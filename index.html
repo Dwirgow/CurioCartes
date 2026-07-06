@@ -147,7 +147,7 @@
             text-transform: uppercase;
         }
 
-        .quiz-container, .wait-container, .category-container {
+        .quiz-container, .wait-container {
             display: none;
             background: var(--card-bg);
             backdrop-filter: blur(10px);
@@ -162,18 +162,17 @@
             box-sizing: border-box;
         }
 
-        .quiz-header, .discover-header {
+        .quiz-header {
             font-weight: 800;
             margin-bottom: 10px;
             text-transform: uppercase;
             font-size: 0.9rem;
+            color: var(--secondary);
         }
-        .quiz-header { color: var(--secondary); }
-        .discover-header { color: var(--primary); }
 
         h3 { margin-top: 0; font-size: 1.3rem; margin-bottom: 5px; color: var(--text-main); }
 
-        button:not(.category-btn) {
+        button {
             background: var(--primary-gradient);
             color: white;
             border: none;
@@ -186,7 +185,7 @@
             margin-top: 10px;
             box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
         }
-        button:not(.category-btn):active { transform: scale(0.97); }
+        button:active { transform: scale(0.97); }
 
         .quiz-btn { 
             background: #F8FAFC !important; 
@@ -199,38 +198,6 @@
             margin-top: 10px !important;
         }
         .quiz-btn:hover { border-color: var(--primary) !important; background: #F1F5F9 !important; }
-
-        .category-list {
-            margin-top: 15px;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            overflow-y: auto;
-            max-height: 300px;
-        }
-        .category-btn {
-            background: white;
-            color: var(--text-main);
-            border: 2px solid #E2E8F0;
-            padding: 15px;
-            border-radius: 14px;
-            text-align: left;
-            font-weight: 700;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .category-btn:hover { border-color: var(--primary); }
-        .category-count {
-            font-size: 0.8rem;
-            color: white;
-            background: var(--primary-gradient);
-            padding: 4px 10px;
-            border-radius: 999px;
-            font-weight: 800;
-        }
 
         .level-grid {
             display: grid;
@@ -378,12 +345,6 @@
             </div>
         </div>
 
-        <div class="category-container" id="category-view">
-            <div class="discover-header">✨ Mode Découverte</div>
-            <h3>Choisis un thème</h3>
-            <div class="category-list" id="category-list"></div>
-        </div>
-
     </div>
 
     <script>
@@ -403,7 +364,7 @@
         let sessionNewCardsCount = parseInt(localStorage.getItem('curio_session_count')) || 0;
 
         let pendingReviews = []; 
-        let availableNewCardsByCategory = {}; 
+        let availableNewCards = []; 
         let currentCardIndex = null;
         let currentMode = ''; 
         let countdownInterval = null; 
@@ -411,7 +372,6 @@
         const cardView = document.getElementById('card-view');
         const quizView = document.getElementById('quiz-view');
         const waitView = document.getElementById('wait-view');
-        const categoryView = document.getElementById('category-view'); 
         const instruction = document.getElementById('card-instruction');
         const statusBadge = document.getElementById('status-badge');
 
@@ -429,7 +389,7 @@
         function analyzeMemory() {
             const now = Date.now();
             pendingReviews = [];
-            availableNewCardsByCategory = {}; 
+            availableNewCards = []; 
 
             let nextDiscovery = localStorage.getItem('curio_next_discovery');
             if (nextDiscovery && now >= parseInt(nextDiscovery)) {
@@ -445,12 +405,8 @@
                         pendingReviews.push(index);
                     }
                 } else {
-                    // Si la carte n'a pas de catégorie définie, on la met dans "Général"
-                    let category = card.category ? card.category : "Général"; 
-                    if (!availableNewCardsByCategory[category]) {
-                        availableNewCardsByCategory[category] = [];
-                    }
-                    availableNewCardsByCategory[category].push(index);
+                    // Carte jamais vue, on l'ajoute simplement à la liste
+                    availableNewCards.push(index);
                 }
             });
 
@@ -475,44 +431,12 @@
             const box = document.getElementById('discovery-box');
             if (box.classList.contains('actionable')) {
                 clearInterval(countdownInterval);
-                currentMode = 'CHOOSE_CATEGORY';
-                statusBadge.innerText = `✨ Sélecteur`;
-                showCategorySelection();
+                currentMode = 'DISCOVER';
+                // On prend la toute première carte disponible dans la liste
+                currentCardIndex = availableNewCards[0];
+                statusBadge.innerText = `✨ Découverte`;
+                showDiscovery();
             }
-        }
-
-        function showCategorySelection() {
-            hideAllViews();
-            const listDiv = document.getElementById('category-list');
-            listDiv.innerHTML = ''; 
-
-            for (let category in availableNewCardsByCategory) {
-                let count = availableNewCardsByCategory[category].length;
-                if (count <= 0) continue; 
-
-                const btn = document.createElement('button');
-                btn.className = 'category-btn';
-                btn.onclick = () => selectCategory(category);
-                
-                const titleSpan = document.createElement('span');
-                titleSpan.innerText = category;
-                
-                const countSpan = document.createElement('span');
-                countSpan.className = 'category-count';
-                countSpan.innerText = count;
-                
-                btn.appendChild(titleSpan);
-                btn.appendChild(countSpan);
-                listDiv.appendChild(btn);
-            }
-
-            categoryView.style.display = 'flex';
-        }
-
-        function selectCategory(categoryName) {
-            currentMode = 'DISCOVER';
-            currentCardIndex = availableNewCardsByCategory[categoryName][0];
-            showDiscovery();
         }
 
         function showDiscovery() {
@@ -650,12 +574,9 @@
             const discoveryBox = document.getElementById('discovery-box');
             const discoveryTitle = document.getElementById('discovery-title');
             
-            let totalUnread = 0;
-            for (let cat in availableNewCardsByCategory) {
-                totalUnread += availableNewCardsByCategory[cat].length;
-            }
+            let totalUnread = availableNewCards.length;
 
-            // Correction de sécurité : si on a lu les 3 cartes, mais que le chrono n'a pas été sauvegardé
+            // Correction de sécurité
             if (sessionNewCardsCount >= MAX_NEW_CARDS_PER_SESSION && (!nextDiscovery || nextDiscovery === "NaN")) {
                 nextDiscovery = Date.now() + COOLDOWN_DISCOVERY;
                 localStorage.setItem('curio_next_discovery', nextDiscovery);
@@ -700,7 +621,6 @@
             cardView.style.display = 'none';
             quizView.style.display = 'none';
             waitView.style.display = 'none';
-            categoryView.style.display = 'none';
             instruction.style.display = 'none';
         }
 
