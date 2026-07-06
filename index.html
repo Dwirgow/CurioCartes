@@ -232,7 +232,6 @@
             font-weight: 800;
         }
 
-        /* --- NOUVEAU : Grille des niveaux de Quiz --- */
         .level-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -269,7 +268,6 @@
         }
         .level-timer.ready { color: var(--secondary); font-weight: bold; }
 
-        /* Bloc Découverte (En bas) */
         .discovery-box {
             background: white;
             border: 2px solid #F1F5F9;
@@ -390,12 +388,12 @@
 
     <script>
         // --- CONFIGURATION ---
-        const COOLDOWN_DISCOVERY = 4 * 60 * 60 * 1000; // 4 heures
+        const COOLDOWN_DISCOVERY = 4 * 60 * 60 * 1000;
         const INTERVALS = [
-            4 * 60 * 60 * 1000,       // Niveau 0 (4h)
-            24 * 60 * 60 * 1000,      // Niveau 1 (24h)
-            3 * 24 * 60 * 60 * 1000,  // Niveau 2 (3j)
-            7 * 24 * 60 * 60 * 1000   // Niveau 3 (7j)
+            4 * 60 * 60 * 1000,       
+            24 * 60 * 60 * 1000,      
+            3 * 24 * 60 * 60 * 1000,  
+            7 * 24 * 60 * 60 * 1000   
         ];
         const MAX_NEW_CARDS_PER_SESSION = 3;
 
@@ -447,7 +445,8 @@
                         pendingReviews.push(index);
                     }
                 } else {
-                    let category = card.category || "Général"; 
+                    // Si la carte n'a pas de catégorie définie, on la met dans "Général"
+                    let category = card.category ? card.category : "Général"; 
                     if (!availableNewCardsByCategory[category]) {
                         availableNewCardsByCategory[category] = [];
                     }
@@ -620,7 +619,6 @@
                 }
             }
 
-            // Mise à jour de l'affichage de la grille
             for (let i = 0; i <= 3; i++) {
                 document.getElementById(`count-lvl${i}`).innerText = `${stats[i].count} carte${stats[i].count > 1 ? 's' : ''}`;
                 const timerEl = document.getElementById(`timer-lvl${i}`);
@@ -641,7 +639,6 @@
                 }
             }
 
-            // Interruption automatique si un quiz tombe à 0
             if (forceQuizInterrupt && currentMode === 'HUB') {
                 analyzeMemory(); 
                 return; 
@@ -658,10 +655,14 @@
                 totalUnread += availableNewCardsByCategory[cat].length;
             }
 
-            // Combien de cartes lues dans cette session
+            // Correction de sécurité : si on a lu les 3 cartes, mais que le chrono n'a pas été sauvegardé
+            if (sessionNewCardsCount >= MAX_NEW_CARDS_PER_SESSION && (!nextDiscovery || nextDiscovery === "NaN")) {
+                nextDiscovery = Date.now() + COOLDOWN_DISCOVERY;
+                localStorage.setItem('curio_next_discovery', nextDiscovery);
+            }
+
             let displayCount = sessionNewCardsCount > MAX_NEW_CARDS_PER_SESSION ? MAX_NEW_CARDS_PER_SESSION : sessionNewCardsCount;
             
-            // Logique d'affichage
             if (totalUnread === 0) {
                 discoveryTitle.innerText = `✨ Fin du Deck`;
                 discoveryEl.innerText = "Deck 100% terminé";
@@ -687,7 +688,6 @@
             }
         }
 
-        // Traduction des millisecondes en heures, minutes, secondes
         function formatTime(ms) {
             let totalSeconds = Math.floor(ms / 1000);
             let hours = Math.floor(totalSeconds / 3600);
