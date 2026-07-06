@@ -2,7 +2,7 @@
     "name": "CurioCartes Application",
     "short_name": "CurioCartes",
     "description": "Améliorez votre culture générale par micro-doses.",
-    "start_url": ".",
+    "start_url": ".:"./index.html",
     "display": "standalone",
     "background_color": "#F3F4F6",
     "theme_color": "#4F46E5",
