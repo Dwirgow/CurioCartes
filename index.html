@@ -624,9 +624,6 @@
             instruction.style.display = 'none';
         }
 		
-        initApp();
-    </script>
-	<script>
 		// --- ENREGISTREMENT DU SERVICE WORKER (PWA) ---
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
@@ -639,6 +636,8 @@
                     });
             });
         }
-	</script>	
+		
+        initApp();
+    </script>	
 </body>
 </html>
