@@ -9,7 +9,9 @@
     <style>
         :root {
             --primary: #4F46E5;
+            --primary-light: #E0E7FF;
             --secondary: #10B981;
+            --secondary-light: #D1FAE5;
             --bg-color: #F3F4F6;
             --card-bg: #FFFFFF;
             --text-main: #1F2937;
@@ -27,6 +29,7 @@
             margin: 0;
             padding: 20px;
             box-sizing: border-box;
+            overflow-x: hidden;
         }
 
         header {
@@ -35,11 +38,11 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
         }
 
         .status-badge {
-            background-color: #E0E7FF;
+            background-color: var(--primary-light);
             color: var(--primary);
             padding: 5px 15px;
             border-radius: 20px;
@@ -51,6 +54,9 @@
             width: 100%;
             max-width: 400px;
             perspective: 1000px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         /* Système de Carte 3D */
@@ -104,29 +110,70 @@
         .back-section { margin-bottom: 15px; }
         .back-title { font-weight: bold; color: var(--primary); margin-bottom: 4px; font-size: 0.85rem; text-transform: uppercase;}
 
-        /* Ecrans Quiz et Attente */
-        .quiz-container, .wait-container {
+        /* Ecrans Quiz, Attente, Sélection */
+        .quiz-container, .wait-container, .category-container {
             display: none;
             background-color: var(--card-bg);
             border-radius: 20px;
             padding: 30px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.1);
             text-align: center;
-            min-height: 350px;
+            min-height: 380px;
+            width: 100%;
             flex-direction: column;
-            justify-content: center;
             box-sizing: border-box;
         }
 
-        .quiz-header {
-            color: var(--secondary);
+        .quiz-header, .discover-header {
             font-weight: bold;
             margin-bottom: 15px;
             text-transform: uppercase;
             font-size: 0.9rem;
         }
+        .quiz-header { color: var(--secondary); }
+        .discover-header { color: var(--primary); }
 
-        button {
+        /* Catégories */
+        .category-list {
+            margin-top: 15px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .category-btn {
+            background-color: #F9FAFB;
+            color: var(--text-main);
+            border: 1px solid #E5E7EB;
+            padding: 18px;
+            border-radius: 12px;
+            text-align: left;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.2s;
+        }
+        .category-btn:hover {
+            background-color: var(--primary-light);
+            border-color: #C7D2FE;
+            color: var(--primary);
+        }
+        .category-count {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            background-color: #EDF2F7;
+            padding: 4px 10px;
+            border-radius: 12px;
+        }
+        .category-btn:hover .category-count {
+            background-color: white;
+            color: var(--primary);
+        }
+
+        /* Boutons principaux */
+        button:not(.category-btn) {
             background-color: var(--primary);
             color: white;
             border: none;
@@ -140,7 +187,7 @@
             transition: background-color 0.2s;
         }
 
-        button:hover { background-color: #4338CA; }
+        button:not(.category-btn):hover { background-color: #4338CA; }
         .quiz-btn { background-color: #F3F4F6; color: var(--text-main); text-align: left; padding: 12px 15px; font-weight: normal;}
         .quiz-btn:hover { background-color: #E5E7EB; }
 
@@ -152,14 +199,15 @@
             display: none;
         }
 
-        /* NOUVEAU : Design des blocs compte à rebours */
+        /* Les blocs Chronos du Tableau de bord */
         .timer-box {
             background-color: #F9FAFB;
-            border: 1px solid #E5E7EB;
+            border: 2px solid #E5E7EB;
             border-radius: 12px;
             padding: 15px;
             margin-top: 15px;
             text-align: left;
+            transition: all 0.2s;
         }
         .timer-title {
             font-size: 0.8rem;
@@ -168,15 +216,28 @@
             font-weight: bold;
             letter-spacing: 0.05em;
         }
-        .timer-time {
-            font-size: 1.5rem;
-            font-weight: bold;
+        .timer-time { 
+            font-size: 1.5rem; 
+            font-weight: bold; 
+            color: var(--primary); 
+            margin-top: 4px; 
+        }
+
+        /* NOUVEAU : Design cliquable quand le compte à rebours est fini */
+        .timer-box.actionable {
+            cursor: pointer;
+            background-color: var(--primary-light);
+            border-color: var(--primary);
+        }
+        .timer-box.actionable .timer-time {
             color: var(--primary);
-            margin-top: 4px;
         }
-        .timer-time.ready {
-            color: var(--secondary);
+        .timer-box.actionable:hover {
+            background-color: #C7D2FE;
+            transform: scale(1.02);
         }
+
+        .timer-time.ready { color: var(--secondary); }
     </style>
 </head>
 <body>
@@ -217,32 +278,39 @@
         </div>
 
         <div class="wait-container" id="wait-view">
-            <h3 style="margin-top: 0;">Repos Neuronal 🔋</h3>
-            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 10px;">Ton cerveau assimile les connaissances de la session.</p>
+            <h3 style="margin-top: 0;">Tableau de Bord ⚡</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 10px;">Ton centre de contrôle d'apprentissage.</p>
             
-            <div class="timer-box">
+            <div class="timer-box" id="review-box">
                 <div class="timer-title">🧠 Prochain Quiz Révision</div>
                 <div class="timer-time" id="review-countdown">--h --m --s</div>
             </div>
 
-            <div class="timer-box">
+            <div class="timer-box" id="discovery-box" onclick="launchDiscoveryIfReady()">
                 <div class="timer-title">✨ Nouvelles cartes disponibles</div>
                 <div class="timer-time" id="discovery-countdown">--h --m --s</div>
             </div>
         </div>
 
+        <div class="category-container" id="category-view">
+            <div class="discover-header">✨ Mode Découverte</div>
+            <h3 style="margin-top: 0;">Choisissez un thème</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">Cliquez sur un thème disponible pour débloquer votre prochaine carte.</p>
+            <div class="category-list" id="category-list">
+                </div>
+        </div>
+
     </div>
 
     <script>
-        // --- CONFIGURATION SCIENTIFIQUE ---
-        const COOLDOWN_DISCOVERY = 10 * 1000; // 4 heures de blocage après session de découverte
+        // --- CONFIGURATION ---
+        const COOLDOWN_DISCOVERY = 4 * 60 * 60 * 1000; // 4 heures
         const INTERVALS = [
-            15 * 1000,      // Niveau 0 -> Révision dans 4h
-            24 * 60 * 60 * 1000,     // Niveau 1 -> Révision dans 24h
-            3 * 24 * 60 * 60 * 1000, // Niveau 2 -> Révision dans 3 jours
-            7 * 24 * 60 * 60 * 1000  // Niveau 3 -> Révision dans 7 jours
+            4 * 60 * 60 * 1000,
+            24 * 60 * 60 * 1000,
+            3 * 24 * 60 * 60 * 1000,
+            7 * 24 * 60 * 60 * 1000
         ];
-        
         const MAX_NEW_CARDS_PER_SESSION = 3;
 
         // --- VARIABLES D'ÉTAT ---
@@ -251,14 +319,16 @@
         let sessionNewCardsCount = parseInt(localStorage.getItem('curio_session_count')) || 0;
 
         let pendingReviews = []; 
-        let availableNewCards = []; 
+        let availableNewCardsByCategory = {}; 
         let currentCardIndex = null;
+        let selectedCategory = null; 
         let currentMode = ''; 
-        let countdownInterval = null; // Gère la mise à jour des chronos en temps réel
+        let countdownInterval = null; 
 
         const cardView = document.getElementById('card-view');
         const quizView = document.getElementById('quiz-view');
         const waitView = document.getElementById('wait-view');
+        const categoryView = document.getElementById('category-view'); 
         const instruction = document.getElementById('card-instruction');
         const statusBadge = document.getElementById('status-badge');
 
@@ -278,9 +348,8 @@
         function analyzeMemory() {
             const now = Date.now();
             pendingReviews = [];
-            availableNewCards = [];
+            availableNewCardsByCategory = {}; 
 
-            // Reset du compteur de session si le temps d'attente découverte est expiré
             let nextDiscovery = localStorage.getItem('curio_next_discovery');
             if (nextDiscovery && now >= parseInt(nextDiscovery)) {
                 sessionNewCardsCount = 0;
@@ -295,35 +364,84 @@
                         pendingReviews.push(index);
                     }
                 } else {
-                    availableNewCards.push(index);
+                    let category = card.category || "Sans Catégorie"; 
+                    if (!availableNewCardsByCategory[category]) {
+                        availableNewCardsByCategory[category] = [];
+                    }
+                    availableNewCardsByCategory[category].push(index);
                 }
             });
 
             routeSession();
         }
 
-        // --- 3. AIGUILLAGE ---
+        // --- 3. AIGUILLAGE DE LA SESSION ---
         function routeSession() {
-            clearInterval(countdownInterval); // On stoppe les chronos s'ils tournaient
+            clearInterval(countdownInterval); 
 
+            // PRIORITÉ 1 : Les révisions (Automatique et Inesquivable)
             if (pendingReviews.length > 0) {
                 currentMode = 'REVIEW';
                 currentCardIndex = pendingReviews[0];
                 statusBadge.innerText = `🔄 ${pendingReviews.length} Révision(s)`;
                 showQuiz();
             } 
-            else if (availableNewCards.length > 0 && sessionNewCardsCount < MAX_NEW_CARDS_PER_SESSION) {
-                currentMode = 'DISCOVER';
-                currentCardIndex = availableNewCards[0];
-                statusBadge.innerText = `✨ Découverte`;
-                showDiscovery();
-            } 
+            // PRIORITÉ 2 : On affiche le tableau de bord (Hub)
             else {
+                currentMode = 'HUB';
                 showWaitScreen();
             }
         }
 
-        // --- 4. MODE DÉCOUVERTE ---
+        // --- 4. ACTION UTILISATEUR : LANCER DÉCOUVERTE ---
+        function launchDiscoveryIfReady() {
+            const discoveryBox = document.getElementById('discovery-box');
+            // On vérifie que la boîte a bien été rendue cliquable par l'algorithme
+            if (discoveryBox.classList.contains('actionable')) {
+                clearInterval(countdownInterval);
+                currentMode = 'CHOOSE_CATEGORY';
+                statusBadge.innerText = `✨ Choix Découverte`;
+                showCategorySelection();
+            }
+        }
+
+        // --- 5. ÉCRAN SÉLECTION DE CATÉGORIE ---
+        function showCategorySelection() {
+            hideAllViews();
+            const listDiv = document.getElementById('category-list');
+            listDiv.innerHTML = ''; 
+
+            for (let category in availableNewCardsByCategory) {
+                let count = availableNewCardsByCategory[category].length;
+                if (count <= 0) continue; 
+
+                const btn = document.createElement('button');
+                btn.className = 'category-btn';
+                btn.onclick = () => selectCategory(category);
+                
+                const titleSpan = document.createElement('span');
+                titleSpan.innerText = category;
+                
+                const countSpan = document.createElement('span');
+                countSpan.className = 'category-count';
+                countSpan.innerText = `${count} carte(s)`;
+                
+                btn.appendChild(titleSpan);
+                btn.appendChild(countSpan);
+                listDiv.appendChild(btn);
+            }
+
+            categoryView.style.display = 'flex';
+        }
+
+        function selectCategory(categoryName) {
+            selectedCategory = categoryName;
+            currentMode = 'DISCOVER';
+            currentCardIndex = availableNewCardsByCategory[categoryName][0];
+            showDiscovery();
+        }
+
+        // --- 6. MODE DÉCOUVERTE (Carte) ---
         function showDiscovery() {
             const card = deck[currentCardIndex];
             document.getElementById('card-front').innerText = card.front;
@@ -344,20 +462,21 @@
 
         function finishDiscovery(event) {
             event.stopPropagation();
-            saveToMemory(currentCardIndex, 0); // Niveau 0
+            saveToMemory(currentCardIndex, 0); 
             
             sessionNewCardsCount++;
             localStorage.setItem('curio_session_count', sessionNewCardsCount);
             
-            // Si limite atteinte, on enregistre le moment de la prochaine dispo
             if (sessionNewCardsCount >= MAX_NEW_CARDS_PER_SESSION) {
                 localStorage.setItem('curio_next_discovery', Date.now() + COOLDOWN_DISCOVERY);
             }
             
+            selectedCategory = null; 
+            // Retour automatique au tableau de bord pour évaluer la suite
             analyzeMemory();
         }
 
-        // --- 5. MODE RÉVISION ---
+        // --- 7. MODE RÉVISION (Quiz) ---
         function showQuiz() {
             const card = deck[currentCardIndex];
             document.getElementById('quiz-question').innerText = card.quizQ;
@@ -385,11 +504,12 @@
                 currentLevel++;
                 if(currentLevel >= INTERVALS.length) currentLevel = INTERVALS.length - 1;
             } else {
-                alert("Faux ! La réponse était : " + deck[currentCardIndex].quizOpts[correctIndex] + "\n\nRetour au niveau 0.");
+                alert("Faux ! La réponse était : " + deck[currentCardIndex].quizOpts[correctIndex]);
                 currentLevel = 0;
             }
 
             saveToMemory(currentCardIndex, currentLevel);
+            // Dès qu'on répond, on analyse la mémoire. S'il reste des quiz, l'appli les force.
             analyzeMemory();
         }
 
@@ -401,71 +521,65 @@
             localStorage.setItem('curio_memory', JSON.stringify(memoryData));
         }
 
-        // --- 6. ÉCRAN D'ATTENTE AVEC CHRONOS DYNAMIQUES ---
+        // --- 8. ÉCRAN TABLEAU DE BORD (HUB) AVEC CHRONOS DYNAMIQUES ---
         function showWaitScreen() {
             hideAllViews();
             waitView.style.display = 'flex';
-            statusBadge.innerText = "En attente";
-
-            // Lancement de la boucle des comptes à rebours (1 mise à jour par seconde)
+            statusBadge.innerText = "Tableau de Bord";
             updateTimersDisplay();
             countdownInterval = setInterval(updateTimersDisplay, 1000);
         }
 
         function updateTimersDisplay() {
             const now = Date.now();
-            let refreshNeeded = false;
+            let forceQuizInterrupt = false; // Le fameux déclencheur inesquivable
 
-            // --- CHRONO 1 : PROCHAIN QUIZ ---
-            // On cherche le "nextReview" le plus proche dans le futur
+            // --- CHRONO QUIZ ---
             let earliestReview = Infinity;
             for (let key in memoryData) {
                 let time = memoryData[key].nextReview;
-                if (time > now && time < earliestReview) {
-                    earliestReview = time;
-                }
+                if (time > now && time < earliestReview) earliestReview = time;
             }
-
+            
             const reviewEl = document.getElementById('review-countdown');
             if (earliestReview === Infinity) {
                 reviewEl.innerText = "Aucun quiz planifié";
-                reviewEl.classList.remove('ready');
             } else {
                 let diff = earliestReview - now;
                 if (diff <= 0) {
-                    reviewEl.innerText = "Prêt !";
-                    reviewEl.classList.add('ready');
-                    refreshNeeded = true;
+                    // Si le chrono quiz tombe à zéro pendant qu'on regarde l'écran, on force l'interruption !
+                    forceQuizInterrupt = true; 
                 } else {
                     reviewEl.innerText = formatTime(diff);
-                    reviewEl.classList.remove('ready');
                 }
             }
 
-            // --- CHRONO 2 : NOUVELLES CARTES ---
+            // Exécution de l'interruption Quiz
+            if (forceQuizInterrupt && currentMode === 'HUB') {
+                analyzeMemory(); 
+                return; // On arrête l'affichage du tableau de bord
+            }
+
+            // --- CHRONO DÉCOUVERTE ---
             let nextDiscovery = localStorage.getItem('curio_next_discovery');
             const discoveryEl = document.getElementById('discovery-countdown');
-
-            if (!nextDiscovery || sessionNewCardsCount < MAX_NEW_CARDS_PER_SESSION) {
-                discoveryEl.innerText = "Disponible maintenant !";
-                discoveryEl.classList.add('ready');
-                // Si on est bloqué sur cet écran mais que c'est dispo, on rafraîchit
-                if(sessionNewCardsCount >= MAX_NEW_CARDS_PER_SESSION) refreshNeeded = true;
-            } else {
-                let diff = parseInt(nextDiscovery) - now;
-                if (diff <= 0) {
-                    discoveryEl.innerText = "Disponible !";
-                    discoveryEl.classList.add('ready');
-                    refreshNeeded = true;
-                } else {
-                    discoveryEl.innerText = formatTime(diff);
-                    discoveryEl.classList.remove('ready');
-                }
+            const discoveryBox = document.getElementById('discovery-box');
+            
+            let isCooldownOver = (!nextDiscovery || sessionNewCardsCount < MAX_NEW_CARDS_PER_SESSION);
+            if (!isCooldownOver && now >= parseInt(nextDiscovery)) {
+                isCooldownOver = true; // Le chrono vient de se terminer
             }
 
-            // Si un des chronos vient de se terminer, on relance l'analyse pour débloquer l'appli en direct !
-            if (refreshNeeded) {
-                analyzeMemory();
+            if (isCooldownOver && Object.keys(availableNewCardsByCategory).length > 0) {
+                discoveryEl.innerText = "Prêt ! Cliquez ici ✨";
+                discoveryBox.classList.add('actionable'); // Rend la case cliquable visuellement et fonctionnellement
+            } else if (Object.keys(availableNewCardsByCategory).length === 0) {
+                discoveryEl.innerText = "Plus aucune carte neuve";
+                discoveryBox.classList.remove('actionable');
+            } else {
+                let diff = parseInt(nextDiscovery) - now;
+                discoveryEl.innerText = formatTime(diff);
+                discoveryBox.classList.remove('actionable');
             }
         }
 
@@ -475,7 +589,6 @@
             let hours = Math.floor(totalSeconds / 3600);
             let minutes = Math.floor((totalSeconds % 3600) / 60);
             let seconds = totalSeconds % 60;
-
             return `${String(hours).padStart(2, '0')}h ${String(minutes).padStart(2, '0')}m ${String(seconds).padStart(2, '0')}s`;
         }
 
@@ -483,6 +596,7 @@
             cardView.style.display = 'none';
             quizView.style.display = 'none';
             waitView.style.display = 'none';
+            categoryView.style.display = 'none';
             instruction.style.display = 'none';
         }
 
