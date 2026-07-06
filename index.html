@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CurioCartes PWA</title>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#4F46E5">
+    <style>
+        :root {
+            --primary: #4F46E5;
+            --bg-color: #F3F4F6;
+            --card-bg: #FFFFFF;
+            --text-main: #1F2937;
+            --text-muted: #6B7280;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        header {
+            width: 100%;
+            max-width: 400px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .credits {
+            background-color: #E0E7FF;
+            color: var(--primary);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        .app-container {
+            width: 100%;
+            max-width: 400px;
+            perspective: 1000px;
+        }
+
+        .flip-card {
+            background-color: transparent;
+            width: 100%;
+            height: 420px;
+            cursor: pointer;
+            display: block;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);
+            transform-style: preserve-3d;
+        }
+
+        .flip-card.flipped .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            background-color: var(--card-bg);
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        .flip-card-front {
+            font-size: 1.4rem;
+            font-weight: bold;
+            line-height: 1.4;
+        }
+
+        .flip-card-back {
+            transform: rotateY(180deg);
+            text-align: left;
+            font-size: 0.95rem;
+            justify-content: flex-start;
+            overflow-y: auto;
+        }
+
+        .back-section { margin-bottom: 15px; }
+        .back-title { font-weight: bold; color: var(--primary); margin-bottom: 4px; font-size: 0.85rem; text-transform: uppercase;}
+
+        .quiz-container, .wait-container {
+            display: none;
+            background-color: var(--card-bg);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+            min-height: 350px;
+            flex-direction: column;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 14px 20px;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+            transition: background-color 0.2s;
+        }
+
+        button:hover { background-color: #4338CA; }
+        .quiz-btn { background-color: #F3F4F6; color: var(--text-main); text-align: left; padding: 12px 15px; font-weight: normal;}
+        .quiz-btn:hover { background-color: #E5E7EB; }
+
+        .instruction {
+            margin-top: 20px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2>CurioCartes</h2>
+        <div class="credits">⚡ <span id="credit-count">2</span></div>
+    </header>
+
+    <div class="app-container">
+        
+        <!-- ÉCRAN 1 : LA CARTE -->
+        <div class="flip-card" id="card-view" onclick="flipCard()">
+            <div class="flip-card-inner" id="card-inner">
+                
+                <div class="flip-card-front" id="card-front">
+                    Chargement du savoir...
+                </div>
+                
+                <div class="flip-card-back">
+                    <div class="back-section">
+                        <div class="back-title">L'Explication</div>
+                        <div id="card-exp"></div>
+                    </div>
+                    <div class="back-section">
+                        <div class="back-title">L'Analogie 💡</div>
+                        <div id="card-ana"></div>
+                    </div>
+                    <div class="back-section">
+                        <div class="back-title">Le Fun Fact 🍿</div>
+                        <div id="card-fun"></div>
+                    </div>
+                    <button onclick="goToQuiz(event)" style="margin-top: auto;">J'ai compris !</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="instruction" id="card-instruction">Appuyez sur la carte pour la retourner</div>
+
+        <!-- ÉCRAN 2 : LE QUIZ -->
+        <div class="quiz-container" id="quiz-view">
+            <h3>Vérification rapide !</h3>
+            <p id="quiz-question" style="font-weight: bold; margin-bottom: 20px;"></p>
+            <div id="quiz-options"></div>
+        </div>
+
+        <!-- ÉCRAN 3 : L'ATTENTE -->
+        <div class="wait-container" id="wait-view">
+            <h3>Plus d'énergie ! 🔋</h3>
+            <p>Ton cerveau a besoin d'assimiler.</p>
+            <p>Prochaine carte disponible dans :</p>
+            <h2 id="timer-display" style="color: var(--primary); font-size: 2rem; margin: 10px 0;">10s</h2>
+        </div>
+
+    </div>
+
+    <script>
+        let deck = [];
+        let currentCardIndex = 0;
+        let credits = 2;
+        let isRecharging = false;
+
+        const cardView = document.getElementById('card-view');
+        const quizView = document.getElementById('quiz-view');
+        const waitView = document.getElementById('wait-view');
+        const instruction = document.getElementById('card-instruction');
+        const creditDisplay = document.getElementById('credit-count');
+
+        // Initialisation : Charger les données du fichier externe JSON
+        async function initApp() {
+            try {
+                const response = await fetch('cards.json');
+                if (!response.ok) throw new Error("Impossible de récupérer cards.json");
+                deck = await response.json();
+                loadCard();
+            } catch (error) {
+                document.getElementById('card-front').innerText = "Erreur de chargement. Lancez l'application via un serveur local (Live Server) ou hébergez-la.";
+                console.error(error);
+            }
+        }
+
+        function loadCard() {
+            if (credits <= 0) {
+                showWaitScreen();
+                return;
+            }
+
+            if (deck.length === 0) return;
+
+            const card = deck[currentCardIndex];
+            document.getElementById('card-front').innerText = card.front;
+            document.getElementById('card-exp').innerText = card.exp;
+            document.getElementById('card-ana').innerText = card.ana;
+            document.getElementById('card-fun').innerText = card.fun;
+            
+            document.getElementById('card-inner').closest('.flip-card').classList.remove('flipped');
+            
+            cardView.style.display = 'block';
+            quizView.style.display = 'none';
+            waitView.style.display = 'none';
+            instruction.style.display = 'block';
+        }
+
+        function flipCard() {
+            document.getElementById('card-inner').closest('.flip-card').classList.add('flipped');
+            instruction.style.display = 'none';
+        }
+
+        function goToQuiz(event) {
+            event.stopPropagation();
+            
+            const card = deck[currentCardIndex];
+            document.getElementById('quiz-question').innerText = card.quizQ;
+            
+            const optionsDiv = document.getElementById('quiz-options');
+            optionsDiv.innerHTML = '';
+            
+            card.quizOpts.forEach((opt, index) => {
+                const btn = document.createElement('button');
+                btn.className = 'quiz-btn';
+                btn.innerText = opt;
+                btn.onclick = () => checkAnswer(index, card.quizAns);
+                optionsDiv.appendChild(btn);
+            });
+
+            cardView.style.display = 'none';
+            quizView.style.display = 'flex';
+        }
+
+        function checkAnswer(selectedIndex, correctIndex) {
+            if (selectedIndex === correctIndex) {
+                alert("Bonne réponse ! 🎉");
+            } else {
+                alert("Oups, ce n'était pas ça ! Mais l'important est d'apprendre. 😉");
+            }
+
+            credits--;
+            updateCredits();
+            
+            currentCardIndex++;
+            if (currentCardIndex >= deck.length) {
+                currentCardIndex = 0; // Boucle sur le deck
+            }
+
+            loadCard();
+        }
+
+        function updateCredits() {
+            creditDisplay.innerText = credits;
+            if (credits < 2 && !isRecharging) {
+                startRechargeTimer();
+            }
+        }
+
+        function showWaitScreen() {
+            cardView.style.display = 'none';
+            quizView.style.display = 'none';
+            instruction.style.display = 'none';
+            waitView.style.display = 'flex';
+        }
+
+        function startRechargeTimer() {
+            isRecharging = true;
+            let timeLeft = 10; // Pour la démo : 10 secondes au lieu d'une heure
+            
+            const timerInterval = setInterval(() => {
+                timeLeft--;
+                document.getElementById('timer-display').innerText = timeLeft + "s";
+                
+                if (timeLeft <= 0) {
+                    clearInterval(timerInterval);
+                    credits++;
+                    updateCredits();
+                    isRecharging = false;
+                    
+                    if (credits < 2) {
+                        startRechargeTimer();
+                    }
+                    
+                    if (waitView.style.display === 'flex') {
+                        loadCard();
+                    }
+                }
+            }, 1000);
+        }
+
+        // Enregistrement du Service Worker pour la PWA
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js')
+                    .then(reg => console.log('Service Worker enregistré !', reg))
+                    .catch(err => console.log('Erreur SW:', err));
+            });
+        }
+
+        initApp();
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+[
+    {
+        "front": "Comment une banque gagne-t-elle de l'argent (outre les frais) ?",
+        "exp": "Grâce à l'effet de levier. Elle prête une grande partie des dépôts de ses clients à d'autres personnes (avec intérêts), tout en garantissant que ton argent est toujours là.",
+        "ana": "C'est comme le vestiaire d'une boîte de nuit qui louerait ton manteau à quelqu'un d'autre pendant que tu danses.",
+        "fun": "On appelle cela la 'création monétaire' : les banques créent de l'argent quand elles accordent un crédit !",
+        "quizQ": "Quel mécanisme permet aux banques de prêter l'argent déposé ?",
+        "quizOpts": [
+            "Les frais de dossier",
+            "L'effet de levier",
+            "L'impression de billets"
+        ],
+        "quizAns": 1
+    },
+    {
+        "front": "Comment Amazon livre-t-il des millions de colis en 24h ?",
+        "exp": "Grâce à la prédiction de données. Leurs algorithmes devinent ce que tu vas acheter et pré-positionnent le stock dans l'entrepôt le plus proche.",
+        "ana": "Comme un cuisinier qui commence à préparer ton plat préféré dès qu'il te voit te garer devant le restaurant.",
+        "fun": "L'activité la plus rentable d'Amazon n'est pas la livraison, mais AWS (leurs serveurs informatiques qui hébergent une grande partie d'internet).",
+        "quizQ": "Quelle est l'activité la plus rentable d'Amazon ?",
+        "quizOpts": [
+            "La vente de livres",
+            "L'abonnement Prime",
+            "L'hébergement web (AWS)"
+        ],
+        "quizAns": 2
+    },
+    {
+        "front": "Qu'est-ce qui a vraiment déclenché la crise économique de 1929 ?",
+        "exp": "Une spéculation boursière excessive alimentée par des crédits faciles. Les gens achetaient des actions avec de l'argent qu'ils n'avaient pas, jusqu'au jour où la confiance a rompu (le Jeudi Noir).",
+        "ana": "C'est le jeu de la chaise musicale : tout le monde danse tant que la musique tourne, mais quand elle s'arrête, il n'y a pas de vraies chaises (de vrai argent) pour tout le monde.",
+        "fun": "La crise a été si violente qu'elle a popularisé les soupes populaires aux États-Unis, dont l'une des plus célèbres à Chicago était financée par le gangster Al Capone.",
+        "quizQ": "Comment s'appelle le jour du krach boursier de 1929 ?",
+        "quizOpts": [
+            "Le Mardi Rouge",
+            "Le Jeudi Noir",
+            "Le Vendredi Saint"
+        ],
+        "quizAns": 1
+    },
+    {
+        "front": "Comment ton téléphone sait-il exactement où tu es grâce au GPS ?",
+        "exp": "Par trilatération. Ton téléphone calcule sa distance par rapport à au moins 4 satellites en orbite en mesurant le temps que met le signal radio pour arriver.",
+        "ana": "Si trois personnes à des endroits différents te disent à quelle distance exacte tu te trouves d'elles, tu peux dessiner des cercles et trouver l'unique point d'intersection.",
+        "fun": "Le temps passe plus vite dans l'espace que sur Terre à cause de la relativité d'Einstein. Les horloges des satellites doivent être corrigées de 38 microsecondes par jour, sinon le GPS se tromperait de 11 km par jour !",
+        "quizQ": "Combien de satellites au minimum faut-il pour une position GPS précise ?",
+        "quizOpts": [
+            "1 satellite",
+            "2 satellites",
+            "4 satellites"
+        ],
+        "quizAns": 2
+    }
+]
