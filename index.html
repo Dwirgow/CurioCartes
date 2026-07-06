@@ -9,6 +9,7 @@
     <style>
         :root {
             --primary: #4F46E5;
+            --secondary: #10B981;
             --bg-color: #F3F4F6;
             --card-bg: #FFFFFF;
             --text-main: #1F2937;
@@ -37,12 +38,13 @@
             margin-bottom: 30px;
         }
 
-        .credits {
+        .status-badge {
             background-color: #E0E7FF;
             color: var(--primary);
             padding: 5px 15px;
             border-radius: 20px;
             font-weight: bold;
+            font-size: 0.9rem;
         }
 
         .app-container {
@@ -51,12 +53,13 @@
             perspective: 1000px;
         }
 
+        /* Système de Carte 3D */
         .flip-card {
             background-color: transparent;
             width: 100%;
             height: 420px;
             cursor: pointer;
-            display: block;
+            display: none;
         }
 
         .flip-card-inner {
@@ -88,12 +91,8 @@
             box-sizing: border-box;
         }
 
-        .flip-card-front {
-            font-size: 1.4rem;
-            font-weight: bold;
-            line-height: 1.4;
-        }
-
+        .flip-card-front { font-size: 1.4rem; font-weight: bold; line-height: 1.4; }
+        
         .flip-card-back {
             transform: rotateY(180deg);
             text-align: left;
@@ -105,6 +104,7 @@
         .back-section { margin-bottom: 15px; }
         .back-title { font-weight: bold; color: var(--primary); margin-bottom: 4px; font-size: 0.85rem; text-transform: uppercase;}
 
+        /* Ecrans Quiz et Attente */
         .quiz-container, .wait-container {
             display: none;
             background-color: var(--card-bg);
@@ -116,6 +116,14 @@
             flex-direction: column;
             justify-content: center;
             box-sizing: border-box;
+        }
+
+        .quiz-header {
+            color: var(--secondary);
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
         }
 
         button {
@@ -141,6 +149,7 @@
             color: var(--text-muted);
             font-size: 0.9rem;
             text-align: center;
+            display: none;
         }
     </style>
 </head>
@@ -148,19 +157,14 @@
 
     <header>
         <h2>CurioCartes</h2>
-        <div class="credits">⚡ <span id="credit-count">2</span></div>
+        <div class="status-badge" id="status-badge">Chargement...</div>
     </header>
 
     <div class="app-container">
         
-        <!-- ÉCRAN 1 : LA CARTE -->
         <div class="flip-card" id="card-view" onclick="flipCard()">
             <div class="flip-card-inner" id="card-inner">
-                
-                <div class="flip-card-front" id="card-front">
-                    Chargement du savoir...
-                </div>
-                
+                <div class="flip-card-front" id="card-front"></div>
                 <div class="flip-card-back">
                     <div class="back-section">
                         <div class="back-title">L'Explication</div>
@@ -174,63 +178,116 @@
                         <div class="back-title">Le Fun Fact 🍿</div>
                         <div id="card-fun"></div>
                     </div>
-                    <button onclick="goToQuiz(event)" style="margin-top: auto;">J'ai compris !</button>
+                    <button onclick="finishDiscovery(event)" style="margin-top: auto;">J'ai compris !</button>
                 </div>
-
             </div>
         </div>
         <div class="instruction" id="card-instruction">Appuyez sur la carte pour la retourner</div>
 
-        <!-- ÉCRAN 2 : LE QUIZ -->
         <div class="quiz-container" id="quiz-view">
-            <h3>Vérification rapide !</h3>
-            <p id="quiz-question" style="font-weight: bold; margin-bottom: 20px;"></p>
+            <div class="quiz-header">🧠 Mode Révision</div>
+            <p id="quiz-question" style="font-weight: bold; margin-bottom: 20px; font-size: 1.2rem;"></p>
             <div id="quiz-options"></div>
         </div>
 
-        <!-- ÉCRAN 3 : L'ATTENTE -->
         <div class="wait-container" id="wait-view">
-            <h3>Plus d'énergie ! 🔋</h3>
+            <h3>Repos Neuronal 🔋</h3>
             <p>Ton cerveau a besoin d'assimiler.</p>
-            <p>Prochaine carte disponible dans :</p>
-            <h2 id="timer-display" style="color: var(--primary); font-size: 2rem; margin: 10px 0;">10s</h2>
+            <p style="margin-top: 20px; color: var(--text-muted);">Reviens plus tard pour tes révisions ou de nouvelles découvertes.</p>
         </div>
 
     </div>
 
     <script>
-        let deck = [];
-        let currentCardIndex = 0;
-        let credits = 2;
-        let isRecharging = false;
+        // --- CONFIGURATION SCIENTIFIQUE DE LA MÉMOIRE ---
+        // Les intervalles de répétition espacée (en millisecondes)
+        const INTERVALS = [
+            4 * 60 * 60 * 1000,   // Niveau 0 : 4 heures (pour tester rapidement, remplace par 60 * 1000 pour 1 minute)
+            24 * 60 * 60 * 1000,  // Niveau 1 : 24 heures
+            3 * 24 * 60 * 60 * 1000, // Niveau 2 : 3 jours
+            7 * 24 * 60 * 60 * 1000  // Niveau 3 : 7 jours
+        ];
+        
+        const MAX_NEW_CARDS_PER_SESSION = 3;
 
+        // --- VARIABLES D'ÉTAT ---
+        let deck = [];
+        let memoryData = JSON.parse(localStorage.getItem('curio_memory')) || {}; 
+        // Structure de memoryData : { "indexCarte": { level: 0, nextReview: timestamp } }
+
+        let pendingReviews = []; // Index des cartes à réviser
+        let availableNewCards = []; // Index des cartes jamais vues
+        let sessionNewCardsCount = 0; // Compteur pour limiter la surcharge cognitive
+        
+        let currentCardIndex = null;
+        let currentMode = ''; // 'REVIEW' ou 'DISCOVER'
+
+        // --- ÉLÉMENTS DU DOM ---
         const cardView = document.getElementById('card-view');
         const quizView = document.getElementById('quiz-view');
         const waitView = document.getElementById('wait-view');
         const instruction = document.getElementById('card-instruction');
-        const creditDisplay = document.getElementById('credit-count');
+        const statusBadge = document.getElementById('status-badge');
 
-        // Initialisation : Charger les données du fichier externe JSON
+        // --- 1. INITIALISATION ---
         async function initApp() {
             try {
                 const response = await fetch('cards.json');
-                if (!response.ok) throw new Error("Impossible de récupérer cards.json");
+                if (!response.ok) throw new Error("Erreur réseau");
                 deck = await response.json();
-                loadCard();
+                analyzeMemory();
             } catch (error) {
-                document.getElementById('card-front').innerText = "Erreur de chargement. Lancez l'application via un serveur local (Live Server) ou hébergez-la.";
-                console.error(error);
+                console.error("Impossible de charger les cartes.", error);
             }
         }
 
-        function loadCard() {
-            if (credits <= 0) {
+        // --- 2. TRI DES CARTES (Cerveau de l'appli) ---
+        function analyzeMemory() {
+            const now = Date.now();
+            pendingReviews = [];
+            availableNewCards = [];
+
+            deck.forEach((card, index) => {
+                const cardMemory = memoryData[index];
+                
+                if (cardMemory) {
+                    // La carte a déjà été vue. Est-il l'heure de la réviser ?
+                    if (now >= cardMemory.nextReview) {
+                        pendingReviews.push(index);
+                    }
+                } else {
+                    // La carte n'a jamais été lue
+                    availableNewCards.push(index);
+                }
+            });
+
+            routeSession();
+        }
+
+        // --- 3. AIGUILLAGE DE LA SESSION ---
+        function routeSession() {
+            // RÈGLE D'OR : Les révisions priment sur les nouveautés
+            if (pendingReviews.length > 0) {
+                currentMode = 'REVIEW';
+                currentCardIndex = pendingReviews[0];
+                statusBadge.innerText = `🔄 ${pendingReviews.length} Révision(s)`;
+                showQuiz();
+            } 
+            // S'il n'y a plus de révision, on peut découvrir
+            else if (availableNewCards.length > 0 && sessionNewCardsCount < MAX_NEW_CARDS_PER_SESSION) {
+                currentMode = 'DISCOVER';
+                currentCardIndex = availableNewCards[0];
+                statusBadge.innerText = `✨ Nouvelle Découverte`;
+                showDiscovery();
+            } 
+            // Sinon, repos !
+            else {
                 showWaitScreen();
-                return;
             }
+        }
 
-            if (deck.length === 0) return;
-
+        // --- 4. MODE DÉCOUVERTE (Encodage) ---
+        function showDiscovery() {
             const card = deck[currentCardIndex];
             document.getElementById('card-front').innerText = card.front;
             document.getElementById('card-exp').innerText = card.exp;
@@ -239,9 +296,8 @@
             
             document.getElementById('card-inner').closest('.flip-card').classList.remove('flipped');
             
+            hideAllViews();
             cardView.style.display = 'block';
-            quizView.style.display = 'none';
-            waitView.style.display = 'none';
             instruction.style.display = 'block';
         }
 
@@ -250,9 +306,18 @@
             instruction.style.display = 'none';
         }
 
-        function goToQuiz(event) {
+        function finishDiscovery(event) {
             event.stopPropagation();
             
+            // On sauvegarde la carte dans la mémoire (Niveau 0)
+            saveToMemory(currentCardIndex, 0);
+            
+            sessionNewCardsCount++;
+            analyzeMemory(); // On recalcule la suite
+        }
+
+        // --- 5. MODE RÉVISION (Rappel Actif) ---
+        function showQuiz() {
             const card = deck[currentCardIndex];
             document.getElementById('quiz-question').innerText = card.quizQ;
             
@@ -267,76 +332,56 @@
                 optionsDiv.appendChild(btn);
             });
 
-            cardView.style.display = 'none';
+            hideAllViews();
             quizView.style.display = 'flex';
         }
 
         function checkAnswer(selectedIndex, correctIndex) {
+            const cardMemory = memoryData[currentCardIndex];
+            let currentLevel = cardMemory.level;
+
             if (selectedIndex === correctIndex) {
-                alert("Bonne réponse ! 🎉");
+                alert("Bonne réponse ! 🎉 La carte est ancrée plus profondément.");
+                currentLevel++; // On monte de niveau
+                // Plafond au niveau max
+                if(currentLevel >= INTERVALS.length) currentLevel = INTERVALS.length - 1; 
             } else {
-                alert("Oups, ce n'était pas ça ! Mais l'important est d'apprendre. 😉");
+                alert("Faux ! La réponse était : " + deck[currentCardIndex].quizOpts[correctIndex] + "\n\nPas de souci, on reprend l'apprentissage à zéro.");
+                currentLevel = 0; // On réinitialise l'oubli
             }
 
-            credits--;
-            updateCredits();
-            
-            currentCardIndex++;
-            if (currentCardIndex >= deck.length) {
-                currentCardIndex = 0; // Boucle sur le deck
-            }
-
-            loadCard();
+            saveToMemory(currentCardIndex, currentLevel);
+            analyzeMemory(); // On passe à la suite
         }
 
-        function updateCredits() {
-            creditDisplay.innerText = credits;
-            if (credits < 2 && !isRecharging) {
-                startRechargeTimer();
-            }
+        // --- 6. GESTION DE LA MÉMOIRE LOCALE ---
+        function saveToMemory(index, level) {
+            const nextReviewTime = Date.now() + INTERVALS[level];
+            
+            memoryData[index] = {
+                level: level,
+                nextReview: nextReviewTime
+            };
+            
+            // Sauvegarde physique dans le téléphone
+            localStorage.setItem('curio_memory', JSON.stringify(memoryData));
+        }
+
+        // --- UTILITAIRES ---
+        function hideAllViews() {
+            cardView.style.display = 'none';
+            quizView.style.display = 'none';
+            waitView.style.display = 'none';
+            instruction.style.display = 'none';
         }
 
         function showWaitScreen() {
-            cardView.style.display = 'none';
-            quizView.style.display = 'none';
-            instruction.style.display = 'none';
+            hideAllViews();
             waitView.style.display = 'flex';
+            statusBadge.innerText = "Repos";
         }
 
-        function startRechargeTimer() {
-            isRecharging = true;
-            let timeLeft = 10; // Pour la démo : 10 secondes au lieu d'une heure
-            
-            const timerInterval = setInterval(() => {
-                timeLeft--;
-                document.getElementById('timer-display').innerText = timeLeft + "s";
-                
-                if (timeLeft <= 0) {
-                    clearInterval(timerInterval);
-                    credits++;
-                    updateCredits();
-                    isRecharging = false;
-                    
-                    if (credits < 2) {
-                        startRechargeTimer();
-                    }
-                    
-                    if (waitView.style.display === 'flex') {
-                        loadCard();
-                    }
-                }
-            }, 1000);
-        }
-
-        // Enregistrement du Service Worker pour la PWA
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('sw.js')
-                    .then(reg => console.log('Service Worker enregistré !', reg))
-                    .catch(err => console.log('Erreur SW:', err));
-            });
-        }
-
+        // Lancement !
         initApp();
     </script>
 </body>
