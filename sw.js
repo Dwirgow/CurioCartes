@@ -2,7 +2,6 @@ const CACHE_NAME = 'CurioCartes_v1';
 
 // Les fichiers locaux indispensables pour que l'app fonctionne hors-ligne
 const ASSETS_TO_CACHE = [
-  './',
   './index.html',
   './cards.json',
   './manifest.json',
