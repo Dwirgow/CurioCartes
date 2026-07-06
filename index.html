@@ -151,6 +151,32 @@
             text-align: center;
             display: none;
         }
+
+        /* NOUVEAU : Design des blocs compte à rebours */
+        .timer-box {
+            background-color: #F9FAFB;
+            border: 1px solid #E5E7EB;
+            border-radius: 12px;
+            padding: 15px;
+            margin-top: 15px;
+            text-align: left;
+        }
+        .timer-title {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+        }
+        .timer-time {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary);
+            margin-top: 4px;
+        }
+        .timer-time.ready {
+            color: var(--secondary);
+        }
     </style>
 </head>
 <body>
@@ -191,21 +217,30 @@
         </div>
 
         <div class="wait-container" id="wait-view">
-            <h3>Repos Neuronal 🔋</h3>
-            <p>Ton cerveau a besoin d'assimiler.</p>
-            <p style="margin-top: 20px; color: var(--text-muted);">Reviens plus tard pour tes révisions ou de nouvelles découvertes.</p>
+            <h3 style="margin-top: 0;">Repos Neuronal 🔋</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 10px;">Ton cerveau assimile les connaissances de la session.</p>
+            
+            <div class="timer-box">
+                <div class="timer-title">🧠 Prochain Quiz Révision</div>
+                <div class="timer-time" id="review-countdown">--h --m --s</div>
+            </div>
+
+            <div class="timer-box">
+                <div class="timer-title">✨ Nouvelles cartes disponibles</div>
+                <div class="timer-time" id="discovery-countdown">--h --m --s</div>
+            </div>
         </div>
 
     </div>
 
     <script>
-        // --- CONFIGURATION SCIENTIFIQUE DE LA MÉMOIRE ---
-        // Les intervalles de répétition espacée (en millisecondes)
+        // --- CONFIGURATION SCIENTIFIQUE ---
+        const COOLDOWN_DISCOVERY = 10 * 1000; // 4 heures de blocage après session de découverte
         const INTERVALS = [
-            4 * 60 * 60 * 1000,   // Niveau 0 : 4 heures (pour tester rapidement, remplace par 60 * 1000 pour 1 minute)
-            24 * 60 * 60 * 1000,  // Niveau 1 : 24 heures
-            3 * 24 * 60 * 60 * 1000, // Niveau 2 : 3 jours
-            7 * 24 * 60 * 60 * 1000  // Niveau 3 : 7 jours
+            15 * 1000,      // Niveau 0 -> Révision dans 4h
+            24 * 60 * 60 * 1000,     // Niveau 1 -> Révision dans 24h
+            3 * 24 * 60 * 60 * 1000, // Niveau 2 -> Révision dans 3 jours
+            7 * 24 * 60 * 60 * 1000  // Niveau 3 -> Révision dans 7 jours
         ];
         
         const MAX_NEW_CARDS_PER_SESSION = 3;
@@ -213,16 +248,14 @@
         // --- VARIABLES D'ÉTAT ---
         let deck = [];
         let memoryData = JSON.parse(localStorage.getItem('curio_memory')) || {}; 
-        // Structure de memoryData : { "indexCarte": { level: 0, nextReview: timestamp } }
+        let sessionNewCardsCount = parseInt(localStorage.getItem('curio_session_count')) || 0;
 
-        let pendingReviews = []; // Index des cartes à réviser
-        let availableNewCards = []; // Index des cartes jamais vues
-        let sessionNewCardsCount = 0; // Compteur pour limiter la surcharge cognitive
-        
+        let pendingReviews = []; 
+        let availableNewCards = []; 
         let currentCardIndex = null;
-        let currentMode = ''; // 'REVIEW' ou 'DISCOVER'
+        let currentMode = ''; 
+        let countdownInterval = null; // Gère la mise à jour des chronos en temps réel
 
-        // --- ÉLÉMENTS DU DOM ---
         const cardView = document.getElementById('card-view');
         const quizView = document.getElementById('quiz-view');
         const waitView = document.getElementById('wait-view');
@@ -241,22 +274,27 @@
             }
         }
 
-        // --- 2. TRI DES CARTES (Cerveau de l'appli) ---
+        // --- 2. ANALYSE ET TRI ---
         function analyzeMemory() {
             const now = Date.now();
             pendingReviews = [];
             availableNewCards = [];
 
+            // Reset du compteur de session si le temps d'attente découverte est expiré
+            let nextDiscovery = localStorage.getItem('curio_next_discovery');
+            if (nextDiscovery && now >= parseInt(nextDiscovery)) {
+                sessionNewCardsCount = 0;
+                localStorage.setItem('curio_session_count', 0);
+                localStorage.removeItem('curio_next_discovery');
+            }
+
             deck.forEach((card, index) => {
                 const cardMemory = memoryData[index];
-                
                 if (cardMemory) {
-                    // La carte a déjà été vue. Est-il l'heure de la réviser ?
                     if (now >= cardMemory.nextReview) {
                         pendingReviews.push(index);
                     }
                 } else {
-                    // La carte n'a jamais été lue
                     availableNewCards.push(index);
                 }
             });
@@ -264,36 +302,34 @@
             routeSession();
         }
 
-        // --- 3. AIGUILLAGE DE LA SESSION ---
+        // --- 3. AIGUILLAGE ---
         function routeSession() {
-            // RÈGLE D'OR : Les révisions priment sur les nouveautés
+            clearInterval(countdownInterval); // On stoppe les chronos s'ils tournaient
+
             if (pendingReviews.length > 0) {
                 currentMode = 'REVIEW';
                 currentCardIndex = pendingReviews[0];
                 statusBadge.innerText = `🔄 ${pendingReviews.length} Révision(s)`;
                 showQuiz();
             } 
-            // S'il n'y a plus de révision, on peut découvrir
             else if (availableNewCards.length > 0 && sessionNewCardsCount < MAX_NEW_CARDS_PER_SESSION) {
                 currentMode = 'DISCOVER';
                 currentCardIndex = availableNewCards[0];
-                statusBadge.innerText = `✨ Nouvelle Découverte`;
+                statusBadge.innerText = `✨ Découverte`;
                 showDiscovery();
             } 
-            // Sinon, repos !
             else {
                 showWaitScreen();
             }
         }
 
-        // --- 4. MODE DÉCOUVERTE (Encodage) ---
+        // --- 4. MODE DÉCOUVERTE ---
         function showDiscovery() {
             const card = deck[currentCardIndex];
             document.getElementById('card-front').innerText = card.front;
             document.getElementById('card-exp').innerText = card.exp;
             document.getElementById('card-ana').innerText = card.ana;
             document.getElementById('card-fun').innerText = card.fun;
-            
             document.getElementById('card-inner').closest('.flip-card').classList.remove('flipped');
             
             hideAllViews();
@@ -308,19 +344,23 @@
 
         function finishDiscovery(event) {
             event.stopPropagation();
-            
-            // On sauvegarde la carte dans la mémoire (Niveau 0)
-            saveToMemory(currentCardIndex, 0);
+            saveToMemory(currentCardIndex, 0); // Niveau 0
             
             sessionNewCardsCount++;
-            analyzeMemory(); // On recalcule la suite
+            localStorage.setItem('curio_session_count', sessionNewCardsCount);
+            
+            // Si limite atteinte, on enregistre le moment de la prochaine dispo
+            if (sessionNewCardsCount >= MAX_NEW_CARDS_PER_SESSION) {
+                localStorage.setItem('curio_next_discovery', Date.now() + COOLDOWN_DISCOVERY);
+            }
+            
+            analyzeMemory();
         }
 
-        // --- 5. MODE RÉVISION (Rappel Actif) ---
+        // --- 5. MODE RÉVISION ---
         function showQuiz() {
             const card = deck[currentCardIndex];
             document.getElementById('quiz-question').innerText = card.quizQ;
-            
             const optionsDiv = document.getElementById('quiz-options');
             optionsDiv.innerHTML = '';
             
@@ -341,33 +381,104 @@
             let currentLevel = cardMemory.level;
 
             if (selectedIndex === correctIndex) {
-                alert("Bonne réponse ! 🎉 La carte est ancrée plus profondément.");
-                currentLevel++; // On monte de niveau
-                // Plafond au niveau max
-                if(currentLevel >= INTERVALS.length) currentLevel = INTERVALS.length - 1; 
+                alert("Bonne réponse ! 🎉");
+                currentLevel++;
+                if(currentLevel >= INTERVALS.length) currentLevel = INTERVALS.length - 1;
             } else {
-                alert("Faux ! La réponse était : " + deck[currentCardIndex].quizOpts[correctIndex] + "\n\nPas de souci, on reprend l'apprentissage à zéro.");
-                currentLevel = 0; // On réinitialise l'oubli
+                alert("Faux ! La réponse était : " + deck[currentCardIndex].quizOpts[correctIndex] + "\n\nRetour au niveau 0.");
+                currentLevel = 0;
             }
 
             saveToMemory(currentCardIndex, currentLevel);
-            analyzeMemory(); // On passe à la suite
+            analyzeMemory();
         }
 
-        // --- 6. GESTION DE LA MÉMOIRE LOCALE ---
         function saveToMemory(index, level) {
-            const nextReviewTime = Date.now() + INTERVALS[level];
-            
             memoryData[index] = {
                 level: level,
-                nextReview: nextReviewTime
+                nextReview: Date.now() + INTERVALS[level]
             };
-            
-            // Sauvegarde physique dans le téléphone
             localStorage.setItem('curio_memory', JSON.stringify(memoryData));
         }
 
-        // --- UTILITAIRES ---
+        // --- 6. ÉCRAN D'ATTENTE AVEC CHRONOS DYNAMIQUES ---
+        function showWaitScreen() {
+            hideAllViews();
+            waitView.style.display = 'flex';
+            statusBadge.innerText = "En attente";
+
+            // Lancement de la boucle des comptes à rebours (1 mise à jour par seconde)
+            updateTimersDisplay();
+            countdownInterval = setInterval(updateTimersDisplay, 1000);
+        }
+
+        function updateTimersDisplay() {
+            const now = Date.now();
+            let refreshNeeded = false;
+
+            // --- CHRONO 1 : PROCHAIN QUIZ ---
+            // On cherche le "nextReview" le plus proche dans le futur
+            let earliestReview = Infinity;
+            for (let key in memoryData) {
+                let time = memoryData[key].nextReview;
+                if (time > now && time < earliestReview) {
+                    earliestReview = time;
+                }
+            }
+
+            const reviewEl = document.getElementById('review-countdown');
+            if (earliestReview === Infinity) {
+                reviewEl.innerText = "Aucun quiz planifié";
+                reviewEl.classList.remove('ready');
+            } else {
+                let diff = earliestReview - now;
+                if (diff <= 0) {
+                    reviewEl.innerText = "Prêt !";
+                    reviewEl.classList.add('ready');
+                    refreshNeeded = true;
+                } else {
+                    reviewEl.innerText = formatTime(diff);
+                    reviewEl.classList.remove('ready');
+                }
+            }
+
+            // --- CHRONO 2 : NOUVELLES CARTES ---
+            let nextDiscovery = localStorage.getItem('curio_next_discovery');
+            const discoveryEl = document.getElementById('discovery-countdown');
+
+            if (!nextDiscovery || sessionNewCardsCount < MAX_NEW_CARDS_PER_SESSION) {
+                discoveryEl.innerText = "Disponible maintenant !";
+                discoveryEl.classList.add('ready');
+                // Si on est bloqué sur cet écran mais que c'est dispo, on rafraîchit
+                if(sessionNewCardsCount >= MAX_NEW_CARDS_PER_SESSION) refreshNeeded = true;
+            } else {
+                let diff = parseInt(nextDiscovery) - now;
+                if (diff <= 0) {
+                    discoveryEl.innerText = "Disponible !";
+                    discoveryEl.classList.add('ready');
+                    refreshNeeded = true;
+                } else {
+                    discoveryEl.innerText = formatTime(diff);
+                    discoveryEl.classList.remove('ready');
+                }
+            }
+
+            // Si un des chronos vient de se terminer, on relance l'analyse pour débloquer l'appli en direct !
+            if (refreshNeeded) {
+                analyzeMemory();
+            }
+        }
+
+        // Traduit les millisecondes en format lisible : 03h 14m 05s
+        function formatTime(ms) {
+            let totalSeconds = Math.floor(ms / 1000);
+            let hours = Math.floor(totalSeconds / 3600);
+            let minutes = Math.floor((totalSeconds % 3600) / 60);
+            let seconds = totalSeconds % 60;
+
+            return `${String(hours).padStart(2, '0')}h ${String(minutes).padStart(2, '0')}m ${String(seconds).padStart(2, '0')}s`;
+        }
+
         function hideAllViews() {
             cardView.style.display = 'none';
             quizView.style.display = 'none';
@@ -375,13 +486,6 @@
             instruction.style.display = 'none';
         }
 
-        function showWaitScreen() {
-            hideAllViews();
-            waitView.style.display = 'flex';
-            statusBadge.innerText = "Repos";
-        }
-
-        // Lancement !
         initApp();
     </script>
 </body>
