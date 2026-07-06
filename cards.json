@@ -5,11 +5,7 @@
         "ana": "C'est comme le vestiaire d'une boîte de nuit qui louerait ton manteau à quelqu'un d'autre pendant que tu danses.",
         "fun": "On appelle cela la 'création monétaire' : les banques créent de l'argent quand elles accordent un crédit !",
         "quizQ": "Quel mécanisme permet aux banques de prêter l'argent déposé ?",
-        "quizOpts": [
-            "Les frais de dossier",
-            "L'effet de levier",
-            "L'impression de billets"
-        ],
+        "quizOpts": ["Les frais de dossier", "L'effet de levier", "L'impression de billets"],
         "quizAns": 1
     },
     {
@@ -18,11 +14,7 @@
         "ana": "Comme un cuisinier qui commence à préparer ton plat préféré dès qu'il te voit te garer devant le restaurant.",
         "fun": "L'activité la plus rentable d'Amazon n'est pas la livraison, mais AWS (leurs serveurs informatiques qui hébergent une grande partie d'internet).",
         "quizQ": "Quelle est l'activité la plus rentable d'Amazon ?",
-        "quizOpts": [
-            "La vente de livres",
-            "L'abonnement Prime",
-            "L'hébergement web (AWS)"
-        ],
+        "quizOpts": ["La vente de livres", "L'abonnement Prime", "L'hébergement web (AWS)"],
         "quizAns": 2
     },
     {
@@ -31,11 +23,7 @@
         "ana": "C'est le jeu de la chaise musicale : tout le monde danse tant que la musique tourne, mais quand elle s'arrête, il n'y a pas de vraies chaises (de vrai argent) pour tout le monde.",
         "fun": "La crise a été si violente qu'elle a popularisé les soupes populaires aux États-Unis, dont l'une des plus célèbres à Chicago était financée par le gangster Al Capone.",
         "quizQ": "Comment s'appelle le jour du krach boursier de 1929 ?",
-        "quizOpts": [
-            "Le Mardi Rouge",
-            "Le Jeudi Noir",
-            "Le Vendredi Saint"
-        ],
+        "quizOpts": ["Le Mardi Rouge", "Le Jeudi Noir", "Le Vendredi Saint"],
         "quizAns": 1
     },
     {
@@ -44,11 +32,673 @@
         "ana": "Si trois personnes à des endroits différents te disent à quelle distance exacte tu te trouves d'elles, tu peux dessiner des cercles et trouver l'unique point d'intersection.",
         "fun": "Le temps passe plus vite dans l'espace que sur Terre à cause de la relativité d'Einstein. Les horloges des satellites doivent être corrigées de 38 microsecondes par jour, sinon le GPS se tromperait de 11 km par jour !",
         "quizQ": "Combien de satellites au minimum faut-il pour une position GPS précise ?",
-        "quizOpts": [
-            "1 satellite",
-            "2 satellites",
-            "4 satellites"
-        ],
+        "quizOpts": ["1 satellite", "2 satellites",  "4 satellites"],
         "quizAns": 2
+    },
+    {
+        "front": "Comment fonctionne l'inflation (et pourquoi les prix augmentent) ?",
+        "exp": "L'inflation arrive souvent quand il y a trop d'argent en circulation par rapport aux biens disponibles. Comme tout le monde a de l'argent pour acheter, les vendeurs augmentent les prix, et la monnaie perd de sa valeur.",
+        "ana": "Imagine un jeu de société où chaque joueur commence soudainement avec 1 million d'euros au lieu de 1500€. Les propriétés ne vont pas rester au même prix, elles vont devenir hors de prix.",
+        "fun": "En 2008, le Zimbabwe a connu une inflation si folle qu'ils ont imprimé des billets de 100 000 milliards de dollars zimbabwéens... qui permettaient à peine d'acheter un pain !",
+        "quizQ": "Quelle est la cause principale de l'inflation ?",
+        "quizOpts": ["La disparition des pièces de monnaie", "Une trop grande quantité d'argent en circulation", "Les banques qui ferment le week-end"],
+        "quizAns": 1
+    },
+    {
+        "front": "Comment fonctionne le modèle économique de McDonald's ?",
+        "exp": "McDonald's n'est pas vraiment dans le business des burgers, mais dans l'immobilier. L'entreprise achète les terrains et les bâtiments, puis les loue très cher aux gérants de ses restaurants (les franchisés), en plus de prendre un pourcentage sur leurs ventes.",
+        "ana": "C'est comme si un propriétaire de maison te louait sa cuisine et son matériel, et te demandait un loyer fixe + 10% sur tous les gâteaux que tu y prépares et vends.",
+        "fun": "McDonald's est l'un des plus grands propriétaires immobiliers de la planète. La valeur de ses terrains et bâtiments se compte en dizaines de milliards de dollars.",
+        "quizQ": "Quelle est la véritable source majeure de revenus de McDonald's ?",
+        "quizOpts": ["La vente de frites et de sodas", "L'immobilier (les loyers de ses terrains)", "La publicité à la télévision"],
+        "quizAns": 1
+    },
+    {
+        "front": "Comment fonctionne le Wi-Fi dans ta maison ?",
+        "exp": "Le Wi-Fi utilise des ondes radio invisibles (comme la radio de ta voiture) mais à des fréquences beaucoup plus hautes pour transporter des données numériques sous forme de code binaire (des 0 et des 1) entre ta box et ton téléphone.",
+        "ana": "C'est comme si ta box internet clignotait avec une lampe torche ultra-rapide pour envoyer des messages en morse à ton téléphone, qui les traduit instantanément en images ou vidéos.",
+        "fun": "Le Wi-Fi utilise la même fréquence d'onde (2,4 GHz) que... ton four à micro-ondes ! C'est pour cela que si ton four est vieux ou mal isolé, il peut couper ton internet quand il tourne.",
+        "quizQ": "Quelle technologie utilise le Wi-Fi pour envoyer des données ?",
+        "quizOpts": ["Des faisceaux laser", "Des fils invisibles", "Des ondes radio"],
+        "quizAns": 2
+    },
+    {
+        "front": "Pourquoi la chute du Mur de Berlin a-t-elle eu lieu en 1989 ?",
+        "exp": "Après la Seconde Guerre mondiale, l'Allemagne a été coupée en deux : l'Ouest (capitaliste) et l'Est (communiste, contrôlé par l'URSS). En 1989, l'URSS était en faillite économique et n'avait plus les moyens de maintenir son contrôle politique, poussant le peuple à détruire pacifiquement le mur.",
+        "ana": "C'est comme une colocation forcée où un des colocataires tyranniques n'a plus d'argent pour payer l'électricité et décide de partir, permettant enfin d'abattre la cloison qui séparait le salon.",
+        "fun": "L'ouverture des frontières le 9 novembre 1989 est due à une erreur ! Un officiel est-allemand a mal lu ses notes lors d'une conférence de presse en direct et a déclaré que les voyages vers l'Ouest étaient autorisés 'immédiatement', provoquant la ruée de la foule.",
+        "quizQ": "Quelle est la raison de fond de l'effondrement du bloc de l'Est en 1989 ?",
+        "quizOpts": ["Une invasion militaire de l'Ouest", "La faillite économique et politique de l'URSS", "Une décision de l'ONU"],
+        "quizAns": 1
+    },
+	{
+        "front": "Comment fonctionne la technologie Bluetooth ?",
+        "exp": "Le Bluetooth utilise des ondes radio de faible portée pour connecter des appareils sans fil. Il change de fréquence des milliers de fois par seconde pour éviter les interférences avec d'autres appareils.",
+        "ana": "C'est comme deux personnes qui discutent dans une fête bondée en changeant de pièce dès que le bruit devient trop fort autour d'elles.",
+        "fun": "Le nom vient d'un roi viking du Xe siècle, Harald à la dent bleue (Blåtand), qui était célèbre pour avoir unifié des tribus scandinaves, tout comme le Bluetooth unifie les appareils technologiques.",
+        "quizQ": "D'où vient le nom de la technologie Bluetooth ?",
+        "quizOpts": ["D'un roi viking", "D'une marque de dentifrice", "D'un océan bleu"],
+        "quizAns": 0
+    },
+    {
+        "front": "Comment fonctionne une assurance ?",
+        "exp": "L'assurance repose sur la mutualisation des risques. Un grand nombre de personnes paient une petite somme (la prime) chaque mois. Cet argent est mis dans un pot commun qui sert à rembourser les quelques personnes qui ont un accident.",
+        "ana": "Imagine un groupe d'amis où chacun met 1€ par semaine dans une boîte. Si l'un d'eux casse son téléphone, on utilise l'argent de la boîte pour lui en racheter un.",
+        "fun": "Les premières assurances modernes sont nées dans les cafés de Londres au XVIIe siècle, notamment chez Lloyd's, où les marchands se cotisaient pour s'assurer contre la perte de leurs navires en mer.",
+        "quizQ": "Sur quel principe fondamental repose le système des assurances ?",
+        "quizOpts": ["La spéculation", "La mutualisation des risques", "Le crédit gratuit"],
+        "quizAns": 1
+    },
+    {
+        "front": "Qu'est-ce qu'une bulle spéculative (comme le Bitcoin ou l'immobilier parfois) ?",
+        "exp": "Une bulle se forme quand le prix d'un produit augmente de façon excessive, non pas parce qu'il a plus de valeur, mais simplement parce que tout le monde espère le revendre plus cher à quelqu'un d'autre.",
+        "ana": "C'est le jeu de la patate chaude : tout le monde s'achète l'objet de plus en plus cher, jusqu'au jour où plus personne ne veut l'acheter, et le dernier propriétaire perd tout.",
+        "fun": "La première bulle de l'histoire a eu lieu aux Pays-Bas au XVIIe siècle avec... des oignons de tulipes ! Un seul oignon de tulipe rare pouvait s'acheter au prix d'une maison bourgeoise.",
+        "quizQ": "Quel fleur a causé la première grande bulle spéculative de l'histoire ?",
+        "quizOpts": ["La rose", "Le lys", "La tulipe"],
+        "quizAns": 2
+    },
+    {
+        "front": "Comment fonctionne la Blockchain (la technologie derrière les cryptomonnaies) ?",
+        "exp": "C'est un grand livre de comptes numérique partagé, indestructible et transparent. Chaque fois qu'une transaction est faite, elle est vérifiée par des milliers d'ordinateurs et gravée dans un 'bloc' lié aux précédents.",
+        "ana": "Imagine un cahier de comptes où chaque page est photocopiée et distribuée à tous les habitants d'un village. Personne ne peut tricher ou rayer une ligne, car tout le monde possède l'original.",
+        "fun": "Le créateur du Bitcoin et de la blockchain utilise le pseudonyme de Satoshi Nakamoto, mais à ce jour, personne ne sait de manière certaine qui se cache derrière ce nom.",
+        "quizQ": "Pourquoi la blockchain est-elle considérée comme ultra-sécurisée ?",
+        "quizOpts": ["Parce qu'elle est stockée sur un seul superordinateur", "Parce qu'elle est partagée et vérifiée par des milliers d'ordinateurs", "Parce qu'elle est gérée par le gouvernement"],
+        "quizAns": 1
+    },
+    {
+        "front": "Comment le moteur de recherche Google trie-t-il les sites web ?",
+        "exp": "À l'origine, Google utilisait l'algorithme PageRank. Il mesure l'importance d'un site web en comptant le nombre de liens provenant d'autres sites qui pointent vers lui.",
+        "ana": "C'est un vote de popularité géant : plus un site est recommandé par des sites eux-mêmes importants, plus il monte en haut de la liste.",
+        "fun": "Le nom 'Google' vient d'une faute d'orthographe du mot mathématique 'Googol', qui représente le chiffre 1 suivi de 100 zéros, symbolisant l'immensité du web.",
+        "quizQ": "Comment s'appelait l'algorithme d'origine de Google pour classer les sites ?",
+        "quizOpts": ["PageRank", "SiteFinder", "NetSort"],
+        "quizAns": 0
+    },
+    {
+        "front": "Comment fonctionne la tarification dynamique d'Uber ?",
+        "exp": "Uber ajuste ses prix en temps réel selon la loi de l'offre et de la demande. S'il y a beaucoup de clients et peu de chauffeurs disponibles (pendant la pluie ou le Nouvel An), les prix grimpent automatiquement.",
+        "ana": "C'est comme s'il n'y avait qu'un seul parapluie à vendre dans un magasin en pleine tempête, et que le vendeur le vendait au plus offrant.",
+        "fun": "Cette hausse des prix sert en fait à inciter les chauffeurs Uber qui se reposent chez eux à prendre leur voiture pour venir travailler, augmentant ainsi le nombre de véhicules disponibles.",
+        "quizQ": "Pourquoi les prix d'Uber augmentent-ils soudainement sous la pluie ?",
+        "quizOpts": ["Pour payer le lavage des voitures", "Parce qu'il y a plus de demande de clients et moins de chauffeurs", "À cause d'une taxe d'État"],
+        "quizAns": 1
+    },
+    {
+        "front": "Pourquoi les avions volent-ils alors qu'ils sont ultra-lourds ?",
+        "exp": "Grâce à la forme bombée de leurs ailes (principe de Bernoulli). Quand l'avion avance vite, l'air passe plus rapidement au-dessus de l'aile qu'en dessous, ce qui crée une aspiration vers le haut appelée la portance.",
+        "ana": "Si tu sors ta main par la fenêtre d'une voiture qui roule vite et que tu l'inclines légèrement vers le haut, l'air va naturellement pousser ta main vers le ciel.",
+        "fun": "Le plus gros avion de ligne du monde, l'Airbus A380, pèse jusqu'à 575 tonnes au décollage, soit l'équivalent de plus de 80 éléphants !",
+        "quizQ": "Comment appelle-t-on la force qui pousse l'avion vers le haut ?",
+        "quizOpts": ["La poussée", "La traînée", "La portance"],
+        "quizAns": 2
+    },
+    {
+        "front": "Comment un four à micro-ondes chauffe-t-il les aliments ?",
+        "exp": "Il émet des ondes magnétiques qui ciblent spécifiquement les molécules d'eau contenues dans la nourriture. Ces ondes font vibrer les molécules d'eau des millions de fois par seconde, ce qui crée de la chaleur par friction.",
+        "ana": "C'est exactement comme lorsque tu frottes tes mains très vite l'une contre l'autre en hiver pour te réchauffer.",
+        "fun": "Le micro-ondes a été inventé par accident par un ingénieur qui travaillait sur des radars militaires : il a remarqué qu'une barre de chocolat avait fondu dans sa poche !",
+        "quizQ": "Quelles molécules sont principalement agitées par le micro-ondes ?",
+        "quizOpts": ["Le plastique", "L'eau", "L'air"],
+        "quizAns": 1
+    },
+    {
+        "front": "Comment fonctionne une ampoule LED ?",
+        "exp": "Contrairement aux vieilles ampoules qui chauffaient un fil de métal, la LED utilise un semi-conducteur. Quand l'électricité passe dedans, les électrons tombent dans des trous d'énergie, libérant de la lumière sans chaleur.",
+        "ana": "Imagine des billes qui tombent d'une marche d'escalier et qui, à chaque marche descendue, émettent un petit flash de lumière.",
+        "fun": "Les LED consomment jusqu'à 85 % d'énergie en moins que les ampoules à incandescence traditionnelles et peuvent durer plus de 15 ans.",
+        "quizQ": "Quel est le principal avantage d'une ampoule LED ?",
+        "quizOpts": ["Elle chauffe la pièce", "Elle consomme beaucoup moins d'énergie", "Elle fonctionne sans électricité"],
+        "quizAns": 1
+    },
+    {
+        "front": "Comment fonctionne la bourse (les actions) ?",
+        "exp": "Une action est une toute petite part du capital d'une entreprise. Quand une entreprise a besoin d'argent pour grandir, elle vend ces parts en bourse. Si l'entreprise réussit, l'action prend de la valeur.",
+        "ana": "Imagine que tu achètes une part d'une pizzeria de ton quartier. Si la pizzeria devient super populaire, ta part vaut beaucoup plus cher que ce que tu l'as payée.",
+        "fun": "La plus ancienne bourse du monde a été créée à Amsterdam en 1602 par la Compagnie néerlandaise des Indes orientales pour financer ses voyages en bateau.",
+        "quizQ": "Qu'est-ce qu'une action en bourse ?",
+        "quizOpts": ["Un prêt d'argent à l'État", "Une petite part de propriété d'une entreprise", "Un produit vendu au supermarché"],
+        "quizAns": 1
+    },
+    {
+        "front": "Comment fonctionne la puce électronique d'une carte bancaire ?",
+        "exp": "La puce est un mini-ordinateur. Quand tu l'insères dans un terminal, elle ne donne pas ton code secret. À la place, elle résout un problème mathématique cryptographique complexe pour prouver que la carte est authentique.",
+        "ana": "C'est comme un garde à l'entrée d'un château qui te donne un mot de passe secret modifié à chaque seconde, plutôt que de te demander ta carte d'identité.",
+        "fun": "La carte à puce a été inventée par un Français, Roland Moreno, en 1974. Il avait déposé plus de 45 brevets pour protéger son idée.",
+        "quizQ": "Qui a inventé la carte à puce ?",
+        "quizOpts": ["Un ingénieur américain", "Un chercheur japonais", "Un inventeur français"],
+        "quizAns": 2
+    },
+    {
+        "front": "Pourquoi la mer est-elle salée ?",
+        "exp": "La pluie, légèrement acide, ronge les roches de la Terre et en extrait des minéraux, notamment du sodium et du chlore. Les rivières transportent ces minéraux vers la mer. Quand l'eau de mer s'évapore, le sel reste bloqué.",
+        "ana": "C'est comme si tu mettais du sel dans une casserole d'eau sur le feu. Si tu laisses l'eau bouillir et s'évaporer complètement, il ne restera que du sel au fond.",
+        "fun": "Si on extrayait tout le sel des océans pour l'étaler sur les continents, on obtiendrait une couche de sel de 150 mètres d'épaisseur sur toute la Terre !",
+        "quizQ": "D'où vient principalement le sel présent dans les océans ?",
+        "quizOpts": ["De l'érosion des roches par la pluie", "De usines sous-marines", "Des baleines"],
+        "quizAns": 0
+    },
+    {
+        "front": "Comment fonctionne un vaccin à ARNm (comme pour le COVID-19) ?",
+        "exp": "L'ARNm est une simple notice de montage temporaire. Le vaccin donne les plans à tes cellules pour fabriquer une petite pièce inoffensive du virus (la protéine Spike). Ton système immunitaire apprend ainsi à la détruire.",
+        "ana": "C'est comme envoyer un e-mail avec un plan d'entraînement à ton armée pour qu'elle apprenne à reconnaître le mannequin d'entraînement avant la vraie bataille.",
+        "fun": "L'ARNm contenu dans le vaccin est ultra-fragile et s'autodétruit dans le corps en quelques jours, il ne peut pas modifier ou toucher à ton ADN.",
+        "quizQ": "Qu'est-ce que l'ARNm envoyé par le vaccin ?",
+        "quizOpts": ["Un morceau du vrai virus vivant", "Une notice de montage temporaire pour les cellules", "Un produit qui modifie l'ADN"],
+        "quizAns": 1
+    },
+    {
+        "front": "Comment a été inventé le code-barres ?",
+        "exp": "Le code-barres permet d'identifier un produit rapidement grâce à des barres noires et blanches lues par un laser. Le laser mesure la lumière réfléchie pour traduire les barres en chiffres.",
+        "ana": "C'est l'équivalent moderne de l'alphabet Morse, sauf qu'au lieu d'écouter des points et des tirets sonores, on lit des lignes fines et épaisses.",
+        "fun": "L'inventeur du code-barres a eu l'idée en dessinant des lignes dans le sable sur une plage de Miami alors qu'il réfléchissait à une solution pour accélérer les caisses de supermarché.",
+        "quizQ": "De quel système de communication s'inspire le code-barres ?",
+        "quizOpts": ["Le langage des signes", "Le code Morse", "Les hiéroglyphes"],
+        "quizAns": 1
+    },
+    {
+        "front": "Pourquoi le ciel est-il bleu ?",
+        "exp": "La lumière du Soleil contient toutes les couleurs de l'arc-en-ciel. En entrant dans l'atmosphère terrestre, les molécules d'air diffusent (éparpillent) la couleur bleue dans toutes les directions beaucoup plus que les autres couleurs.",
+        "ana": "Imagine que la lumière est un flot de balles de ping-pong de toutes les couleurs jetées contre un grillage. Les balles bleues sont les seules à rebondir partout, remplissant tout l'espace.",
+        "fun": "Sur Mars, l'atmosphère est très fine et pleine de poussière de fer : le ciel y est de couleur rose/orangée pendant la journée !",
+        "quizQ": "Pourquoi le ciel nous apparaît-il bleu ?",
+        "quizOpts": ["À cause du reflet de l'océan", "Parce que l'atmosphère diffuse davantage la lumière bleue", "Parce que l'espace est bleu"],
+        "quizAns": 1
+    },
+    {
+        "front": "Comment fonctionne ChatGPT (et l'IA générative) ?",
+        "exp": "C'est un modèle de langage entraîné sur d'immenses bases de données textuelles. Il ne 'pense' pas, mais utilise les probabilités mathématiques pour prédire le mot suivant le plus logique selon ce que tu lui demandes.",
+        "ana": "C'est une version ultra-intelligente de l'écriture prédictive de ton smartphone (qui te propose le mot suivant quand tu tapes un SMS).",
+        "fun": "Le 'GPT' dans ChatGPT signifie 'Generative Pre-trained Transformer', faisant référence à l'architecture informatique inventée par Google en 2017.",
+        "quizQ": "Que fait fondamentalement ChatGPT pour répondre à une question ?",
+        "quizOpts": ["Il recopie Wikipédia mot pour mot", "Il prédit statistiquement le mot suivant le plus logique", "Il se connecte à un cerveau humain"],
+        "quizAns": 1
+    },
+    {
+        "front": "Comment fonctionne la climatisation ?",
+        "exp": "Une climatisation ne produit pas du froid. À la place, elle utilise un fluide réfrigérant pour absorber la chaleur présente à l'intérieur de ta pièce et la rejeter à l'extérieur.",
+        "ana": "C'est comme une éponge géante qui absorberait l'eau (la chaleur) dans ta maison et que tu irais essorer dehors, avant de revenir la passer à l'intérieur.",
+        "fun": "Le premier système de climatisation moderne a été inventé en 1902 par Willis Carrier non pas pour le confort humain, mais pour empêcher le papier de gondoler dans une imprimerie !",
+        "quizQ": "Quel est le principe de base d'un climatiseur ?",
+        "quizOpts": ["Créer de la glace artificielle", "Déplacer la chaleur de l'intérieur vers l'extérieur", "Souffler de l'air venu de l'espace"],
+        "quizAns": 1
+    },
+    {
+        "front": "Pourquoi notre semaine fait-elle exactement 7 jours ?",
+        "exp": "Ce choix vient des Babyloniens au VIIe siècle avant J.-C. Ils ont calqué la semaine sur les cycles de la Lune (qui change de phase tous les 7 jours environ) et sur les 7 corps célestes visibles à l'œil nu à l'époque.",
+        "ana": "C'est comme diviser une pizza en 4 parts égales : la Lune met 28 jours pour faire le tour de la Terre, les anciens l'ont divisée en 4 phases de 7 jours.",
+        "fun": "Les noms des jours en français viennent de ces astres : Lundi (Lune), Mardi (Mars), Mercredi (Mercure), Jeudi (Jupiter), Vendredi (Vénus).",
+        "quizQ": "De quel peuple antique héritons-nous de la semaine de 7 jours ?",
+        "quizOpts": ["Les Babyloniens", "Les Incas", "Les Vikings"],
+        "quizAns": 0
+    },
+    {
+        "front": "Comment IKEA organise-t-il ses magasins pour nous faire acheter plus ?",
+        "exp": "IKEA utilise un tracé en labyrinthe unique appelé 'chemin de guidage forcé'. Cela t'oblige à traverser toutes les sections du magasin et t'expose à des centaines d'achats impulsifs avant d'arriver aux caisses.",
+        "ana": "C'est comme un tapis roulant de parc d'attractions dont tu ne peux pas descendre, t'obligeant à regarder toutes les vitrines du décor.",
+        "fun": "Les célèbres boulettes de viande suédoises d'IKEA sont vendues à prix coûtant exprès. Un client qui mange a l'estomac plein, reste plus longtemps et dépense plus !",
+        "quizQ": "Comment s'appelle la stratégie d'IKEA pour forcer le parcours client ?",
+        "quizOpts": ["Le chemin libre", "Le labyrinthe forcé", "Le saut de rayon"],
+        "quizAns": 1
+    },
+    {
+        "front": "Comment fonctionne la Taxe sur la Valeur Ajoutée (TVA) ?",
+        "exp": "C'est un impôt indirect sur la consommation. Chaque entreprise ajoute une taxe au prix du produit à chaque étape de sa fabrication. À la fin, c'est le consommateur final qui paie la totalité de la taxe.",
+        "ana": "Imagine que tu fabriques une cabane. L'État prend une petite pièce de bois à celui qui coupe l'arbre, à celui qui taille les planches, et enfin à toi qui l'achètes.",
+        "fun": "La TVA est une invention française ! Elle a été créée en 1954 par Maurice Lauré et a depuis été adoptée par plus de 160 pays dans le monde.",
+        "quizQ": "Qui paie réellement la TVA à la toute fin ?",
+        "quizOpts": ["L'usine de fabrication", "Le magasin", "Le consommateur final"],
+        "quizAns": 2
+    },
+    {
+        "front": "Comment fonctionne une montre automatique (sans pile) ?",
+        "exp": "Elle utilise un petit poids en métal en forme de demi-lune appelé 'rotor'. Quand tu bouges le bras, le rotor tourne et remonte un ressort interne qui stocke l'énergie pour faire tourner les aiguilles.",
+        "ana": "C'est comme une petite balançoire à l'intérieur de la montre : chaque mouvement de ton corps lui donne une impulsion pour remonter le mécanisme.",
+        "fun": "Si tu ne portes pas une montre automatique pendant quelques jours, elle s'arrête tout simplement par manque de mouvement. Il suffit de la secouer pour la relancer !",
+        "quizQ": "Qu'est-ce qui remplace la pile dans une montre automatique ?",
+        "quizOpts": ["La chaleur de la peau", "Les mouvements du poignet", "La lumière du soleil"],
+        "quizAns": 1
+    },
+    {
+        "front": "Pourquoi la Lune ne tombe-t-elle pas sur la Terre ?",
+        "exp": "En réalité, la Lune tombe constamment vers la Terre à cause de la gravité, mais elle avance tellement vite sur le côté qu'elle rate toujours la Terre. Sa trajectoire courbe épouse parfaitement la rondeur de notre planète.",
+        "ana": "Imagine que tu lances un caillou ultra-fort devant toi. Il va s'arrêter plus loin. Si tu le lances à une vitesse spatiale, la Terre va s'arrondir sous lui avant qu'il ne touche le sol.",
+        "fun": "La Lune s'éloigne en fait de la Terre de 3,8 centimètres par an à cause des forces de marée !",
+        "quizQ": "Pourquoi la Lune reste-t-elle en orbite sans s'écraser ?",
+        "quizOpts": ["Parce qu'il n'y a pas de gravité dans l'espace", "Parce qu'elle avance très vite sur le côté tout en tombant", "Parce que des aimants la repoussent"],
+        "quizAns": 1
+    },
+    {
+        "front": "Comment fonctionne l'écran tactile d'un smartphone ?",
+        "exp": "La plupart des écrans utilisent la technologie 'capacitive'. L'écran est recouvert d'une couche chargée d'électricité invisible. Ton doigt, qui conduit l'électricité, perturbe ce champ électrique au point de contact.",
+        "ana": "C'est comme une surface d'eau parfaitement plate : dès que tu y plonges le doigt, tu crées des ondulations que les capteurs du téléphone détectent immédiatement.",
+        "fun": "C'est pour cela que les écrans tactiles ne fonctionnent pas si tu essaies de cliquer avec tes ongles ou avec des gants normaux : ils ne conduisent pas l'électricité de ton corps !",
+        "quizQ": "Pourquoi un écran tactile de smartphone réagit-il au doigt ?",
+        "quizOpts": ["Grâce à la pression du clic", "Parce que le doigt perturbe un champ électrique", "Grâce à la chaleur de la peau"],
+        "quizAns": 1
+    },
+    {
+        "front": "D'où vient le mot 'Sabotage' ?",
+        "exp": "Le mot vient de l'époque de la Révolution industrielle. Les ouvriers d'usine, en colère contre l'arrivée des machines automatiques qui menaçaient leurs emplois, jetaient leurs chaussures en bois dedans pour les bloquer.",
+        "ana": "C'est l'équivalent ancien de mettre une clé USB pleine de virus dans l'ordinateur central de ton entreprise pour tout couper.",
+        "fun": "Ces chaussures en bois s'appelaient des 'sabots'. C'est de là que vient le verbe saboter !",
+        "quizQ": "Quel objet est à l'origine du mot 'sabotage' ?",
+        "quizOpts": ["Une chaussure en bois", "Une épée en fer", "Une roue de charrette"],
+        "quizAns": 0
+    },
+    {
+        "front": "Pourquoi pleure-t-on quand on coupe des oignons ?",
+        "exp": "En coupant l'oignon, on casse ses cellules, ce qui libère un gaz soufré volatil. Au contact de l'eau présente dans tes yeux, ce gaz se transforme en une substance acide très irritante.",
+        "ana": "C'est un système d'alarme chimique : l'oignon agresse tes yeux avec un gaz piquant, et ton cerveau déclenche les larmes pour laver l'acide.",
+        "fun": "Pour éviter de pleurer, on peut mettre l'oignon au frigo avant de le couper (le froid ralentit la réaction chimique) ou couper l'oignon sous un filet d'eau.",
+        "quizQ": "Qu'est-ce qui cause les larmes lors de la découpe des oignons ?",
+        "quizOpts": ["L'odeur trop forte", "Un gaz soufré qui devient acide au contact des yeux", "La tristesse de cuisiner"],
+        "quizAns": 1
+    },
+    {
+        "front": "Comment fonctionnent les cotes des paris sportifs ?",
+        "exp": "Une cote représente la probabilité mathématique d'un événement inversé, calculée par les bookmakers. Si une équipe a une cote de 2.00, tu doubles ta mise si elle gagne. Les cotes bougent selon l'argent misé par le public.",
+        "ana": "C'est comme une balance : plus les gens mettent de l'argent d'un côté, plus la cote de l'autre côté monte pour équilibrer les risques de la maison de paris.",
+        "fun": "Les bookmakers ne parient pas contre toi : ils ajustent les cotes pour gagner un pourcentage fixe (la marge), peu importe quelle équipe gagne le match.",
+        "quizQ": "Qu'indique une cote faible (ex: 1.10) pour une équipe ?",
+        "quizOpts": ["Qu'elle a de fortes chances de gagner", "Qu'elle va perdre à coup sûr", "Que le match est annulé"],
+        "quizAns": 0
+    },
+    {
+        "front": "Comment fonctionne un code QR ?",
+        "exp": "Un code QR (Quick Response) stocke des données sous forme de carrés noirs et blancs. Il contient des motifs de repère (les 3 grands carrés dans les coins) qui permettent à l'appareil photo de le lire instantanément, peu importe l'angle.",
+        "ana": "C'est un code-barres en 2D : au lieu de lire une simple ligne de gauche à droite, l'appareil lit une grille complète de haut en bas.",
+        "fun": "Les codes QR ont été inventés au Japon en 1994 par une filiale de Toyota pour suivre les pièces automobiles dans les usines de fabrication.",
+        "quizQ": "À quoi servent les 3 grands carrés noirs dans les coins d'un code QR ?",
+        "quizOpts": ["À faire joli", "À aider l'appareil photo à s'orienter", "À stocker le mot de passe"],
+        "quizAns": 1
+    },
+    {
+        "front": "Pourquoi a-t-on créé les fuseaux horaires ?",
+        "exp": "Avant le XIXe siècle, chaque ville réglait son heure sur le Soleil (midi quand il était au plus haut). L'invention des chemins de fer a rendu ce système impossible, car les trains avaient besoin d'horaires précis pour éviter les collisions.",
+        "ana": "Imagine devoir changer l'heure de ta montre de 4 minutes à chaque fois que tu roules 50 kilomètres vers l'est.",
+        "fun": "C'est un ingénieur des chemins de fer canadien, Sandford Fleming, qui a proposé en 1876 de diviser la Terre en 24 zones horaires égales.",
+        "quizQ": "Quelle invention a rendu obligatoire la création des fuseaux horaires ?",
+        "quizOpts": ["L'avion de ligne", "Le train et les chemins de fer", "Le téléphone portable"],
+        "quizAns": 1
+    },
+    {
+        "front": "Pourquoi le café nous donne-t-il l'impression de nous réveiller ?",
+        "exp": "Ton corps produit naturellement une molécule appelée adénosine qui se fixe sur ton cerveau pour te dire que tu es fatigué. La caféine a la même forme que l'adénosine et vient bloquer ses récepteurs.",
+        "ana": "C'est comme si tu mettais un faux morceau de bois dans une serrure : la clé de la fatigue (l'adénosine) ne peut plus entrer pour verrouiller ton énergie.",
+        "fun": "La caféine ne crée pas d'énergie, elle masque juste la fatigue. Quand elle s'élimine, toute l'adénosine accumulée se fixe d'un coup, provoquant le fameux coup de barre.",
+        "quizQ": "Comment la caféine agit-elle sur le cerveau ?",
+        "quizOpts": ["En produisant des vitamines", "En bloquant les récepteurs de la fatigue", "En nous faisant dormir debout"],
+        "quizAns": 1
+    },
+    {
+        "front": "D'où vient l'expression 'Premier bug informatique' ?",
+        "exp": "En 1947, l'informaticienne Grace Hopper travaillait sur un immense ordinateur en panne. En cherchant l'origine du problème, son équipe a trouvé un véritable insecte (un papillon de nuit) coincé dans un relais électrique.",
+        "ana": "C'est comme si ta console de jeux vidéo s'arrêtait de fonctionner parce qu'une mouche s'est glissée à l'intérieur du circuit électrique.",
+        "fun": "L'équipe a scotché le papillon dans leur carnet de bord avec la mention : 'Premier cas réel de bug (insecte) trouvé'. Le mot est resté !",
+        "quizQ": "Quel animal est à l'origine du mot 'bug' en informatique ?",
+        "quizOpts": ["Une mite / papillon de nuit", "Une souris", "Un cafard"],
+        "quizAns": 0
+    },
+    {
+        "front": "Comment fonctionne le 'Cloud Computing' (le Nuage) ?",
+        "exp": "Le cloud ne désigne pas des données magiques dans le ciel. Vos photos et fichiers sont simplement stockés et calculés dans d'immenses hangars remplis d'ordinateurs (des serveurs de données) appartenant à Amazon, Google ou Microsoft.",
+        "ana": "Au lieu d'avoir une immense bibliothèque de livres chez toi qui prend de la place, tu loues une étagère dans une immense bibliothèque publique à distance.",
+        "fun": "Ces hangars (Data Centers) consomment tellement d'énergie qu'ils sont souvent construits dans les pays nordiques pour utiliser l'air glacial extérieur pour refroidir les serveurs.",
+        "quizQ": "Où sont réellement stockées tes données quand elles sont sur le 'Cloud' ?",
+        "quizOpts": ["Dans des satellites en orbite", "Dans d'immenses hangars de serveurs au sol", "Dans l'antenne Wi-Fi de ta maison"],
+        "quizAns": 1
+    },
+    {
+        "front": "Pourquoi les feux de signalisation routière sont-ils rouges ?",
+        "exp": "La couleur rouge possède la longueur d'onde la plus longue du spectre visible. Cela signifie que c'est la couleur qui se propage le mieux à travers la pluie, le brouillard ou la poussière, et qu'elle se voit de plus loin.",
+        "ana": "Le rouge est comme un haut-parleur ultra-puissant qui crie à travers le bruit, alors que le bleu ou le violet sont des chuchotements vite étouffés par la brume.",
+        "fun": "Le tout premier feu de signalisation a été installé à Londres en 1868 pour les calèches. Il fonctionnait au gaz et... a fini par exploser, blessant le policier qui le gérait !",
+        "quizQ": "Pourquoi a-t-on choisi la couleur rouge pour s'arrêter ?",
+        "quizOpts": ["Parce que c'est la couleur préférée des voitures", "Parce qu'elle se diffuse le moins et se voit de très loin", "C'est un choix purement aléatoire"],
+        "quizAns": 1
+    },
+    {
+        "front": "Comment fonctionnent les écouteurs à réduction de bruit active ?",
+        "exp": "Les écouteurs possèdent des micro-micros qui écoutent les bruits extérieurs (le moteur de l'avion). L'ordinateur interne de l'écouteur crée instantanément une onde sonore exactement inverse pour annuler le bruit.",
+        "ana": "Imagine qu'une vague d'eau arrive vers toi. Les écouteurs créent une contre-vague de taille identique au même moment : les deux vagues s'entrechoquent et l'eau redevient plate.",
+        "fun": "Cette technologie a été inventée au départ pour protéger l'audition des pilotes d'avions de chasse et des conducteurs d'hélicoptères.",
+        "quizQ": "Comment la réduction de bruit active annule-t-elle les sons ?",
+        "quizOpts": ["En bouchant les oreilles très fort", "En diffusant une onde sonore inverse", "En coupant le son de la musique"],
+        "quizAns": 1
+    },
+    {
+        "front": "Pourquoi met-on du sel sur les routes en hiver ?",
+        "exp": "L'eau pure gèle à 0°C. Lorsque l'on mélange du sel à l'eau, le point de congélation baisse (jusqu'à -10°C selon la quantité). Le sel empêche ainsi l'eau de se transformer en plaques de verglas.",
+        "ana": "C'est comme ajouter un intrus perturbateur dans une équipe de danse synchronisée : les molécules d'eau n'arrivent plus à s'aligner proprement pour former de la glace ferme.",
+        "fun": "Si la température descend en dessous de -10°C, le sel classique ne fonctionne plus ! Les services routiers doivent alors utiliser des sels spéciaux ou du sable.",
+        "quizQ": "Quel est l'effet du sel appliqué sur la route en hiver ?",
+        "quizOpts": ["Il réchauffe la route par friction", "Il abaisse le point de congélation de l'eau", "Il absorbe toute la neige"],
+        "quizAns": 1
+    },
+    {
+        "front": "Comment fonctionne une imprimante 3D ?",
+        "exp": "Une imprimante 3D crée des objets réels à partir d'un modèle numérique. Elle fait fondre un filament de plastique et le dépose couche par couche, du bas vers le haut, en suivant des coordonnées précises.",
+        "ana": "C'est exactement comme utiliser un pistolet à colle chaude millimètre par millimètre pour construire une maison en Lego superposée.",
+        "fun": "On utilise aujourd'hui des imprimantes 3D géantes pour imprimer de vraies maisons en béton en moins de 24 heures, ou du chocolat pour la haute pâtisserie !",
+        "quizQ": "Comment une imprimante 3D classique construit-elle un objet ?",
+        "quizOpts": ["En sculptant un gros bloc de pierre", "En superposant des couches de plastique fondu", "Par magie optique"],
+        "quizAns": 1
+    },
+    {
+        "front": "Comment fonctionne l'application Shazam pour reconnaître une musique ?",
+        "exp": "Shazam ne cherche pas les paroles. L'application crée une 'empreinte digitale acoustique' des 10 secondes de musique écoutée (les pics d'intensité) et la compare en un clin d'œil à une base de données de millions de titres.",
+        "ana": "C'est comme chercher un criminel grâce à ses empreintes digitales plutôt qu'en demandant une description complète de ses vêtements.",
+        "fun": "Shazam a été lancé en 1999 ! À l'époque, il fallait composer le '2580' sur son téléphone fixe, faire écouter la musique, et on recevait le titre par SMS.",
+        "quizQ": "Comment Shazam identifie-t-il un morceau de musique ?",
+        "quizOpts": ["En analysant les paroles chantées", "En créant une empreinte digitale acoustique des fréquences", "En demandant à un DJ en direct"],
+        "quizAns": 1
+    },
+    {
+        "front": "Comment fonctionne le modèle économique du 'Freemium' (Deezer, Spotify, Fortnite) ?",
+        "exp": "C'est une stratégie commerciale qui consiste à offrir un produit gratuitement pour attirer un maximum d'utilisateurs. L'entreprise gagne de l'argent en vendant des options payantes ou des abonnements 'Premium'.",
+        "ana": "C'est comme un boulanger qui te donnerait un échantillon de gâteau gratuit. C'est si bon que tu finis par lui acheter le gâteau entier.",
+        "fun": "Sur les jeux vidéo comme Fortnite, moins de 10 % des joueurs achètent des éléments payants (des skins), mais cela suffit à générer des milliards de dollars de bénéfices.",
+        "quizQ": "Que signifie le modèle 'Freemium' ?",
+        "quizOpts": ["Un produit 100% payant dès le départ", "Un produit gratuit avec des options payantes", "Un produit uniquement financé par l'État"],
+        "quizAns": 1
+    },
+    {
+        "front": "Pourquoi le pain rassis devient-il dur alors qu'un biscuit devient mou ?",
+        "exp": "C'est une question d'humidité et d'amidon. Le pain perd son eau dans l'air, ce qui fait cristalliser l'amidon et le rend dur. Les biscuits, pleins de sucre et de sel, absorbent l'humidité de l'air, ce qui les ramollit.",
+        "ana": "Le pain est comme une éponge qui sèche au soleil, tandis que le biscuit est comme un morceau de sucre qui absorbe l'humidité d'une pièce humide.",
+        "fun": "Pour redonner de la fraîcheur à du pain rassis, il suffit de l'humidifier légèrement avec de l'eau et de le passer quelques minutes au four !",
+        "quizQ": "Pourquoi un vieux biscuit devient-il mou avec le temps ?",
+        "quizOpts": ["Parce qu'il perd son sucre", "Parce qu'il absorbe l'humidité de l'air", "Parce qu'il refroidit"],
+        "quizAns": 1
+    },
+    {
+        "front": "Comment fonctionnent les lunettes de soleil polarisées ?",
+        "exp": "La lumière du soleil rebondit sur les surfaces plates (comme le capot d'une voiture ou l'eau) de manière horizontale, ce qui crée un éblouissement. Les verres polarisés possèdent un filtre vertical qui bloque ces reflets gênants.",
+        "ana": "Imagine essayer de faire passer une planche en bois horizontale à travers une barrière de piquets verticaux : la planche reste bloquée dehors.",
+        "fun": "Les pêcheurs adorent les lunettes polarisées car en bloquant le reflet du soleil sur l'eau, elles permettent de voir à travers la surface et de repérer les poissons !",
+        "quizQ": "Quel type de reflets est bloqué par les verres polarisés ?",
+        "quizOpts": ["Les reflets horizontaux sur les surfaces plates", "La lumière de la Lune", "Les couleurs bleues"],
+        "quizAns": 0
+    },
+    {
+        "front": "Comment se forment les vrais diamants dans la nature ?",
+        "exp": "Les diamants sont faits de carbone pur (comme la mine de ton crayon). Ils se forment à plus de 150 km sous terre, où la chaleur extrême et la pression gigantesque forcent les atomes de carbone à se lier de façon ultra-solide.",
+        "ana": "C'est comme presser une boule de neige de toutes tes forces jusqu'à ce qu'elle devienne un bloc de glace compact et incassable.",
+        "fun": "Le diamant est le matériau naturel le plus dur de la Terre. Seul un autre diamant peut rayer ou couper un diamant !",
+        "quizQ": "De quel élément chimique de base est composé un diamant ?",
+        "quizOpts": ["De l'or", "Du carbone", "Du verre"],
+        "quizAns": 1
+    },
+    {
+        "front": "Comment fonctionne l'algorithme de recommandation de TikTok ?",
+        "exp": "TikTok mesure précisément le temps de visionnage (la rétention). Si tu t'arrêtes ne serait-ce que 3 secondes de plus sur une vidéo de chat, l'algorithme comprend ton intérêt et modifie ton fil d'actualité en temps réel.",
+        "ana": "C'est comme un serveur de restaurant qui observerait discrètement tes yeux et t'apporterait immédiatement une deuxième assiette de frites s'il te voit sourire en les mangeant.",
+        "fun": "L'algorithme est si performant qu'il peut cerner les goûts cachés d'un utilisateur en moins de 20 minutes d'utilisation passive.",
+        "quizQ": "Quelle métrique est la plus importante pour l'algorithme de TikTok ?",
+        "quizOpts": ["Le nombre de partages", "Le temps passé à regarder la vidéo", "Le nombre de commentaires"],
+        "quizAns": 1
+    },
+    {
+        "front": "Comment fonctionne le système des banques centrales ?",
+        "exp": "Une banque centrale est la 'banque des banques'. Elle ne prête pas d'argent aux particuliers, mais fixe les taux d'intérêt pour les banques commerciales, contrôlant ainsi la quantité d'argent en circulation pour éviter les crises.",
+        "ana": "C'est le plombier en chef du réseau : c'est elle qui ouvre ou ferme le robinet principal du crédit pour réguler le débit économique.",
+        "fun": "La Banque Centrale Européenne (BCE) est basée à Francfort, en Allemagne, et gère la monnaie de plus de 340 millions d'Européens.",
+        "quizQ": "Quel est le rôle principal d'une banque centrale ?",
+        "quizOpts": ["Ouvrir des comptes d'épargne pour les citoyens", "Réguler la monnaie et fixer les taux d'intérêt directeurs", "Financer les clubs de football"],
+        "quizAns": 1
+    },
+    {
+        "front": "Pourquoi le logo de Coca-Cola est-il rouge et blanc ?",
+        "exp": "Au XIXe siècle, les tonneaux de Coca-Cola étaient transportés dans les mêmes convois que l'alcool. Pour aider les agents des impôts à différencier rapidement les boissons non taxées, Coca-Cola a peint ses tonneaux en rouge vif.",
+        "ana": "C'est l'équivalent ancien de mettre un gilet jaune fluorescent sur un objet pour que la police le repère de loin sans avoir à ouvrir le paquet.",
+        "fun": "La couleur rouge de Coca-Cola n'est pas une couleur standard : c'est un mélange secret de trois teintes différentes qui n'a pas de nom officiel.",
+        "quizQ": "Pourquoi Coca-Cola a-t-il commencé à peindre ses tonneaux en rouge ?",
+        "quizOpts": ["Pour ressembler au Père Noël", "Pour que les inspecteurs des impôts les différencient de l'alcool", "Parce que la peinture rouge était la moins chère"],
+        "quizAns": 1
+    },
+    {
+        "front": "Comment fonctionnent les feux d'artifice pour afficher des couleurs ?",
+        "exp": "Les feux d'artifice contiennent des poudre de sels métalliques. Lorsqu'ils explosent et chauffent à haute température, chaque métal émet une couleur unique (le cuivre fait du bleu, le sodium du jaune, le strontium du rouge).",
+        "ana": "C'est comme jeter différents ingrédients magiques dans une cheminée : certains font crépiter le feu, d'autres changent la couleur de la flamme.",
+        "fun": "La couleur la plus difficile à fabriquer pour les maîtres artificiers est le bleu électrique, car le cuivre brûle très vite s'il fait trop chaud !",
+        "quizQ": "Qu'est-ce qui donne sa couleur à un feu d'artifice ?",
+        "quizOpts": ["Des colorants alimentaires", "Des poudres de sels métalliques", "Des mini ampoules LED"],
+        "quizAns": 1
+    },
+    {
+        "front": "Comment fonctionne la reconnaissance faciale de ton téléphone ?",
+        "exp": "Des capteurs invisibles (projecteur infrarouge) projettent des milliers de points sur ton visage pour créer une carte en 3D. Le téléphone mesure les distances exactes entre tes yeux, ton nez et ta bouche pour vérifier ton identité.",
+        "ana": "C'est comme si un sculpteur prenait un moule en plâtre de ton visage à chaque fois que tu regardes l'écran pour vérifier s'il s'emboîte parfaitement.",
+        "fun": "La reconnaissance faciale 3D (comme FaceID) est si précise qu'elle ne peut pas être trompée par une simple photo en 2D imprimée sur papier.",
+        "quizQ": "Comment le téléphone analyse-t-il ton visage en sécurité ?",
+        "quizOpts": ["En analysant la couleur de tes yeux", "En créant une carte géométrique en 3D de ton visage", "En mesurant la température de ta peau"],
+        "quizAns": 1
+    },
+    {
+        "front": "Comment fonctionne le recyclage du verre ?",
+        "exp": "Le verre est un matériau magique : il est recyclable à 100 % et à l'infini. Les bouteilles triées sont broyées en morceaux (le calcin), puis fondues dans un four à plus de 1500°C pour redevenir des bouteilles neuves.",
+        "ana": "C'est comme un château de glace qui fond au soleil et dont on réutilise l'eau pour reconstruire exactement le même château, sans perdre une seule goutte.",
+        "fun": "Recycler le verre permet d'économiser beaucoup d'énergie car le calcin fond à une température plus basse que le sable pur utilisé pour fabriquer du verre neuf.",
+        "quizQ": "Combien de fois peut-on recycler du verre ?",
+        "quizOpts": ["Seulement 3 fois", "Environ 10 fois", "À l'infini"],
+        "quizAns": 2
+    },
+    {
+        "front": "Comment fonctionne le système des cotes de popularité en politique ?",
+        "exp": "Les instituts de sondage interrogent un échantillon représentatif de la population (souvent 1000 personnes). Grâce aux lois statistiques, les réponses de ce petit groupe permettent d'estimer l'avis de tout un pays avec une petite marge d'erreur.",
+        "ana": "C'est comme goûter une seule cuillère de soupe dans une marmite géante : si la cuillère est salée, toute la marmite est salée, pas besoin de tout boire.",
+        "fun": "Pour que l'échantillon soit bon, il doit respecter la méthode des quotas : autant de femmes, de jeunes, d'ouvriers ou de cadres que dans la vraie population française.",
+        "quizQ": "Comment les sondeurs font-ils pour connaître l'avis de 68 millions de Français ?",
+        "quizOpts": ["Ils appellent tout le monde un par un", "Ils interrogent un échantillon représentatif (méthode des quotas)", "Ils devinent au hasard"],
+        "quizAns": 1
+    },
+    {
+        "front": "Comment fonctionne le modèle économique de la franchise (ex: Subway ou Paul) ?",
+        "exp": "Le créateur d'une marque à succès (le franchiseur) vend le droit d'utiliser son nom, ses recettes et ses fournisseurs à un entrepreneur indépendant (le franchisé), en échange d'un droit d'entrée et d'un pourcentage sur les ventes.",
+        "ana": "C'est comme louer le costume et les blagues d'un humoriste célèbre pour faire un spectacle dans ton village : tu gagnes l'argent des billets, mais tu lui paies une redevance.",
+        "fun": "Près de 85 % des restaurants McDonald's dans le monde ne appartiennent pas à l'entreprise, mais à des entrepreneurs franchisés indépendants !",
+        "quizQ": "Qu'est-ce qu'un magasin franchisé ?",
+        "quizOpts": ["Un magasin qui appartient à 100% à l'État", "Un commerçant indépendant qui utilise la marque d'un grand groupe", "Un magasin illégal"],
+        "quizAns": 1
+    },
+    {
+        "front": "Pourquoi les pneus de voiture ont-ils des rainures ?",
+        "exp": "Les rainures servent à évacuer l'eau présente sur la route par temps de pluie. Elles rejettent l'eau sur les côtés pour que le pneu reste en contact direct avec l'asphalte, évitant ainsi l'aquaplaning (glissade).",
+        "ana": "C'est comme les lignes de tes empreintes digitales qui te permettent de saisir un verre mouillé sans qu'il te glisse des mains.",
+        "fun": "Sur les circuits de Formule 1, quand la piste est parfaitement sèche, on utilise des pneus lisses (les slicks) pour avoir un maximum d'adhérence au sol !",
+        "quizQ": "À quoi servent les lignes creusées sur les pneus ?",
+        "quizOpts": ["À faire du bruit sur la route", "À évacuer l'eau pour éviter les glissades", "À économiser du caoutchouc"],
+        "quizAns": 1
+    },
+    {
+        "front": "Comment fonctionne le moteur de recherche de billets d'avion (Skyscanner, Kayak) ?",
+        "exp": "Ces sites sont des comparateurs (méta-chercheurs). Ils utilisent des scripts informatiques automatiques (des API) qui interrogent en direct les systèmes de réservation de centaines de compagnies aériennes pour centraliser les prix sur un seul écran.",
+        "ana": "C'est comme envoyer 50 amis courir dans toutes les agences de voyage de la ville en même temps et revenir te donner le meilleur prix en 2 secondes.",
+        "fun": "Les prix changent parfois pendant que tu cherches à cause du 'Yield Management' : un algorithme des compagnies qui fait grimper le prix si le vol se remplit vite.",
+        "quizQ": "Comment les comparateurs trouvent-ils les prix des vols ?",
+        "quizOpts": ["Ils appellent les compagnies au téléphone", "Ils interrogent les systèmes des compagnies en temps réel via des API", "Ils inventent les prix"],
+        "quizAns": 1
+    },
+    {
+        "front": "Pourquoi le sel empêche-t-il les aliments de pourrir (la salaison) ?",
+        "exp": "Les bactéries ont besoin d'eau pour vivre et se développer. Le sel absorbe l'eau contenue dans les aliments par un phénomène appelé l'osmose, déshydratant ainsi les microbes qui finissent par mourir.",
+        "ana": "C'est comme priver d'eau une plante verte : sans humidité, la vie s'arrête net, bloquant la décomposition du produit.",
+        "fun": "Avant l'invention du réfrigérateur, la salaison était la méthode principale pour transporter la viande et le poisson lors des longs voyages en bateau.",
+        "quizQ": "Comment le sel conserve-t-il la nourriture ?",
+        "quizOpts": ["En tuant les microbes avec du poison", "En absorbant l'eau indispensable aux bactéries", "En congelant les aliments"],
+        "quizAns": 1
+    },
+    {
+        "front": "Comment fonctionne le réseau internet mondial (les câbles sous-marins) ?",
+        "exp": "Internet ne passe pas principalement par les satellites. Plus de 98 % des données mondiales transitent par d'immenses câbles de fibre optique posés au fond des océans, connectant les continents à la vitesse de la lumière.",
+        "ana": "C'est comme une immense toile d'araignée de fils téléphoniques géants tendus tout autour de la Terre, cachés sous l'eau.",
+        "fun": "Certains de ces câbles sous-marins sont recouverts d'une couche de protection spéciale en acier renforcé pour empêcher... les requins de croquer dedans !",
+        "quizQ": "Par où passe la grande majorité du trafic internet international ?",
+        "quizOpts": ["Par des connexions satellites", "Par des câbles de fibre optique sous-marins", "Par le réseau 5G aérien"],
+        "quizAns": 1
+    },
+    {
+        "front": "Comment fonctionnent les panneaux solaires photovoltaïques ?",
+        "exp": "Les panneaux sont faits de silicium. Quand les grains de lumière du Soleil (les photons) frappent le panneau, ils arrachent des électrons aux atomes de silicium. Ce déplacement d'électrons crée un courant électrique.",
+        "ana": "Imagine un jeu de billard où la boule blanche (la lumière) vient percuter un groupe de billes, les forçant à rouler toutes dans la même direction.",
+        "fun": "L'effet photovoltaïque a été découvert en 1839 par un physicien français de seulement 19 ans, Antoine Becquerel !",
+        "quizQ": "Quel élément chimique issu du sable compose les panneaux solaires ?",
+        "quizOpts": ["Le silicium", "Le plastique", "Le fer"],
+        "quizAns": 0
+    },
+    {
+        "front": "Pourquoi les oies volent-elles en formation en 'V' ?",
+        "exp": "L'oiseau de tête fend l'air et crée un courant d'air ascendant derrière ses ailes. Les oiseaux suivants se placent dans ce courant pour économiser leurs forces. Ils changent régulièrement de leader pour partager la fatigue.",
+        "ana": "C'est exactement comme les cyclistes du Tour de France qui se collent les uns derrière les autres pour s'abriter du vent et rouler plus vite.",
+        "fun": "Voler en formation en 'V' permet aux oiseaux migrateurs d'augmenter leur distance de vol de plus de 70 % par rapport à un oiseau volant seul !",
+        "quizQ": "Quel est le but principal du vol en 'V' chez les oiseaux ?",
+        "quizOpts": ["Mieux voir le paysage", "Économiser de l'énergie en s'abritant du vent du leader", "Effrayer les chasseurs"],
+        "quizAns": 1
+    },
+    {
+        "front": "Comment fonctionne le système du 'Code de déontologie' des médecins (Serment d'Hippocrate) ?",
+        "exp": "C'est un ensemble de règles éthiques et morales que chaque médecin jure de respecter avant d'exercer. Le principe fondamental est le 'Primum non nocere' : d'abord, ne pas nuire au patient.",
+        "ana": "C'est la charte de bonne conduite ultime, comme un règlement intérieur mondial qui place la vie humaine au-dessus de tout intérêt personnel.",
+        "fun": "Ce serment a été rédigé dans la Grèce antique au Ve siècle avant J.-C. par Hippocrate, considéré comme le père de la médecine moderne.",
+        "quizQ": "Quel est le principe premier du serment des médecins ?",
+        "quizOpts": ["Gagner de l'argent", "D'abord, ne pas nuire (soigner avant tout)", "Travailler à l'hôpital"],
+        "quizAns": 1
+    },
+    {
+        "front": "Comment fonctionne l'algorithme de compression MP3 pour la musique ?",
+        "exp": "Le format MP3 réduit la taille d'un fichier audio en supprimant les sons invisibles pour l'oreille humaine, comme les sons ultra-aigus ou un son faible joué juste après un son très fort (psychoacoustique).",
+        "ana": "C'est comme résumer un long texte en enlevant les petits mots répétitifs : l'histoire reste la même, mais le texte prend deux fois moins de place.",
+        "fun": "Une chanson compressée en MP3 prend environ 10 fois moins de place que sur un CD d'origine, sans que la majorité des gens ne voient la différence.",
+        "quizQ": "Comment le MP3 fait-il pour alléger un fichier de musique ?",
+        "quizOpts": ["En accélérant la chanson", "En supprimant les fréquences inaudibles pour l'oreille humaine", "En effaçant les paroles"],
+        "quizAns": 1
+    },
+    {
+        "front": "Pourquoi le champagne fait-il des bulles ?",
+        "exp": "Pendant la fabrication, on ajoute du sucre et des levures dans la bouteille fermée. Les levures mangent le sucre et créent du gaz carbonique (CO2) qui reste prisonnier du liquide sous pression jusqu'au débouchage.",
+        "ana": "C'est comme gonfler un ballon de baudruche à l'intérieur d'une boîte en métal fermée : le gaz attend juste l'ouverture pour s'échapper.",
+        "fun": "Les bulles ne se forment pas au hasard : elles s'accrochent aux microscopiques poussières ou fibres de tissu piégées sur les parois du verre !",
+        "quizQ": "Qu'est-ce qui crée le gaz carbonique dans le champagne ?",
+        "quizOpts": ["L'injection de gaz à l'usine", "Le travail des levures qui consomment le sucre", "La chaleur du soleil"],
+        "quizAns": 1
+    },
+    {
+        "front": "Comment fonctionne une montre connectée pour compter tes pas ?",
+        "exp": "Elle contient un capteur miniature appelé un accéléromètre en 3D. Ce composant mesure en permanence les changements de vitesse et l'orientation de ton poignet dans l'espace pour identifier le mouvement typique de la marche.",
+        "ana": "C'est comme si un petit niveau à bulle électronique analysait chaque balancement de ton bras pour cocher une case à chaque pas validé.",
+        "fun": "Si tu tricotes ou que tu remues énergiquement une salade, ta montre peut parfois confondre ces gestes avec des pas et faire grimper ton score !",
+        "quizQ": "Quel capteur permet de compter les pas dans une montre ?",
+        "quizOpts": ["Un thermomètre", "Un accéléromètre", "Un capteur de lumière"],
+        "quizAns": 1
+    },
+    {
+        "front": "Comment fonctionne le système des banques de graines mondiales (Svalbard) ?",
+        "exp": "Située sur une île isolée en Norvège, c'est une immense chambre forte souterraine construite dans le permafrost (sol gelé). Elle conserve des millions de graines de toutes les plantes de la Terre pour parer à une apocalypse.",
+        "ana": "C'est l'ultime clé USB de sauvegarde de la nature : si une variété de riz ou de blé disparaît à cause d'une guerre, on vient chercher la copie ici.",
+        "fun": "Le coffre est conçu pour résister aux tremblements de terre, aux bombes nucléaires et à la fonte des glaces pendant des centaines d'années.",
+        "quizQ": "Où se trouve la réserve mondiale de graines de sécurité ?",
+        "quizOpts": ["Dans le désert du Sahara", "Sur une île gelée en Norvège (Svalbard)", "En Amazonie"],
+        "quizAns": 1
+    },
+    {
+        "front": "Comment fonctionnent les codes-barres invisibles des billets de banque ?",
+        "exp": "Les billets de banque possèdent des fils de sécurité micro-imprimés et des encres magnétiques invisibles. Les machines de tri des banques lisent ces motifs magnétiques pour compter l'argent et éliminer les faux billets.",
+        "ana": "C'est comme une encre magique qui ne brille que sous une lampe spéciale, invisible pour les faussaires mais évidente pour les détecteurs.",
+        "fun": "Le papier des billets de banque n'est pas fait avec du bois, mais avec du coton pur, ce qui explique pourquoi ils ne se détruisent pas si tu les oublies dans la machine à laver !",
+        "quizQ": "Avec quelle matière première principale fabrique-t-on les billets d'euro ?",
+        "quizOpts": ["Du bois d'arbre", "Du coton", "Du plastique recyclé"],
+        "quizAns": 1
+    },
+    {
+        "front": "Pourquoi les miroirs inversent-ils la gauche et la droite ?",
+        "exp": "En réalité, un miroir n'inverse pas la gauche et la droite, il inverse l'avant et l'arrière. La lumière rebondit en ligne droite vers toi. C'est ton cerveau qui fait une rotation mentale pour s'imaginer à la place de l'image.",
+        "ana": "C'est comme enfoncer un gant en caoutchouc à l'envers : le côté intérieur devient le côté extérieur, pointant directement vers toi.",
+        "fun": "Si tu portes un t-shirt avec un texte écrit dessus face au miroir, le texte semble inversé car tu as retourné le vêtement face au miroir pour le lui montrer !",
+        "quizQ": "Qu'inverse réellement un miroir plan ?",
+        "quizOpts": ["Le haut et le bas", "L'avant et l'arrière (la profondeur)", "La gauche et la droite"],
+        "quizAns": 1
+    },
+    {
+        "front": "Comment fonctionne le commerce équitable ?",
+        "exp": "C'est un partenariat commercial qui garantit aux petits producteurs des pays en développement (café, cacao) un prix d'achat minimum stable, supérieur aux cours de la bourse, pour leur assurer une vie d'indépendance financière.",
+        "ana": "C'est comme boycotter les grands intermédiaires pour acheter tes légumes directement au fermier de ton village en acceptant de payer le juste prix de son travail.",
+        "fun": "Le label le plus connu du commerce équitable est Fairtrade, créé à la fin des années 1980.",
+        "quizQ": "Quel est l'objectif premier du commerce équitable ?",
+        "quizOpts": ["Baisser les prix au maximum pour le client", "Garantir un prix d'achat juste et stable aux petits producteurs", "Interdire la vente de chocolat"],
+        "quizAns": 1
+    },
+    {
+        "front": "Comment fonctionne la numérisation de la musique (du vinyle au streaming) ?",
+        "exp": "Un vinyle grave la vraie forme physique de l'onde sonore dans du plastique (analogique). Pour la numériser, un ordinateur prend des photos de cette onde des milliers de fois par seconde (échantillonnage) et transforme ces mesures en code binaire (0 et 1).",
+        "ana": "Le vinyle est une peinture continue faite au pinceau, tandis que le fichier numérique est une mosaïque d'images pixelisées ultra-fines.",
+        "fun": "La qualité standard d'un CD audio prend exactement 44 100 mesures de son par seconde pour reconstituer la musique !",
+        "quizQ": "Comment l'ordinateur stocke-t-il le son numérique ?",
+        "quizOpts": ["En gravant des lignes", "Sous forme de code binaire (0 et 1)", "Dans une cassette"],
+        "quizAns": 1
+    },
+    {
+        "front": "Pourquoi les bouteilles de bière ou de vin sont-elles souvent vertes ou marron ?",
+        "exp": "La lumière du soleil (surtout les rayons ultraviolets) déclenche une réaction chimique destructrice avec les acides de la bière ou du vin, altérant le goût. Les verres colorés bloquent ces rayons nocifs.",
+        "ana": "C'est comme mettre de la crème solaire ou des lunettes teintées sur la bouteille pour protéger le liquide des coups de soleil.",
+        "fun": "Une bière laissée en plein soleil dans un verre transparent peut développer un goût et une odeur de... mouffette en moins de 10 minutes !",
+        "quizQ": "Pourquoi utilise-t-on du verre teinté pour les boissons alcoolisées ?",
+        "quizOpts": ["Pour cacher la couleur du liquide", "Pour protéger le liquide de la lumière du soleil", "Parce que le verre vert coûte moins cher"],
+        "quizAns": 1
+    },
+    {
+        "front": "Comment fonctionnent les boîtes noires des avions ?",
+        "exp": "Les boîtes noires enregistrent tous les paramètres de vol et les conversations dans le cockpit. Elles sont blindées d'acier et d'isolants thermiques pour résister aux crashs, aux incendies et à la pression des fonds marins.",
+        "ana": "C'est l'équivalent d'une carte mémoire indestructible emballée dans une armure de super-héros capable de survivre à l'enfer.",
+        "fun": "Malgré leur nom, les boîtes noires sont en réalité peintes en orange fluo pour être repérées plus facilement au milieu des débris !",
+        "quizQ": "De quelle couleur sont réellement les 'boîtes noires' des avions ?",
+        "quizOpts": ["Noires", "Orange fluorescent", "Bleu ciel"],
+        "quizAns": 1
+    },
+    {
+        "front": "Comment fonctionne le système immunitaire face à un virus ?",
+        "exp": "Tes globules blancs sont les soldats de ton corps. Les macrophages patrouillent pour dévorer les intrus, tandis que les lymphocytes fabriquent des anticorps sur mesure : des clés spécifiques pour verrouiller et détruire le virus.",
+        "ana": "C'est une véritable armée de sécurité avec des patrouilles de police à pied et des usines de fabrication d'armes guidées par laser.",
+        "fun": "Ton corps possède une 'mémoire immunitaire' : une fois qu'il a combattu un virus, il garde les plans des armes secrètes pour éliminer l'intrus instantanément s'il revient.",
+        "quizQ": "Quelles cellules fabriquent les anticorps dans le corps ?",
+        "quizOpts": ["Les globules rouges", "Les lymphocytes (globules blancs)", "Les cellules de la peau"],
+        "quizAns": 1
+    },
+    {
+        "front": "Pourquoi le symbole du dollar est-il un 'S' barré ($) ?",
+        "exp": "L'origine la plus acceptée vient de l'époque coloniale. La monnaie de référence était le peso espagnol, abrégé 'Ps'. À force d'écrire le P et le S l'un sur l'autre pour aller vite, le graphisme s'est transformé en $.",
+        "ana": "C'est comme écrire l'esperluette (&) qui est à l'origine la fusion rapide des lettres 'E' et 't' pour écrire le mot 'et'.",
+        "fun": "Une autre légende urbaine prétend que le symbole vient de la superposition des lettres 'U' et 'S' pour United States, mais le symbole existait déjà avant la création du pays !",
+        "quizQ": "De quelle monnaie ancienne découle probablement le symbole $ ?",
+        "quizOpts": ["La livre sterling", "Le peso espagnol", "Le franc"],
+        "quizAns": 1
+    },
+    {
+        "front": "Comment fonctionne un télescope spatial (comme James Webb) ?",
+        "exp": "Il possède d'immenses miroirs dorés pour capter la lumière infrarouge invisible émise par les premières étoiles de l'univers. En orbite à 1,5 million de kilomètres de la Terre, il évite le flou causé par l'atmosphère terrestre.",
+        "ana": "C'est comme monter tout en haut d'une montagne déserte pour regarder les étoiles, au lieu de les regarder à travers la vitre sale et éclairée de ta cuisine.",
+        "fun": "Le miroir du télescope James Webb est recouvert d'une couche d'or pur ultra-fine, épaisse de seulement quelques centaines d'atomes, pour refléter au mieux l'infrarouge.",
+        "quizQ": "Pourquoi envoie-t-on des télescopes dans l'espace ?",
+        "quizOpts": ["Pour être plus près des étoiles", "Pour éviter la pollution et le flou de l'atmosphère terrestre", "Parce qu'ils ne fonctionnent pas au sol"],
+        "quizAns": 1
+    },
+    {
+        "front": "Comment fonctionnent les algorithmes de compression de fichiers (fichiers ZIP) ?",
+        "exp": "Un fichier ZIP réduit la taille des données sans rien perdre (compression sans perte). Il cherche les répétitions dans le code informatique et les remplace par un dictionnaire de raccourcis plus courts.",
+        "ana": "Au lieu d'écrire 50 fois le mot 'Bonjour' dans une lettre, tu écris le mot une seule fois et tu mets des numéros fléchés pour économiser de l'encre.",
+        "fun": "L'inventeur du format ZIP, Phil Katz, a créé la première version du logiciel en 1989 pour pouvoir transférer ses fichiers plus vite sur les ancêtres d'internet.",
+        "quizQ": "Comment fonctionne la compression ZIP ?",
+        "quizOpts": ["En coupant la fin du fichier", "En remplaçant les répétitions par des raccourcis logiques", "En traduisant le fichier en anglais"],
+        "quizAns": 1
+    },
+    {
+        "front": "Pourquoi les navires géants en acier flottent-ils sur l'eau ?",
+        "exp": "Grâce à la poussée d'Archimède. Le bateau est immense et rempli d'air. Le volume d'eau déplacé par sa coque pèse plus lourd que le poids total du navire. L'eau pousse donc le navire vers le haut.",
+        "ana": "Prends une bille de pâte à modeler : elle coule. Étale-la en forme de bol creux plein d'air et pose-la sur l'eau : elle flotte parfaitement.",
+        "fun": "Les plus grands porte-conteneurs actuels peuvent mesurer jusqu'à 400 mètres de long (plus que la Tour Eiffel !) et flotter sans problème grâce à leur forme creuse.",
+        "quizQ": "Quelle force physique permet aux navires en acier de flotter ?",
+        "quizOpts": ["La force centrifuge", "La poussée d'Archimède", "L'attraction magnétique"],
+        "quizAns": 1
     }
 ]
