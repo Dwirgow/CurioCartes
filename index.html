@@ -8,15 +8,14 @@
     <meta name="theme-color" content="#6366F1">
     <style>
         :root {
-            --primary: #6366F1; /* Indigo moderne */
+            --primary: #6366F1;
             --primary-gradient: linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%);
-            --secondary: #10B981; /* Vert menthe */
+            --secondary: #10B981;
             --bg-gradient: linear-gradient(135deg, #E0E7FF 0%, #EDE9FE 100%);
             --card-bg: rgba(255, 255, 255, 0.95);
             --text-main: #1E293B;
             --text-muted: #64748B;
             --shadow-soft: 0 20px 40px -15px rgba(0,0,0,0.1);
-            --shadow-glow: 0 0 20px rgba(99, 102, 241, 0.4);
         }
 
         body {
@@ -40,8 +39,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 25px;
-            padding-top: 10px;
+            margin-bottom: 20px;
         }
 
         header h2 {
@@ -56,10 +54,10 @@
         .status-badge {
             background: white;
             color: var(--primary);
-            padding: 8px 16px;
+            padding: 6px 14px;
             border-radius: 999px;
             font-weight: 700;
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             box-shadow: 0 4px 6px rgba(0,0,0,0.05);
         }
 
@@ -72,10 +70,9 @@
             align-items: center;
         }
 
-        /* --- ANIMATIONS --- */
         @keyframes float {
             0% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
+            50% { transform: translateY(-8px); }
             100% { transform: translateY(0px); }
         }
 
@@ -85,14 +82,13 @@
             100% { box-shadow: 0 0 0 0 rgba(99, 102, 241, 0); }
         }
 
-        /* --- SYSTÈME DE CARTE --- */
         .flip-card {
             background-color: transparent;
             width: 100%;
-            height: 450px; /* Un peu plus haute */
+            height: 450px;
             cursor: pointer;
             display: none;
-            animation: float 6s ease-in-out infinite; /* Effet de flottaison */
+            animation: float 6s ease-in-out infinite;
         }
 
         .flip-card-inner {
@@ -104,11 +100,8 @@
             transform-style: preserve-3d;
         }
 
-        .flip-card.flipped .flip-card-inner {
-            transform: rotateY(180deg);
-        }
-
-        .flip-card.flipped { animation: none; /* Stoppe la flottaison quand on lit */ }
+        .flip-card.flipped .flip-card-inner { transform: rotateY(180deg); }
+        .flip-card.flipped { animation: none; }
 
         .flip-card-front, .flip-card-back {
             position: absolute;
@@ -117,7 +110,7 @@
             -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
             background: var(--card-bg);
-            backdrop-filter: blur(10px); /* Effet verre */
+            backdrop-filter: blur(10px);
             border-radius: 28px;
             border: 1px solid rgba(255, 255, 255, 0.4);
             box-shadow: var(--shadow-soft);
@@ -129,7 +122,7 @@
         }
 
         .flip-card-front { 
-            font-size: 1.6rem; 
+            font-size: 1.5rem; 
             font-weight: 800; 
             line-height: 1.3; 
             color: var(--primary);
@@ -139,30 +132,28 @@
         .flip-card-back {
             transform: rotateY(180deg);
             text-align: left;
-            font-size: 1rem;
+            font-size: 0.95rem;
             justify-content: flex-start;
             overflow-y: auto;
-            line-height: 1.5;
+            line-height: 1.4;
         }
 
-        .back-section { margin-bottom: 20px; }
+        .back-section { margin-bottom: 15px; }
         .back-title { 
             font-weight: 800; 
             color: var(--primary); 
-            margin-bottom: 6px; 
+            margin-bottom: 4px; 
             font-size: 0.8rem; 
             text-transform: uppercase;
-            letter-spacing: 0.05em;
         }
 
-        /* --- CONTENEURS (Quiz, Attente, Sélection) --- */
         .quiz-container, .wait-container, .category-container {
             display: none;
             background: var(--card-bg);
             backdrop-filter: blur(10px);
             border-radius: 28px;
             border: 1px solid rgba(255, 255, 255, 0.4);
-            padding: 35px;
+            padding: 25px;
             box-shadow: var(--shadow-soft);
             text-align: center;
             min-height: 400px;
@@ -173,142 +164,149 @@
 
         .quiz-header, .discover-header {
             font-weight: 800;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             text-transform: uppercase;
             font-size: 0.9rem;
-            letter-spacing: 0.05em;
         }
         .quiz-header { color: var(--secondary); }
         .discover-header { color: var(--primary); }
 
-        h3 { margin-top: 0; font-size: 1.4rem; color: var(--text-main); }
+        h3 { margin-top: 0; font-size: 1.3rem; margin-bottom: 5px; color: var(--text-main); }
 
-        /* --- BOUTONS PRINCIPAUX --- */
         button:not(.category-btn) {
             background: var(--primary-gradient);
             color: white;
             border: none;
-            padding: 16px 24px;
-            border-radius: 16px;
-            font-size: 1.05rem;
+            padding: 14px 20px;
+            border-radius: 14px;
+            font-size: 1rem;
             font-weight: 700;
             cursor: pointer;
             width: 100%;
             margin-top: 10px;
-            transition: transform 0.1s, box-shadow 0.2s;
             box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
         }
+        button:not(.category-btn):active { transform: scale(0.97); }
 
-        button:not(.category-btn):active { 
-            transform: scale(0.96); 
-        }
-
-        /* Boutons de réponses au quiz */
         .quiz-btn { 
             background: #F8FAFC !important; 
             color: var(--text-main) !important; 
             text-align: left; 
-            padding: 16px 20px !important; 
+            padding: 14px 18px !important; 
             font-weight: 600 !important;
             border: 2px solid transparent !important;
             box-shadow: none !important;
-            margin-top: 12px !important;
+            margin-top: 10px !important;
         }
-        .quiz-btn:hover { 
-            border-color: var(--primary) !important;
-            background: #F1F5F9 !important;
-        }
+        .quiz-btn:hover { border-color: var(--primary) !important; background: #F1F5F9 !important; }
 
-        /* --- LISTE DES CATÉGORIES --- */
         .category-list {
             margin-top: 15px;
             width: 100%;
             display: flex;
             flex-direction: column;
-            gap: 12px;
+            gap: 10px;
+            overflow-y: auto;
+            max-height: 300px;
         }
         .category-btn {
             background: white;
             color: var(--text-main);
             border: 2px solid #E2E8F0;
-            padding: 18px 20px;
-            border-radius: 16px;
+            padding: 15px;
+            border-radius: 14px;
             text-align: left;
             font-weight: 700;
             cursor: pointer;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
         }
-        .category-btn:hover {
-            border-color: var(--primary);
-            transform: translateY(-2px);
-            box-shadow: 0 10px 20px -10px rgba(99, 102, 241, 0.3);
-        }
+        .category-btn:hover { border-color: var(--primary); }
         .category-count {
             font-size: 0.8rem;
             color: white;
             background: var(--primary-gradient);
-            padding: 6px 12px;
+            padding: 4px 10px;
             border-radius: 999px;
             font-weight: 800;
         }
 
-        /* --- TABLEAU DE BORD (CHRONOS) --- */
-        .timer-box {
+        /* --- NOUVEAU : Grille des niveaux de Quiz --- */
+        .level-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        .level-card {
             background: white;
             border: 2px solid #F1F5F9;
-            border-radius: 20px;
-            padding: 20px;
-            margin-top: 15px;
-            text-align: left;
+            border-radius: 16px;
+            padding: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .level-header {
+            font-size: 0.7rem;
+            font-weight: 800;
+            color: var(--text-muted);
+            text-transform: uppercase;
+        }
+        .level-count {
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin: 4px 0;
+        }
+        .level-timer {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            font-variant-numeric: tabular-nums;
+        }
+        .level-timer.ready { color: var(--secondary); font-weight: bold; }
+
+        /* Bloc Découverte (En bas) */
+        .discovery-box {
+            background: white;
+            border: 2px solid #F1F5F9;
+            border-radius: 16px;
+            padding: 15px;
+            text-align: center;
             transition: all 0.3s ease;
         }
-        .timer-title {
-            font-size: 0.75rem;
+        .discovery-title {
+            font-size: 0.8rem;
             color: var(--text-muted);
             text-transform: uppercase;
             font-weight: 800;
-            letter-spacing: 0.05em;
-            display: flex;
-            align-items: center;
-            gap: 6px;
         }
-        .timer-time { 
-            font-size: 1.8rem; 
-            font-weight: 800; 
-            color: var(--text-main); 
-            margin-top: 8px; 
-            font-variant-numeric: tabular-nums; /* Empêche les chiffres de trembler */
+        .discovery-timer {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: var(--text-main);
+            margin-top: 5px;
+            font-variant-numeric: tabular-nums;
         }
-
-        /* Bloc cliquable pour découverte */
-        .timer-box.actionable {
+        
+        .discovery-box.actionable {
             cursor: pointer;
             border-color: var(--primary);
             background: #F5F3FF;
-            animation: pulseGlow 2s infinite; /* Animation qui respire */
+            animation: pulseGlow 2s infinite;
         }
-        .timer-box.actionable .timer-time {
-            color: var(--primary);
-        }
-        .timer-box.actionable:hover {
-            transform: scale(1.03);
-        }
-
-        .timer-time.ready { color: var(--secondary); }
+        .discovery-box.actionable .discovery-timer { color: var(--primary); }
 
         .instruction {
-            margin-top: 25px;
+            margin-top: 20px;
             color: var(--text-muted);
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             font-weight: 600;
             text-align: center;
             display: none;
-            background: rgba(255,255,255,0.5);
-            padding: 8px 16px;
-            border-radius: 20px;
         }
     </style>
 </head>
@@ -345,43 +343,59 @@
 
         <div class="quiz-container" id="quiz-view">
             <div class="quiz-header">🧠 Mode Révision</div>
-            <p id="quiz-question" style="font-weight: 800; margin-bottom: 25px; font-size: 1.3rem; color: var(--primary);"></p>
+            <p id="quiz-question" style="font-weight: 800; margin-bottom: 20px; font-size: 1.2rem; color: var(--primary);"></p>
             <div id="quiz-options"></div>
         </div>
 
         <div class="wait-container" id="wait-view">
-            <h3 style="margin-top: 0;">Tableau de Bord ⚡</h3>
-            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 15px;">Ton centre de contrôle d'apprentissage.</p>
+            <h3>Tableau de Bord ⚡</h3>
+            <p style="color: var(--text-muted); font-size: 0.85rem;">Ta mémoire à court et long terme.</p>
             
-            <div class="timer-box" id="review-box">
-                <div class="timer-title">🎯 Prochain Quiz Révision</div>
-                <div class="timer-time" id="review-countdown">--h --m --s</div>
+            <div class="level-grid">
+                <div class="level-card">
+                    <div class="level-header">Niveau 1 <span style="text-transform:lowercase">(4h)</span></div>
+                    <div class="level-count" id="count-lvl0">0 carte</div>
+                    <div class="level-timer" id="timer-lvl0">--:--:--</div>
+                </div>
+                <div class="level-card">
+                    <div class="level-header">Niveau 2 <span style="text-transform:lowercase">(24h)</span></div>
+                    <div class="level-count" id="count-lvl1">0 carte</div>
+                    <div class="level-timer" id="timer-lvl1">--:--:--</div>
+                </div>
+                <div class="level-card">
+                    <div class="level-header">Niveau 3 <span style="text-transform:lowercase">(3j)</span></div>
+                    <div class="level-count" id="count-lvl2">0 carte</div>
+                    <div class="level-timer" id="timer-lvl2">--:--:--</div>
+                </div>
+                <div class="level-card">
+                    <div class="level-header">Niveau 4 <span style="text-transform:lowercase">(7j)</span></div>
+                    <div class="level-count" id="count-lvl3">0 carte</div>
+                    <div class="level-timer" id="timer-lvl3">--:--:--</div>
+                </div>
             </div>
 
-            <div class="timer-box" id="discovery-box" onclick="launchDiscoveryIfReady()">
-                <div class="timer-title">✨ Nouvelles Cartes</div>
-                <div class="timer-time" id="discovery-countdown">--h --m --s</div>
+            <div class="discovery-box" id="discovery-box" onclick="launchDiscoveryIfReady()">
+                <div class="discovery-title" id="discovery-title">✨ Nouvelles Cartes</div>
+                <div class="discovery-timer" id="discovery-countdown">--:--:--</div>
             </div>
         </div>
 
         <div class="category-container" id="category-view">
             <div class="discover-header">✨ Mode Découverte</div>
-            <h3 style="margin-top: 0;">Choisissez un thème</h3>
-            <p style="color: var(--text-muted); font-size: 0.95rem;">Cliquez sur un thème disponible pour débloquer votre prochaine carte.</p>
-            <div class="category-list" id="category-list">
-                </div>
+            <h3>Choisis un thème</h3>
+            <div class="category-list" id="category-list"></div>
         </div>
 
     </div>
 
     <script>
         // --- CONFIGURATION ---
-        const COOLDOWN_DISCOVERY = 4 * 60 * 60 * 1000;
+        const COOLDOWN_DISCOVERY = 4 * 60 * 60 * 1000; // 4 heures
         const INTERVALS = [
-            4 * 60 * 60 * 1000,
-            24 * 60 * 60 * 1000,
-            3 * 24 * 60 * 60 * 1000,
-            7 * 24 * 60 * 60 * 1000
+            4 * 60 * 60 * 1000,       // Niveau 0 (4h)
+            24 * 60 * 60 * 1000,      // Niveau 1 (24h)
+            3 * 24 * 60 * 60 * 1000,  // Niveau 2 (3j)
+            7 * 24 * 60 * 60 * 1000   // Niveau 3 (7j)
         ];
         const MAX_NEW_CARDS_PER_SESSION = 3;
 
@@ -393,7 +407,6 @@
         let pendingReviews = []; 
         let availableNewCardsByCategory = {}; 
         let currentCardIndex = null;
-        let selectedCategory = null; 
         let currentMode = ''; 
         let countdownInterval = null; 
 
@@ -453,16 +466,15 @@
                 currentCardIndex = pendingReviews[0];
                 statusBadge.innerText = `🔄 ${pendingReviews.length} Révision(s)`;
                 showQuiz();
-            } 
-            else {
+            } else {
                 currentMode = 'HUB';
                 showWaitScreen();
             }
         }
 
         function launchDiscoveryIfReady() {
-            const discoveryBox = document.getElementById('discovery-box');
-            if (discoveryBox.classList.contains('actionable')) {
+            const box = document.getElementById('discovery-box');
+            if (box.classList.contains('actionable')) {
                 clearInterval(countdownInterval);
                 currentMode = 'CHOOSE_CATEGORY';
                 statusBadge.innerText = `✨ Sélecteur`;
@@ -499,7 +511,6 @@
         }
 
         function selectCategory(categoryName) {
-            selectedCategory = categoryName;
             currentMode = 'DISCOVER';
             currentCardIndex = availableNewCardsByCategory[categoryName][0];
             showDiscovery();
@@ -533,8 +544,6 @@
             if (sessionNewCardsCount >= MAX_NEW_CARDS_PER_SESSION) {
                 localStorage.setItem('curio_next_discovery', Date.now() + COOLDOWN_DISCOVERY);
             }
-            
-            selectedCategory = null; 
             analyzeMemory();
         }
 
@@ -593,53 +602,92 @@
             const now = Date.now();
             let forceQuizInterrupt = false; 
 
-            // CHRONO QUIZ
-            let earliestReview = Infinity;
+            // --- STATISTIQUES DES NIVEAUX DE QUIZ ---
+            let stats = {
+                0: { count: 0, earliest: Infinity },
+                1: { count: 0, earliest: Infinity },
+                2: { count: 0, earliest: Infinity },
+                3: { count: 0, earliest: Infinity }
+            };
+
             for (let key in memoryData) {
-                let time = memoryData[key].nextReview;
-                if (time > now && time < earliestReview) earliestReview = time;
-            }
-            
-            const reviewEl = document.getElementById('review-countdown');
-            if (earliestReview === Infinity) {
-                reviewEl.innerText = "Aucun quiz planifié";
-            } else {
-                let diff = earliestReview - now;
-                if (diff <= 0) {
-                    forceQuizInterrupt = true; 
-                } else {
-                    reviewEl.innerText = formatTime(diff);
+                let card = memoryData[key];
+                let lvl = card.level;
+                if (lvl > 3) lvl = 3; 
+                stats[lvl].count++;
+                if (card.nextReview < stats[lvl].earliest) {
+                    stats[lvl].earliest = card.nextReview;
                 }
             }
 
+            // Mise à jour de l'affichage de la grille
+            for (let i = 0; i <= 3; i++) {
+                document.getElementById(`count-lvl${i}`).innerText = `${stats[i].count} carte${stats[i].count > 1 ? 's' : ''}`;
+                const timerEl = document.getElementById(`timer-lvl${i}`);
+                
+                if (stats[i].count === 0) {
+                    timerEl.innerText = "Vide";
+                    timerEl.classList.remove('ready');
+                } else {
+                    let diff = stats[i].earliest - now;
+                    if (diff <= 0) {
+                        timerEl.innerText = "Prêt !";
+                        timerEl.classList.add('ready');
+                        forceQuizInterrupt = true;
+                    } else {
+                        timerEl.innerText = formatTime(diff);
+                        timerEl.classList.remove('ready');
+                    }
+                }
+            }
+
+            // Interruption automatique si un quiz tombe à 0
             if (forceQuizInterrupt && currentMode === 'HUB') {
                 analyzeMemory(); 
                 return; 
             }
 
-            // CHRONO DÉCOUVERTE
+            // --- CHRONO DE DÉCOUVERTE ---
             let nextDiscovery = localStorage.getItem('curio_next_discovery');
             const discoveryEl = document.getElementById('discovery-countdown');
             const discoveryBox = document.getElementById('discovery-box');
+            const discoveryTitle = document.getElementById('discovery-title');
             
-            let isCooldownOver = (!nextDiscovery || sessionNewCardsCount < MAX_NEW_CARDS_PER_SESSION);
-            if (!isCooldownOver && now >= parseInt(nextDiscovery)) {
-                isCooldownOver = true; 
+            let totalUnread = 0;
+            for (let cat in availableNewCardsByCategory) {
+                totalUnread += availableNewCardsByCategory[cat].length;
             }
 
-            if (isCooldownOver && Object.keys(availableNewCardsByCategory).length > 0) {
-                discoveryEl.innerText = "Prêt ! Cliquez ici ✨";
-                discoveryBox.classList.add('actionable'); 
-            } else if (Object.keys(availableNewCardsByCategory).length === 0) {
-                discoveryEl.innerText = "Plus de cartes neuves";
+            // Combien de cartes lues dans cette session
+            let displayCount = sessionNewCardsCount > MAX_NEW_CARDS_PER_SESSION ? MAX_NEW_CARDS_PER_SESSION : sessionNewCardsCount;
+            
+            // Logique d'affichage
+            if (totalUnread === 0) {
+                discoveryTitle.innerText = `✨ Fin du Deck`;
+                discoveryEl.innerText = "Deck 100% terminé";
+                discoveryEl.style.fontSize = "1.2rem";
                 discoveryBox.classList.remove('actionable');
             } else {
-                let diff = parseInt(nextDiscovery) - now;
-                discoveryEl.innerText = formatTime(diff);
-                discoveryBox.classList.remove('actionable');
+                discoveryTitle.innerText = `✨ Découvertes (${displayCount}/${MAX_NEW_CARDS_PER_SESSION})`;
+                discoveryEl.style.fontSize = "1.4rem";
+
+                let isCooldownOver = (!nextDiscovery || sessionNewCardsCount < MAX_NEW_CARDS_PER_SESSION);
+                if (!isCooldownOver && now >= parseInt(nextDiscovery)) {
+                    isCooldownOver = true; 
+                }
+
+                if (isCooldownOver) {
+                    discoveryEl.innerText = "Cliquez ici";
+                    discoveryBox.classList.add('actionable'); 
+                } else {
+                    let diff = parseInt(nextDiscovery) - now;
+                    discoveryEl.innerText = formatTime(diff);
+                    discoveryBox.classList.remove('actionable');
+                }
             }
         }
 
+        // Traduction des millisecondes en heures, minutes, secondes
         function formatTime(ms) {
             let totalSeconds = Math.floor(ms / 1000);
             let hours = Math.floor(totalSeconds / 3600);
