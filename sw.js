@@ -3,6 +3,7 @@ const ASSETS = [
   'index.html',
   'cards.json',
   'manifest.json'
+  'icon.png'
 ];
 
 self.addEventListener('install', event => {
