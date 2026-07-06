@@ -2,11 +2,12 @@ const CACHE_NAME = 'CurioCartes_v2';
 
 // Les fichiers locaux indispensables pour que l'app fonctionne hors-ligne
 const ASSETS_TO_CACHE = [
-  './',              // <-- C'EST LUI QUI MANQUAIT !
+  './',
   './index.html',
   './cards.json',
   './manifest.json',
-  './icon.png'
+  './icon-192.png',
+  './icon-512.png'
 ];
 
 // Installation du Service Worker et mise en cache des fichiers
