@@ -1,7 +1,8 @@
-const CACHE_NAME = 'CurioCartes_v1';
+const CACHE_NAME = 'CurioCartes_v2';
 
 // Les fichiers locaux indispensables pour que l'app fonctionne hors-ligne
 const ASSETS_TO_CACHE = [
+  './',              // <-- C'EST LUI QUI MANQUAIT !
   './index.html',
   './cards.json',
   './manifest.json',
@@ -18,7 +19,7 @@ self.addEventListener('install', (event) => {
   self.skipWaiting();
 });
 
-// Nettoyage des anciens caches lors d'une mise à jour
+// Nettoyage des anciens caches lors d'une mise à jour (très important pour passer à la v2)
 self.addEventListener('activate', (event) => {
   event.waitUntil(
     caches.keys().then((cacheNames) => {
@@ -34,15 +35,13 @@ self.addEventListener('activate', (event) => {
   self.clients.claim();
 });
 
-
-// Interception des requêtes : on sert le cache s'il existe, sinon on va sur le réseau
+// Interception des requêtes
 self.addEventListener('fetch', (event) => {
   event.respondWith(
     caches.match(event.request).then((cachedResponse) => {
       return cachedResponse || fetch(event.request);
     }).catch(() => {
-      // Si on est hors ligne et que la ressource n'est pas en cache
-      // on peut éventuellement renvoyer une ressource par défaut ici
+      // Sécurité en cas de déconnexion totale
     })
   );
 });
