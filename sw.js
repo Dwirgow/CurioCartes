@@ -34,6 +34,7 @@ self.addEventListener('activate', (event) => {
   self.clients.claim();
 });
 
+
 // Interception des requêtes : on sert le cache s'il existe, sinon on va sur le réseau
 self.addEventListener('fetch', (event) => {
   event.respondWith(
