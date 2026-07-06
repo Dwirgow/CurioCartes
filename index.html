@@ -5,22 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CurioCartes PWA</title>
     <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#4F46E5">
+    <meta name="theme-color" content="#6366F1">
     <style>
         :root {
-            --primary: #4F46E5;
-            --primary-light: #E0E7FF;
-            --secondary: #10B981;
-            --secondary-light: #D1FAE5;
-            --bg-color: #F3F4F6;
-            --card-bg: #FFFFFF;
-            --text-main: #1F2937;
-            --text-muted: #6B7280;
+            --primary: #6366F1; /* Indigo moderne */
+            --primary-gradient: linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%);
+            --secondary: #10B981; /* Vert menthe */
+            --bg-gradient: linear-gradient(135deg, #E0E7FF 0%, #EDE9FE 100%);
+            --card-bg: rgba(255, 255, 255, 0.95);
+            --text-main: #1E293B;
+            --text-muted: #64748B;
+            --shadow-soft: 0 20px 40px -15px rgba(0,0,0,0.1);
+            --shadow-glow: 0 0 20px rgba(99, 102, 241, 0.4);
         }
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--bg-color);
+            background: var(--bg-gradient);
+            background-attachment: fixed;
             color: var(--text-main);
             display: flex;
             flex-direction: column;
@@ -39,33 +41,58 @@
             justify-content: space-between;
             align-items: center;
             margin-bottom: 25px;
+            padding-top: 10px;
+        }
+
+        header h2 {
+            margin: 0;
+            font-size: 1.5rem;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 800;
         }
 
         .status-badge {
-            background-color: var(--primary-light);
+            background: white;
             color: var(--primary);
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-weight: bold;
-            font-size: 0.9rem;
+            padding: 8px 16px;
+            border-radius: 999px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
         }
 
         .app-container {
             width: 100%;
             max-width: 400px;
-            perspective: 1000px;
+            perspective: 1500px;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
 
-        /* Système de Carte 3D */
+        /* --- ANIMATIONS --- */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        @keyframes pulseGlow {
+            0% { box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.4); }
+            70% { box-shadow: 0 0 0 15px rgba(99, 102, 241, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(99, 102, 241, 0); }
+        }
+
+        /* --- SYSTÈME DE CARTE --- */
         .flip-card {
             background-color: transparent;
             width: 100%;
-            height: 420px;
+            height: 450px; /* Un peu plus haute */
             cursor: pointer;
             display: none;
+            animation: float 6s ease-in-out infinite; /* Effet de flottaison */
         }
 
         .flip-card-inner {
@@ -73,7 +100,7 @@
             width: 100%;
             height: 100%;
             text-align: center;
-            transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);
+            transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
             transform-style: preserve-3d;
         }
 
@@ -81,163 +108,208 @@
             transform: rotateY(180deg);
         }
 
+        .flip-card.flipped { animation: none; /* Stoppe la flottaison quand on lit */ }
+
         .flip-card-front, .flip-card-back {
             position: absolute;
             width: 100%;
             height: 100%;
             -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
-            background-color: var(--card-bg);
-            border-radius: 20px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            background: var(--card-bg);
+            backdrop-filter: blur(10px); /* Effet verre */
+            border-radius: 28px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: var(--shadow-soft);
             display: flex;
             flex-direction: column;
             justify-content: center;
-            padding: 30px;
+            padding: 35px;
             box-sizing: border-box;
         }
 
-        .flip-card-front { font-size: 1.4rem; font-weight: bold; line-height: 1.4; }
+        .flip-card-front { 
+            font-size: 1.6rem; 
+            font-weight: 800; 
+            line-height: 1.3; 
+            color: var(--primary);
+            background: white;
+        }
         
         .flip-card-back {
             transform: rotateY(180deg);
             text-align: left;
-            font-size: 0.95rem;
+            font-size: 1rem;
             justify-content: flex-start;
             overflow-y: auto;
+            line-height: 1.5;
         }
 
-        .back-section { margin-bottom: 15px; }
-        .back-title { font-weight: bold; color: var(--primary); margin-bottom: 4px; font-size: 0.85rem; text-transform: uppercase;}
+        .back-section { margin-bottom: 20px; }
+        .back-title { 
+            font-weight: 800; 
+            color: var(--primary); 
+            margin-bottom: 6px; 
+            font-size: 0.8rem; 
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
 
-        /* Ecrans Quiz, Attente, Sélection */
+        /* --- CONTENEURS (Quiz, Attente, Sélection) --- */
         .quiz-container, .wait-container, .category-container {
             display: none;
-            background-color: var(--card-bg);
-            border-radius: 20px;
-            padding: 30px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border-radius: 28px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            padding: 35px;
+            box-shadow: var(--shadow-soft);
             text-align: center;
-            min-height: 380px;
+            min-height: 400px;
             width: 100%;
             flex-direction: column;
             box-sizing: border-box;
         }
 
         .quiz-header, .discover-header {
-            font-weight: bold;
+            font-weight: 800;
             margin-bottom: 15px;
             text-transform: uppercase;
             font-size: 0.9rem;
+            letter-spacing: 0.05em;
         }
         .quiz-header { color: var(--secondary); }
         .discover-header { color: var(--primary); }
 
-        /* Catégories */
+        h3 { margin-top: 0; font-size: 1.4rem; color: var(--text-main); }
+
+        /* --- BOUTONS PRINCIPAUX --- */
+        button:not(.category-btn) {
+            background: var(--primary-gradient);
+            color: white;
+            border: none;
+            padding: 16px 24px;
+            border-radius: 16px;
+            font-size: 1.05rem;
+            font-weight: 700;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+            transition: transform 0.1s, box-shadow 0.2s;
+            box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+        }
+
+        button:not(.category-btn):active { 
+            transform: scale(0.96); 
+        }
+
+        /* Boutons de réponses au quiz */
+        .quiz-btn { 
+            background: #F8FAFC !important; 
+            color: var(--text-main) !important; 
+            text-align: left; 
+            padding: 16px 20px !important; 
+            font-weight: 600 !important;
+            border: 2px solid transparent !important;
+            box-shadow: none !important;
+            margin-top: 12px !important;
+        }
+        .quiz-btn:hover { 
+            border-color: var(--primary) !important;
+            background: #F1F5F9 !important;
+        }
+
+        /* --- LISTE DES CATÉGORIES --- */
         .category-list {
             margin-top: 15px;
             width: 100%;
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 12px;
         }
         .category-btn {
-            background-color: #F9FAFB;
+            background: white;
             color: var(--text-main);
-            border: 1px solid #E5E7EB;
-            padding: 18px;
-            border-radius: 12px;
+            border: 2px solid #E2E8F0;
+            padding: 18px 20px;
+            border-radius: 16px;
             text-align: left;
-            font-weight: 600;
+            font-weight: 700;
             cursor: pointer;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            transition: all 0.2s;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
         }
         .category-btn:hover {
-            background-color: var(--primary-light);
-            border-color: #C7D2FE;
-            color: var(--primary);
+            border-color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px -10px rgba(99, 102, 241, 0.3);
         }
         .category-count {
             font-size: 0.8rem;
-            color: var(--text-muted);
-            background-color: #EDF2F7;
-            padding: 4px 10px;
-            border-radius: 12px;
-        }
-        .category-btn:hover .category-count {
-            background-color: white;
-            color: var(--primary);
-        }
-
-        /* Boutons principaux */
-        button:not(.category-btn) {
-            background-color: var(--primary);
             color: white;
-            border: none;
-            padding: 14px 20px;
-            border-radius: 10px;
-            font-size: 1rem;
-            font-weight: bold;
-            cursor: pointer;
-            width: 100%;
-            margin-top: 10px;
-            transition: background-color 0.2s;
+            background: var(--primary-gradient);
+            padding: 6px 12px;
+            border-radius: 999px;
+            font-weight: 800;
         }
 
-        button:not(.category-btn):hover { background-color: #4338CA; }
-        .quiz-btn { background-color: #F3F4F6; color: var(--text-main); text-align: left; padding: 12px 15px; font-weight: normal;}
-        .quiz-btn:hover { background-color: #E5E7EB; }
-
-        .instruction {
-            margin-top: 20px;
-            color: var(--text-muted);
-            font-size: 0.9rem;
-            text-align: center;
-            display: none;
-        }
-
-        /* Les blocs Chronos du Tableau de bord */
+        /* --- TABLEAU DE BORD (CHRONOS) --- */
         .timer-box {
-            background-color: #F9FAFB;
-            border: 2px solid #E5E7EB;
-            border-radius: 12px;
-            padding: 15px;
+            background: white;
+            border: 2px solid #F1F5F9;
+            border-radius: 20px;
+            padding: 20px;
             margin-top: 15px;
             text-align: left;
-            transition: all 0.2s;
+            transition: all 0.3s ease;
         }
         .timer-title {
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             color: var(--text-muted);
             text-transform: uppercase;
-            font-weight: bold;
+            font-weight: 800;
             letter-spacing: 0.05em;
+            display: flex;
+            align-items: center;
+            gap: 6px;
         }
         .timer-time { 
-            font-size: 1.5rem; 
-            font-weight: bold; 
-            color: var(--primary); 
-            margin-top: 4px; 
+            font-size: 1.8rem; 
+            font-weight: 800; 
+            color: var(--text-main); 
+            margin-top: 8px; 
+            font-variant-numeric: tabular-nums; /* Empêche les chiffres de trembler */
         }
 
-        /* NOUVEAU : Design cliquable quand le compte à rebours est fini */
+        /* Bloc cliquable pour découverte */
         .timer-box.actionable {
             cursor: pointer;
-            background-color: var(--primary-light);
             border-color: var(--primary);
+            background: #F5F3FF;
+            animation: pulseGlow 2s infinite; /* Animation qui respire */
         }
         .timer-box.actionable .timer-time {
             color: var(--primary);
         }
         .timer-box.actionable:hover {
-            background-color: #C7D2FE;
-            transform: scale(1.02);
+            transform: scale(1.03);
         }
 
         .timer-time.ready { color: var(--secondary); }
+
+        .instruction {
+            margin-top: 25px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-align: center;
+            display: none;
+            background: rgba(255,255,255,0.5);
+            padding: 8px 16px;
+            border-radius: 20px;
+        }
     </style>
 </head>
 <body>
@@ -269,25 +341,25 @@
                 </div>
             </div>
         </div>
-        <div class="instruction" id="card-instruction">Appuyez sur la carte pour la retourner</div>
+        <div class="instruction" id="card-instruction">👆 Appuyez sur la carte pour la retourner</div>
 
         <div class="quiz-container" id="quiz-view">
             <div class="quiz-header">🧠 Mode Révision</div>
-            <p id="quiz-question" style="font-weight: bold; margin-bottom: 20px; font-size: 1.2rem;"></p>
+            <p id="quiz-question" style="font-weight: 800; margin-bottom: 25px; font-size: 1.3rem; color: var(--primary);"></p>
             <div id="quiz-options"></div>
         </div>
 
         <div class="wait-container" id="wait-view">
             <h3 style="margin-top: 0;">Tableau de Bord ⚡</h3>
-            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 10px;">Ton centre de contrôle d'apprentissage.</p>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 15px;">Ton centre de contrôle d'apprentissage.</p>
             
             <div class="timer-box" id="review-box">
-                <div class="timer-title">🧠 Prochain Quiz Révision</div>
+                <div class="timer-title">🎯 Prochain Quiz Révision</div>
                 <div class="timer-time" id="review-countdown">--h --m --s</div>
             </div>
 
             <div class="timer-box" id="discovery-box" onclick="launchDiscoveryIfReady()">
-                <div class="timer-title">✨ Nouvelles cartes disponibles</div>
+                <div class="timer-title">✨ Nouvelles Cartes</div>
                 <div class="timer-time" id="discovery-countdown">--h --m --s</div>
             </div>
         </div>
@@ -304,7 +376,7 @@
 
     <script>
         // --- CONFIGURATION ---
-        const COOLDOWN_DISCOVERY = 4 * 60 * 60 * 1000; // 4 heures
+        const COOLDOWN_DISCOVERY = 4 * 60 * 60 * 1000;
         const INTERVALS = [
             4 * 60 * 60 * 1000,
             24 * 60 * 60 * 1000,
@@ -332,7 +404,6 @@
         const instruction = document.getElementById('card-instruction');
         const statusBadge = document.getElementById('status-badge');
 
-        // --- 1. INITIALISATION ---
         async function initApp() {
             try {
                 const response = await fetch('cards.json');
@@ -344,7 +415,6 @@
             }
         }
 
-        // --- 2. ANALYSE ET TRI ---
         function analyzeMemory() {
             const now = Date.now();
             pendingReviews = [];
@@ -364,7 +434,7 @@
                         pendingReviews.push(index);
                     }
                 } else {
-                    let category = card.category || "Sans Catégorie"; 
+                    let category = card.category || "Général"; 
                     if (!availableNewCardsByCategory[category]) {
                         availableNewCardsByCategory[category] = [];
                     }
@@ -375,37 +445,31 @@
             routeSession();
         }
 
-        // --- 3. AIGUILLAGE DE LA SESSION ---
         function routeSession() {
             clearInterval(countdownInterval); 
 
-            // PRIORITÉ 1 : Les révisions (Automatique et Inesquivable)
             if (pendingReviews.length > 0) {
                 currentMode = 'REVIEW';
                 currentCardIndex = pendingReviews[0];
                 statusBadge.innerText = `🔄 ${pendingReviews.length} Révision(s)`;
                 showQuiz();
             } 
-            // PRIORITÉ 2 : On affiche le tableau de bord (Hub)
             else {
                 currentMode = 'HUB';
                 showWaitScreen();
             }
         }
 
-        // --- 4. ACTION UTILISATEUR : LANCER DÉCOUVERTE ---
         function launchDiscoveryIfReady() {
             const discoveryBox = document.getElementById('discovery-box');
-            // On vérifie que la boîte a bien été rendue cliquable par l'algorithme
             if (discoveryBox.classList.contains('actionable')) {
                 clearInterval(countdownInterval);
                 currentMode = 'CHOOSE_CATEGORY';
-                statusBadge.innerText = `✨ Choix Découverte`;
+                statusBadge.innerText = `✨ Sélecteur`;
                 showCategorySelection();
             }
         }
 
-        // --- 5. ÉCRAN SÉLECTION DE CATÉGORIE ---
         function showCategorySelection() {
             hideAllViews();
             const listDiv = document.getElementById('category-list');
@@ -424,7 +488,7 @@
                 
                 const countSpan = document.createElement('span');
                 countSpan.className = 'category-count';
-                countSpan.innerText = `${count} carte(s)`;
+                countSpan.innerText = count;
                 
                 btn.appendChild(titleSpan);
                 btn.appendChild(countSpan);
@@ -441,7 +505,6 @@
             showDiscovery();
         }
 
-        // --- 6. MODE DÉCOUVERTE (Carte) ---
         function showDiscovery() {
             const card = deck[currentCardIndex];
             document.getElementById('card-front').innerText = card.front;
@@ -472,11 +535,9 @@
             }
             
             selectedCategory = null; 
-            // Retour automatique au tableau de bord pour évaluer la suite
             analyzeMemory();
         }
 
-        // --- 7. MODE RÉVISION (Quiz) ---
         function showQuiz() {
             const card = deck[currentCardIndex];
             document.getElementById('quiz-question').innerText = card.quizQ;
@@ -509,7 +570,6 @@
             }
 
             saveToMemory(currentCardIndex, currentLevel);
-            // Dès qu'on répond, on analyse la mémoire. S'il reste des quiz, l'appli les force.
             analyzeMemory();
         }
 
@@ -521,20 +581,19 @@
             localStorage.setItem('curio_memory', JSON.stringify(memoryData));
         }
 
-        // --- 8. ÉCRAN TABLEAU DE BORD (HUB) AVEC CHRONOS DYNAMIQUES ---
         function showWaitScreen() {
             hideAllViews();
             waitView.style.display = 'flex';
-            statusBadge.innerText = "Tableau de Bord";
+            statusBadge.innerText = "Accueil";
             updateTimersDisplay();
             countdownInterval = setInterval(updateTimersDisplay, 1000);
         }
 
         function updateTimersDisplay() {
             const now = Date.now();
-            let forceQuizInterrupt = false; // Le fameux déclencheur inesquivable
+            let forceQuizInterrupt = false; 
 
-            // --- CHRONO QUIZ ---
+            // CHRONO QUIZ
             let earliestReview = Infinity;
             for (let key in memoryData) {
                 let time = memoryData[key].nextReview;
@@ -547,34 +606,32 @@
             } else {
                 let diff = earliestReview - now;
                 if (diff <= 0) {
-                    // Si le chrono quiz tombe à zéro pendant qu'on regarde l'écran, on force l'interruption !
                     forceQuizInterrupt = true; 
                 } else {
                     reviewEl.innerText = formatTime(diff);
                 }
             }
 
-            // Exécution de l'interruption Quiz
             if (forceQuizInterrupt && currentMode === 'HUB') {
                 analyzeMemory(); 
-                return; // On arrête l'affichage du tableau de bord
+                return; 
             }
 
-            // --- CHRONO DÉCOUVERTE ---
+            // CHRONO DÉCOUVERTE
             let nextDiscovery = localStorage.getItem('curio_next_discovery');
             const discoveryEl = document.getElementById('discovery-countdown');
             const discoveryBox = document.getElementById('discovery-box');
             
             let isCooldownOver = (!nextDiscovery || sessionNewCardsCount < MAX_NEW_CARDS_PER_SESSION);
             if (!isCooldownOver && now >= parseInt(nextDiscovery)) {
-                isCooldownOver = true; // Le chrono vient de se terminer
+                isCooldownOver = true; 
             }
 
             if (isCooldownOver && Object.keys(availableNewCardsByCategory).length > 0) {
                 discoveryEl.innerText = "Prêt ! Cliquez ici ✨";
-                discoveryBox.classList.add('actionable'); // Rend la case cliquable visuellement et fonctionnellement
+                discoveryBox.classList.add('actionable'); 
             } else if (Object.keys(availableNewCardsByCategory).length === 0) {
-                discoveryEl.innerText = "Plus aucune carte neuve";
+                discoveryEl.innerText = "Plus de cartes neuves";
                 discoveryBox.classList.remove('actionable');
             } else {
                 let diff = parseInt(nextDiscovery) - now;
@@ -583,7 +640,6 @@
             }
         }
 
-        // Traduit les millisecondes en format lisible : 03h 14m 05s
         function formatTime(ms) {
             let totalSeconds = Math.floor(ms / 1000);
             let hours = Math.floor(totalSeconds / 3600);
