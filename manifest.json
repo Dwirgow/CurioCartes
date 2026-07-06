@@ -1,5 +1,5 @@
 {
-    "name": "CurioCartes Application",
+    "name": "CurioCartes",
     "short_name": "CurioCartes",
     "description": "Améliorez votre culture générale par micro-doses.",
     "start_url": "./index.html",
