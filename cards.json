@@ -700,5 +700,195 @@
         "quizQ": "Quelle force physique permet aux navires en acier de flotter ?",
         "quizOpts": ["La force centrifuge", "La poussée d'Archimède", "L'attraction magnétique"],
         "quizAns": 1
+    },
+	{
+        "front": "Comment les salles de sport low-cost gagnent-elles de l'argent avec un abonnement si peu cher ?",
+        "exp": "Elles misent sur la 'surréservation' (overbooking). Elles vendent beaucoup plus d'abonnements que la capacité maximale de la salle, sachant statistiquement qu'une grande majorité des inscrits (souvent plus de 60%) abandonneront après quelques semaines tout en continuant à payer leur prélèvement automatique.",
+        "ana": "C'est comme une compagnie aérienne qui vendrait 300 billets pour un avion de 150 places, en pariant fermement que la moitié des passagers auront la flemme de venir prendre leur vol le jour J.",
+        "fun": "Ces salles font souvent en sorte d'éviter de t'envoyer des emails promotionnels ou des rappels trop fréquents, pour ne pas 'réveiller' le payeur inactif qui pourrait se souvenir de se désabonner !",
+        "quizzes": [
+            {
+                "question": "Sur quel phénomène psychologique et statistique reposent ces salles ?",
+                "options": ["L'addiction au sport", "L'abandon rapide (le payeur inactif)", "L'achat compulsif d'équipements"],
+                "answer": 1
+            },
+            {
+                "question": "Comment appelle-t-on le fait de vendre plus de places que la capacité réelle ?",
+                "options": ["Le dumping", "Le sponsoring", "La surréservation (overbooking)"],
+                "answer": 2
+            }
+        ]
+    },
+    {
+        "front": "Comment fonctionne une plaque de cuisson à induction ?",
+        "exp": "Contrairement aux plaques électriques classiques qui chauffent une résistance rougeoyante, l'induction utilise un puissant électro-aimant situé sous une vitre. Le courant électrique crée un champ magnétique invisible. C'est le métal de ta casserole qui, en 'résistant' à ce champ magnétique (via des courants de Foucault), crée sa propre chaleur de l'intérieur.",
+        "ana": "C'est comme frotter tes mains très vite l'une contre l'autre pour te réchauffer en hiver : la plaque ne crée pas de chaleur directement, elle force les particules du métal de ta poêle à 'se frotter' pour s'échauffer elles-mêmes.",
+        "fun": "Si tu mets ta main à plat sur une plaque à induction allumée à pleine puissance (sans bague ni métal sur toi), tu ne sentiras aucune chaleur ! La plaque elle-même reste presque froide.",
+        "quizzes": [
+            {
+                "question": "Qu'est-ce qui chauffe réellement dans le système de l'induction ?",
+                "options": ["La vitre en verre", "L'air ambiant", "Le métal de la casserole elle-même"],
+                "answer": 2
+            },
+            {
+                "question": "Quelle force invisible est utilisée par la plaque ?",
+                "options": ["Le laser", "Le champ magnétique", "Les ondes micro-ondes"],
+                "answer": 1
+            },
+            {
+                "question": "Pourquoi une poêle en cuivre pur ne fonctionne-t-elle pas sur l'induction ?",
+                "options": ["Car le cuivre n'est pas réactif au champ magnétique", "Car elle fondrait", "Car elle est trop lourde"],
+                "answer": 0
+            }
+        ]
+    },
+    {
+        "front": "Comment un airbag de voiture se gonfle-t-il si vite lors d'un crash ?",
+        "exp": "Il ne se gonfle pas avec une bonbonne d'air comprimé (trop lente et encombrante), mais grâce à une réaction chimique explosive contrôlée. Un capteur de choc envoie un courant électrique qui enflamme une pastille chimique (comme l'azoture de sodium). Cette pastille solide se transforme instantanément en un volume gigantesque de gaz (de l'azote), gonflant le coussin en 30 millisecondes.",
+        "ana": "C'est comme le pop-corn : un tout petit grain dur (le produit chimique) qui, sous l'effet d'une décharge d'énergie, explose et prend 50 fois sa taille d'origine en une fraction de seconde.",
+        "fun": "L'airbag est percé de petits trous à l'arrière pour se dégonfler immédiatement après le choc, sinon le visage du conducteur rebondirait dessus avec une violence extrême, comme sur un ballon de gym !",
+        "quizzes": [
+            {
+                "question": "Qu'est-ce qui gonfle le coussin de l'airbag ?",
+                "options": ["Une pompe à air ultra-rapide", "L'air extérieur aspiré par une hélice", "Un gaz généré par une réaction chimique explosive"],
+                "answer": 2
+            },
+            {
+                "question": "Pourquoi l'airbag doit-il se dégonfler immédiatement après s'être déployé ?",
+                "options": ["Pour éviter un effet rebond violent du passager", "Pour être réutilisé plus tard", "Pour ne pas boucher la vue"],
+                "answer": 0
+            }
+        ]
+    },
+    {
+        "front": "Comment les salles de cinéma gagnent-elles vraiment de l'argent ?",
+        "exp": "La majorité du prix d'un ticket de cinéma est reversée aux créateurs (distributeurs, producteurs, taxes). Le cinéma ne garde qu'une très petite part du billet. Leur véritable marge bénéficiaire (qui monte souvent jusqu'à 80%) se fait sur la vente des confiseries : le pop-corn, les bonbons et les boissons.",
+        "ana": "C'est comme un bar qui offrirait l'entrée gratuite pour un super concert, sachant pertinemment que tu vas avoir soif et consommer des boissons très rentables à l'intérieur.",
+        "fun": "Le maïs à pop-corn est l'un des produits les plus rentables au monde pour un commerçant ! On vend à prix d'or un aliment qui est composé à 90% de simple air chaud emprisonné dans une graine éclatée.",
+        "quizzes": [
+            {
+                "question": "Quelle est la principale source de bénéfice pur d'un cinéma ?",
+                "options": ["La vente des tickets", "La confiserie (pop-corn, boissons)", "La publicité dans le hall"],
+                "answer": 1
+            },
+            {
+                "question": "À qui va la majorité du prix d'un ticket de cinéma ?",
+                "options": ["Aux employés de la salle", "À l'État uniquement", "Aux distributeurs et créateurs du film"],
+                "answer": 2
+            }
+        ]
+    },
+    {
+        "front": "Pourquoi les ascenseurs ne s'écrasent-ils pas au sol si le câble casse ?",
+        "exp": "Grâce au frein de sécurité (le parachute) inventé par Elisha Otis en 1852. Ce système n'est pas électrique, mais purement mécanique. Si le câble casse et que la cabine accélère en chute libre, des mâchoires en métal sont automatiquement poussées par la vitesse et viennent s'encastrer dans les rails de guidage pour bloquer la cabine instantanément.",
+        "ana": "C'est le principe de la ceinture de sécurité de ta voiture : tu peux tirer doucement dessus (montée/descente normale de l'ascenseur), mais si tu tires d'un coup sec (chute), elle se bloque mécaniquement.",
+        "fun": "Pour prouver l'efficacité de son invention au public terrifié, Elisha Otis est monté sur une plateforme en public et a ordonné à un assistant de couper l'unique corde à la hache au-dessus de sa tête !",
+        "quizzes": [
+            {
+                "question": "Le système de sécurité empêchant la chute d'un ascenseur est-il électrique ?",
+                "options": ["Oui, c'est un électro-aimant", "Non, c'est un système purement mécanique activé par la vitesse", "Il dépend de batteries de secours"],
+                "answer": 1
+            },
+            {
+                "question": "Que viennent mordre les mâchoires de sécurité en cas de chute ?",
+                "options": ["Le câble restant", "Le mur en béton", "Les rails de guidage de la cage d'ascenseur"],
+                "answer": 2
+            }
+        ]
+    },
+    {
+        "front": "Comment la fibre optique transporte-t-elle internet jusque chez toi ?",
+        "exp": "La fibre est un fil de verre ou de plastique extrêmement pur, plus fin qu'un cheveu. Au lieu d'utiliser de l'électricité comme les vieux câbles en cuivre, elle transporte des données sous forme d'impulsions lumineuses (des lasers clignotants). La lumière rebondit à l'intérieur du fil sans jamais s'échapper, transmettant des données à la vitesse de la lumière.",
+        "ana": "Imagine que tu sois en haut d'une montagne avec une lampe torche et que tu communiques en code morse avec un ami sur une autre montagne. La fibre, c'est une lampe torche ultra-rapide guidée dans un long tuyau fermé pour ne jamais perdre le signal en chemin.",
+        "fun": "La pureté du verre utilisé dans une fibre optique est telle que si l'océan était composé de ce verre, tu pourrais voir le fond à plusieurs kilomètres de profondeur avec une clarté parfaite !",
+        "quizzes": [
+            {
+                "question": "Quelle énergie la fibre optique utilise-t-elle pour transporter les données ?",
+                "options": ["Des ondes radio", "De l'électricité", "De la lumière (impulsions laser)"],
+                "answer": 2
+            },
+            {
+                "question": "Quel matériau compose principalement le fil interne de la fibre optique ?",
+                "options": ["Le cuivre", "Le verre ou plastique ultra-pur", "L'aluminium"],
+                "answer": 1
+            },
+            {
+                "question": "Pourquoi la fibre est-elle plus performante que le cuivre (ADSL) ?",
+                "options": ["La lumière voyage plus vite et sans interférence magnétique", "Les fils sont plus gros", "Elle chauffe l'air ambiant"],
+                "answer": 0
+            }
+        ]
+    },
+    {
+        "front": "Comment fonctionne le paiement 'Sans Contact' (NFC) de ta carte bancaire ?",
+        "exp": "Il utilise la technologie NFC (Near Field Communication). Ta carte possède une minuscule antenne radio enroulée à l'intérieur du plastique. Quand tu l'approches du terminal du commerçant, celui-ci émet un champ électromagnétique qui 'réveille' l'antenne et donne à la carte juste assez d'énergie électrique pour échanger des données cryptées.",
+        "ana": "C'est comme si ta carte avait un panneau solaire microscopique et que le terminal de paiement jouait le rôle du Soleil. Dès qu'elle s'approche de la 'lumière', ta carte s'allume une demi-seconde pour valider l'achat, sans avoir besoin de pile interne.",
+        "fun": "L'antenne radio fait tout le tour intérieur de ta carte bancaire ! Si tu perces un trou dans ta carte (pour la mettre sur un porte-clés par exemple) et que tu coupes ce fil invisible, le sans-contact meurt définitivement.",
+        "quizzes": [
+            {
+                "question": "D'où vient l'énergie électrique nécessaire pour faire fonctionner la puce lors d'un paiement sans contact ?",
+                "options": ["D'une mini-pile plate cachée dans la carte", "Du champ électromagnétique émis par le terminal de paiement", "De l'électricité statique du doigt"],
+                "answer": 1
+            },
+            {
+                "question": "Où se trouve l'antenne radio dans une carte bancaire ?",
+                "options": ["Uniquement dans la puce dorée", "Elle fait le tour du plastique à l'intérieur de la carte", "Dans la bande noire magnétique au dos"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Comment fonctionne un détecteur de fumée classique (optique) ?",
+        "exp": "À l'intérieur, il y a une petite 'chambre noire' avec une lampe (une LED infrarouge) qui projette un faisceau droit. Un capteur photosensible est placé sur le côté de ce rayon, dans l'ombre. Si de la fumée entre dans la chambre, les particules de cendres dévient le rayon lumineux. Le capteur est soudainement éclairé, ce qui déclenche l'alarme.",
+        "ana": "Imagine un couloir plongé dans le noir absolu avec un laser de sécurité qui tire tout droit. Tu ne vois rien. Mais si un cambrioleur jette une poignée de farine en l'air, tu verras soudainement le laser briller sur la poussière.",
+        "fun": "C'est pour cela qu'il ne faut pas installer de détecteur de fumée optique juste à la sortie d'une salle de bain : la vapeur d'eau épaisse d'une douche bien chaude peut dévier la lumière et déclencher une fausse alerte !",
+        "quizzes": [
+            {
+                "question": "Qu'est-ce qui déclenche réellement l'alarme dans le détecteur optique ?",
+                "options": ["La chaleur de l'air", "La lumière déviée par les particules de fumée qui frappe un capteur", "L'odeur de la cendre"],
+                "answer": 1
+            },
+            {
+                "question": "Pourquoi la vapeur d'eau peut-elle déclencher une fausse alarme ?",
+                "options": ["Parce que l'eau court-circuite la pile", "Parce que ses gouttelettes dévient aussi le rayon lumineux", "Parce que l'eau est chaude"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Comment la barrière de télépéage s'ouvre-t-elle sans que tu ne sortes d'argent ?",
+        "exp": "Le badge accroché à ton pare-brise utilise un transpondeur radio (souvent RFID ou micro-ondes). Quand ta voiture s'approche, l'antenne de la barrière de péage envoie une onde pour interroger le badge. Celui-ci répond instantanément en envoyant ton numéro client crypté. Le système vérifie en une fraction de seconde si ton compte est valide et lève la barrière.",
+        "ana": "C'est un dialogue invisible et ultra-rapide à distance : 'Hé, je suis le badge numéro 4567, vérifie mon accès !' / 'Identité confirmée, tu peux passer, on t'enverra la facture à la fin du mois.'",
+        "fun": "Le pare-brise des voitures modernes contient de minuscules fils métalliques pour isoler de la chaleur du soleil, ce qui bloque les ondes radio. La petite zone noire avec des pointillés autour de ton rétroviseur est exprès dépourvue de métal pour laisser 'respirer' le signal de ton badge !",
+        "quizzes": [
+            {
+                "question": "Quelle technologie permet la communication entre le badge et la barrière ?",
+                "options": ["Le Bluetooth", "Des ondes radio / RFID", "Un flash photographique"],
+                "answer": 1
+            },
+            {
+                "question": "Pourquoi faut-il placer le badge spécifiquement dans la zone pointillée du pare-brise ?",
+                "options": ["Pour faire joli", "Car c'est la seule zone sans film métallique bloquant les ondes radio", "Pour être à l'ombre du soleil"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Pourquoi y a-t-il un code de sécurité (CVV) de 3 chiffres au dos de ta carte bancaire ?",
+        "exp": "Le Card Verification Value (CVV) est une mesure vitale contre la fraude en ligne. Selon la loi internationale, les commerçants n'ont absolument pas le droit de stocker ou sauvegarder le CVV dans leurs bases de données après un achat. Ainsi, si un site web se fait pirater, les hackers peuvent voler les numéros de carte, mais pas le CVV, rendant la carte inutilisable pour d'autres achats sur le web.",
+        "ana": "Ton numéro de carte est l'adresse de ta maison (publique, connue de ton bureau de poste). Le CVV est la clé de la porte : tu l'utilises le jour de la transaction, mais le commerçant n'a pas le droit d'en faire un double pour la garder.",
+        "fun": "Certaines banques proposent désormais des cartes avec un mini-écran digital au dos à la place du code statique : le CVV change tout seul toutes les heures, rendant la carte littéralement inviolable si elle est piratée !",
+        "quizzes": [
+            {
+                "question": "Quelle est la règle d'or imposée aux commerçants concernant le CVV ?",
+                "options": ["Ils doivent l'imprimer sur la facture", "Ils n'ont pas le droit de le conserver dans leur base de données", "Ils doivent le donner à la police"],
+                "answer": 1
+            },
+            {
+                "question": "À quoi sert principalement ce code de 3 chiffres ?",
+                "options": ["À bloquer la carte au distributeur", "À prouver que la carte physique est bien entre tes mains lors d'un paiement en ligne", "À connaître le solde du compte"],
+                "answer": 1
+            }
+        ]
     }
 ]
