@@ -367,7 +367,9 @@
         let availableNewCards = []; 
         let currentCardIndex = null;
         let currentMode = ''; 
-        let countdownInterval = null; 
+        let countdownInterval = null;
+		let currentQuizzes = []; 
+        let currentSubQuizIndex = 0;
 
         const cardView = document.getElementById('card-view');
         const quizView = document.getElementById('quiz-view');
@@ -420,6 +422,21 @@
                 currentMode = 'REVIEW';
                 currentCardIndex = pendingReviews[0];
                 statusBadge.innerText = `🔄 ${pendingReviews.length} Révision(s)`;
+                
+                // NOUVEAU : Préparation des questions (Rétrocompatibilité)
+                const card = deck[currentCardIndex];
+                if (card.quizzes) {
+                    currentQuizzes = card.quizzes; // Nouveau format
+                } else {
+                    // Ancien format transformé temporairement en tableau
+                    currentQuizzes = [{
+                        question: card.quizQ,
+                        options: card.quizOpts,
+                        answer: card.quizAns
+                    }];
+                }
+                currentSubQuizIndex = 0; // On commence à la question 1
+                
                 showQuiz();
             } else {
                 currentMode = 'HUB';
@@ -471,16 +488,25 @@
         }
 
         function showQuiz() {
-            const card = deck[currentCardIndex];
-            document.getElementById('quiz-question').innerText = card.quizQ;
+            const quiz = currentQuizzes[currentSubQuizIndex];
+            
+            // Affichage du compteur si plusieurs questions
+            const headerText = document.querySelector('.quiz-header');
+            if (currentQuizzes.length > 1) {
+                headerText.innerText = `🧠 Mode Révision (${currentSubQuizIndex + 1}/${currentQuizzes.length})`;
+            } else {
+                headerText.innerText = `🧠 Mode Révision`;
+            }
+            
+            document.getElementById('quiz-question').innerText = quiz.question;
             const optionsDiv = document.getElementById('quiz-options');
             optionsDiv.innerHTML = '';
             
-            card.quizOpts.forEach((opt, index) => {
+            quiz.options.forEach((opt, index) => {
                 const btn = document.createElement('button');
                 btn.className = 'quiz-btn';
                 btn.innerText = opt;
-                btn.onclick = () => checkAnswer(index, card.quizAns);
+                btn.onclick = () => checkAnswer(index, quiz.answer);
                 optionsDiv.appendChild(btn);
             });
 
@@ -493,14 +519,25 @@
             let currentLevel = cardMemory.level;
 
             if (selectedIndex === correctIndex) {
-                alert("Bonne réponse ! 🎉");
-                currentLevel++;
-                if(currentLevel >= INTERVALS.length) currentLevel = INTERVALS.length - 1;
+                // Bonne réponse pour cette question
+                if (currentSubQuizIndex < currentQuizzes.length - 1) {
+                    // Il reste des questions sur cette carte, on passe à la suivante
+                    currentSubQuizIndex++;
+                    showQuiz();
+                    return; // On arrête la fonction ici, on ne sauvegarde pas encore
+                } else {
+                    // C'était la dernière question de la carte !
+                    alert("Parfait ! Tout est juste ! 🎉");
+                    currentLevel++;
+                    if(currentLevel >= INTERVALS.length) currentLevel = INTERVALS.length - 1;
+                }
             } else {
-                alert("Faux ! La réponse était : " + deck[currentCardIndex].quizOpts[correctIndex]);
+                // Mauvaise réponse ! (Pénalité immédiate)
+                alert("Faux ! La bonne réponse était : " + currentQuizzes[currentSubQuizIndex].options[correctIndex]);
                 currentLevel = 0;
             }
 
+            // On sauvegarde et on passe à la carte suivante
             saveToMemory(currentCardIndex, currentLevel);
             analyzeMemory();
         }
