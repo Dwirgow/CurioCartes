@@ -321,7 +321,8 @@
                         <div class="back-title">Le Fun Fact 🍿</div>
                         <div id="card-fun"></div>
                     </div>
-                    <button onclick="finishDiscovery(event)" style="margin-top: auto;">J'ai compris !</button>
+                    <button id="btn-finish-discovery" onclick="finishDiscovery(event)" style="margin-top: auto;">J'ai compris !</button>
+                    <button id="btn-close-library" onclick="showLibrary(event)" style="margin-top: auto; display: none; background: var(--text-muted);">Retour à la liste</button>
                 </div>
             </div>
         </div>
@@ -336,6 +337,7 @@
         <div class="wait-container" id="wait-view">
             <h3>Tableau de Bord ⚡</h3>
             <p style="color: var(--text-muted); font-size: 0.85rem;">Ta mémoire à court et long terme.</p>
+			<button onclick="showLibrary()" style="margin-bottom: 15px; background: var(--secondary);">📖 Ma Bibliothèque</button>
 			
 			<div class="deck-stats">
                 <div>Vues <span id="stat-seen">0</span></div>
@@ -370,6 +372,15 @@
                 <div class="discovery-title" id="discovery-title">✨ Nouvelles Cartes</div>
                 <div class="discovery-timer" id="discovery-countdown">--:--:--</div>
             </div>
+        </div>
+		
+		<div class="wait-container" id="library-view" style="display: none;">
+            <h3>Ma Bibliothèque 📚</h3>
+            <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 15px;">Toutes tes cartes découvertes.</p>
+            
+            <div id="library-list" style="display: flex; flex-direction: column; gap: 10px; max-height: 350px; overflow-y: auto; width: 100%;"></div>
+            
+            <button onclick="showWaitScreen()" style="margin-top: 20px; background: var(--text-muted);">Retour au Menu</button>
         </div>
 
     </div>
@@ -490,6 +501,8 @@
             document.getElementById('card-ana').innerText = card.ana;
             document.getElementById('card-fun').innerText = card.fun;
             document.getElementById('card-inner').closest('.flip-card').classList.remove('flipped');
+			document.getElementById('btn-finish-discovery').style.display = 'block';
+            document.getElementById('btn-close-library').style.display = 'none';
             
             hideAllViews();
             cardView.style.display = 'block';
@@ -690,12 +703,65 @@
             let seconds = totalSeconds % 60;
             return `${String(hours).padStart(2, '0')}h ${String(minutes).padStart(2, '0')}m ${String(seconds).padStart(2, '0')}s`;
         }
+		
+		function showLibrary(event) {
+            if (event) event.stopPropagation(); // Évite que le clic retourne la carte
+            currentMode = 'LIBRARY';
+            hideAllViews();
+            statusBadge.innerText = "Bibliothèque";
+            
+            const listDiv = document.getElementById('library-list');
+            listDiv.innerHTML = '';
+            
+            // Récupérer les index des cartes déjà vues
+            const seenIndices = Object.keys(memoryData).map(Number);
+            
+            if (seenIndices.length === 0) {
+                listDiv.innerHTML = '<p style="color: var(--text-muted); font-size: 0.9rem;">Tu n\'as encore découvert aucune carte.</p>';
+            } else {
+                seenIndices.forEach(index => {
+                    const btn = document.createElement('button');
+                    btn.className = 'quiz-btn'; // On réutilise ce style parfait pour des listes
+                    
+                    // On coupe le texte s'il est trop long pour le bouton
+                    let title = deck[index].front;
+                    if(title.length > 35) title = title.substring(0, 35) + '...';
+                    
+                    btn.innerText = title;
+                    btn.onclick = () => readLibraryCard(index);
+                    listDiv.appendChild(btn);
+                });
+            }
+            document.getElementById('library-view').style.display = 'flex';
+        }
+
+        function readLibraryCard(index) {
+            currentMode = 'LIBRARY_READ';
+            currentCardIndex = index;
+            const card = deck[index];
+            
+            document.getElementById('card-front').innerText = card.front;
+            document.getElementById('card-exp').innerText = card.exp;
+            document.getElementById('card-ana').innerText = card.ana;
+            document.getElementById('card-fun').innerText = card.fun;
+            document.getElementById('card-inner').closest('.flip-card').classList.remove('flipped');
+            
+            // On affiche le bouton "Retour à la liste" et on cache "J'ai compris !"
+            document.getElementById('btn-finish-discovery').style.display = 'none';
+            document.getElementById('btn-close-library').style.display = 'block';
+            
+            hideAllViews();
+            cardView.style.display = 'block';
+            instruction.style.display = 'block';
+        }
 
         function hideAllViews() {
             cardView.style.display = 'none';
             quizView.style.display = 'none';
             waitView.style.display = 'none';
             instruction.style.display = 'none';
+			const libView = document.getElementById('library-view');
+            if(libView) libView.style.display = 'none';
         }
 		
 		// --- ENREGISTREMENT DU SERVICE WORKER (PWA) ---
