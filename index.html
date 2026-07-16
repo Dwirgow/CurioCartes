@@ -198,7 +198,28 @@
             margin-top: 10px !important;
         }
         .quiz-btn:hover { border-color: var(--primary) !important; background: #F1F5F9 !important; }
-
+		.deck-stats {
+            display: flex;
+            justify-content: space-around;
+            background: #F8FAFC;
+            padding: 15px 10px;
+            border-radius: 16px;
+            margin-bottom: 20px;
+            font-size: 0.75rem;
+            font-weight: 800;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            border: 2px solid #F1F5F9;
+        }
+        .deck-stats div {
+            display: flex;
+            flex-direction: column;
+        }
+        .deck-stats span {
+            color: var(--primary);
+            font-size: 1.2rem;
+            margin-top: 4px;
+        }
         .level-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -315,6 +336,12 @@
         <div class="wait-container" id="wait-view">
             <h3>Tableau de Bord ⚡</h3>
             <p style="color: var(--text-muted); font-size: 0.85rem;">Ta mémoire à court et long terme.</p>
+			
+			<div class="deck-stats">
+                <div>Vues <span id="stat-seen">0</span></div>
+                <div>Restantes <span id="stat-new">0</span></div>
+                <div>Total <span id="stat-total">0</span></div>
+            </div>
             
             <div class="level-grid">
                 <div class="level-card">
@@ -561,6 +588,16 @@
         function updateTimersDisplay() {
             const now = Date.now();
             let forceQuizInterrupt = false; 
+			
+			if (deck.length > 0) {
+                const totalCards = deck.length;
+                const newCardsCount = availableNewCards.length;
+                const seenCardsCount = totalCards - newCardsCount;
+
+                document.getElementById('stat-seen').innerText = seenCardsCount;
+                document.getElementById('stat-new').innerText = newCardsCount;
+                document.getElementById('stat-total').innerText = totalCards;
+            }
 
             // --- STATISTIQUES DES NIVEAUX DE QUIZ ---
             let stats = {
