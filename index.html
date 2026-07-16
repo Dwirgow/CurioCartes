@@ -210,6 +210,27 @@
             color: var(--text-muted);
             text-transform: uppercase;
             border: 2px solid #F1F5F9;
+			
+		/* Animation de tremblement */
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            20%, 60% { transform: translateX(-6px); }
+            40%, 80% { transform: translateX(6px); }
+        }
+			
+		.quiz-btn.correct {
+            background: var(--secondary) !important; /* Vert */
+            color: white !important;
+            border-color: var(--secondary) !important;
+            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4) !important;
+			animation: shake 0.4s cubic-bezier(.36,.07,.19,.97);
+        }
+        .quiz-btn.wrong {
+            background: #EF4444 !important; /* Rouge */
+            color: white !important;
+            border-color: #EF4444 !important;
+            box-shadow: 0 4px 15px rgba(239, 68, 68, 0.4) !important;
+        }
         }
         .deck-stats div {
             display: flex;
@@ -546,7 +567,7 @@
                 const btn = document.createElement('button');
                 btn.className = 'quiz-btn';
                 btn.innerText = opt;
-                btn.onclick = () => checkAnswer(index, quiz.answer);
+                btn.onclick = () => checkAnswer(index, quiz.answer, btn);
                 optionsDiv.appendChild(btn);
             });
 
@@ -554,32 +575,44 @@
             quizView.style.display = 'flex';
         }
 
-        function checkAnswer(selectedIndex, correctIndex) {
+        function checkAnswer(selectedIndex, correctIndex, clickedBtn) {
+            // 1. On bloque tous les boutons pour éviter les doubles clics
+            const allBtns = document.querySelectorAll('.quiz-btn');
+            allBtns.forEach(btn => btn.style.pointerEvents = 'none');
+
             const cardMemory = memoryData[currentCardIndex];
             let currentLevel = cardMemory.level;
 
+            // 2. Logique visuelle selon la réponse
             if (selectedIndex === correctIndex) {
-                // Bonne réponse pour cette question
-                if (currentSubQuizIndex < currentQuizzes.length - 1) {
-                    // Il reste des questions sur cette carte, on passe à la suivante
-                    currentSubQuizIndex++;
-                    showQuiz();
-                    return; // On arrête la fonction ici, on ne sauvegarde pas encore
-                } else {
-                    // C'était la dernière question de la carte !
-                    alert("Parfait ! Tout est juste ! 🎉");
-                    currentLevel++;
-                    if(currentLevel >= INTERVALS.length) currentLevel = INTERVALS.length - 1;
-                }
-            } else {
-                // Mauvaise réponse ! (Pénalité immédiate)
-                alert("Faux ! La bonne réponse était : " + currentQuizzes[currentSubQuizIndex].options[correctIndex]);
-                currentLevel = 0;
-            }
+                // BONNE RÉPONSE : Le bouton devient vert
+                clickedBtn.classList.add('correct');
+                
+                // On attend 1 seconde avant de passer à la suite
+                setTimeout(() => {
+                    if (currentSubQuizIndex < currentQuizzes.length - 1) {
+                        currentSubQuizIndex++;
+                        showQuiz();
+                    } else {
+                        currentLevel++;
+                        if(currentLevel >= INTERVALS.length) currentLevel = INTERVALS.length - 1;
+                        saveToMemory(currentCardIndex, currentLevel);
+                        analyzeMemory();
+                    }
+                }, 1000);
 
-            // On sauvegarde et on passe à la carte suivante
-            saveToMemory(currentCardIndex, currentLevel);
-            analyzeMemory();
+            } else {
+                // MAUVAISE RÉPONSE : Le bouton devient rouge, et le bon devient vert
+                clickedBtn.classList.add('wrong');
+                allBtns[correctIndex].classList.add('correct');
+                
+                // On attend 2 secondes (pour te laisser lire la bonne réponse) avant de quitter
+                setTimeout(() => {
+                    currentLevel = 0;
+                    saveToMemory(currentCardIndex, currentLevel);
+                    analyzeMemory();
+                }, 2000);
+            }
         }
 
         function saveToMemory(index, level) {
