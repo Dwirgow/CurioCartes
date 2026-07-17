@@ -576,42 +576,44 @@
         }
 
         function checkAnswer(selectedIndex, correctIndex, clickedBtn) {
-            // 1. On bloque tous les boutons pour éviter les doubles clics
+            // On bloque les boutons pour éviter les doubles clics
             const allBtns = document.querySelectorAll('.quiz-btn');
             allBtns.forEach(btn => btn.style.pointerEvents = 'none');
 
             const cardMemory = memoryData[currentCardIndex];
             let currentLevel = cardMemory.level;
 
-            // 2. Logique visuelle selon la réponse
             if (selectedIndex === correctIndex) {
-                // BONNE RÉPONSE : Le bouton devient vert
+                // Le bouton devient vert
                 clickedBtn.classList.add('correct');
                 
-                // On attend 1 seconde avant de passer à la suite
+                // Micro-délai de 10ms (instantané) pour afficher la couleur avant le message
                 setTimeout(() => {
                     if (currentSubQuizIndex < currentQuizzes.length - 1) {
+                        alert("Bonne réponse ! 🎉 On passe à la suivante.");
                         currentSubQuizIndex++;
                         showQuiz();
                     } else {
+                        alert("Parfait ! Tout est juste ! 🎉");
                         currentLevel++;
                         if(currentLevel >= INTERVALS.length) currentLevel = INTERVALS.length - 1;
                         saveToMemory(currentCardIndex, currentLevel);
                         analyzeMemory();
                     }
-                }, 1000);
+                }, 10);
 
             } else {
-                // MAUVAISE RÉPONSE : Le bouton devient rouge, et le bon devient vert
+                // Le bouton devient rouge, la bonne réponse devient verte
                 clickedBtn.classList.add('wrong');
                 allBtns[correctIndex].classList.add('correct');
                 
-                // On attend 2 secondes (pour te laisser lire la bonne réponse) avant de quitter
+                // Micro-délai de 10ms (instantané) pour afficher les couleurs avant le message
                 setTimeout(() => {
+                    alert("Faux ! La bonne réponse était : " + currentQuizzes[currentSubQuizIndex].options[correctIndex]);
                     currentLevel = 0;
                     saveToMemory(currentCardIndex, currentLevel);
                     analyzeMemory();
-                }, 2000);
+                }, 10);
             }
         }
 
