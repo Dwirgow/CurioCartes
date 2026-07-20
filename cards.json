@@ -890,5 +890,775 @@
                 "answer": 1
             }
         ]
+    },
+	{
+        "front": "Comment le modèle économique des machines Nespresso ou des imprimantes fonctionne-t-il ?",
+        "exp": "C'est le modèle 'Rasoirs et Lames' (Razor and blades model). L'entreprise vend l'appareil principal (l'imprimante, la machine à café, le manche du rasoir) à perte ou sans aucune marge. Son véritable profit se fait sur la vente récurrente et indispensable des consommables (cartouches d'encre, capsules, lames) qui sont vendus avec une marge énorme.",
+        "ana": "C'est comme t'offrir une lampe de poche presque gratuitement, mais t'obliger à acheter leurs piles spécifiques très cher pour le reste de ta vie pour pouvoir l'utiliser.",
+        "fun": "L'encre d'imprimante officielle est l'un des liquides les plus chers au monde, coûtant souvent plus cher au litre que du parfum de luxe ou du sang humain !",
+        "quizzes": [
+            {
+                "question": "Sur quel produit l'entreprise fait-elle le plus de bénéfices dans ce modèle ?",
+                "options": ["L'appareil principal (l'imprimante)", "Les consommables (l'encre, les capsules)", "Les extensions de garantie"],
+                "answer": 1
+            },
+            {
+                "question": "Pourquoi l'appareil principal est-il souvent vendu à bas prix ?",
+                "options": ["Parce qu'il est de mauvaise qualité", "Pour forcer le client à entrer dans l'écosystème et acheter les recharges", "Parce que l'État subventionne l'électroménager"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Pourquoi le lait, les œufs et la viande sont-ils toujours tout au fond des supermarchés ?",
+        "exp": "C'est une stratégie d'aménagement pour maximiser tes achats. Les produits de première nécessité (ceux que tout le monde vient acheter) sont placés au fond pour t'obliger à traverser tous les autres rayons. En chemin, tu es exposé à des centaines de produits tentants, augmentant la probabilité d'achats impulsifs.",
+        "ana": "C'est comme cacher le trésor à la toute fin d'un parcours semé de pièges gourmands : tu viens pour une épée, tu repars avec trois potions et un bouclier dont tu n'avais pas besoin.",
+        "fun": "Les produits les plus rentables pour le magasin sont toujours placés à 'hauteur des yeux', tandis que les produits les moins chers sont tout en bas, t'obligeant à faire un effort physique pour les prendre.",
+        "quizzes": [
+            {
+                "question": "Quel est le but de placer les produits essentiels au fond du magasin ?",
+                "options": ["Les garder au frais près des frigos", "Forcer le client à traverser le magasin et provoquer des achats impulsifs", "Faciliter le travail des employés"],
+                "answer": 1
+            },
+            {
+                "question": "Où se trouvent généralement les produits avec la plus grande marge de profit ?",
+                "options": ["Tout en haut du rayon", "À hauteur des yeux", "Tout en bas du rayon"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Comment un Thermos (gourde isotherme) garde-t-il le café chaud pendant des heures ?",
+        "exp": "Il utilise une double paroi en acier ou en verre entre laquelle on a retiré presque tout l'air pour créer un vide. Sans matière (comme l'air) pour transporter la chaleur par conduction ou convection, la température ne peut pas s'échapper ni entrer. L'intérieur est aussi poli comme un miroir pour faire rebondir le rayonnement thermique vers le liquide.",
+        "ana": "C'est comme isoler une maison en retirant complètement l'air entre les murs extérieurs et intérieurs : sans pont physique pour traverser, le froid et le chaud restent bloqués chacun de leur côté.",
+        "fun": "Le thermos n'a pas été inventé pour le café ! Il a été créé en 1892 par le physicien James Dewar pour conserver des gaz liquides à des températures extrêmement froides dans son laboratoire.",
+        "quizzes": [
+            {
+                "question": "Qu'y a-t-il entre les deux parois d'un Thermos ?",
+                "options": ["Du coton isolant", "Du gaz carbonique", "Un vide (presque aucun air)"],
+                "answer": 2
+            },
+            {
+                "question": "Pourquoi le vide isole-t-il si bien la chaleur ?",
+                "options": ["Parce que la chaleur a besoin de matière pour se propager", "Parce que le vide est naturellement très froid", "Parce qu'il aspire la chaleur"],
+                "answer": 0
+            }
+        ]
+    },
+    {
+        "front": "Comment le micro de la borne du Drive d'un fast-food sait-il que ta voiture est arrivée ?",
+        "exp": "Il n'y a ni caméra magique ni balance de poids. Sous le bitume se cache une 'boucle à induction magnétique'. C'est un grand câble électrique enroulé qui crée un champ magnétique constant. Quand une grosse masse métallique (le châssis de ta voiture) passe au-dessus, elle perturbe ce champ, ce qui déclenche un 'bip' dans le casque de l'employé.",
+        "ana": "C'est comme un détecteur de métaux de plage géant, enterré dans le sol et réglé pour ne sonner que si un objet de la taille d'une tonne de fer passe dessus.",
+        "fun": "Si tu passes au Drive à vélo ou avec une moto très légère en fibre de carbone, la boucle magnétique ne te détectera probablement pas et tu devras crier pour qu'on te remarque !",
+        "quizzes": [
+            {
+                "question": "Quelle technologie détecte les voitures au Drive ?",
+                "options": ["Un laser infrarouge", "Une plaque qui pèse le poids", "Une boucle à induction magnétique sous le sol"],
+                "answer": 2
+            },
+            {
+                "question": "Qu'est-ce qui perturbe le système pour le déclencher ?",
+                "options": ["Le bruit du moteur", "La masse métallique de la voiture", "La chaleur des pneus"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Comment la chasse d'eau des toilettes évacue-t-elle tout d'un seul coup ?",
+        "exp": "Elle fonctionne grâce au principe physique du siphon. La cuvette possède un tuyau en forme de 'S' renversé. Quand tu tires la chasse, une grande quantité d'eau est relâchée d'un coup, remplissant complètement le coude du tuyau et chassant l'air. La gravité tire cette masse d'eau vers le bas, créant un vide aspirant qui vide toute la cuvette jusqu'à ce que de l'air rentre à nouveau.",
+        "ana": "C'est comme aspirer l'essence d'un réservoir avec un tuyau : une fois que le liquide a commencé à descendre, l'aspiration entraîne tout le reste avec lui sans avoir besoin de moteur.",
+        "fun": "Cette forme en 'S' est vitale pour une autre raison : elle retient un peu d'eau propre au fond en permanence pour créer un 'bouchon' naturel qui empêche les mauvaises odeurs des égouts de remonter !",
+        "quizzes": [
+            {
+                "question": "Quel principe physique permet l'évacuation massive des toilettes ?",
+                "options": ["La force centrifuge", "Le siphon", "La pression atmosphérique"],
+                "answer": 1
+            },
+            {
+                "question": "À quoi sert le bouchon d'eau qui reste toujours au fond de la cuvette ?",
+                "options": ["À bloquer les mauvaises odeurs des égouts", "À nettoyer la céramique", "À rafraîchir la pièce"],
+                "answer": 0
+            }
+        ]
+    },
+    {
+        "front": "Comment un réfrigérateur produit-il du froid ?",
+        "exp": "Il ne 'produit' pas de froid, il extrait la chaleur ! Un fluide réfrigérant circule dans des tuyaux. À l'intérieur du frigo, ce liquide s'évapore et absorbe la chaleur ambiante (et celle des aliments). Un compresseur pousse ensuite ce gaz chaud à l'extérieur (dans la grille noire derrière le frigo) où il est compressé et redevient liquide, rejetant toute la chaleur dans la pièce.",
+        "ana": "C'est comme une éponge géante qui absorberait l'eau (la chaleur) à l'intérieur, que l'on essorerait à l'extérieur pour la faire couler, puis qu'on remettrait à l'intérieur pour recommencer le cycle.",
+        "fun": "C'est pour cela que laisser la porte d'un frigo ouverte ne refroidira jamais ta cuisine : la chaleur extraite de l'intérieur est immédiatement rejetée à l'arrière du même appareil, la pièce va donc même se réchauffer !",
+        "quizzes": [
+            {
+                "question": "Que fait réellement le frigo pour refroidir les aliments ?",
+                "options": ["Il souffle du vent glacé", "Il extrait la chaleur de l'intérieur pour la rejeter à l'extérieur", "Il détruit les molécules chaudes"],
+                "answer": 1
+            },
+            {
+                "question": "À quoi sert la grille métallique chaude à l'arrière du frigo ?",
+                "options": ["À protéger le moteur", "À évacuer la chaleur absorbée à l'intérieur", "À décorer"],
+                "answer": 1
+            },
+            {
+                "question": "Peut-on refroidir une pièce en laissant le frigo ouvert ?",
+                "options": ["Oui, comme une climatisation", "Non, la pièce va même se réchauffer globalement", "Seulement s'il fait nuit"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Comment un distributeur automatique à l'école sait-il si tu mets une fausse pièce ?",
+        "exp": "La machine analyse la pièce pendant sa courte chute. Des diodes optiques (lasers) mesurent son diamètre exact et son épaisseur. Mais surtout, des électro-aimants testent sa 'signature électromagnétique', c'est-à-dire la composition exacte de son métal. Si un seul paramètre est faux, un petit clapet dévie instantanément la pièce vers le bac de rejet.",
+        "ana": "C'est comme un videur de boîte de nuit ultra-rapide qui vérifierait ta taille, ton poids et scannerait ton ADN pendant que tu glisses dans un toboggan.",
+        "fun": "Les pièces de 1 et 2 euros sont 'bimétalliques' (un centre en laiton et un anneau en cuivre/nickel) spécialement pour rendre leur signature électromagnétique extrêmement complexe à copier pour les faussaires.",
+        "quizzes": [
+            {
+                "question": "Quel est le test le plus complexe effectué par le distributeur ?",
+                "options": ["Peser la pièce", "Mesurer la couleur de la pièce", "Tester la signature électromagnétique du métal"],
+                "answer": 2
+            },
+            {
+                "question": "Pourquoi les pièces de 1 et 2 euros ont-elles deux couleurs de métal ?",
+                "options": ["Pour faire joli", "Pour être plus difficiles à falsifier face aux machines", "Pour coûter moins cher à fabriquer"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Qu'est-ce que le nettoyage 'à sec' au pressing ?",
+        "exp": "Le nettoyage à sec n'est pas du tout sec ! Les vêtements sont bien brassés dans un liquide à l'intérieur d'une grosse machine. Cependant, au lieu d'utiliser de l'eau (qui fait gonfler et abîme les fibres sensibles comme la laine), on utilise un solvant chimique liquide (souvent du perchloroéthylène). Ce produit dissout les graisses sans mouiller la fibre textile en profondeur.",
+        "ana": "C'est comme se laver les mains avec du gel hydroalcoolique plutôt qu'avec de l'eau : c'est mouillé, ça nettoie les impuretés, mais ça s'évapore instantanément sans détremper la peau.",
+        "fun": "Les solvants utilisés sont toxiques et chers. La machine de pressing fonctionne donc en circuit fermé : elle récupère le liquide sale, le filtre, le vaporise pour le purifier, et le réutilise à 99% pour le client suivant.",
+        "quizzes": [
+            {
+                "question": "Trempe-t-on les vêtements dans un liquide lors d'un nettoyage 'à sec' ?",
+                "options": ["Non, on utilise de l'air comprimé", "Oui, dans de l'eau bouillante", "Oui, dans un solvant chimique spécial sans eau"],
+                "answer": 2
+            },
+            {
+                "question": "Pourquoi ne pas utiliser de l'eau pour un manteau en laine ?",
+                "options": ["L'eau fait gonfler et déforme certaines fibres sensibles", "L'eau décolore toujours les manteaux", "Parce que l'eau coûte trop cher"],
+                "answer": 0
+            }
+        ]
+    },
+    {
+        "front": "Comment fonctionne un stylo-bille (Bic) ?",
+        "exp": "À la pointe du stylo se trouve une minuscule bille en acier dur (ou carbure de tungstène) emprisonnée dans une petite douille métallique, mais libre de rouler sur elle-même. Quand on écrit, la bille roule : la partie tournée vers l'intérieur se couvre d'une encre très épaisse stockée dans le tube, et en tournant, elle dépose cette encre directement sur le papier.",
+        "ana": "C'est exactement le même principe qu'un déodorant à bille (roll-on), mais fabriqué à une échelle microscopique !",
+        "fun": "Le stylo-bille a été inventé en 1938 par le journaliste hongrois László Bíró. Il s'était inspiré de l'encre des rotatives d'imprimerie, qui séchait très vite sans baver. En Angleterre, un stylo s'appelle d'ailleurs toujours un 'Biro'.",
+        "quizzes": [
+            {
+                "question": "Qu'est-ce qui retient l'encre à l'intérieur du stylo tout en lui permettant de sortir ?",
+                "options": ["Une petite éponge", "Une bille métallique qui tourne", "Un clapet en plastique"],
+                "answer": 1
+            },
+            {
+                "question": "À quel objet cosmétique peut-on comparer le stylo-bille ?",
+                "options": ["Un vaporisateur de parfum", "Un rouge à lèvres", "Un déodorant à bille"],
+                "answer": 2
+            }
+        ]
+    },
+    {
+        "front": "Qu'est-ce que le 'Dropshipping' sur les boutiques en ligne ?",
+        "exp": "C'est un modèle de vente où le marchand ne possède aucun stock. Le vendeur crée une belle boutique en ligne et dépense en publicité. Quand un client achète un produit (ex: 30€), le vendeur passe secrètement commande à un fournisseur (souvent en Asie, pour 5€) et lui donne l'adresse du client. Le fournisseur expédie directement l'objet, et le vendeur empoche la différence sans jamais avoir touché le produit.",
+        "ana": "C'est comme un rabatteur dans la rue qui te vend un menu très cher avec de belles photos, puis commande le plat au boui-boui caché d'à côté pour te le faire livrer à ta table.",
+        "fun": "C'est un modèle légal, mais souvent décrié car la qualité est parfois mauvaise, les délais de livraison très longs (car le colis vient de Chine), et le prix est gonflé artificiellement par le marketing.",
+        "quizzes": [
+            {
+                "question": "Quelle est la particularité du vendeur en Dropshipping ?",
+                "options": ["Il fabrique tout lui-même", "Il ne possède et ne touche jamais les produits qu'il vend", "Il ne vend que des produits numériques"],
+                "answer": 1
+            },
+            {
+                "question": "Qui se charge de l'expédition du colis ?",
+                "options": ["Le vendeur", "La poste locale", "Le fournisseur initial (souvent en Asie)"],
+                "answer": 2
+            },
+            {
+                "question": "Où se trouve la vraie valeur ajoutée (et le travail) du dropshipper ?",
+                "options": ["Dans la conception du produit", "Dans le marketing et la création de la vitrine en ligne", "Dans la gestion des entrepôts"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Comment fonctionnent les robinets automatiques sans contact ?",
+        "exp": "Ils utilisent un capteur infrarouge actif. Une diode sur le robinet émet en continu un faisceau de lumière infrarouge invisible. Quand tu places tes mains en dessous, cette lumière rebondit sur ta peau et retourne vers le capteur récepteur. L'ordinateur comprend qu'un obstacle est présent et ouvre une vanne électromagnétique pour laisser couler l'eau.",
+        "ana": "C'est comme jouer au ping-pong dans le noir total contre un mur : tant que la balle ne te revient pas, tu sais qu'il n'y a pas de mur devant toi. Si la balle rebondit, tu déclenches l'eau.",
+        "fun": "Si tes mains sont recouvertes d'une mousse de savon très foncée ou que tu portes des gants noirs, le robinet peut ne pas se déclencher, car la couleur noire absorbe la lumière au lieu de la réfléchir !",
+        "quizzes": [
+            {
+                "question": "Quelle technologie utilisent ces robinets sans contact ?",
+                "options": ["Un détecteur de chaleur corporelle", "Une caméra vidéo cachée", "Un capteur optique infrarouge"],
+                "answer": 2
+            },
+            {
+                "question": "Que doit faire le faisceau infrarouge pour déclencher l'eau ?",
+                "options": ["Rebondir sur les mains et revenir au capteur", "Traverser les mains", "Chauffer la peau"],
+                "answer": 0
+            }
+        ]
+    },
+    {
+        "front": "Comment fonctionne le mécanisme d'une fermeture éclair ?",
+        "exp": "Elle est composée de deux rangées de petites dents métalliques ou plastiques fixées en quinconce. Chaque dent a un crochet en haut et un creux en bas. Le 'curseur' (la pièce que l'on tire) possède des canaux internes en forme de 'Y'. En montant, ce canal force les dents des deux côtés à s'emboîter parfaitement. En descendant, un séparateur interne écarte les dents pour les décrocher.",
+        "ana": "C'est comme deux files de voitures sur l'autoroute qui s'insèrent parfaitement l'une après l'autre (en quinconce) lors d'un rétrécissement de voie, formant une seule ligne ininterrompue.",
+        "fun": "Le nom officiel n'est pas 'fermeture éclair'. Éclair était en réalité une marque déposée en France dans les années 1920 (comme Frigo ou Sopalin). Le vrai terme mécanique est 'fermeture à glissière' !",
+        "quizzes": [
+            {
+                "question": "Quelle est la forme du canal à l'intérieur du curseur de la fermeture ?",
+                "options": ["En forme de 'O'", "En forme de 'Y'", "En forme de 'Z'"],
+                "answer": 1
+            },
+            {
+                "question": "Quel est le vrai nom générique d'une fermeture éclair ?",
+                "options": ["Une fermeture à glissière", "Une fermeture rapide", "Un accroche-dents"],
+                "answer": 0
+            }
+        ]
+    },
+    {
+        "front": "Comment Spotify ou Apple Music répartissent-ils l'argent aux artistes ?",
+        "exp": "Contrairement à la croyance, ils n'utilisent pas un paiement 'à l'écoute' (Centric). Ils utilisent le modèle 'Pro-rata' (ou Market Centric). L'entreprise met l'argent de tous les abonnements du mois dans un immense pot commun mondial. Si le rappeur Drake représente 2% de TOUTES les écoutes de la plateforme ce mois-là, il reçoit 2% du pot commun d'argent, peu importe qui a payé.",
+        "ana": "Si tu paies 10€ par mois, et que tu n'écoutes que de petits groupes indépendants locaux, ton argent ne va pas à eux ! Tes 10€ vont dans le pot global, et ce sont les immenses stars planétaires qui prendront la grande majorité de tes 10€.",
+        "fun": "Ce système avantage tellement les superstars que certains fans organisés créent des 'fermes à streams' : des ordinateurs qui lisent la même chanson en boucle 24h/24 sans le son, juste pour gonfler le pourcentage de leur artiste !",
+        "quizzes": [
+            {
+                "question": "Comment s'appelle le modèle économique de répartition de Spotify ?",
+                "options": ["Le paiement direct (User Centric)", "Le pot commun (Pro-rata)", "Le paiement au clic"],
+                "answer": 1
+            },
+            {
+                "question": "Où va l'argent de ton abonnement si tu n'écoutes que des petits artistes ?",
+                "options": ["À ces petits artistes", "Directement dans la poche des patrons", "Majoritairement aux plus grandes stars de la plateforme"],
+                "answer": 2
+            }
+        ]
+    },
+    {
+        "front": "Comment les toilettes d'un avion fonctionnent-elles à 10 000 mètres d'altitude ?",
+        "exp": "Pour économiser du poids, l'avion n'utilise presque pas d'eau. Il utilise un système d'aspiration sous vide. En appuyant sur le bouton, une valve s'ouvre, connectant la cuvette à un immense réservoir de déchets situé à l'arrière de l'avion. La forte différence de pression entre l'air de la cabine et le réservoir aspire tout le contenu à plus de 200 km/h, avec ce fameux bruit fracassant.",
+        "ana": "C'est l'équivalent d'un aspirateur géant ultra-puissant branché sur le tuyau. L'eau bleue ne sert qu'à rincer les parois, c'est l'air qui fait tout le travail de déplacement des matières.",
+        "fun": "Contrairement à un mythe persistant, les avions de ligne ne larguent jamais, au grand jamais, les déchets en plein vol ! Tout est gardé dans le réservoir et vidé par un camion-citerne une fois l'avion posé.",
+        "quizzes": [
+            {
+                "question": "Qu'est-ce qui tire les déchets dans le fond des toilettes de l'avion ?",
+                "options": ["L'attraction terrestre", "L'aspiration créée par une différence de pression d'air", "Des litres d'eau sous pression"],
+                "answer": 1
+            },
+            {
+                "question": "Où finissent les déchets pendant le vol ?",
+                "options": ["Ils sont largués discrètement", "Ils sont brûlés dans les moteurs", "Dans un grand réservoir fermé à l'arrière de l'avion"],
+                "answer": 2
+            }
+        ]
+    },
+    {
+        "front": "Pourquoi la rampe noire (la main courante) des escalators va-t-elle souvent plus vite que les marches ?",
+        "exp": "Ce n'est pas un défaut de réglage, c'est une mesure de sécurité volontaire. Si la rampe allait un peu plus lentement que les marches, ton bras serait doucement tiré vers l'arrière, ce qui risquerait de te déséquilibrer et te faire tomber à la renverse (chute très dangereuse). En la faisant aller 2% plus vite, ton corps est très légèrement tiré vers l'avant, une posture beaucoup plus facile à corriger.",
+        "ana": "C'est comme promener un gros chien : il vaut mieux que la laisse tire un peu vers l'avant (tu contrôles et t'adaptes) plutôt que d'être tiré par surprise vers l'arrière (tu tombes sur le dos).",
+        "fun": "Les rainures métalliques sur les marches ne sont pas là pour le style : elles s'emboîtent parfaitement avec les 'peignes' jaunes aux extrémités pour empêcher les lacets ou les vêtements longs d'être avalés par le mécanisme !",
+        "quizzes": [
+            {
+                "question": "Pourquoi la main courante avance-t-elle un peu plus vite que l'escalator ?",
+                "options": ["À cause de l'usure du moteur", "Pour éviter que le passager ne bascule dangereusement en arrière", "Pour inciter les gens à marcher"],
+                "answer": 1
+            },
+            {
+                "question": "À quoi servent les rainures sur les marches métalliques ?",
+                "options": ["À bloquer les lacets via les peignes aux extrémités", "À évacuer la pluie", "À empêcher de glisser avec des chaussures lisses"],
+                "answer": 0
+            }
+        ]
+    },
+    {
+        "front": "Comment fonctionne une serrure classique avec sa clé ?",
+        "exp": "La plupart utilisent le système du 'barillet à goupilles'. À l'intérieur de la serrure, de petits pistons métalliques (les goupilles) coupés en deux sont poussés par des ressorts et bloquent la rotation du cylindre. Quand on insère la bonne clé, les crans de la clé soulèvent chaque piston exactement à la bonne hauteur pour aligner la coupure. Le cylindre est alors libre et peut tourner.",
+        "ana": "Imagine 5 portes avec des fentes pour les lettres à des hauteurs différentes. Ta clé est une longue planche taillée sur mesure pour glisser parfaitement à travers les 5 fentes en même temps.",
+        "fun": "Le crochetage de serrure (le lockpicking des films) est un principe très simple : on utilise un outil pour pousser et coincer ces petites goupilles à la bonne hauteur une par une, sans avoir besoin de la clé globale !",
+        "quizzes": [
+            {
+                "question": "Qu'est-ce qui bloque le cylindre d'une serrure quand il n'y a pas de clé ?",
+                "options": ["Un cadenas externe", "De petits pistons à ressorts appelés goupilles", "Un champ magnétique"],
+                "answer": 1
+            },
+            {
+                "question": "Que font les crans (les dents) de la clé ?",
+                "options": ["Ils scient le métal", "Ils soulèvent les goupilles exactement à la bonne hauteur", "Ils font un code secret"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Comment les banques financent-elles les programmes de Cashback et de Points Fidélité de leurs cartes ?",
+        "exp": "Ce n'est pas de l'argent magique. À chaque fois que tu utilises ta carte de crédit, le commerçant paie des 'frais d'interchange' à ta banque (souvent 1% à 3% du montant total). La banque récupère cette taxe invisible et t'en reverse une petite partie sous forme de cashback pour t'encourager à utiliser ta carte le plus possible, plutôt que des espèces.",
+        "ana": "C'est un système d'apporteur d'affaires. La banque te dit : 'Pour chaque achat que tu m'amènes chez ce vendeur, je lui prends ma commission et je t'en donne un petit bout pour te remercier de ta fidélité.'",
+        "fun": "En réalité, le commerçant augmente légèrement tous ses prix de vente pour couvrir ces frais bancaires. Ironiquement, les clients qui paient en espèces paient donc plus cher pour financer les récompenses des clients qui paient en carte !",
+        "quizzes": [
+            {
+                "question": "D'où vient l'argent du Cashback remboursé par ta banque ?",
+                "options": ["Des impôts de l'État", "Des frais cachés prélevés au commerçant à chaque transaction", "D'un cadeau du directeur de la banque"],
+                "answer": 1
+            },
+            {
+                "question": "Quel est l'objectif de la banque en offrant des points de fidélité ?",
+                "options": ["Aider les pauvres", "T'inciter à utiliser la carte au maximum plutôt que les espèces", "Te faire acheter moins"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Pourquoi les ondes du four à micro-ondes ne traversent-elles pas la vitre de la porte ?",
+        "exp": "Si tu regardes de près la vitre de ton micro-ondes, tu verras une fine grille métallique perforée. Les ondes utilisées pour chauffer la nourriture mesurent environ 12 centimètres de large. Les trous de la grille font quelques millimètres. Les ondes sont donc trop 'grosses' pour passer à travers les trous et rebondissent. C'est une cage de Faraday.",
+        "ana": "C'est comme essayer de faire passer un ballon de basket à travers les mailles serrées d'un filet de tennis. Le ballon (les micro-ondes) reste coincé, mais les grains de sable (la lumière visible qui te permet de voir ton plat) passent facilement au travers.",
+        "fun": "Si ton téléphone portable perd son réseau ou son Wi-Fi quand tu le mets dans un micro-ondes FERMÉ (éteint, bien sûr !), cela prouve que la cage métallique de la porte fonctionne parfaitement pour bloquer les ondes externes !",
+        "quizzes": [
+            {
+                "question": "Qu'est-ce qui bloque les micro-ondes sur la porte du four ?",
+                "options": ["Un verre blindé épais", "Une fine grille métallique perforée (cage de Faraday)", "Un champ de force invisible"],
+                "answer": 1
+            },
+            {
+                "question": "Pourquoi la lumière peut-elle traverser cette grille, mais pas les micro-ondes ?",
+                "options": ["Parce que la lumière est plus petite que les trous, alors que les ondes sont trop grandes", "Parce que la lumière est plus chaude", "Parce que la grille est transparente"],
+                "answer": 0
+            }
+        ]
+    },
+    {
+        "front": "Comment fonctionnent les murs anti-bruit installés au bord des autoroutes ?",
+        "exp": "Ils utilisent deux principes : l'absorption et la réflexion. Au lieu d'être un mur lisse en béton (qui ferait juste rebondir le bruit bruyamment), ces murs ont souvent des trous, des rainures ou sont composés de matériaux poreux comme la fibre de bois. Les ondes sonores entrent dans ces cavités, frottent contre le matériau, et se transforment en une minuscule chaleur, étouffant le son.",
+        "ana": "C'est la différence auditive entre taper fort dans les mains dans un parking souterrain vide (l'écho rebondit) et le faire dans une pièce remplie de gros matelas en mousse épaisse (le son est absorbé immédiatement).",
+        "fun": "Ces murs ne suppriment jamais totalement le bruit ! Les ondes sonores très basses (les vibrations lourdes des poids lourds) ont tendance à 'passer par-dessus' le mur en se courbant, un phénomène physique appelé la diffraction.",
+        "quizzes": [
+            {
+                "question": "Pourquoi les murs anti-bruit ne sont-ils pas lisses ?",
+                "options": ["Pour faire des économies de béton", "Pour absorber les ondes sonores dans les cavités", "Pour laisser passer l'air"],
+                "answer": 1
+            },
+            {
+                "question": "En quoi se transforme l'onde sonore lorsqu'elle est absorbée par le mur ?",
+                "options": ["En eau", "En lumière", "En chaleur (friction microscopique)"],
+                "answer": 2
+            }
+        ]
+    },
+    {
+        "front": "Comment la caisse en bois d'une guitare acoustique amplifie-t-elle le son ?",
+        "exp": "Si tu tends une corde de guitare en l'air sans rien d'autre et que tu la grattes, elle ne fait presque aucun bruit car elle est trop fine pour déplacer l'air. Sur une guitare, la vibration de la corde est transmise au bois via la fixation (le chevalet). La grande face avant en bois (la table d'harmonie) se met à vibrer. Étant très large, elle pousse beaucoup plus d'air, amplifiant l'onde qui s'échappe par le trou central.",
+        "ana": "C'est le même principe qu'un haut-parleur d'enceinte : la corde est le moteur électrique, et la grande plaque de bois est la membrane en carton qui pulse pour projeter fort l'onde sonore vers toi.",
+        "fun": "C'est pour cette raison que les guitares électriques n'ont pas besoin de trou ni de caisse vide ! Elles utilisent des aimants (les micros) pour capter magnétiquement les vibrations du métal des cordes et les envoyer dans un fil électrique.",
+        "quizzes": [
+            {
+                "question": "Que se passe-t-il si l'on gratte une corde de guitare tendue sans caisse de résonance ?",
+                "options": ["Le son est très fort et strident", "Le son est presque inaudible car la corde est trop fine pour pousser l'air", "La corde casse immédiatement"],
+                "answer": 1
+            },
+            {
+                "question": "Quelle partie de la guitare acoustique pousse vraiment l'air pour créer le volume fort ?",
+                "options": ["Le manche de la guitare", "La large face avant en bois (table d'harmonie)", "Les mécaniques d'accordage"],
+                "answer": 1
+            }
+        ]
+    },
+	{
+        "front": "Comment l'écran d'une liseuse électronique (comme le Kindle) fonctionne-t-il ?",
+        "exp": "C'est la technologie de l'encre électronique (E-ink). L'écran est composé de millions de micro-capsules contenant des particules noires chargées négativement et des particules blanches chargées positivement. En appliquant un courant électrique très bref sous une capsule, on fait remonter l'encre noire ou blanche à la surface pour former le texte.",
+        "ana": "C'est comme une ardoise magique : on utilise des aimants pour attirer de la poudre noire à la surface afin de dessiner, et le dessin reste là tout seul.",
+        "fun": "L'écran ne consomme de l'électricité que lorsque tu tournes la page ! Une fois l'encre placée, elle reste fixée physiquement. C'est pour cela qu'une liseuse peut rester allumée sur la même page pendant des mois sans vider la batterie.",
+        "quizzes": [
+            {
+                "question": "De quoi est composé l'écran d'une liseuse ?",
+                "options": ["De micro-capsules contenant des particules d'encre physiques chargées électriquement", "D'une grille de LED ultra-fines", "D'un liquide phosphorescent"],
+                "answer": 0
+            },
+            {
+                "question": "À quel moment précis une liseuse consomme-t-elle de la batterie pour son écran ?",
+                "options": ["En permanence tant qu'elle est allumée", "Quand elle capte le Wi-Fi", "Uniquement au moment où l'on change de page"],
+                "answer": 2
+            }
+        ]
+    },
+    {
+        "front": "Comment ton téléphone connaît-il ta position exacte même quand le GPS est désactivé ?",
+        "exp": "Il utilise la 'triangulation Wi-Fi'. Google et Apple possèdent une immense base de données qui répertorie la position GPS exacte de presque toutes les box Wi-Fi du monde. Ton téléphone scanne les réseaux Wi-Fi autour de lui (même s'il n'y est pas connecté) et mesure la force de leur signal. En croisant la position connue de 3 box autour de toi, il déduit ta position au mètre près.",
+        "ana": "Imagine que tu es dans le brouillard. Si tu entends le clocher de 3 églises différentes dont tu connais l'emplacement, et que tu mesures à quel point chaque cloche sonne fort, tu peux dessiner une carte pour deviner où tu te tiens.",
+        "fun": "Ces bases de données géantes ont été construites à l'origine par les voitures 'Google Street View' qui, en plus de prendre des photos, enregistraient le nom de toutes les box Wi-Fi des maisons devant lesquelles elles passaient !",
+        "quizzes": [
+            {
+                "question": "Outre le GPS, qu'utilise principalement le téléphone pour te localiser en ville ?",
+                "options": ["Le champ magnétique de la Terre", "Les rayons du Soleil", "Les réseaux Wi-Fi environnants"],
+                "answer": 2
+            },
+            {
+                "question": "Le téléphone a-t-il besoin d'être connecté à une box Wi-Fi pour s'en servir de repère ?",
+                "options": ["Seulement si le Bluetooth est allumé", "Non, il a juste besoin de capter l'existence du signal", "Oui, avec le mot de passe"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Comment le modèle des buffets 'À volonté' permet-il aux restaurants de faire du profit ?",
+        "exp": "Le modèle repose sur le contrôle psychologique des portions et les aliments 'remplisseurs' (fillers). Le restaurant te fournit souvent de petites assiettes. De plus, les aliments riches en glucides (riz, frites, pain), qui sont très peu chers, sont placés en premier sur le buffet et dans de grands bacs. Les viandes chères sont coupées en petits morceaux, servies dans des plats étroits, ou nécessitent l'intervention d'un cuisinier pour ralentir la consommation.",
+        "ana": "C'est comme un magicien qui te fait un tour de passe-passe : il te donne l'illusion de l'abondance tout en saturant ton estomac avec de l'eau et de la mie de pain avant que tu n'arrives au caviar.",
+        "fun": "Les buffets économisent aussi énormément sur les salaires ! Puisque tu te sers toi-même, le restaurant n'a presque pas besoin d'employer de serveurs en salle.",
+        "quizzes": [
+            {
+                "question": "Quelle astuce matérielle les buffets utilisent-ils souvent ?",
+                "options": ["Pas de couverts", "Des assiettes plus petites que la norme", "Des tables très basses"],
+                "answer": 1
+            },
+            {
+                "question": "Où sont généralement placés les aliments les moins chers (comme le riz ou les frites) ?",
+                "options": ["Au tout début du parcours du buffet", "Cachés en cuisine", "Tout à la fin du buffet"],
+                "answer": 0
+            },
+            {
+                "question": "Sur quel poste de dépense majeur un restaurant à volonté économise-t-il le plus ?",
+                "options": ["La facture d'eau", "La publicité", "Les salaires des serveurs"],
+                "answer": 2
+            }
+        ]
+    },
+    {
+        "front": "Comment une poêle en Téflon (antiadhésive) empêche-t-elle les aliments de coller ?",
+        "exp": "Le Téflon (PTFE) est un plastique composé de chaînes de carbone entourées d'atomes de fluor. Cette structure chimique crée un véritable 'bouclier' qui repousse absolument toutes les autres molécules (l'eau comme le gras). Les atomes de fluor refusent de se lier avec la nourriture, ce qui empêche toute adhérence lors de la cuisson.",
+        "ana": "C'est l'équivalent microscopique d'une foule où chaque personne porterait un costume recouvert de piques repoussant les autres : impossible de s'y accrocher.",
+        "fun": "Si le Téflon repousse tout, comment le fait-on coller à la poêle en métal à l'usine ? On doit sabler la poêle pour la rendre rugueuse comme du papier de verre, puis on 'cuit' le Téflon sous une pression extrême pour qu'il s'encastre mécaniquement dans les rayures du métal !",
+        "quizzes": [
+            {
+                "question": "Que font les atomes de fluor du Téflon face à la nourriture ?",
+                "options": ["Ils l'absorbent", "Ils la cuisent plus vite", "Ils refusent de s'y lier chimiquement"],
+                "answer": 2
+            },
+            {
+                "question": "Le Téflon repousse-t-il l'eau ou la graisse ?",
+                "options": ["Seulement l'eau", "Seulement la graisse", "Les deux (hydrophobe et lipophobe)"],
+                "answer": 2
+            },
+            {
+                "question": "Comment le Téflon adhère-t-il à la poêle en usine ?",
+                "options": ["Par un encastrement mécanique dans un métal rendu très rugueux", "Grâce à une colle super-forte", "Parce que c'est de l'acier aimanté"],
+                "answer": 0
+            }
+        ]
+    },
+    {
+        "front": "Pourquoi y a-t-il toujours un tout petit trou en bas des hublots d'avion ?",
+        "exp": "À 10 000 mètres d'altitude, la pression de l'air extérieur est très faible, tandis que la cabine est pressurisée. Le hublot est en fait composé de trois vitres. La vitre extérieure subit toute la pression. Ce petit trou (le 'breather hole') est percé dans la vitre du milieu pour permettre à la pression de s'équilibrer entre les vitres et pour évacuer l'humidité afin d'éviter la buée ou le givre.",
+        "ana": "C'est comme la valve d'une cocotte-minute, mais inversée : cela permet de relâcher doucement la tension pour qu'une seule paroi solide encaisse l'effort sans que la vitre intérieure ne se brise sous l'écart de pression.",
+        "fun": "La vitre intérieure (celle que tu touches) n'est même pas indispensable à la structure de l'avion : elle est juste là pour t'empêcher de gratter et d'abîmer la vraie vitre pressurisée du milieu !",
+        "quizzes": [
+            {
+                "question": "Combien de vitres superposées composent généralement un hublot d'avion de ligne ?",
+                "options": ["Une seule très épaisse", "Trois", "Cinq"],
+                "answer": 1
+            },
+            {
+                "question": "Quel est le but principal de ce petit trou de respiration ?",
+                "options": ["Équilibrer la pression d'air et empêcher le givre/buée", "Laisser entrer de l'oxygène", "Faire passer le son"],
+                "answer": 0
+            }
+        ]
+    },
+    {
+        "front": "Comment le modèle des jeux vidéo gratuits 'Gacha' (ou Loot Boxes) fait-il des milliards ?",
+        "exp": "Ces jeux (souvent gratuits sur mobile) utilisent le principe de la 'loterie'. Pour obtenir le personnage que tu veux, tu dois acheter des coffres virtuels dont le contenu est aléatoire. Le modèle repose sur la 'loi de Pareto' poussée à l'extrême : 95% des joueurs ne paient rien, mais le jeu est financé par 1% de joueurs appelés 'les Baleines' (Whales), qui dépensent des milliers d'euros par mois par addiction ou passion.",
+        "ana": "C'est le même principe neurologique que les machines à sous au casino : le cerveau libère de la dopamine face à l'incertitude du gain, te poussant à rejouer jusqu'à obtenir le gros lot.",
+        "fun": "Pour contourner les lois sur les jeux d'argent, certains jeux ont été obligés d'afficher publiquement les pourcentages de chance (les taux de 'drop'), qui sont parfois inférieurs à 0,5% pour le meilleur objet !",
+        "quizzes": [
+            {
+                "question": "Comment appelle-t-on le très petit pourcentage de joueurs qui dépensent des fortunes sur ces jeux gratuits ?",
+                "options": ["Les Baleines (Whales)", "Les Trésoriers", "Les Pigeons"],
+                "answer": 0
+            },
+            {
+                "question": "Sur quel biais psychologique les Loot Boxes se basent-elles ?",
+                "options": ["Le besoin de compétition", "Le circuit de la récompense et de la loterie (dopamine)", "La peur de rater quelque chose"],
+                "answer": 1
+            },
+            {
+                "question": "Une très grande majorité des joueurs de ces jeux paient-ils pour jouer ?",
+                "options": ["Oui, environ 80%", "Non, ce sont des abonnements d'État", "Non, la vaste majorité joue de manière 100% gratuite"],
+                "answer": 2
+            }
+        ]
+    },
+    {
+        "front": "Comment fonctionne une montre à Quartz ?",
+        "exp": "À l'intérieur, il y a un minuscule morceau de cristal de quartz taillé en forme de diapason. Le quartz possède une propriété magique appelée 'piézoélectricité' : quand la petite pile lui envoie un léger choc électrique, le quartz se met à vibrer très exactement 32 768 fois par seconde. Une puce compte ces vibrations et fait avancer l'aiguille des secondes chaque fois qu'elle atteint ce chiffre précis.",
+        "ana": "C'est comme un musicien qui utiliserait un métronome parfait : la pile donne l'énergie pour balancer le métronome, et un ordinateur compte les 'tic-tac' pour dire à l'horloge d'avancer d'une seconde.",
+        "fun": "L'effet inverse est aussi vrai (piézoélectricité) : si tu écrases ou frappes très fort un cristal de quartz, il produira de l'électricité ! C'est ce principe qui crée l'étincelle dans les briquets 'à clic' (briquets électroniques).",
+        "quizzes": [
+            {
+                "question": "Que se passe-t-il quand on envoie de l'électricité dans un cristal de quartz ?",
+                "options": ["Il chauffe", "Il change de couleur", "Il vibre à une fréquence ultra-précise"],
+                "answer": 2
+            },
+            {
+                "question": "Combien de fois le quartz d'une montre vibre-t-il pour faire exactement 1 seconde ?",
+                "options": ["10 fois", "32 768 fois", "1 million de fois"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Pourquoi les paquets de chips sont-ils toujours à moitié remplis de vide ?",
+        "exp": "Ce n'est pas pour arnaquer le client. L'air à l'intérieur n'est d'ailleurs pas de l'air normal, mais du gaz d'azote pur (nitrogen). L'azote ne réagit pas chimiquement avec la nourriture, ce qui empêche l'huile des chips de s'oxyder (devenir rance) et de ramollir. De plus, ce 'coussin d'air' gonflé empêche les chips délicates d'être écrasées en miettes pendant le transport en camion.",
+        "ana": "Le gaz remplit deux fonctions : il sert à la fois d'airbag de sécurité pour le transport, et de bouclier anti-vieillissement de l'intérieur.",
+        "fun": "Si on mettait de l'oxygène (l'air normal qu'on respire) dans le paquet, tes chips deviendraient complètement molles et immangeables en moins d'une semaine !",
+        "quizzes": [
+            {
+                "question": "Quel gaz remplit l'espace vide des paquets de chips ?",
+                "options": ["De l'hydrogène", "De l'oxygène", "De l'azote pur (nitrogen)"],
+                "answer": 2
+            },
+            {
+                "question": "Quel est le but mécanique de ce vide rempli de gaz ?",
+                "options": ["Faire office de coussin 'airbag' pour éviter les miettes pendant le transport", "Rendre le paquet plus lourd", "Éviter que le plastique ne fonde"],
+                "answer": 0
+            },
+            {
+                "question": "Pourquoi n'utilise-t-on pas l'air ambiant normal ?",
+                "options": ["Il coûte plus cher à injecter", "L'oxygène ferait vieillir et ramollir l'huile des chips", "Il ferait exploser le paquet"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Comment fonctionne l'effet spécial du 'Fond Vert' (Chroma Key) au cinéma ?",
+        "exp": "Le logiciel de montage de l'ordinateur est paramétré pour isoler une teinte de couleur très spécifique et la rendre transparente (couche alpha). On choisit généralement un vert vif ou un bleu électrique vif, car ce sont les couleurs les plus éloignées de la pigmentation de la peau humaine. Ainsi, on peut effacer tout le décor sans risquer d'effacer le visage de l'acteur.",
+        "ana": "C'est comme jouer avec un livre de coloriage magique : tu dis à l'ordinateur 'transforme tout ce qui est colorié avec ce feutre vert fluo en du verre transparent', te permettant de glisser un dessin spatial juste derrière la feuille.",
+        "fun": "Si un acteur porte une cravate verte identique au fond, l'ordinateur effacera sa cravate ! Dans le film final, on verra alors un trou dans son torse affichant le décor de l'espace derrière lui.",
+        "quizzes": [
+            {
+                "question": "Que fait l'ordinateur lors de l'application de l'effet Chroma Key ?",
+                "options": ["Il dessine par-dessus les acteurs", "Il sélectionne une couleur spécifique et la rend 100% transparente", "Il ajuste la luminosité de la pièce"],
+                "answer": 1
+            },
+            {
+                "question": "Pourquoi a-t-on historiquement choisi le vert vif (ou le bleu) ?",
+                "options": ["Parce que la peinture verte est moins chère", "C'est la couleur qui reflète le plus de lumière", "Car c'est la couleur la plus éloignée de la teinte de la peau humaine"],
+                "answer": 2
+            }
+        ]
+    },
+    {
+        "front": "Comment fonctionne un extincteur classique (Triangle du feu) ?",
+        "exp": "Pour qu'un feu brûle, il a obligatoirement besoin de 3 éléments réunis (le triangle du feu) : de la chaleur, un combustible (le bois, l'essence) et de l'oxygène. Un extincteur a pour but de supprimer l'un de ces trois piliers. Par exemple, l'extincteur à poudre projette un nuage chimique qui se dépose sur les flammes et crée une croûte étouffante, coupant instantanément le contact avec l'oxygène de l'air.",
+        "ana": "Le feu est un tabouret à trois pieds. Si tu casses un seul pied (l'oxygène, la chaleur, ou le combustible), le tabouret s'effondre et le feu s'éteint.",
+        "fun": "L'eau n'éteint pas le feu en l'étouffant, mais en cassant le pied 'chaleur' : l'eau absorbe énormément d'énergie thermique pour s'évaporer, ce qui refroidit violemment le combustible jusqu'à ce qu'il ne puisse plus brûler.",
+        "quizzes": [
+            {
+                "question": "Quel élément fait partie du 'Triangle du feu' (les 3 conditions pour qu'un feu existe) ?",
+                "options": ["L'oxygène", "L'azote", "La lumière"],
+                "answer": 0
+            },
+            {
+                "question": "Comment un extincteur à poudre chimique éteint-il le feu ?",
+                "options": ["En refroidissant la pièce avec du givre", "En créant une croûte qui empêche l'oxygène de toucher le feu", "En aspirant la fumée"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Qu'est-ce que la stratégie commerciale du 'Produit d'appel' (Loss Leader) ?",
+        "exp": "C'est un produit vendu par un magasin à un prix tellement bas qu'il ne fait aucun bénéfice dessus, voire qu'il perd de l'argent. Le but est d'attirer les clients à l'intérieur de la boutique. Une fois le client sur place pour acheter ce produit 'cadeau', il est presque certain qu'il achètera d'autres articles très rentables pour le magasin (des sodas, des accessoires, etc.).",
+        "ana": "C'est l'appât sur la ligne de pêche : le ver de terre coûte un peu d'argent au pêcheur, mais il est sacrifié avec plaisir s'il permet de remonter un gros poisson juteux.",
+        "fun": "L'un des exemples les plus célèbres au monde est le hot-dog de chez Costco, dont le prix (1,50$ avec boisson) n'a jamais augmenté depuis 1985, ou encore les poulets rôtis à prix cassés au fond des supermarchés !",
+        "quizzes": [
+            {
+                "question": "Le magasin gagne-t-il de l'argent directement sur la vente du produit d'appel ?",
+                "options": ["Toujours une très grosse marge", "Seulement le week-end", "Non, la marge est quasi nulle ou à perte"],
+                "answer": 2
+            },
+            {
+                "question": "Quel est le but réel de cette stratégie ?",
+                "options": ["Attirer le client dans le magasin pour lui vendre d'autres produits rentables", "Faire faillite légalement", "Vider les vieux stocks périmés"],
+                "answer": 0
+            },
+            {
+                "question": "Dans quel secteur voit-on le plus souvent des produits d'appel très connus (comme le poulet rôti) ?",
+                "options": ["Dans l'aéronautique", "Dans les grands supermarchés", "Chez les bijoutiers de luxe"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Pourquoi faut-il mettre du sel spécial dans son lave-vaisselle ?",
+        "exp": "L'eau du robinet contient souvent du calcaire (elle est 'dure'). Le calcaire laisse des traces blanches sur les verres et détruit les résistances chauffantes. Le lave-vaisselle contient une 'résine échangeuse d'ions', sorte de filtre magique qui attrape le calcaire. Le sel pour lave-vaisselle ne va jamais sur ta vaisselle : il est utilisé par la machine pour laver et 'recharger' ce filtre en sodium après chaque cycle.",
+        "ana": "La résine est un piège à souris, le calcaire est la souris, et le sel est l'employé de nettoyage qui vient vider le piège et le remettre à neuf pour le lendemain.",
+        "fun": "Si on te sert un verre d'eau au restaurant et qu'il est parfaitement sans trace, c'est grâce à ce gros sel (chlorure de sodium pur) caché dans la machinerie des cuisines !",
+        "quizzes": [
+            {
+                "question": "Le sel pour lave-vaisselle est-il pulvérisé sur tes assiettes pour les laver ?",
+                "options": ["Oui, avec le liquide de rinçage", "Non, il sert uniquement à nettoyer le filtre anti-calcaire de la machine", "Seulement lors du séchage"],
+                "answer": 1
+            },
+            {
+                "question": "Que se passe-t-il si l'eau d'une maison est trop 'dure' ?",
+                "options": ["L'eau est gelée", "L'eau est gazeuse", "L'eau contient trop de calcaire qui laissera des traces blanches"],
+                "answer": 2
+            }
+        ]
+    },
+    {
+        "front": "Comment fonctionne le tissu Gore-Tex, imperméable mais 'respirant' ?",
+        "exp": "Le secret du Gore-Tex est une fine membrane en téflon étiré, coincée entre deux couches de tissu. Cette membrane est remplie de milliards de pores microscopiques. Ces trous sont 20 000 fois plus petits qu'une goutte d'eau de pluie, donc l'eau externe ne peut pas rentrer. Mais ces mêmes trous sont 700 fois plus grands qu'une molécule de vapeur d'eau : la transpiration de ton corps sous forme de gaz peut donc facilement s'échapper.",
+        "ana": "Imagine une grille de passoire à travers laquelle tu veux faire passer des cailloux (les grosses gouttes de pluie) et de la fumée (la vapeur de transpiration). La fumée passe, les cailloux sont bloqués.",
+        "fun": "Le Gore-Tex a été inventé par erreur en 1969 lorsque Bob Gore a tiré d'un coup sec (par frustration) sur une barre de Téflon chauffée, au lieu de l'étirer doucement, créant ainsi cette structure microporeuse unique !",
+        "quizzes": [
+            {
+                "question": "Pourquoi la goutte d'eau de pluie ne peut-elle pas traverser la veste ?",
+                "options": ["Parce que les trous de la membrane sont beaucoup trop petits pour elle", "Parce que le tissu est recouvert de cire épaisse", "Grâce à une charge électrique"],
+                "answer": 0
+            },
+            {
+                "question": "Sous quelle forme la transpiration parvient-elle à s'échapper du tissu ?",
+                "options": ["Sous forme de sueur liquide", "Sous forme de glace", "Sous forme de vapeur d'eau (gaz)"],
+                "answer": 2
+            },
+            {
+                "question": "Quel est le nom de la matière plastique microporeuse utilisée ?",
+                "options": ["Le latex", "Le Téflon étiré", "Le coton naturel"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Qu'est-ce que l'Obsolescence Programmée (et le cartel de Phoebus) ?",
+        "exp": "L'obsolescence programmée est une stratégie industrielle visant à réduire artificiellement la durée de vie d'un produit pour forcer le consommateur à le racheter. Le premier cas historiquement documenté est le Cartel de Phoebus en 1924. Les plus grands fabricants d'ampoules du monde se sont réunis secrètement pour interdire à leurs ingénieurs de créer des ampoules durant plus de 1000 heures, alors qu'ils maîtrisaient déjà la technologie pour qu'elles durent 2500 heures.",
+        "ana": "C'est comme un boulanger qui mettrait secrètement un produit chimique dans ton pain pour qu'il moisisse en 12h, te forçant à revenir dans sa boutique tous les jours.",
+        "fun": "Il existe une ampoule installée dans une caserne de pompiers à Livermore en Californie qui brille sans interruption (ou presque) depuis 1901 ! Preuve qu'on savait fabriquer des ampoules inusables bien avant la création du cartel.",
+        "quizzes": [
+            {
+                "question": "Quel était le produit concerné par le célèbre Cartel de Phoebus en 1924 ?",
+                "options": ["Les voitures", "Les ampoules électriques", "Les machines à laver"],
+                "answer": 1
+            },
+            {
+                "question": "Quel est l'objectif commercial de l'obsolescence programmée ?",
+                "options": ["Forcer le rachat régulier en diminuant la durée de vie du produit", "Créer des emplois d'ingénieurs", "Améliorer la qualité des matériaux"],
+                "answer": 0
+            }
+        ]
+    },
+    {
+        "front": "Comment fonctionne le Pot Catalytique sous ta voiture ?",
+        "exp": "Situé dans la ligne d'échappement, il sert à dépolluer les gaz toxiques sortant du moteur. À l'intérieur se trouve un filtre en nid d'abeille recouvert de métaux très précieux (platine, palladium, rhodium). À très haute température, ces métaux agissent comme des 'catalyseurs' (accélérateurs chimiques) : ils cassent les gaz mortels (comme le monoxyde de carbone) et les recombinent instantanément en gaz moins nocifs (comme le CO2 ou la vapeur d'eau).",
+        "ana": "C'est la douane chimique de la voiture : la fumée empoisonnée entre dans un tunnel en nid d'abeille, se fait désarmer par des métaux précieux, et ressort beaucoup moins dangereuse pour l'air de la ville.",
+        "fun": "À cause des métaux précieux rares qu'ils contiennent, les vols de pots catalytiques à la scie circulaire sont devenus un véritable fléau pour les voitures garées dans la rue !",
+        "quizzes": [
+            {
+                "question": "Où se trouve un pot catalytique ?",
+                "options": ["Dans le réservoir d'essence", "Sous le volant", "Dans la ligne du pot d'échappement"],
+                "answer": 2
+            },
+            {
+                "question": "Pourquoi les pots catalytiques sont-ils souvent volés ?",
+                "options": ["Parce que leur nid d'abeille contient des métaux très précieux (platine, palladium)", "Parce qu'ils contiennent de l'essence pure", "Parce qu'ils font un joli bruit"],
+                "answer": 0
+            },
+            {
+                "question": "Que fait le pot catalytique aux gaz d'échappement ?",
+                "options": ["Il les stocke pour toujours", "Il les transforme chimiquement en gaz moins toxiques avant de les relâcher", "Il les transforme en électricité"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Comment fonctionne le système reCAPTCHA (Je ne suis pas un robot) ?",
+        "exp": "Lorsque Google te demande de prouver que tu es humain en cliquant sur des 'feux de circulation' ou en déchiffrant un texte flou, tu travailles en réalité gratuitement pour eux. Au début, ce système servait à numériser d'anciens livres : on te montrait des mots que les scanners d'ordinateur n'arrivaient pas à lire. Aujourd'hui, en sélectionnant des passages piétons ou des bus, tu aides à entraîner les Intelligences Artificielles des voitures autonomes à reconnaître les éléments de la route.",
+        "ana": "C'est comme le professeur qui donne les copies de ses élèves à corriger aux autres élèves pour gagner du temps : l'intelligence collective humaine est utilisée pour instruire la machine.",
+        "fun": "Si Google a un doute, le logiciel ne regarde pas que tes clics : il analyse le micro-mouvement et la trajectoire organique de ta souris avant que tu ne cliques sur la case, car un robot déplace sa souris de façon beaucoup trop droite et mathématique !",
+        "quizzes": [
+            {
+                "question": "Qu'entraînes-tu lorsque tu cliques sur des images de routes ou de feux rouges dans un Captcha ?",
+                "options": ["Un système de gestion des péages", "L'Intelligence Artificielle de conduite autonome (Google Waymo)", "Le GPS des satellites"],
+                "answer": 1
+            },
+            {
+                "question": "Quelle donnée invisible le système analyse-t-il souvent pour s'assurer que tu n'es pas un robot ?",
+                "options": ["Le temps de réponse de ton clavier", "L'historique de tes achats en ligne", "Les trajectoires 'imparfaites' et organiques de ta souris"],
+                "answer": 2
+            }
+        ]
+    },
+    {
+        "front": "Comment fonctionne la crème solaire pour te protéger des coups de soleil ?",
+        "exp": "Il existe deux grands types de filtres. Les 'filtres chimiques' pénètrent dans la peau et agissent comme des éponges : ils absorbent l'énergie mortelle des rayons UV et la transforment en une très légère chaleur inoffensive. Les 'filtres minéraux' (comme l'oxyde de zinc) restent à la surface de la peau comme des milliers de minuscules miroirs et réfléchissent physiquement les rayons UV loin de ton corps.",
+        "ana": "Le filtre chimique, c'est comme mettre un coussin pour absorber le choc d'une balle. Le filtre minéral, c'est porter un bouclier en acier pour faire rebondir la balle ailleurs.",
+        "fun": "Les crèmes solaires à filtres minéraux (souvent utilisées pour les enfants) sont celles qui laissent une trace très blanche et tenace sur la peau, justement parce qu'elles déposent une vraie barrière physique 'miroir' sur l'épiderme.",
+        "quizzes": [
+            {
+                "question": "Comment agit un filtre solaire chimique ?",
+                "options": ["Il absorbe l'énergie des UV et la dissipe en chaleur", "Il fait bronzer plus vite", "Il gèle la peau"],
+                "answer": 0
+            },
+            {
+                "question": "Comment agit un filtre solaire minéral (physique) ?",
+                "options": ["Il hydrate la peau en profondeur", "Il réfléchit les rayons UV comme un miroir microscopique", "Il crée des ombres chinoises"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Comment fonctionne la batterie de ton téléphone (Lithium-ion) ?",
+        "exp": "La batterie est divisée en deux côtés séparés par un filtre : l'anode (négative) et la cathode (positive). Au milieu, il y a un liquide chimique. Quand tu utilises ton téléphone, des particules de Lithium veulent absolument voyager du côté négatif vers le côté positif. Mais comme le filtre les empêche de passer en ligne droite, leurs électrons sont obligés de faire un détour par le circuit de ton téléphone, créant le courant électrique qui allume l'écran.",
+        "ana": "Imagine deux bassins d'eau de hauteurs différentes. L'eau veut descendre vers le bassin du bas. Au lieu de la laisser couler librement, on l'oblige à passer dans un tuyau qui fait tourner un moulin (ton téléphone) au passage.",
+        "fun": "Quand tu branches ton téléphone, le courant de la prise électrique agit comme une grosse pompe : il force brutalement les particules de Lithium à refaire le chemin inverse vers le côté négatif, rechargeant le bassin du haut.",
+        "quizzes": [
+            {
+                "question": "Pourquoi les électrons traversent-ils les composants du téléphone pour créer du courant ?",
+                "options": ["Parce qu'ils sont attirés par les ondes", "Parce que l'écran aspire l'électricité", "Parce qu'ils sont obligés de faire un détour pour rejoindre la borne positive"],
+                "answer": 2
+            },
+            {
+                "question": "Que se passe-t-il physiquement quand tu branches ton téléphone au chargeur ?",
+                "options": ["L'électricité force les particules à revenir à leur point de départ négatif", "Le téléphone fabrique de nouvelles particules", "L'écran devient fluorescent"],
+                "answer": 0
+            }
+        ]
+    },
+    {
+        "front": "Comment fonctionne une machine à coudre moderne ?",
+        "exp": "Contrairement à la couture à la main qui utilise un seul fil, la machine en utilise deux ! Il y a le fil supérieur (guidé par l'aiguille qui descend) et le fil inférieur (caché sous le tissu dans la canette). L'aiguille pousse le fil supérieur à travers le tissu pour former une boucle. En dessous, un crochet rotatif attrape cette boucle et la fait passer autour de la bobine du fil inférieur. Les deux fils se nouent et l'aiguille remonte, bloquant le point dans l'épaisseur du tissu.",
+        "ana": "C'est comme deux personnes, l'une au-dessus et l'autre en dessous d'un tapis. Celle du haut passe une corde par un trou, celle du bas passe un bâton dans la boucle et tire, coinçant la corde.",
+        "fun": "L'invention de l'aiguille de machine à coudre a été une révolution contre-intuitive : on a dû placer le trou de l'aiguille (le chas) au niveau de la pointe pour piquer, alors que depuis des millénaires il était placé en haut !",
+        "quizzes": [
+            {
+                "question": "Combien de fils utilise le mécanisme central d'une machine à coudre classique ?",
+                "options": ["Trois", "Deux (un en haut, un en bas)", "Un seul très épais"],
+                "answer": 1
+            },
+            {
+                "question": "Quelle est la particularité révolutionnaire de l'aiguille de machine à coudre ?",
+                "options": ["Le trou pour le fil (le chas) se trouve à la pointe", "Elle est en plastique souple", "Elle est chauffante"],
+                "answer": 0
+            },
+            {
+                "question": "Où se trouve la bobine de fil inférieur ?",
+                "options": ["Au-dessus de la machine", "À côté de la pédale", "Cachée sous la plaque métallique (dans la canette)"],
+                "answer": 2
+            }
+        ]
+    },
+    {
+        "front": "Comment fonctionnent les lunettes 3D au cinéma aujourd'hui ?",
+        "exp": "Le cinéma n'utilise plus les vieilles lunettes avec un verre rouge et un bleu. Aujourd'hui, il utilise la 'polarisation circulaire'. Le projecteur diffuse en réalité deux films différents sur l'écran en même temps : l'un avec des ondes lumineuses qui tournent dans le sens des aiguilles d'une montre, et l'autre dans le sens inverse. Ton verre gauche ne laisse passer que la lumière qui tourne à gauche, et le verre droit celle qui tourne à droite.",
+        "ana": "C'est comme si le projecteur lançait à la fois des vis et des écrous vers toi. Ton œil gauche porte un filtre qui ne laisse entrer que les vis, ton œil droit ne laisse entrer que les écrous. Ton cerveau assemble les deux pour recréer la profondeur.",
+        "fun": "Grâce à cette technologie circulaire, tu peux même pencher la tête sur le côté pendant le film : l'effet 3D continuera de fonctionner parfaitement, ce qui n'était pas possible avec les anciens systèmes !",
+        "quizzes": [
+            {
+                "question": "Combien d'images le projecteur diffuse-t-il simultanément sur l'écran pour créer la 3D ?",
+                "options": ["Une image floue", "Trois images de couleurs primaires", "Deux images différentes superposées"],
+                "answer": 2
+            },
+            {
+                "question": "Comment chaque œil de la lunette filtre-t-il la bonne image ?",
+                "options": ["Par détection de chaleur", "Grâce à la polarisation directionnelle de la lumière (horaire/anti-horaire)", "Avec un mini-ordinateur caché dans la branche"],
+                "answer": 1
+            }
+        ]
     }
 ]
