@@ -1660,5 +1660,23 @@
                 "answer": 1
             }
         ]
-    }
+    },
+	{
+		"front": "Le Wood Wide Web (L'Internet de la forêt)",
+		"exp": "Les arbres d'une forêt ne grandissent pas de manière isolée. Ils sont connectés par un immense réseau souterrain de champignons (le mycélium) qui fusionne avec leurs racines. À travers ce réseau symbiotique appelé mycorhize, les arbres échangent des ressources vitales (ils troquent les sucres de leur photosynthèse contre l'eau et les minéraux du champignon) et se transmettent des signaux d'alerte chimiques en cas de danger.",
+		"ana": "C'est exactement comme notre réseau Internet domestique : les minuscules filaments fongiques sont les câbles de fibre optique enfouis sous terre, et les arbres sont les ordinateurs connectés au réseau. Ils utilisent cette infrastructure pour faire des transferts de fichiers (partage de nutriments) ou envoyer des e-mails d'urgence à leurs voisins ("Alerte : invasion d'insectes dans mon secteur !").",
+		"fun": "Lorsqu'un grand arbre mature (souvent appelé "arbre mère") est sur le point de mourir, il ne s'éteint pas égoïstement. Il vide ses ultimes réserves de carbone et de nutriments directement dans le réseau fongique, léguant ainsi son "héritage" pour nourrir et soutenir la croissance des jeunes pousses environnantes.",
+		"quizzes": [
+			{
+				"question": "Quelle est la nature exacte de la symbiose métabolique qui s'opère entre les racines de l'arbre et le réseau fongique ?"
+				"options": ["Le champignon synthétise des sucres complexes grâce à l'humidité du sol et les échange contre les minéraux filtrés par la sève de l'arbre, "L'arbre fournit les sucres issus de la photosynthèse au champignon, qui lui apporte en retour l'eau et les minéraux profonds inaccessibles aux simples racines.", "Le champignon agit comme un canal inerte, transférant l'eau de la nappe phréatique vers l'arbre en échange d'un espace sécurisé pour se reproduire.],
+				"answer": 1
+			},
+			{
+				"question": "Quel mécanisme précis est enclenché via le réseau mycorhizien lorsqu'un arbre subit une attaque de parasites (comme des insectes ravageurs) ?",
+				"options": ["L'arbre attaqué envoie des signaux chimiques de stress à travers le mycélium, incitant les arbres voisins connectés à amorcer la production de toxines défensives avant même l'arrivée des insectes.", "Le réseau fongique libère des enzymes toxiques qui empoisonnent la terre autour des racines de l'arbre attaqué, bloquant ainsi la progression des parasites vers le reste de la forêt.", "Les arbres voisins utilisent le réseau pour drainer la sève de l'arbre infecté, ce qui l'assèche volontairement pour priver les parasites de leur source de nourriture."],
+				"answer": 0
+			}
+		]
+	}
 ]
