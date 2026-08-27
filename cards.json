@@ -1678,5 +1678,213 @@
 				"answer": 0
 			}
 		]
-	}
+	},
+	{
+        "front": "Comment fonctionne la technologie CRISPR-Cas9 (les ciseaux génétiques) ?",
+        "exp": "CRISPR-Cas9 est un système de défense immunitaire naturel des bactéries que les scientifiques ont adapté pour modifier l'ADN avec une précision inédite. Le système utilise un brin d'ARN guide (ARNg) programmé pour cibler une séquence génétique très spécifique dans le génome. Une fois la cible trouvée et appariée, l'enzyme Cas9 agit comme une endonucléase : elle coupe les deux brins de la double hélice d'ADN à cet endroit précis. La cellule tente ensuite de réparer cette cassure d'urgence. Les chercheurs profitent de ce processus de réparation cellulaire (mécanismes NHEJ ou HDR) pour insérer, modifier ou désactiver un gène spécifique.",
+        "ana": "Imagine un traitement de texte ultra-rapide. L'ARN guide est la fonction 'Recherche' (Ctrl+F) qui scanne le document pour trouver un mot exact, et l'enzyme Cas9 est le curseur qui 'Supprime' (Backspace) le mot, te laissant un espace vide pour taper une nouvelle phrase à la place.",
+        "fun": "À l'origine, les bactéries utilisaient ce système depuis des milliards d'années pour conserver des 'photographies' génétiques des virus qui les attaquaient, afin de pouvoir les reconnaître et les détruire instantanément s'ils revenaient !",
+        "quizzes": [
+            {
+                "question": "Quel est le rôle biologique précis de l'enzyme Cas9 dans le complexe CRISPR ?",
+                "options": [
+                    "Elle synthétise un nouveau brin d'ARN pour remplacer le brin d'ADN défectueux.",
+                    "Elle agit comme une endonucléase en clivant (coupant) les deux brins de l'ADN cible.",
+                    "Elle sert de guide moléculaire exclusif pour repérer la séquence virale dans le noyau cellulaire."
+                ],
+                "answer": 1
+            },
+            {
+                "question": "Que se passe-t-il immédiatement après que le complexe CRISPR-Cas9 a effectué sa coupe dans l'ADN ?",
+                "options": [
+                    "La cellule s'autodétruit instantanément par un processus appelé apoptose.",
+                    "Le complexe enzymatique fusionne de l'ADN synthétique externe par magnétisme.",
+                    "La cellule déclenche d'urgence ses propres mécanismes naturels de réparation de l'ADN (comme le NHEJ ou le HDR)."
+                ],
+                "answer": 2
+            }
+        ]
+    },
+    {
+        "front": "Qu'est-ce que le phénomène d'intrication quantique ?",
+        "exp": "L'intrication quantique est un phénomène de la mécanique quantique où deux (ou plusieurs) particules deviennent si profondément liées que leurs états quantiques ne peuvent plus être décrits indépendamment l'un de l'autre. Elles forment un système unique. La conséquence vertigineuse est que si l'on mesure l'état d'une particule (par exemple, son spin orienté vers le haut), l'état de l'autre particule intriquée est instantanément déterminé (spin orienté vers le bas), même si elles sont séparées par des années-lumière. La mesure de l'une fixe l'état de l'autre, sans aucun transfert d'information observable.",
+        "ana": "C'est comme posséder une paire de dés magiques. Tu jettes un dé à Paris et il tombe sur un 6. Instantanément et de manière absolue, tu sais que le second dé, même s'il vient d'être jeté sur la planète Mars au même moment, s'est immobilisé sur la face opposée, le 1.",
+        "fun": "Albert Einstein détestait cette idée car elle semblait contredire sa théorie de la relativité (qui postule que rien ne voyage plus vite que la lumière). Il a d'ailleurs qualifié ce phénomène d''action fantôme à distance' (spooky action at a distance).",
+        "quizzes": [
+            {
+                "question": "Que se passe-t-il concrètement lors de la mesure d'une des particules intriquées ?",
+                "options": [
+                    "L'état quantique de la seconde particule est instantanément déterminé, violant en apparence le principe de localité.",
+                    "La particule mesurée perd son énergie thermique, qui est transférée à la seconde particule.",
+                    "Une particule de lumière (photon) est émise pour informer la seconde particule du changement d'état."
+                ],
+                "answer": 0
+            },
+            {
+                "question": "Pourquoi Albert Einstein était-il fondamentalement sceptique face à l'intrication quantique ?",
+                "options": [
+                    "Parce que ce phénomène remettait en cause la loi de la thermodynamique sur l'entropie.",
+                    "Parce qu'il semblait impliquer qu'une corrélation s'établisse instantanément, défiant la limite de la vitesse de la lumière.",
+                    "Parce qu'il croyait que seules les ondes gravitationnelles pouvaient lier deux particules éloignées."
+                ],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Pourquoi le béton romain (Opus Caementicium) résiste-t-il depuis 2000 ans sans s'effriter ?",
+        "exp": "Contrairement au béton Portland moderne qui se fissure et se dégrade en quelques décennies, le béton romain possède une capacité incroyable : l'auto-guérison. Les Romains pratiquaient le 'mélange à chaud', intégrant des cendres volcaniques (la pouzzolane) et de la chaux vive à des températures très élevées. Cela créait de petits amas résiduels de calcium appelés 'clastes de chaux'. Lorsque le béton se fissure avec le temps et que de l'eau de pluie ou de mer s'y infiltre, l'eau réagit chimiquement avec ces clastes de chaux très réactifs. Cette réaction produit une solution riche en calcium qui recristallise rapidement, colmatant la fissure avant qu'elle ne s'agrandisse.",
+        "ana": "C'est l'équivalent architectural de la coagulation sanguine humaine. Si tu te fais une entaille, ton corps produit immédiatement une croûte pour refermer la plaie. Le béton romain a son propre 'système immunitaire' minéral qui cicatrise ses propres blessures.",
+        "fun": "Pendant des siècles, les ingénieurs modernes pensaient que les 'grumeaux' blancs visibles dans le béton romain étaient dus à un mauvais mélange ou à un travail bâclé des ouvriers de l'Antiquité. C'est en 2023 que des chercheurs du MIT ont compris qu'il s'agissait du secret de sa longévité !",
+        "quizzes": [
+            {
+                "question": "Quel processus chimique exact confère au béton romain sa capacité d'auto-guérison ?",
+                "options": [
+                    "Le fer oxydé contenu dans la roche gonfle sous l'effet de la chaleur, repoussant l'eau hors de la structure.",
+                    "L'eau d'infiltration interagit avec les clastes de chaux vive résiduels, déclenchant une recristallisation qui rebouche la fissure.",
+                    "Les cendres volcaniques absorbent l'humidité de l'air pour créer une couche de verre protectrice et imperméable."
+                ],
+                "answer": 1
+            },
+            {
+                "question": "Quel ingrédient spécifique, lié à la géologie italienne, était massivement utilisé dans ce mélange ?",
+                "options": [
+                    "Le basalte noir refroidi au fond de la mer.",
+                    "L'argile rouge cuite à plus de 2000 degrés.",
+                    "La pouzzolane (des cendres volcaniques très réactives)."
+                ],
+                "answer": 2
+            }
+        ]
+    },
+    {
+        "front": "Comment fonctionne la mémoire Flash NAND (les disques durs SSD) ?",
+        "exp": "Contrairement aux anciens disques durs (HDD) qui utilisent un plateau magnétique tournant et une aiguille physique, les SSD n'ont aucune pièce mobile. Ils utilisent la mémoire Flash NAND. Les données sont stockées dans des milliards de cellules de mémoire microscopiques appelées 'transistors à grille flottante'. Pour écrire une donnée (un '0' ou un '1'), on applique une tension électrique précise qui force des électrons à traverser une barrière isolante (par effet tunnel) pour se retrouver piégés dans la grille flottante. Une fois piégés, l'isolant les empêche de ressortir, même quand l'ordinateur est éteint.",
+        "ana": "Imagine une immense façade d'immeuble avec des millions de balcons fermés par de lourdes portes en acier. Pour stocker de l'information, tu utilises un canon à air comprimé (l'électricité) pour forcer des balles (les électrons) à traverser la porte. Les portes sont si lourdes que les balles restent coincées à l'intérieur, même quand on coupe le courant du bâtiment.",
+        "fun": "L'inconvénient de cette technologie est que le passage en force des électrons finit par user la 'porte' isolante (la couche d'oxyde). C'est pourquoi un SSD a une durée de vie limitée en nombre de cycles d'écriture (souvent mesurée en Téraoctets Écrits ou TBW) !",
+        "quizzes": [
+            {
+                "question": "Par quel phénomène de mécanique quantique les électrons parviennent-ils à traverser l'isolant pour entrer dans la grille flottante ?",
+                "options": [
+                    "La supraconductivité.",
+                    "L'effet tunnel (Fowler-Nordheim).",
+                    "L'intrication quantique."
+                ],
+                "answer": 1
+            },
+            {
+                "question": "Pourquoi la durée de vie d'un SSD est-elle structurellement limitée en termes d'écritures ?",
+                "options": [
+                    "Parce que le moteur rotatif finit par chauffer et griller les composants électroniques.",
+                    "Parce que les électrons stockés deviennent de plus en plus lourds et déforment la puce.",
+                    "Parce que la décharge électrique endommage progressivement la couche isolante qui retient les électrons."
+                ],
+                "answer": 2
+            }
+        ]
+    },
+	{
+        "front": "Comment fonctionne une pompe à chaleur pour chauffer une maison avec l'air froid de l'hiver ?",
+        "exp": "Elle utilise les lois de la thermodynamique et les changements d'état d'un fluide frigorigène. Même à -5°C, l'air extérieur contient des calories (de l'énergie thermique). La pompe aspire cet air via un évaporateur où le fluide, maintenu à très basse pression, bout et s'évapore en absorbant ces calories. Ce gaz est ensuite envoyé dans un compresseur. En comprimant ce gaz, on augmente violemment sa pression et donc sa température (selon la loi de Gay-Lussac). Ce gaz devenu très chaud passe dans le condenseur, transférant sa chaleur au circuit d'eau de la maison, redevient liquide, puis traverse un détendeur pour chuter en pression et recommencer le cycle.",
+        "ana": "C'est comme une pompe à vélo : quand tu bouches le bout avec ton doigt et que tu pompes fort (compression), le bout de la pompe devient très chaud. La pompe à chaleur fait la même chose, mais en récupérant d'abord les calories gratuites de l'air extérieur pour les 'compresser' et les injecter dans ton salon.",
+        "fun": "Une pompe à chaleur a souvent un rendement de 300% à 400% (un COP de 3 ou 4) ! Cela signifie que pour 1 kWh d'électricité consommé (pour faire tourner le compresseur), elle restitue 4 kWh d'énergie thermique dans la maison, car les 3 kWh supplémentaires sont tout simplement volés à la nature.",
+        "quizzes": [
+            {
+                "question": "Quel composant est directement responsable de l'élévation spectaculaire de la température du fluide frigorigène ?",
+                "options": [
+                    "L'évaporateur, qui capte les rayons du soleil.",
+                    "Le détendeur, qui libère soudainement la pression du gaz.",
+                    "Le compresseur, qui augmente violemment la pression du gaz."
+                ],
+                "answer": 2
+            },
+            {
+                "question": "Pourquoi le fluide frigorigène parvient-il à s'évaporer et à absorber de la chaleur même quand il fait -5°C dehors ?",
+                "options": [
+                    "Parce qu'il est maintenu à une pression extrêmement basse, ce qui abaisse drastiquement son point d'ébullition.",
+                    "Parce qu'il est préchauffé par une résistance électrique cachée dans le bloc extérieur.",
+                    "Parce que sa composition chimique génère une réaction exothermique au contact de l'air."
+                ],
+                "answer": 0
+            }
+        ]
+    },
+    {
+        "front": "Pourquoi la batterie de ton smartphone se dégrade-t-elle inexorablement au fil des années ?",
+        "exp": "À chaque cycle de charge et de décharge d'une batterie Lithium-ion, les ions lithium voyagent entre l'anode (graphite) et la cathode. Avec le temps et la chaleur, deux phénomènes dégradent ce processus. Le premier est l'épaississement de la couche SEI (Solid Electrolyte Interphase) sur l'anode, une croûte protectrice qui s'épaissit trop et piège définitivement des ions lithium, réduisant la capacité totale. Le second est le placage de lithium (lithium plating) : lors d'une charge trop rapide ou par grand froid, les ions n'ont pas le temps de s'insérer dans le graphite et s'accumulent sous forme de métal solide à la surface, détruisant le lithium actif.",
+        "ana": "Imagine un restaurant de 100 places (la capacité de la batterie). Au fil des mois, des clients collent du chewing-gum sur les chaises (la couche SEI) ou décident de s'y endormir définitivement (le placage de lithium). Tu as toujours une salle de 100 chaises, mais tu ne peux plus y asseoir que 80 nouveaux clients à cause des places condamnées.",
+        "fun": "C'est pour limiter ce stress chimique (et surtout éviter le placage de lithium) que ton téléphone charge rapidement de 0% à 80%, mais ralentit drastiquement la vitesse de charge pour les 20 derniers pourcents, car les places pour les ions dans l'anode deviennent difficiles à trouver sans forcer !",
+        "quizzes": [
+            {
+                "question": "Qu'est-ce que la couche SEI dans une batterie Lithium-ion vieillissante ?",
+                "options": [
+                    "Un filtre logiciel mis à jour par le constructeur pour réduire l'autonomie.",
+                    "Une couche de passivation chimique sur l'anode qui s'épaissit et piège définitivement des ions lithium.",
+                    "Un liquide de refroidissement interne qui s'évapore à chaque fois que le téléphone chauffe."
+                ],
+                "answer": 1
+            },
+            {
+                "question": "Dans quelles conditions le phénomène destructeur de placage de lithium (lithium plating) se produit-il le plus souvent ?",
+                "options": [
+                    "Lors d'une charge très rapide ou à des températures très froides, quand les ions n'arrivent pas à s'insérer dans le graphite.",
+                    "Lorsqu'on laisse le téléphone s'éteindre complètement à 0% trop souvent.",
+                    "Lorsqu'on utilise un chargeur sans fil qui inverse la polarité magnétique de la batterie."
+                ],
+                "answer": 0
+            }
+        ]
+    },
+    {
+        "front": "Comment le capteur photo de ton téléphone réussit-il à voir les couleurs ?",
+        "exp": "Le capteur électronique d'un appareil photo (CMOS) est en réalité aveugle aux couleurs : il ne sait que compter l'intensité lumineuse (les photons) pour créer une image en noir et blanc. Pour obtenir de la couleur, on place au-dessus des millions de pixels une matrice de filtres colorés appelée filtre de Bayer. C'est un damier de minuscules filtres rouges, verts et bleus. Chaque pixel ne capte donc qu'une seule couleur. C'est ensuite le processeur du téléphone qui utilise un algorithme de dématriçage (démosaïquage) : il devine les deux couleurs manquantes de chaque pixel en analysant mathématiquement les couleurs des pixels voisins pour reconstituer l'image finale.",
+        "ana": "C'est comme un jeu de Sudoku géant. Tu as une grille avec seulement quelques chiffres rouges, verts ou bleus placés au hasard. L'ordinateur regarde les cases autour et déduit mathématiquement quelle couleur doit remplir les cases vides pour créer une image lisse et complète.",
+        "fun": "Le filtre de Bayer utilise toujours deux fois plus de vert que de rouge ou de bleu (un motif RVBV). Pourquoi ? Tout simplement pour imiter la physiologie de l'œil humain, qui est beaucoup plus sensible à la luminance des teintes vertes !",
+        "quizzes": [
+            {
+                "question": "Quelle est la nature de l'information réellement captée par les photosites bruts d'un capteur CMOS avant l'application d'un filtre ?",
+                "options": [
+                    "Ils ne mesurent que l'intensité lumineuse (la quantité de photons), générant une donnée purement monochrome.",
+                    "Ils captent directement le spectre électromagnétique complet pour chaque pixel.",
+                    "Ils séparent la lumière en trois faisceaux grâce à des micro-prismes en verre."
+                ],
+                "answer": 0
+            },
+            {
+                "question": "Pourquoi la matrice de Bayer standard utilise-t-elle 50% de filtres verts, contre 25% pour le rouge et le bleu ?",
+                "options": [
+                    "Parce que la longueur d'onde verte est la plus énergétique du spectre solaire.",
+                    "Pour imiter la physiologie de l'œil humain, qui est évolutivement plus sensible à la luminance des teintes vertes.",
+                    "Parce que le silicium du capteur a du mal à absorber la lumière verte et nécessite plus de surface de captation."
+                ],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Comment la lessive moderne parvient-elle à détruire des taches tenaces même à 30°C ?",
+        "exp": "Historiquement, on utilisait de l'eau bouillante pour agiter et faire fondre les taches. La lessive moderne contourne le besoin de chaleur grâce aux enzymes. Ce sont des protéines biologiques, de véritables ciseaux moléculaires spécialisés. Les protéases découpent les protéines (sang, sueur), les lipases décomposent les graisses (beurre, huile), et les amylases s'attaquent aux sucres complexes. En coupant ces grosses molécules de saleté en petits morceaux solubles, elles permettent aux agents de surface (les tensioactifs) d'enrober plus facilement les résidus dans des micelles pour qu'ils soient évacués avec l'eau de rinçage.",
+        "ana": "Les tensioactifs classiques sont de simples balayeurs : face à un gros meuble coincé (la tache incrustée), ils sont impuissants. Les enzymes sont des bûcherons qui viennent tronçonner le meuble en petits morceaux pour que les balayeurs puissent tout mettre à la poubelle sans effort.",
+        "fun": "Les enzymes sont si sensibles qu'elles se dénaturent à haute température ! Faire bouillir ton linge à 90°C avec une lessive enzymatique va en réalité cuire et détruire ces protéines biologiques, rendant la lessive bien moins efficace contre les taches organiques.",
+        "quizzes": [
+            {
+                "question": "Quel est le mode d'action précis des enzymes comme les lipases ou les protéases dans le tambour de la machine ?",
+                "options": [
+                    "Elles créent une réaction exothermique qui chauffe l'eau localement autour de la tache.",
+                    "Elles décomposent les macromolécules biologiques de la tache en fragments plus petits et solubles.",
+                    "Elles blanchissent la tache en libérant de l'oxygène actif (eau oxygénée) sur le tissu."
+                ],
+                "answer": 1
+            },
+            {
+                "question": "Quel effet a un cycle de lavage à très haute température (90°C) sur une lessive moderne aux enzymes biologiques ?",
+                "options": [
+                    "Il dénature (détruit) les enzymes, ce qui réduit considérablement l'efficacité du lavage sur les taches organiques.",
+                    "Il décuple l'efficacité des enzymes car la chaleur accélère toutes les réactions catalytiques.",
+                    "Il n'a aucun impact sur les enzymes, mais abîme uniquement les fibres du tissu."
+                ],
+                "answer": 0
+            }
+        ]
+    }
 ]
