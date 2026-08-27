@@ -567,11 +567,29 @@
             const optionsDiv = document.getElementById('quiz-options');
             optionsDiv.innerHTML = '';
             
-            quiz.options.forEach((opt, index) => {
+            // 1. Lier chaque réponse à son statut (vrai ou faux) avant de mélanger
+            let shuffledOptions = quiz.options.map((opt, index) => ({
+                text: opt,
+                isCorrect: (index === quiz.answer)
+            }));
+
+            // 2. Mélanger les réponses aléatoirement (Algorithme de Fisher-Yates)
+            for (let i = shuffledOptions.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffledOptions[i], shuffledOptions[j]] = [shuffledOptions[j], shuffledOptions[i]];
+            }
+            
+            // 3. Créer et afficher les boutons mélangés
+            shuffledOptions.forEach((opt) => {
                 const btn = document.createElement('button');
                 btn.className = 'quiz-btn';
-                btn.innerText = opt;
-                btn.onclick = () => checkAnswer(index, quiz.answer, btn);
+                btn.innerText = opt.text;
+                
+                // On ajoute une étiquette invisible pour retrouver le bon bouton plus tard
+                if (opt.isCorrect) btn.dataset.correct = "true";
+                
+                // On passe le vrai texte de la bonne réponse pour l'alerte en cas d'erreur
+                btn.onclick = () => checkAnswer(opt.isCorrect, btn, quiz.options[quiz.answer]);
                 optionsDiv.appendChild(btn);
             });
 
@@ -579,7 +597,7 @@
             quizView.style.display = 'flex';
         }
 
-        function checkAnswer(selectedIndex, correctIndex, clickedBtn) {
+        function checkAnswer(isCorrect, clickedBtn, correctText) {
             // On bloque les boutons pour éviter les doubles clics
             const allBtns = document.querySelectorAll('.quiz-btn');
             allBtns.forEach(btn => btn.style.pointerEvents = 'none');
@@ -587,33 +605,35 @@
             const cardMemory = memoryData[currentCardIndex];
             let currentLevel = cardMemory.level;
 
-            if (selectedIndex === correctIndex) {
+            if (isCorrect) {
                 // Le bouton devient vert
                 clickedBtn.classList.add('correct');
                 
-                // Micro-délai de 10ms (instantané) pour afficher la couleur avant le message
+                // Délai de 600ms pour voir le bouton vert avant de passer à la suite automatiquement
                 setTimeout(() => {
                     if (currentSubQuizIndex < currentQuizzes.length - 1) {
-                        alert("Bonne réponse ! 🎉 On passe à la suivante.");
                         currentSubQuizIndex++;
                         showQuiz();
                     } else {
-                        alert("Parfait ! Tout est juste ! 🎉");
+                        // Fin de la carte, on augmente le niveau et on passe à la suivante
                         currentLevel++;
                         if(currentLevel >= INTERVALS.length) currentLevel = INTERVALS.length - 1;
                         saveToMemory(currentCardIndex, currentLevel);
                         analyzeMemory();
                     }
-                }, 10);
+                }, 600);
 
             } else {
-                // Le bouton devient rouge, la bonne réponse devient verte
+                // Le bouton devient rouge
                 clickedBtn.classList.add('wrong');
-                allBtns[correctIndex].classList.add('correct');
                 
-                // Micro-délai de 10ms (instantané) pour afficher les couleurs avant le message
+                // On cherche le bouton qui a l'étiquette "correct" pour l'allumer en vert
+                const correctBtn = Array.from(allBtns).find(b => b.dataset.correct === "true");
+                if (correctBtn) correctBtn.classList.add('correct');
+                
+                // Micro-délai pour afficher les couleurs avant le message
                 setTimeout(() => {
-                    alert("Faux ! La bonne réponse était : " + currentQuizzes[currentSubQuizIndex].options[correctIndex]);
+                    alert("Faux ! La bonne réponse était : " + correctText);
                     currentLevel = 0;
                     saveToMemory(currentCardIndex, currentLevel);
                     analyzeMemory();
