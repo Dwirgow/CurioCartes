@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CurioCartes PWA</title>
+    <title>CurioCartes - Entraîneur d'Ouvertures</title>
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#4F46E5">
     <style>
@@ -68,8 +68,39 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-			flex : 1;
+            flex: 1;
         }
+
+        /* Styles de l'échiquier intégré */
+        .chessboard-wrapper {
+            width: 100%;
+            max-width: 320px;
+            margin: 0 auto 20px auto;
+            display: none; /* Masqué par défaut, affiché via JS */
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            border-radius: 8px;
+            overflow: hidden;
+            border: 4px solid var(--text-main);
+            flex-shrink: 0;
+        }
+
+        .chessboard {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            width: 100%;
+        }
+
+        .square {
+            width: 100%;
+            aspect-ratio: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .light { background-color: #ebecd0; }
+        .dark { background-color: #739552; }
+        .chess-piece { width: 85%; height: 85%; filter: drop-shadow(0 2px 2px rgba(0,0,0,0.5)); user-select: none; }
 
         @keyframes float {
             0% { transform: translateY(0px); }
@@ -86,8 +117,8 @@
         .flip-card {
             background-color: transparent;
             width: 100%;
-			flex : 1;
-            min-height: 450px;
+            flex: 1;
+            min-height: 400px;
             cursor: pointer;
             display: none;
             animation: float 6s ease-in-out infinite;
@@ -119,12 +150,12 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            padding: 35px;
+            padding: 30px;
             box-sizing: border-box;
         }
 
         .flip-card-front { 
-            font-size: 1.5rem; 
+            font-size: 1.4rem; 
             font-weight: 800; 
             line-height: 1.3; 
             color: var(--primary);
@@ -134,7 +165,7 @@
         .flip-card-back {
             transform: rotateY(180deg);
             text-align: left;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             justify-content: flex-start;
             overflow-y: auto;
             line-height: 1.4;
@@ -193,14 +224,36 @@
             background: #F8FAFC !important; 
             color: var(--text-main) !important; 
             text-align: left; 
-            padding: 14px 18px !important; 
+            padding: 12px 16px !important; 
+            font-size: 0.95rem;
             font-weight: 600 !important;
             border: 2px solid transparent !important;
             box-shadow: none !important;
-            margin-top: 10px !important;
+            margin-top: 8px !important;
         }
         .quiz-btn:hover { border-color: var(--primary) !important; background: #F1F5F9 !important; }
-		.deck-stats {
+        
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            20%, 60% { transform: translateX(-6px); }
+            40%, 80% { transform: translateX(6px); }
+        }
+            
+        .quiz-btn.correct {
+            background: var(--secondary) !important;
+            color: white !important;
+            border-color: var(--secondary) !important;
+            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4) !important;
+            animation: shake 0.4s cubic-bezier(.36,.07,.19,.97);
+        }
+        .quiz-btn.wrong {
+            background: #EF4444 !important;
+            color: white !important;
+            border-color: #EF4444 !important;
+            box-shadow: 0 4px 15px rgba(239, 68, 68, 0.4) !important;
+        }
+
+        .deck-stats {
             display: flex;
             justify-content: space-around;
             background: #F8FAFC;
@@ -212,28 +265,6 @@
             color: var(--text-muted);
             text-transform: uppercase;
             border: 2px solid #F1F5F9;
-		}
-			
-		/* Animation de tremblement */
-        @keyframes shake {
-            0%, 100% { transform: translateX(0); }
-            20%, 60% { transform: translateX(-6px); }
-            40%, 80% { transform: translateX(6px); }
-        }
-			
-		.quiz-btn.correct {
-            background: var(--secondary) !important; /* Vert */
-            color: white !important;
-            border-color: var(--secondary) !important;
-            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4) !important;
-			animation: shake 0.4s cubic-bezier(.36,.07,.19,.97);
-        }
-        .quiz-btn.wrong {
-            background: #EF4444 !important; /* Rouge */
-            color: white !important;
-            border-color: #EF4444 !important;
-            box-shadow: 0 4px 15px rgba(239, 68, 68, 0.4) !important;
-        }
         }
         .deck-stats div {
             display: flex;
@@ -261,23 +292,9 @@
             align-items: center;
             justify-content: center;
         }
-        .level-header {
-            font-size: 0.7rem;
-            font-weight: 800;
-            color: var(--text-muted);
-            text-transform: uppercase;
-        }
-        .level-count {
-            font-size: 1.1rem;
-            font-weight: 800;
-            color: var(--primary);
-            margin: 4px 0;
-        }
-        .level-timer {
-            font-size: 0.8rem;
-            color: var(--text-muted);
-            font-variant-numeric: tabular-nums;
-        }
+        .level-header { font-size: 0.7rem; font-weight: 800; color: var(--text-muted); text-transform: uppercase; }
+        .level-count { font-size: 1.1rem; font-weight: 800; color: var(--primary); margin: 4px 0; }
+        .level-timer { font-size: 0.8rem; color: var(--text-muted); font-variant-numeric: tabular-nums; }
         .level-timer.ready { color: var(--secondary); font-weight: bold; }
 
         .discovery-box {
@@ -288,19 +305,8 @@
             text-align: center;
             transition: all 0.3s ease;
         }
-        .discovery-title {
-            font-size: 0.8rem;
-            color: var(--text-muted);
-            text-transform: uppercase;
-            font-weight: 800;
-        }
-        .discovery-timer {
-            font-size: 1.4rem;
-            font-weight: 800;
-            color: var(--text-main);
-            margin-top: 5px;
-            font-variant-numeric: tabular-nums;
-        }
+        .discovery-title { font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; font-weight: 800; }
+        .discovery-timer { font-size: 1.4rem; font-weight: 800; color: var(--text-main); margin-top: 5px; font-variant-numeric: tabular-nums; }
         
         .discovery-box.actionable {
             cursor: pointer;
@@ -311,8 +317,7 @@
         .discovery-box.actionable .discovery-timer { color: var(--primary); }
 
         .instruction {
-            margin-top: 20px;
-			margin-bottom: 10px;
+            margin-top: 10px;
             color: var(--text-muted);
             font-size: 0.85rem;
             font-weight: 600;
@@ -324,26 +329,31 @@
 <body>
 
     <header>
-        <h2>CurioCartes</h2>
+        <h2>Ouvertures</h2>
         <div class="status-badge" id="status-badge">Chargement...</div>
     </header>
 
     <div class="app-container">
         
+        <!-- ÉCHIQUIER INTÉGRÉ -->
+        <div class="chessboard-wrapper" id="board-wrapper">
+            <div class="chessboard" id="chessboard-grid"></div>
+        </div>
+
         <div class="flip-card" id="card-view" onclick="flipCard()">
             <div class="flip-card-inner" id="card-inner">
                 <div class="flip-card-front" id="card-front"></div>
                 <div class="flip-card-back">
                     <div class="back-section">
-                        <div class="back-title">L'Explication</div>
+                        <div class="back-title">La Théorie</div>
                         <div id="card-exp"></div>
                     </div>
                     <div class="back-section">
-                        <div class="back-title">L'Analogie 💡</div>
+                        <div class="back-title">Le Plan Stratégique ♟️</div>
                         <div id="card-ana"></div>
                     </div>
                     <div class="back-section">
-                        <div class="back-title">Le Fun Fact 🍿</div>
+                        <div class="back-title">Attention au piège ⚠️</div>
                         <div id="card-fun"></div>
                     </div>
                     <button id="btn-finish-discovery" onclick="finishDiscovery(event)" style="margin-top: auto;">J'ai compris !</button>
@@ -355,16 +365,16 @@
 
         <div class="quiz-container" id="quiz-view">
             <div class="quiz-header">🧠 Mode Révision</div>
-            <p id="quiz-question" style="font-weight: 800; margin-bottom: 20px; font-size: 1.2rem; color: var(--primary);"></p>
+            <p id="quiz-question" style="font-weight: 800; margin-bottom: 15px; font-size: 1.1rem; color: var(--primary);"></p>
             <div id="quiz-options"></div>
         </div>
 
         <div class="wait-container" id="wait-view">
             <h3>Tableau de Bord ⚡</h3>
-            <p style="color: var(--text-muted); font-size: 0.85rem;">Ta mémoire à court et long terme.</p>
-			<button onclick="showLibrary()" style="margin-bottom: 15px; background: var(--secondary);">📖 Ma Bibliothèque</button>
-			
-			<div class="deck-stats">
+            <p style="color: var(--text-muted); font-size: 0.85rem;">Mémorisation des structures d'ouverture.</p>
+            <button onclick="showLibrary()" style="margin-bottom: 15px; background: var(--secondary);">📖 Mon Répertoire</button>
+            
+            <div class="deck-stats">
                 <div>Vues <span id="stat-seen">0</span></div>
                 <div>Restantes <span id="stat-new">0</span></div>
                 <div>Total <span id="stat-total">0</span></div>
@@ -394,14 +404,14 @@
             </div>
 
             <div class="discovery-box" id="discovery-box" onclick="launchDiscoveryIfReady()">
-                <div class="discovery-title" id="discovery-title">✨ Nouvelles Cartes</div>
+                <div class="discovery-title" id="discovery-title">✨ Nouvelles Variantes</div>
                 <div class="discovery-timer" id="discovery-countdown">--:--:--</div>
             </div>
         </div>
-		
-		<div class="wait-container" id="library-view" style="display: none;">
-            <h3>Ma Bibliothèque 📚</h3>
-            <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 15px;">Toutes tes cartes découvertes.</p>
+        
+        <div class="wait-container" id="library-view" style="display: none;">
+            <h3>Mon Répertoire 📚</h3>
+            <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 15px;">Toutes les variantes apprises.</p>
             
             <div id="library-list" style="display: flex; flex-direction: column; gap: 10px; max-height: 350px; overflow-y: auto; width: 100%;"></div>
             
@@ -411,7 +421,17 @@
     </div>
 
     <script>
-        // --- CONFIGURATION ---
+        // --- CONSTANTES DES PIÈCES POUR L'ÉCHIQUIER ---
+        const PIECES = {
+            'P': 'https://images.chesscomfiles.com/chess-themes/pieces/neo/150/wp.png', 'N': 'https://images.chesscomfiles.com/chess-themes/pieces/neo/150/wn.png', 
+            'B': 'https://images.chesscomfiles.com/chess-themes/pieces/neo/150/wb.png', 'R': 'https://images.chesscomfiles.com/chess-themes/pieces/neo/150/wr.png', 
+            'Q': 'https://images.chesscomfiles.com/chess-themes/pieces/neo/150/wq.png', 'K': 'https://images.chesscomfiles.com/chess-themes/pieces/neo/150/wk.png',
+            'p': 'https://images.chesscomfiles.com/chess-themes/pieces/neo/150/bp.png', 'n': 'https://images.chesscomfiles.com/chess-themes/pieces/neo/150/bn.png', 
+            'b': 'https://images.chesscomfiles.com/chess-themes/pieces/neo/150/bb.png', 'r': 'https://images.chesscomfiles.com/chess-themes/pieces/neo/150/br.png', 
+            'q': 'https://images.chesscomfiles.com/chess-themes/pieces/neo/150/bq.png', 'k': 'https://images.chesscomfiles.com/chess-themes/pieces/neo/150/bk.png'
+        };
+
+        // --- CONFIGURATION DE L'APP ---
         const COOLDOWN_DISCOVERY = 4 * 60 * 60 * 1000;
         const INTERVALS = [
             4 * 60 * 60 * 1000,       
@@ -431,7 +451,7 @@
         let currentCardIndex = null;
         let currentMode = ''; 
         let countdownInterval = null;
-		let currentQuizzes = []; 
+        let currentQuizzes = []; 
         let currentSubQuizIndex = 0;
 
         const cardView = document.getElementById('card-view');
@@ -439,6 +459,39 @@
         const waitView = document.getElementById('wait-view');
         const instruction = document.getElementById('card-instruction');
         const statusBadge = document.getElementById('status-badge');
+        const boardWrapper = document.getElementById('board-wrapper');
+
+        // --- FONCTION DE RENDU DE L'ÉCHIQUIER ---
+        function renderChessboard(fen) {
+            const boardDiv = document.getElementById('chessboard-grid');
+            boardDiv.innerHTML = '';
+            if (!fen) return;
+
+            const rows = fen.split(' ')[0].split('/');
+            rows.forEach((row, i) => {
+                let col = 0;
+                for (let char of row) {
+                    if (isNaN(char)) {
+                        const square = document.createElement('div');
+                        square.className = 'square ' + ((i + col) % 2 === 0 ? 'light' : 'dark');
+                        const img = document.createElement('img');
+                        img.src = PIECES[char];
+                        img.className = 'chess-piece';
+                        square.appendChild(img);
+                        boardDiv.appendChild(square);
+                        col++;
+                    } else {
+                        const emptyCount = parseInt(char);
+                        for (let e = 0; e < emptyCount; e++) {
+                            const square = document.createElement('div');
+                            square.className = 'square ' + ((i + col) % 2 === 0 ? 'light' : 'dark');
+                            boardDiv.appendChild(square);
+                            col++;
+                        }
+                    }
+                }
+            });
+        }
 
         async function initApp() {
             try {
@@ -470,7 +523,6 @@
                         pendingReviews.push(index);
                     }
                 } else {
-                    // Carte jamais vue, on l'ajoute simplement à la liste
                     availableNewCards.push(index);
                 }
             });
@@ -486,19 +538,17 @@
                 currentCardIndex = pendingReviews[0];
                 statusBadge.innerText = `🔄 ${pendingReviews.length} Révision(s)`;
                 
-                // NOUVEAU : Préparation des questions (Rétrocompatibilité)
                 const card = deck[currentCardIndex];
                 if (card.quizzes) {
-                    currentQuizzes = card.quizzes; // Nouveau format
+                    currentQuizzes = card.quizzes; 
                 } else {
-                    // Ancien format transformé temporairement en tableau
                     currentQuizzes = [{
                         question: card.quizQ,
                         options: card.quizOpts,
                         answer: card.quizAns
                     }];
                 }
-                currentSubQuizIndex = 0; // On commence à la question 1
+                currentSubQuizIndex = 0; 
                 
                 showQuiz();
             } else {
@@ -512,7 +562,6 @@
             if (box.classList.contains('actionable')) {
                 clearInterval(countdownInterval);
                 currentMode = 'DISCOVER';
-                // On prend la toute première carte disponible dans la liste
                 currentCardIndex = availableNewCards[0];
                 statusBadge.innerText = `✨ Découverte`;
                 showDiscovery();
@@ -526,10 +575,17 @@
             document.getElementById('card-ana').innerText = card.ana;
             document.getElementById('card-fun').innerText = card.fun;
             document.getElementById('card-inner').closest('.flip-card').classList.remove('flipped');
-			document.getElementById('btn-finish-discovery').style.display = 'block';
+            document.getElementById('btn-finish-discovery').style.display = 'block';
             document.getElementById('btn-close-library').style.display = 'none';
             
             hideAllViews();
+            
+            // Affichage de l'échiquier si un FEN est fourni
+            if(card.fen) {
+                boardWrapper.style.display = 'block';
+                renderChessboard(card.fen);
+            }
+
             cardView.style.display = 'block';
             instruction.style.display = 'block';
         }
@@ -553,9 +609,9 @@
         }
 
         function showQuiz() {
+            const card = deck[currentCardIndex];
             const quiz = currentQuizzes[currentSubQuizIndex];
             
-            // Affichage du compteur si plusieurs questions
             const headerText = document.querySelector('.quiz-header');
             if (currentQuizzes.length > 1) {
                 headerText.innerText = `🧠 Mode Révision (${currentSubQuizIndex + 1}/${currentQuizzes.length})`;
@@ -567,38 +623,37 @@
             const optionsDiv = document.getElementById('quiz-options');
             optionsDiv.innerHTML = '';
             
-            // 1. Lier chaque réponse à son statut (vrai ou faux) avant de mélanger
             let shuffledOptions = quiz.options.map((opt, index) => ({
                 text: opt,
                 isCorrect: (index === quiz.answer)
             }));
 
-            // 2. Mélanger les réponses aléatoirement (Algorithme de Fisher-Yates)
             for (let i = shuffledOptions.length - 1; i > 0; i--) {
                 const j = Math.floor(Math.random() * (i + 1));
                 [shuffledOptions[i], shuffledOptions[j]] = [shuffledOptions[j], shuffledOptions[i]];
             }
             
-            // 3. Créer et afficher les boutons mélangés
             shuffledOptions.forEach((opt) => {
                 const btn = document.createElement('button');
                 btn.className = 'quiz-btn';
                 btn.innerText = opt.text;
-                
-                // On ajoute une étiquette invisible pour retrouver le bon bouton plus tard
                 if (opt.isCorrect) btn.dataset.correct = "true";
-                
-                // On passe le vrai texte de la bonne réponse pour l'alerte en cas d'erreur
                 btn.onclick = () => checkAnswer(opt.isCorrect, btn, quiz.options[quiz.answer]);
                 optionsDiv.appendChild(btn);
             });
 
             hideAllViews();
+
+            // Affichage de l'échiquier pendant le quiz
+            if(card.fen) {
+                boardWrapper.style.display = 'block';
+                renderChessboard(card.fen);
+            }
+
             quizView.style.display = 'flex';
         }
 
         function checkAnswer(isCorrect, clickedBtn, correctText) {
-            // On bloque les boutons pour éviter les doubles clics
             const allBtns = document.querySelectorAll('.quiz-btn');
             allBtns.forEach(btn => btn.style.pointerEvents = 'none');
 
@@ -606,16 +661,12 @@
             let currentLevel = cardMemory.level;
 
             if (isCorrect) {
-                // Le bouton devient vert
                 clickedBtn.classList.add('correct');
-                
-                // Délai de 600ms pour voir le bouton vert avant de passer à la suite automatiquement
                 setTimeout(() => {
                     if (currentSubQuizIndex < currentQuizzes.length - 1) {
                         currentSubQuizIndex++;
                         showQuiz();
                     } else {
-                        // Fin de la carte, on augmente le niveau et on passe à la suivante
                         currentLevel++;
                         if(currentLevel >= INTERVALS.length) currentLevel = INTERVALS.length - 1;
                         saveToMemory(currentCardIndex, currentLevel);
@@ -624,14 +675,10 @@
                 }, 600);
 
             } else {
-                // Le bouton devient rouge
                 clickedBtn.classList.add('wrong');
-                
-                // On cherche le bouton qui a l'étiquette "correct" pour l'allumer en vert
                 const correctBtn = Array.from(allBtns).find(b => b.dataset.correct === "true");
                 if (correctBtn) correctBtn.classList.add('correct');
                 
-                // Micro-délai pour afficher les couleurs avant le message
                 setTimeout(() => {
                     alert("Faux ! La bonne réponse était : " + correctText);
                     currentLevel = 0;
@@ -660,8 +707,8 @@
         function updateTimersDisplay() {
             const now = Date.now();
             let forceQuizInterrupt = false; 
-			
-			if (deck.length > 0) {
+            
+            if (deck.length > 0) {
                 const totalCards = deck.length;
                 const newCardsCount = availableNewCards.length;
                 const seenCardsCount = totalCards - newCardsCount;
@@ -671,7 +718,6 @@
                 document.getElementById('stat-total').innerText = totalCards;
             }
 
-            // --- STATISTIQUES DES NIVEAUX DE QUIZ ---
             let stats = {
                 0: { count: 0, earliest: Infinity },
                 1: { count: 0, earliest: Infinity },
@@ -690,7 +736,7 @@
             }
 
             for (let i = 0; i <= 3; i++) {
-                document.getElementById(`count-lvl${i}`).innerText = `${stats[i].count} carte${stats[i].count > 1 ? 's' : ''}`;
+                document.getElementById(`count-lvl${i}`).innerText = `${stats[i].count} var.`;
                 const timerEl = document.getElementById(`timer-lvl${i}`);
                 
                 if (stats[i].count === 0) {
@@ -714,7 +760,6 @@
                 return; 
             }
 
-            // --- CHRONO DE DÉCOUVERTE ---
             let nextDiscovery = localStorage.getItem('curio_next_discovery');
             const discoveryEl = document.getElementById('discovery-countdown');
             const discoveryBox = document.getElementById('discovery-box');
@@ -722,7 +767,6 @@
             
             let totalUnread = availableNewCards.length;
 
-            // Correction de sécurité
             if (sessionNewCardsCount >= MAX_NEW_CARDS_PER_SESSION && (!nextDiscovery || nextDiscovery === "NaN")) {
                 nextDiscovery = Date.now() + COOLDOWN_DISCOVERY;
                 localStorage.setItem('curio_next_discovery', nextDiscovery);
@@ -731,12 +775,12 @@
             let displayCount = sessionNewCardsCount > MAX_NEW_CARDS_PER_SESSION ? MAX_NEW_CARDS_PER_SESSION : sessionNewCardsCount;
             
             if (totalUnread === 0) {
-                discoveryTitle.innerText = `✨ Fin du Deck`;
-                discoveryEl.innerText = "Deck 100% terminé";
+                discoveryTitle.innerText = `✨ Fin du Répertoire`;
+                discoveryEl.innerText = "Répertoire 100% terminé";
                 discoveryEl.style.fontSize = "1.2rem";
                 discoveryBox.classList.remove('actionable');
             } else {
-                discoveryTitle.innerText = `✨ Découvertes (${displayCount}/${MAX_NEW_CARDS_PER_SESSION})`;
+                discoveryTitle.innerText = `✨ Nouvelles Variantes (${displayCount}/${MAX_NEW_CARDS_PER_SESSION})`;
                 discoveryEl.style.fontSize = "1.4rem";
 
                 let isCooldownOver = (!nextDiscovery || sessionNewCardsCount < MAX_NEW_CARDS_PER_SESSION);
@@ -762,27 +806,24 @@
             let seconds = totalSeconds % 60;
             return `${String(hours).padStart(2, '0')}h ${String(minutes).padStart(2, '0')}m ${String(seconds).padStart(2, '0')}s`;
         }
-		
-		function showLibrary(event) {
-            if (event) event.stopPropagation(); // Évite que le clic retourne la carte
+        
+        function showLibrary(event) {
+            if (event) event.stopPropagation(); 
             currentMode = 'LIBRARY';
             hideAllViews();
-            statusBadge.innerText = "Bibliothèque";
+            statusBadge.innerText = "Répertoire";
             
             const listDiv = document.getElementById('library-list');
             listDiv.innerHTML = '';
             
-            // Récupérer les index des cartes déjà vues
             const seenIndices = Object.keys(memoryData).map(Number);
             
             if (seenIndices.length === 0) {
-                listDiv.innerHTML = '<p style="color: var(--text-muted); font-size: 0.9rem;">Tu n\'as encore découvert aucune carte.</p>';
+                listDiv.innerHTML = '<p style="color: var(--text-muted); font-size: 0.9rem;">Tu n\'as encore mémorisé aucune variante.</p>';
             } else {
                 seenIndices.forEach(index => {
                     const btn = document.createElement('button');
-                    btn.className = 'quiz-btn'; // On réutilise ce style parfait pour des listes
-                    
-                    // On coupe le texte s'il est trop long pour le bouton
+                    btn.className = 'quiz-btn'; 
                     let title = deck[index].front;
                     if(title.length > 35) title = title.substring(0, 35) + '...';
                     
@@ -805,25 +846,30 @@
             document.getElementById('card-fun').innerText = card.fun;
             document.getElementById('card-inner').closest('.flip-card').classList.remove('flipped');
             
-            // On affiche le bouton "Retour à la liste" et on cache "J'ai compris !"
             document.getElementById('btn-finish-discovery').style.display = 'none';
             document.getElementById('btn-close-library').style.display = 'block';
             
             hideAllViews();
+
+            if(card.fen) {
+                boardWrapper.style.display = 'block';
+                renderChessboard(card.fen);
+            }
+
             cardView.style.display = 'block';
             instruction.style.display = 'block';
         }
 
         function hideAllViews() {
+            boardWrapper.style.display = 'none'; // Masquer l'échiquier globalement
             cardView.style.display = 'none';
             quizView.style.display = 'none';
             waitView.style.display = 'none';
             instruction.style.display = 'none';
-			const libView = document.getElementById('library-view');
+            const libView = document.getElementById('library-view');
             if(libView) libView.style.display = 'none';
         }
-		
-		// --- ENREGISTREMENT DU SERVICE WORKER (PWA) ---
+        
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
                 navigator.serviceWorker.register('./sw.js')
@@ -835,8 +881,8 @@
                     });
             });
         }
-		
+        
         initApp();
-    </script>	
+    </script>    
 </body>
 </html>
