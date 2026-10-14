@@ -636,6 +636,8 @@
         }
 
         function showWaitScreen() {
+            clearInterval(countdownInterval); // Stoppe l'ancien chrono pour éviter les doublons
+            currentMode = 'HUB'; // Réinitialise proprement le statut
             hideAllViews();
             waitView.style.display = 'flex';
             statusBadge.innerText = "Accueil";
@@ -645,6 +647,7 @@
 
         function updateTimersDisplay() {
             const now = Date.now();
+            let forceRefresh = false; // Ajout de la variable de contrôle
 
             // 1. Stats globales du deck
             if (deck.length > 0) {
@@ -687,11 +690,18 @@
                     if (diff <= 0) {
                         timerEl.innerText = "Prêt !";
                         timerEl.classList.add('ready');
+                        forceRefresh = true; // Signale qu'une carte vient d'arriver à échéance
                     } else {
                         timerEl.innerText = formatTime(diff);
                         timerEl.classList.remove('ready');
                     }
                 }
+            }
+
+            // Si on est sur l'accueil et qu'une carte devient prête, on actualise le bouton principal
+            if (forceRefresh && pendingReviews.length === 0 && currentMode === 'HUB') {
+                analyzeMemory();
+                return;
             }
 
             // 3. Le Bouton d'Action Contextuel (Révision OU Découverte)
