@@ -1,82 +1,91 @@
 [
     {
-        "front": "Gambit Dame Refusé : Variante d'Échange (Carlsbad)",
-        "fen": "r1bqr1k1/pp1n1ppp/2p2n2/3p2B1/2PP4/2NBP3/P1Q1NPPP/R4RK1 b - - 0 10",
-        "exp": "En figeant la structure très tôt (cxd5 exd5), les Blancs obtiennent la formation Carlsbad. C'est une structure asymétrique très stable qui dicte le plan pour l'intégralité du milieu de partie. Elle est extrêmement frustrante pour les Noirs s'ils ne réagissent pas activement.",
-        "ana": "Tu as deux plans majeurs : \n1) L'attaque de minorité à l'aile-Dame (pousser b4-b5 pour échanger en c6 et créer un pion noir arriéré et faible). \n2) L'attaque centrale de Botvinnik (déployer Cge2, f3 et percer violemment avec e4).",
-        "fun": "Si les Noirs développent leur Fou c8 en f5 beaucoup trop tôt sans préparer le terrain, frappe immédiatement avec Db3 ! Cela attaque simultanément b7 et d5, et disloque instantanément leur position.",
+        "front": "Qui était Marie Curie ?",
+        "dates": "1867 - 1934",
+        "faits": "Physicienne et chimiste polonaise naturalisée française, première femme à recevoir un prix Nobel, et la seule à en recevoir dans deux domaines scientifiques différents (Physique et Chimie). Découverte du radium et du polonium.",
+        "fun": "Ses cahiers de laboratoire sont encore tellement radioactifs aujourd'hui qu'ils sont conservés dans des boîtes en plomb et nécessitent un équipement de protection pour être consultés !",
         "quizzes": [
             {
-                "question": "Quel est le but principal de 'l'attaque de minorité' (b4-b5) ?",
-                "options": [
-                    "Forcer les Noirs à échanger les Dames.",
-                    "Créer un pion noir faible et arriéré en c6 pour l'attaquer.",
-                    "Préparer le grand roque blanc en sécurité."
-                ],
+                "question": "Combien de prix Nobel Marie Curie a-t-elle reçus dans sa vie ?",
+                "options": ["Un seul", "Deux", "Trois", "Quatre"],
                 "answer": 1
             },
             {
-                "question": "Comment le plan de 'l'attaque centrale' se prépare-t-il ?",
-                "options": [
-                    "En manœuvrant le Cavalier roi en e2, puis en poussant f3 et e4.",
-                    "En poussant c5 pour bloquer le pion d5.",
-                    "En sacrifiant un Cavalier en d5."
-                ],
-                "answer": 0
-            }
-        ]
-    },
-    {
-        "front": "Nimzo-Indienne : Variante Sämisch (4. a3)",
-        "fen": "r2qk2r/p1pp1ppp/bpn1pn2/n1P5/3PP3/P1PB1P2/6PP/R1BQK1NR w KQkq - 1 9",
-        "exp": "Face au clouage du Cc3, les Blancs exigent ton Fou en b4 immédiatement en poussant a3. Les Noirs acceptent le défi : tu donnes la paire de Fous, mais en échange tu infliges une faiblesse structurelle permanente en doublant les pions blancs sur la colonne c (c3 et c4).",
-        "ana": "Ton unique objectif est de faire le siège du pion c4 ! Tu dois verrouiller le centre et déployer la formation d'attaque parfaite : ...c5, ...b6, ...Fa6, ...Cc6 et le bond final ...Ca5 pour harceler le pion faible.",
-        "fun": "Si les Blancs se développent machinalement avec Cf3 au lieu de Ce2, c'est une excellente nouvelle : tu pourras clouer ce Cavalier avec Fg4 et ils ne pourront plus l'utiliser pour soutenir le fameux pion c4 en danger.",
-        "quizzes": [
-            {
-                "question": "Quelle est la principale faiblesse blanche que tu vas attaquer dans cette variante ?",
-                "options": [
-                    "Le Roi qui est resté au centre.",
-                    "Les pions doublés sur la colonne c (c3/c4).",
-                    "Le pion isolé e4."
-                ],
-                "answer": 1
-            },
-            {
-                "question": "Comment se positionnent idéalement tes pièces pour attaquer le pion c4 ?",
-                "options": [
-                    "Dame en d5 et Tour en d8.",
-                    "Fou en a6 et Cavaliers en c6 et a5.",
-                    "Les deux Cavaliers en e4 et f6."
-                ],
+                "question": "Quels éléments radioactifs majeurs a-t-elle découverts ?",
+                "options": ["L'Uranium et le Plutonium", "Le Radium et le Polonium", "Le Carbone et l'Oxygène", "Le Fer et le Cuivre"],
                 "answer": 1
             }
         ]
     },
     {
-        "front": "Sicilienne Taimanov : Ligne Principale",
-        "fen": "2r1kb1r/1bqp1ppp/p1n1pn2/1p6/3NP3/2N1BB2/PPP2PPP/R2Q1RK1 w k - 4 11",
-        "exp": "La Taimanov se caractérise par l'utilisation de la structure de pions en e6. Ton développement est ultra-compact et souple (Cc6, Dc7, a6). L'immense avantage est que tu conserves toujours l'option de détruire le centre blanc avec la poussée libératrice ...d5.",
-        "ana": "La Dame en c7 est la pièce maîtresse (elle contrôle e5 et libère la Tour pour la colonne c). Lance une puissante tempête sur l'aile-Dame avec ...a6 et ...b5, tout en gardant ton Cavalier roi très flexible (il va souvent en e7 plutôt qu'en f6 pour éviter des clouages).",
-        "fun": "Ne crains surtout pas les tentatives d'intimidation avec le saut du Cavalier blanc en b5 (Cb5). Un simple repli de la Dame en b8 suivi de ...a6 forcera ce Cavalier à reculer honteusement, te faisant gagner des temps d'attaque précieux !",
+        "front": "Qui était Léonard de Vinci ?",
+        "dates": "1452 - 1519",
+        "faits": "Génie universel de la Renaissance italienne. Artiste, scientifique, ingénieur et anatomiste. Auteur de La Joconde et de La Cène. Il a imaginé des machines volantes, des chars d'assaut et des sous-marins des siècles avant leur invention.",
+        "fun": "Il était ambidextre et écrivait souvent ses notes personnelles à l'envers (en miroir) de droite à gauche, pour éviter que l'on vole ses idées et ne pas faire de taches d'encre !",
         "quizzes": [
             {
-                "question": "Quelle est la principale poussée de pion libératrice que tu dois toujours garder en tête ?",
-                "options": [
-                    "La poussée ...g5 sur l'aile roi.",
-                    "La rupture centrale ...d5.",
-                    "La fermeture avec ...e5."
-                ],
+                "question": "À quelle grande période historique appartient Léonard de Vinci ?",
+                "options": ["L'Antiquité", "Le Moyen Âge", "La Renaissance", "Le Siècle des Lumières"],
+                "answer": 2
+            },
+            {
+                "question": "Comment écrivait-il souvent ses carnets de notes personnels ?",
+                "options": ["En latin ancien", "En code morse", "En hiéroglyphes", "En écriture miroir (de droite à gauche)"],
+                "answer": 3
+            }
+        ]
+    },
+    {
+        "front": "Qui était Nelson Mandela ?",
+        "dates": "1918 - 2013",
+        "faits": "Leader politique de la lutte contre l'apartheid en Afrique du Sud. Emprisonné pendant 27 ans pour ses convictions. Libéré en 1990, il devient le premier président noir du pays en 1994, prônant la réconciliation nationale et le pardon.",
+        "fun": "Pendant ses années de clandestinité pour échapper à la police avant son arrestation, il se déguisait souvent en chauffeur de maître ou en chef cuisinier pour passer inaperçu dans la ville !",
+        "quizzes": [
+            {
+                "question": "Contre quel système politique ségrégationniste a-t-il lutté toute sa vie ?",
+                "options": ["L'esclavage romain", "L'apartheid", "Le servage féodal", "La ségrégation américaine"],
                 "answer": 1
             },
             {
-                "question": "Pourquoi développe-t-on très souvent le Cavalier g8 en e7 plutôt qu'en f6 ?",
-                "options": [
-                    "Pour éviter des clouages fâcheux (comme Fg5) et garder la diagonale de la Dame c7 ouverte.",
-                    "Pour préparer le grand roque.",
-                    "Pour l'échanger le plus vite possible contre le Fou blanc."
-                ],
+                "question": "Combien de temps Nelson Mandela a-t-il été emprisonné ?",
+                "options": ["10 ans", "15 ans", "27 ans", "40 ans"],
+                "answer": 2
+            }
+        ]
+    },
+    {
+        "front": "Qui était Cléopâtre VII ?",
+        "dates": "69 av. J.-C. - 30 av. J.-C.",
+        "faits": "Dernière reine d'Égypte antique de la dynastie des Ptolémées. Célèbre pour son intelligence diplomatique, ses alliances avec les généraux romains Jules César puis Marc Antoine, et sa fin tragique marquant l'annexion de l'Égypte par l'Empire romain.",
+        "fun": "Bien qu'étant reine d'Égypte, elle était d'origine grecque (macédonienne). Elle fut d'ailleurs la toute première dirigeante de sa dynastie à apprendre réellement à parler la langue égyptienne locale !",
+        "quizzes": [
+            {
+                "question": "De quelle origine historique était la dynastie de Cléopâtre ?",
+                "options": ["Grecque / Macédonienne", "Égyptienne pure", "Romaine", "Perse"],
                 "answer": 0
+            },
+            {
+                "question": "Avec quels célèbres généraux romains s'est-elle alliée ?",
+                "options": ["Auguste et Néron", "Pompée et Crassus", "Jules César et Marc Antoine", "Tibère et Caligula"],
+                "answer": 2
+            }
+        ]
+    },
+    {
+        "front": "Qui était Albert Einstein ?",
+        "dates": "1879 - 1955",
+        "faits": "Physicien théoricien d'origine allemande. Il a bouleversé notre compréhension de l'univers physique avec sa théorie de la relativité restreinte (E=mc²) et sa théorie de la relativité générale. Il reçut le Prix Nobel de physique en 1921.",
+        "fun": "Après la mort du premier président d'Israël en 1952, le gouvernement a officiellement proposé à Einstein de devenir le nouveau président du pays. Il a poliment refusé, affirmant n'avoir aucune aptitude pour gérer les hommes !",
+        "quizzes": [
+            {
+                "question": "Quelle célèbre équation a été formulée par Albert Einstein ?",
+                "options": ["a² + b² = c²", "F = ma", "E = mc²", "H2O"],
+                "answer": 2
+            },
+            {
+                "question": "Quel poste politique prestigieux lui a-t-on proposé en 1952 ?",
+                "options": ["Gouverneur de New York", "Chancelier d'Allemagne", "Secrétaire général de l'ONU", "Président de l'État d'Israël"],
+                "answer": 3
             }
         ]
     }
