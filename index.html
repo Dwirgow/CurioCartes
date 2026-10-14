@@ -441,11 +441,20 @@
         async function initApp() {
             try {
                 const response = await fetch('cards.json');
-                if (!response.ok) throw new Error("Erreur réseau");
+                if (!response.ok) throw new Error("Fichier introuvable (Erreur " + response.status + ")");
                 deck = await response.json();
                 analyzeMemory();
             } catch (error) {
-                console.error("Impossible de charger les cartes.", error);
+                console.error("Erreur de chargement :", error);
+                const badge = document.getElementById('status-badge');
+                badge.innerText = "Erreur ⚠️";
+                badge.style.background = "#EF4444";
+                badge.style.color = "white";
+                
+                const instruction = document.getElementById('card-instruction');
+                instruction.innerText = "Blocage : " + error.message + "\n(Vérifie le nom du fichier et l'utilisation d'un serveur local)";
+                instruction.style.display = 'block';
+                instruction.style.color = "#EF4444";
             }
         }
 
