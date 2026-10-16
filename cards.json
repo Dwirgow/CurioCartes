@@ -88,5 +88,365 @@
                 "answer": 3
             }
         ]
+    },
+	{
+        "front": "Qui était Napoléon Bonaparte ?",
+        "dates": "1769 - 1821 (Né à Ajaccio, Corse | Mort à Longwood, Île Sainte-Hélène, à 51 ans)",
+        "faits": "Général militaire brillant pendant la Révolution française, il devient Empereur des Français en 1804. Il a conquis une grande partie de l'Europe grâce à ses stratégies novatrices avant de subir de lourdes défaites (campagne de Russie, Waterloo). Il a profondément modernisé la France en créant le Code civil, les lycées et la Banque de France.",
+        "fun": "Contrairement à la légende populaire propagée par les caricatures anglaises, il n'était pas petit ! Il mesurait environ 1,69 m, ce qui était une taille tout à fait moyenne, voire légèrement supérieure, pour un homme de son époque.",
+        "quizzes": [
+            {
+                "question": "Quelle grande institution ou loi française n'a PAS été créée par Napoléon ?",
+                "options": ["Le Code civil", "La Banque de France", "Les lycées", "L'école publique gratuite et obligatoire"],
+                "answer": 3
+            },
+            {
+                "question": "Sur quelle île lointaine Napoléon est-il mort en exil ?",
+                "options": ["Sainte-Hélène", "La Corse", "Elbe", "Madagascar"],
+                "answer": 0
+            }
+        ]
+    },
+    {
+        "front": "Qui était Jeanne d'Arc ?",
+        "dates": "1412 - 1431 (Née à Domrémy, France | Morte à Rouen, France, à 19 ans)",
+        "faits": "Héroïne de l'histoire de France et chef de guerre pendant la guerre de Cent Ans. Paysanne très pieuse, elle affirme entendre des voix divines lui ordonnant de chasser les Anglais. Elle parvient à rencontrer le roi Charles VII, mène les troupes françaises à la victoire à Orléans, mais finit capturée par les Bourguignons, vendue aux Anglais et brûlée vive pour hérésie.",
+        "fun": "Lors de son procès, pour éviter qu'on l'accuse d'être une sorcière maléfique, elle a refusé de jurer sur la Bible de dire toute la vérité concernant ses visions, rendant fous de rage ses juges anglais.",
+        "quizzes": [
+            {
+                "question": "Quel âge avait Jeanne d'Arc lorsqu'elle a été exécutée ?",
+                "options": ["25 ans", "19 ans", "31 ans", "16 ans"],
+                "answer": 1
+            },
+            {
+                "question": "Pour quel motif officiel a-t-elle été condamnée au bûcher par les Anglais ?",
+                "options": ["Trahison militaire", "Vol de la couronne", "Hérésie et port d'habits d'homme", "Meurtre"],
+                "answer": 2
+            }
+        ]
+    },
+    {
+        "front": "Qui était Louis XIV ?",
+        "dates": "1638 - 1715 (Né à Saint-Germain-en-Laye, France | Mort à Versailles, France, à 77 ans)",
+        "faits": "Surnommé le 'Roi-Soleil', il incarne l'apogée de la monarchie absolue de droit divin en France. Son règne de 72 ans est le plus long de l'histoire de France. Il a centralisé le pouvoir, maté la noblesse en l'attirant à la cour, et fait rayonner la culture française dans toute l'Europe en faisant construire le somptueux château de Versailles.",
+        "fun": "Il adorait la danse et le ballet ! Dans sa jeunesse, il s'est produit sur scène devant sa cour dans plus de 20 ballets différents, souvent déguisé en dieu gréco-romain.",
+        "quizzes": [
+            {
+                "question": "Quelle durée incroyable le règne de Louis XIV a-t-il atteint ?",
+                "options": ["72 ans", "50 ans", "45 ans", "64 ans"],
+                "answer": 0
+            },
+            {
+                "question": "Dans quel but politique a-t-il fait construire le château de Versailles ?",
+                "options": ["Pour se protéger des invasions anglaises", "Pour loger les paysans pauvres", "Pour surveiller et domestiquer la noblesse", "Pour en faire un musée d'art"],
+                "answer": 2
+            }
+        ]
+    },
+    {
+        "front": "Qui était Rosa Parks ?",
+        "dates": "1913 - 2005 (Née à Tuskegee, Alabama | Morte à Détroit, Michigan, à 92 ans)",
+        "faits": "Figure emblématique du mouvement des droits civiques aux États-Unis. En 1955, à Montgomery, elle refuse de céder sa place à un passager blanc dans un bus soumis à la ségrégation. Son arrestation déclenche un boycott des bus mené par le jeune pasteur Martin Luther King, menant finalement à l'abolition des lois ségrégationnistes dans les transports.",
+        "fun": "Contrairement à l'image de la petite couturière fatiguée, son acte n'était pas spontané ! Elle était déjà une militante très active et formée au sein de la NAACP (association pour les droits des gens de couleur).",
+        "quizzes": [
+            {
+                "question": "Quel événement massif a été déclenché par l'arrestation de Rosa Parks ?",
+                "options": ["La guerre de Sécession", "Le boycott des bus de Montgomery", "La marche sur Washington", "L'élection de Barack Obama"],
+                "answer": 1
+            },
+            {
+                "question": "Quelle était l'implication politique de Rosa Parks avant cet incident ?",
+                "options": ["Elle était maire de sa ville", "Elle n'avait jamais fait de politique", "Elle était militante active pour les droits civiques", "Elle était sénatrice"],
+                "answer": 2
+            }
+        ]
+    },
+    {
+        "front": "Qui était Mahatma Gandhi ?",
+        "dates": "1869 - 1948 (Né à Porbandar, Inde | Mort à New Delhi, Inde, à 78 ans)",
+        "faits": "Pionnier de la résistance pacifique et de la désobéissance civile. Il a mené l'Inde à l'indépendance face à l'Empire britannique en utilisant des méthodes non violentes (boycotts, grèves de la faim, marches symboliques). Son influence a inspiré de nombreux mouvements pour les droits civiques à travers le monde.",
+        "fun": "Gandhi parlait l'anglais avec un accent parfait et était avocat de formation. Il a même exercé le droit en Afrique du Sud pendant plus de 20 ans avant de retourner en Inde pour lutter.",
+        "quizzes": [
+            {
+                "question": "Contre quel empire Gandhi a-t-il lutté pour l'indépendance de l'Inde ?",
+                "options": ["L'Empire français", "L'Empire britannique", "L'Empire ottoman", "L'Empire espagnol"],
+                "answer": 1
+            },
+            {
+                "question": "Quelle était la profession initiale de Gandhi avant de devenir un guide spirituel et politique ?",
+                "options": ["Avocat", "Médecin", "Militaire", "Agriculteur"],
+                "answer": 0
+            }
+        ]
+    },
+    {
+        "front": "Qui était Winston Churchill ?",
+        "dates": "1874 - 1965 (Né à Woodstock, Angleterre | Mort à Londres, Angleterre, à 90 ans)",
+        "faits": "Premier ministre du Royaume-Uni pendant la Seconde Guerre mondiale. Célèbre pour sa résilience, ses discours galvanisants ('Du sang, du labeur, des larmes et de la sueur') et son refus catégorique de négocier avec l'Allemagne nazie. Il est considéré comme l'un des plus grands dirigeants du XXe siècle.",
+        "fun": "En plus d'être un redoutable politicien, il était un écrivain prolifique et a même remporté le prix Nobel de littérature en 1953 pour ses mémoires historiques !",
+        "quizzes": [
+            {
+                "question": "Quel prix prestigieux et inattendu Winston Churchill a-t-il reçu en 1953 ?",
+                "options": ["Le prix Nobel de la paix", "Le prix Nobel d'économie", "Le prix Nobel de littérature", "L'Oscar du meilleur scénario"],
+                "answer": 2
+            },
+            {
+                "question": "Quelle célèbre phrase résume son discours de détermination en 1940 ?",
+                "options": ["Je vous ai compris", "Du sang, du labeur, des larmes et de la sueur", "I have a dream", "L'État c'est moi"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Qui était Wolfgang Amadeus Mozart ?",
+        "dates": "1756 - 1791 (Né à Salzbourg, Autriche | Mort à Vienne, Autriche, à 35 ans)",
+        "faits": "Génie précoce de la musique classique européenne. Il a composé plus de 600 œuvres (symphonies, opéras, concertos) touchant à tous les genres de son époque. Son talent inné pour la mélodie et l'harmonie a fait de lui l'un des compositeurs les plus influents de l'histoire, malgré sa mort tragique et prématurée.",
+        "fun": "Il avait une mémoire auditive surnaturelle. À 14 ans, après avoir entendu une seule fois un chant secret du Vatican (le Miserere d'Allegri) de 15 minutes, il est rentré chez lui et a réécrit la partition entière de tête, sans aucune erreur !",
+        "quizzes": [
+            {
+                "question": "Quel trait de génie définissait l'enfance de Mozart ?",
+                "options": ["Il était sourd", "Il a composé sa première œuvre à 5 ans et possédait une mémoire absolue", "Il inventait de nouveaux instruments", "Il chantait en plusieurs langues"],
+                "answer": 1
+            },
+            {
+                "question": "Combien d'œuvres environ Mozart a-t-il composées avant de mourir à 35 ans ?",
+                "options": ["Environ 100", "Environ 250", "Plus de 600", "Exactement 1000"],
+                "answer": 2
+            }
+        ]
+    },
+    {
+        "front": "Qui était Isaac Newton ?",
+        "dates": "1643 - 1727 (Né à Woolsthorpe, Angleterre | Mort à Londres, Angleterre, à 84 ans)",
+        "faits": "Physicien, mathématicien et astronome britannique. Il a fondé la mécanique classique avec ses trois lois du mouvement et a formulé la loi de la gravitation universelle (expliquant que la force qui fait tomber une pomme est la même qui maintient la Lune en orbite). Il a également co-inventé le calcul infinitésimal.",
+        "fun": "Newton était obsédé par l'alchimie (essayer de transformer le plomb en or) et l'occultisme. Il a écrit secrètement beaucoup plus de livres sur la théologie et l'alchimie que sur les mathématiques !",
+        "quizzes": [
+            {
+                "question": "Quelle grande loi physique universelle a été théorisée par Newton ?",
+                "options": ["La relativité générale", "La loi de la gravitation universelle", "La mécanique quantique", "La thermodynamique"],
+                "answer": 1
+            },
+            {
+                "question": "Quelle passion secrète occupait une grande partie de la vie de Newton ?",
+                "options": ["L'alchimie et la théologie", "La peinture", "La musique classique", "La biologie marine"],
+                "answer": 0
+            }
+        ]
+    },
+    {
+        "front": "Qui était Charles Darwin ?",
+        "dates": "1809 - 1882 (Né à Shrewsbury, Angleterre | Mort à Downe, Angleterre, à 73 ans)",
+        "faits": "Naturaliste et biologiste britannique. Après un voyage de 5 ans autour du monde sur le navire Beagle, il a publié 'De l'origine des espèces' en 1859. Il y explique que tous les êtres vivants ont évolué avec le temps à partir d'ancêtres communs grâce au processus de la sélection naturelle.",
+        "fun": "Pour étudier si les animaux ressentaient des émotions, Darwin passait un temps fou à observer les singes au zoo de Londres et essayait même de jouer de la flûte aux vers de terre de son jardin pour voir s'ils réagissaient à la musique !",
+        "quizzes": [
+            {
+                "question": "Quel concept révolutionnaire est introduit dans son livre 'De l'origine des espèces' ?",
+                "options": ["Le Big Bang", "La sélection naturelle", "La dérive des continents", "La génétique de l'ADN"],
+                "answer": 1
+            },
+            {
+                "question": "Comment s'appelait le navire sur lequel il a fait son voyage scientifique ?",
+                "options": ["Le Titanic", "Le Santa Maria", "Le Beagle", "Le Mayflower"],
+                "answer": 2
+            }
+        ]
+    },
+    {
+        "front": "Qui était Galilée (Galileo Galilei) ?",
+        "dates": "1564 - 1642 (Né à Pise, Italie | Mort à Arcetri, Italie, à 77 ans)",
+        "faits": "Père de la science moderne. En braquant une lunette astronomique vers le ciel, il prouve que la Terre tourne autour du Soleil (l'héliocentrisme de Copernic) et non l'inverse. Ses découvertes ont déclenché la fureur de l'Église catholique, qui l'a condamné pour hérésie et forcé à abjurer ses théories.",
+        "fun": "La légende raconte qu'en se relevant après avoir été forcé d'avouer que la Terre ne bougeait pas, il aurait murmuré : 'Et pourtant, elle tourne' (E pur si muove). L'Église catholique ne l'a officiellement réhabilité qu'en... 1992 !",
+        "quizzes": [
+            {
+                "question": "Quelle théorie majeure Galilée a-t-il défendue avec ses observations ?",
+                "options": ["L'héliocentrisme (la Terre tourne autour du Soleil)", "Le géocentrisme (le Soleil tourne autour de la Terre)", "La gravité lunaire", "La rotondité de la Terre"],
+                "answer": 0
+            },
+            {
+                "question": "Par quelle puissante institution Galilée a-t-il été jugé et condamné ?",
+                "options": ["L'Inquisition de l'Église catholique", "Le roi de France", "Le Sénat romain", "L'Université d'Oxford"],
+                "answer": 0
+            }
+        ]
+    },
+    {
+        "front": "Qui était Abraham Lincoln ?",
+        "dates": "1809 - 1865 (Né à Hodgenville, Kentucky | Mort à Washington D.C., à 56 ans)",
+        "faits": "16e président des États-Unis, il a dirigé le pays pendant sa période la plus tragique : la guerre de Sécession. Il a réussi à préserver l'Union du pays et a publié la Proclamation d'émancipation, un acte politique majeur qui a conduit à l'abolition de l'esclavage. Il a été assassiné au théâtre peu après la victoire.",
+        "fun": "Avant d'être président, Lincoln était un redoutable lutteur de foire ! Grand (1,93m) et musclé, il n'aurait perdu qu'un seul combat sur environ 300 et figure même au Hall of Fame de la lutte américaine.",
+        "quizzes": [
+            {
+                "question": "Quel conflit majeur Abraham Lincoln a-t-il dû gérer pendant sa présidence ?",
+                "options": ["La guerre d'Indépendance", "La guerre du Viêt Nam", "La guerre de Sécession", "La Première Guerre mondiale"],
+                "answer": 2
+            },
+            {
+                "question": "Quelle institution majeure Lincoln a-t-il permis d'abolir ?",
+                "options": ["La ségrégation dans les bus", "L'esclavage", "La peine de mort", "L'impôt sur le revenu"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Qui était Jules César ?",
+        "dates": "100 av. J.-C. - 44 av. J.-C. (Né à Rome, Italie | Mort à Rome, Italie, à 55 ans)",
+        "faits": "Général et homme politique romain. Ses victoires lors de la guerre des Gaules ont étendu le territoire de Rome de manière spectaculaire. Il s'est ensuite retourné contre le Sénat, a provoqué une guerre civile et s'est fait nommer dictateur à vie, marquant la fin de la République romaine. Il a été assassiné de 23 coups de couteau par un complot de sénateurs.",
+        "fun": "Il n'a jamais été 'Empereur' ! Jules César a préparé le terrain en détruisant la République, mais le tout premier empereur officiel de Rome fut son fils adoptif, Auguste.",
+        "quizzes": [
+            {
+                "question": "Quel grand territoire César a-t-il conquis, forçant Vercingétorix à se rendre ?",
+                "options": ["L'Égypte", "L'Espagne", "La Gaule", "La Grèce"],
+                "answer": 2
+            },
+            {
+                "question": "Quel titre suprême César a-t-il obtenu avant de mourir ?",
+                "options": ["Dictateur à vie", "Empereur de Rome", "Pharaon", "Président du Sénat"],
+                "answer": 0
+            }
+        ]
+    },
+    {
+        "front": "Qui était Alexandre le Grand ?",
+        "dates": "356 av. J.-C. - 323 av. J.-C. (Né à Pella, Macédoine | Mort à Babylone, Mésopotamie, à 32 ans)",
+        "faits": "Roi de Macédoine et l'un des plus grands conquérants de l'histoire. En seulement 13 ans de règne, il a vaincu l'immense Empire perse et étendu son royaume de la Grèce jusqu'à l'Inde. Il n'a jamais perdu une seule bataille de toute sa vie, fondant la civilisation hellénistique (mélange de cultures grecque et orientale).",
+        "fun": "Il avait pour précepteur le célèbre philosophe grec Aristote ! Pendant ses conquêtes, Alexandre envoyait régulièrement des échantillons de plantes et d'animaux exotiques à son ancien professeur pour ses études.",
+        "quizzes": [
+            {
+                "question": "Quel grand philosophe a été le professeur particulier du jeune Alexandre ?",
+                "options": ["Platon", "Socrate", "Aristote", "Pythagore"],
+                "answer": 2
+            },
+            {
+                "question": "Jusqu'à quelle région lointaine Alexandre a-t-il étendu ses conquêtes avant de rebrousser chemin ?",
+                "options": ["La Chine", "L'Égypte", "La Russie", "L'Inde"],
+                "answer": 3
+            }
+        ]
+    },
+    {
+        "front": "Qui était Molière (Jean-Baptiste Poquelin) ?",
+        "dates": "1622 - 1673 (Né à Paris, France | Mort à Paris, France, à 51 ans)",
+        "faits": "Dramaturge et comédien français, maître absolu de la comédie. Protégé de Louis XIV, il a écrit des chefs-d'œuvre (Le Tartuffe, L'Avare, Le Bourgeois gentilhomme) qui dénonçaient les travers, l'hypocrisie et les ridicules de la société de son époque à travers le rire.",
+        "fun": "Contrairement à la légende, il n'est pas mort sur scène ! Il a été pris de violentes convulsions lors d'une représentation du 'Malade imaginaire', mais il a réussi à terminer la pièce avant de mourir chez lui quelques heures plus tard.",
+        "quizzes": [
+            {
+                "question": "Quel trait de la société Molière aimait-il particulièrement critiquer dans ses pièces ?",
+                "options": ["La pauvreté des paysans", "L'hypocrisie et les défauts de la bourgeoisie et de la noblesse", "Les guerres du roi", "La puissance des autres pays"],
+                "answer": 1
+            },
+            {
+                "question": "Quelle est la langue française souvent surnommée en son honneur ?",
+                "options": ["La langue de Louis XIV", "La langue des rois", "La langue de Molière", "Le parler de Paris"],
+                "answer": 2
+            }
+        ]
+    },
+    {
+        "front": "Qui était Frida Kahlo ?",
+        "dates": "1907 - 1954 (Née à Coyoacán, Mexique | Morte à Coyoacán, Mexique, à 47 ans)",
+        "faits": "Artiste peintre mexicaine célèbre pour ses autoportraits intenses et colorés, teintés de surréalisme et de réalisme magique. Souffrant de douleurs chroniques après un grave accident de bus dans sa jeunesse, elle a peint sa souffrance physique et morale, tout en devenant une icône de l'émancipation féminine et de la culture mexicaine.",
+        "fun": "Elle adorait les animaux exotiques. Dans sa fameuse 'Maison Bleue', elle vivait avec des singes-araignées, des chiens nus du Mexique, un faon, et un perroquet qui jurait en espagnol !",
+        "quizzes": [
+            {
+                "question": "Quel événement tragique a profondément influencé l'art et la vie de Frida Kahlo ?",
+                "options": ["Une guerre civile", "Un grave accident de bus", "Un incendie de sa maison", "La perte de la vue"],
+                "answer": 1
+            },
+            {
+                "question": "Quel style de tableau Frida Kahlo peignait-elle le plus souvent ?",
+                "options": ["Des paysages de montagnes", "Des scènes de batailles", "Des autoportraits", "De l'art abstrait géométrique"],
+                "answer": 2
+            }
+        ]
+    },
+    {
+        "front": "Qui était Mère Teresa ?",
+        "dates": "1910 - 1997 (Née à Skopje, Empire ottoman | Morte à Calcutta, Inde, à 87 ans)",
+        "faits": "Religieuse catholique d'origine albanaise, naturalisée indienne. Elle a fondé la congrégation des Missionnaires de la Charité pour consacrer sa vie aux 'plus pauvres d'entre les pauvres' dans les bidonvilles de Calcutta, soignant les mourants et les lépreux. Elle a reçu le prix Nobel de la paix en 1979.",
+        "fun": "Quand elle a reçu son Prix Nobel, elle a refusé le luxueux banquet de gala traditionnel et a demandé que les 192 000 dollars de frais du dîner soient directement reversés aux pauvres de l'Inde.",
+        "quizzes": [
+            {
+                "question": "Dans quelle ville indienne Mère Teresa a-t-elle principalement œuvré ?",
+                "options": ["New Delhi", "Bombay", "Calcutta", "Madras"],
+                "answer": 2
+            },
+            {
+                "question": "Quelle distinction internationale a-t-elle obtenue en 1979 ?",
+                "options": ["Le prix Nobel de médecine", "Le prix Nobel de la paix", "La médaille de l'ONU", "L'Oscar d'honneur"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Qui était Gengis Khan ?",
+        "dates": "Vers 1162 - 1227 (Né dans les monts Khentii, Mongolie | Mort à Yinchuan, Chine, à environ 65 ans)",
+        "faits": "Guerrier et rassembleur des tribus nomades mongoles, il a fondé le plus vaste empire continu de toute l'histoire de l'humanité (s'étendant de l'Europe de l'Est à la mer du Japon). Cavalier et stratège hors pair, il était impitoyable envers ses ennemis mais instaurait la tolérance religieuse et la méritocratie dans ses propres rangs.",
+        "fun": "Personne ne sait où il est enterré. Selon la légende, son escorte funéraire a tué tous ceux qui croisaient leur route, puis des chevaux ont piétiné le sol de sa tombe pour en effacer toute trace.",
+        "quizzes": [
+            {
+                "question": "Quelle est la particularité de l'empire fondé par Gengis Khan ?",
+                "options": ["C'était le plus riche du monde", "Il fut le premier empire démocratique", "C'est le plus vaste empire territorial continu de l'histoire", "Il n'avait aucune armée"],
+                "answer": 2
+            },
+            {
+                "question": "Comment l'armée mongole se déplaçait-elle et combattait-elle principalement ?",
+                "options": ["À pied avec de lourdes armures", "Sur des bateaux", "À cheval avec des arcs", "Avec des chars tirés par des éléphants"],
+                "answer": 2
+            }
+        ]
+    },
+    {
+        "front": "Qui était Neil Armstrong ?",
+        "dates": "1930 - 2012 (Né à Wapakoneta, Ohio | Mort à Cincinnati, Ohio, à 82 ans)",
+        "faits": "Pilote d'essai, ingénieur et astronaute américain. En tant que commandant de la mission Apollo 11, il est entré dans l'histoire le 21 juillet 1969 en devenant le tout premier être humain à poser le pied sur la Lune, prononçant une phrase devenue légendaire.",
+        "fun": "Lors du retour sur Terre, Armstrong, Buzz Aldrin et Michael Collins ont dû remplir un vrai formulaire de déclaration de douane américaine à l'aéroport d'Hawaï, déclarant qu'ils ramenaient des 'roches et poussières de la Lune' !",
+        "quizzes": [
+            {
+                "question": "En quelle année Neil Armstrong a-t-il marché sur la Lune ?",
+                "options": ["1959", "1969", "1975", "1981"],
+                "answer": 1
+            },
+            {
+                "question": "Quelle phrase célèbre a-t-il prononcée en posant le pied sur la surface lunaire ?",
+                "options": ["Houston, on a un problème", "C'est un petit pas pour l'homme, un bond de géant pour l'humanité", "La Terre est bleue comme une orange", "L'aigle s'est posé"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Qui était Victor Hugo ?",
+        "dates": "1802 - 1885 (Né à Besançon, France | Mort à Paris, France, à 83 ans)",
+        "faits": "Monument de la littérature française (poète, romancier, dramaturge) et homme politique engagé. Auteur des 'Misérables' et de 'Notre-Dame de Paris', il a lutté toute sa vie contre la misère, l'injustice sociale et la peine de mort. Fervent défenseur de la République, il s'est exilé pendant 19 ans pour s'opposer à Napoléon III.",
+        "fun": "À sa mort, plus de 2 millions de personnes ont suivi son cortège funéraire dans les rues de Paris, soit une foule plus importante que la population totale de la capitale à l'époque !",
+        "quizzes": [
+            {
+                "question": "Quel célèbre roman a été écrit par Victor Hugo ?",
+                "options": ["Madame Bovary", "Les Trois Mousquetaires", "Les Misérables", "Le Rouge et le Noir"],
+                "answer": 2
+            },
+            {
+                "question": "Contre quoi Victor Hugo s'est-il engagé politiquement tout au long de sa vie ?",
+                "options": ["Pour le retour du roi", "Contre l'école gratuite", "Pour la colonisation", "Contre la peine de mort et la misère"],
+                "answer": 3
+            }
+        ]
+    },
+    {
+        "front": "Qui était Martin Luther King Jr. ?",
+        "dates": "1929 - 1968 (Né à Atlanta, Géorgie | Mort à Memphis, Tennessee, à 39 ans)",
+        "faits": "Pasteur afro-américain et militant non violent pour le mouvement des droits civiques aux États-Unis. Il a mené la lutte contre la ségrégation raciale et a prononcé son célèbre discours 'I Have a Dream' devant le Lincoln Memorial en 1963. Il a reçu le prix Nobel de la paix avant d'être tragiquement assassiné à l'âge de 39 ans.",
+        "fun": "Son vrai prénom de naissance était 'Michael' ! Son père a décidé de changer leurs deux prénoms en 'Martin Luther' après un voyage inspirant en Allemagne sur les traces du grand réformateur protestant.",
+        "quizzes": [
+            {
+                "question": "Quel était le principe fondamental de la lutte de Martin Luther King ?",
+                "options": ["La lutte armée", "L'indépendance d'un État noir", "La non-violence", "L'exil vers l'Afrique"],
+                "answer": 2
+            },
+            {
+                "question": "Comment commence la phrase la plus célèbre de son discours de 1963 ?",
+                "options": ["Yes we can...", "I have a dream...", "We shall overcome...", "I am a man..."],
+                "answer": 1
+            }
+        ]
     }
 ]
