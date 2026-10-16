@@ -438,6 +438,12 @@
         let currentSubQuizIndex = 0;
         let currentBatchCount = 0; // NOUVEAU : Compteur de la session en cours
 
+		const cardView = document.getElementById('card-view');
+        const quizView = document.getElementById('quiz-view');
+        const waitView = document.getElementById('wait-view');
+        const instruction = document.getElementById('card-instruction');
+        const statusBadge = document.getElementById('status-badge');
+		
         async function initApp() {
             try {
                 const response = await fetch('cards.json');
