@@ -1,6 +1,6 @@
 {
-    "name": "CurioCartes",
-    "short_name": "CurioCartes",
+    "name": "CurioCarte",
+    "short_name": "CurioCarte",
     "description": "Améliorez votre culture générale par micro-doses.",
     "start_url": "./index.html",
     "display": "standalone",
