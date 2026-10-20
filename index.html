@@ -615,18 +615,16 @@
                 
                 setTimeout(() => {
                     if (currentSubQuizIndex < currentQuizzes.length - 1) {
-                        alert("Bonne réponse ! 🎉 On passe à la suivante.");
                         currentSubQuizIndex++;
                         showQuiz();
                     } else {
-                        alert("Parfait ! Tout est juste ! 🎉");
                         currentLevel++;
                         if(currentLevel >= INTERVALS.length) currentLevel = INTERVALS.length - 1;
                         saveToMemory(currentCardIndex, currentLevel);
 						currentBatchCount++;
                         analyzeMemory();
                     }
-                }, 10);
+                }, 800);
 
             } else {
                 clickedBtn.classList.add('wrong');
