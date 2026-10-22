@@ -595,11 +595,29 @@
             const optionsDiv = document.getElementById('quiz-options');
             optionsDiv.innerHTML = '';
             
-            quiz.options.forEach((opt, index) => {
+            // 1. Créer un tableau d'objets pour garder la trace de la bonne réponse
+            let shuffledOptions = quiz.options.map((opt, index) => {
+                return { 
+                    text: opt, 
+                    isCorrect: (index === quiz.answer) 
+                };
+            });
+
+            // 2. Mélanger ce tableau au hasard (Algorithme de Fisher-Yates)
+            for (let i = shuffledOptions.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffledOptions[i], shuffledOptions[j]] = [shuffledOptions[j], shuffledOptions[i]];
+            }
+
+            // 3. Trouver la nouvelle position de la bonne réponse après le mélange
+            const newCorrectIndex = shuffledOptions.findIndex(o => o.isCorrect);
+            
+            // 4. Créer les boutons dans le nouvel ordre aléatoire
+            shuffledOptions.forEach((optObj, currentIndex) => {
                 const btn = document.createElement('button');
                 btn.className = 'quiz-btn';
-                btn.innerText = opt;
-                btn.onclick = () => checkAnswer(index, quiz.answer, btn);
+                btn.innerText = optObj.text;
+                btn.onclick = () => checkAnswer(currentIndex, newCorrectIndex, btn);
                 optionsDiv.appendChild(btn);
             });
 
