@@ -448,5 +448,275 @@
                 "answer": 1
             }
         ]
+    },
+	{
+        "front": "Qui était Nikola Tesla ?",
+        "dates": "10 juillet 1856 (Smiljan, Empire d'Autriche) - 7 janvier 1943 (New York, États-Unis) | 86 ans",
+        "faits": "Issu d'une famille serbe (père prêtre orthodoxe, mère inventrice d'outils agricoles). Ingénieur surdoué à la mémoire photographique, il émigre aux États-Unis presque sans un sou pour travailler avec Thomas Edison, avant de devenir son grand rival lors de la fameuse 'guerre des courants'. Tesla invente le courant alternatif (celui qui alimente nos maisons aujourd'hui), le moteur asynchrone, la transmission sans fil, et dépose plus de 300 brevets. Mauvais homme d'affaires, il finit sa vie ruiné, nourrissant les pigeons dans un hôtel.",
+        "fun": "Il souffrait de puissants TOC (Troubles Obsessionnels Compulsifs) : il était obsédé par le chiffre 3, calculait le volume exact de son assiette avant d'avaler une bouchée, et refusait catégoriquement de toucher des cheveux humains ou des bijoux ronds comme des perles.",
+        "quizzes": [
+            {
+                "question": "Quel type de courant électrique Tesla a-t-il défendu et imposé au monde ?",
+                "options": ["Le courant alternatif", "Le courant continu", "Le courant statique", "Le courant radio-magnétique"],
+                "answer": 0
+            },
+            {
+                "question": "Quelle était la profession du père de Nikola Tesla ?",
+                "options": ["Général de l'armée", "Banquier", "Prêtre orthodoxe", "Physicien renommé"],
+                "answer": 2
+            }
+        ]
+    },
+    {
+        "front": "Qui était Ludwig van Beethoven ?",
+        "dates": "16 décembre 1770 (Bonn, Saint-Empire) - 26 mars 1827 (Vienne, Empire d'Autriche) | 56 ans",
+        "faits": "Issu d'une famille de musiciens modestes d'origine flamande. Son père, musicien de cour alcoolique et violent, l'oblige à travailler le piano jour et nuit à coups de bâton pour en faire 'le nouveau Mozart'. Devenu un compositeur de génie à Vienne, il fait la transition majeure entre le classicisme rigoureux et le romantisme émotionnel. Dès l'âge de 27 ans, il commence à perdre l'ouïe. Il composera ses plus grands chefs-d'œuvre (comme sa bouleversante 9e Symphonie) en étant devenu totalement sourd.",
+        "fun": "Pour se 'stimuler le cerveau' lorsqu'il composait, Beethoven avait l'habitude de se verser d'énormes seaux d'eau glacée sur la tête, ce qui inondait régulièrement le plafond de ses pauvres voisins du dessous !",
+        "quizzes": [
+            {
+                "question": "Comment le père de Beethoven l'a-t-il traité durant son enfance ?",
+                "options": ["Il l'a abandonné très jeune", "Il lui interdisait de toucher aux instruments", "Il l'a forcé brutalement pour en faire un enfant prodige", "Il l'a encouragé avec beaucoup de bienveillance"],
+                "answer": 2
+            },
+            {
+                "question": "Quel terrible handicap a frappé Beethoven au sommet de sa carrière ?",
+                "options": ["La paralysie des mains", "La surdité", "La cécité", "La perte de la mémoire"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Qui était Catherine II (Catherine la Grande) ?",
+        "dates": "2 mai 1729 (Stettin, Prusse) - 17 novembre 1796 (Saint-Pétersbourg, Russie) | 67 ans",
+        "faits": "Née princesse allemande (Sophie d'Anhalt-Zerbst) dans une famille désargentée. Mariée à 16 ans à l'héritier du trône de Russie (le futur Pierre III), elle s'isole dans la lecture pour apprendre le russe, la politique et la philosophie. Après un coup d'État où son mari est destitué puis assassiné (avec sa complicité tacite), elle devient Impératrice. Despote éclairée, elle modernise l'empire, étend considérablement le territoire (annexion de la Crimée, de la Pologne) et correspond avec Voltaire et Diderot.",
+        "fun": "Immense collectionneuse d'art, elle a fondé le célèbre musée de l'Ermitage. Pour protéger ses milliers de toiles inestimables contre les rats, elle a officiellement embauché des centaines de chats comme 'gardiens de galerie', une tradition impériale qui perdure encore aujourd'hui !",
+        "quizzes": [
+            {
+                "question": "De quelle nationalité d'origine était l'impératrice Catherine la Grande ?",
+                "options": ["Française", "Russe", "Polonaise", "Allemande"],
+                "answer": 3
+            },
+            {
+                "question": "Comment a-t-elle obtenu le pouvoir absolu en Russie ?",
+                "options": ["Par l'assassinat de son mari lors d'un coup d'État", "Par élection démocratique", "Par un héritage pacifique de son père", "En rachetant le pays"],
+                "answer": 0
+            }
+        ]
+    },
+    {
+        "front": "Qui était Charles de Gaulle ?",
+        "dates": "22 novembre 1890 (Lille, France) - 9 novembre 1970 (Colombey-les-Deux-Églises, France) | 79 ans",
+        "faits": "Issu d'une famille bourgeoise catholique, très patriote et passionnée d'histoire (son père était professeur). Militaire de carrière, il est grièvement blessé et fait prisonnier pendant la Première Guerre mondiale. En 1940, refusant l'armistice face à l'Allemagne nazie, il s'exile à Londres, lance le célèbre Appel du 18 Juin et organise la Résistance. En 1958, rappelé au pouvoir en pleine crise algérienne, il fonde la Ve République et dote la France de la bombe nucléaire pour garantir son indépendance.",
+        "fun": "Sa très grande taille (1,96 m) posait un cauchemar logistique militaire pendant les guerres. Les lits de camp, les uniformes, et même les voitures blindées devaient souvent être rallongés sur mesure pour qu'il puisse s'y tenir !",
+        "quizzes": [
+            {
+                "question": "Quel régime politique Charles de Gaulle a-t-il créé en 1958 ?",
+                "options": ["La IVe République", "La Ve République", "L'Empire français", "La Monarchie constitutionnelle"],
+                "answer": 1
+            },
+            {
+                "question": "Quel acte majeur a-t-il posé en juin 1940 depuis l'Angleterre ?",
+                "options": ["Il a démissionné de l'armée", "Il a demandé de l'aide à l'URSS", "Il a lancé un appel radiophonique à la Résistance", "Il a signé un traité de paix secret"],
+                "answer": 2
+            }
+        ]
+    },
+    {
+        "front": "Qui était Vincent van Gogh ?",
+        "dates": "30 mars 1853 (Groot Zundert, Pays-Bas) - 29 juillet 1890 (Auvers-sur-Oise, France) | 37 ans",
+        "faits": "Fils d'un pasteur protestant strict. Sa jeunesse est une succession d'échecs : il tente d'être marchand d'art, puis instituteur, puis prédicateur miséreux chez les mineurs de charbon. Il ne commence à peindre sérieusement qu'à 27 ans. Soutenu financièrement par son frère Théo, il peint frénétiquement plus de 800 toiles en 10 ans, révolutionnant l'utilisation de la couleur. Souffrant de graves crises de démence, il se coupe l'oreille après une dispute avec Gauguin et meurt par suicide, se croyant raté.",
+        "fun": "De son vivant, sur ses centaines de chefs-d'œuvre, Van Gogh n'a réussi à vendre officiellement qu'un seul et unique tableau ('La Vigne rouge' pour 400 francs). Aujourd'hui, ses toiles s'arrachent pour des dizaines de millions d'euros.",
+        "quizzes": [
+            {
+                "question": "Quel membre de sa famille a été son pilier financier et affectif toute sa vie ?",
+                "options": ["Son oncle banquier", "Sa mère", "Son frère Théo", "Sa sœur cadette"],
+                "answer": 2
+            },
+            {
+                "question": "Avant de devenir peintre, quel métier difficile a-t-il exercé dans la misère ?",
+                "options": ["Forgeron", "Prédicateur religieux pour les mineurs", "Soldat mercenaire", "Agriculteur de tulipes"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Qui était Harriet Tubman ?",
+        "dates": "Vers 1822 (Comté de Dorchester, Maryland, États-Unis) - 10 mars 1913 (Auburn, New York, États-Unis) | environ 91 ans",
+        "faits": "Née esclave noire sous le nom d'Araminta Ross. Battue et maltraitée durant toute sa jeunesse, elle s'échappe seule vers le Nord libre en 1849. Surnommée la 'Moïse noire', elle fait l'incroyable choix de retourner clandestinement dans le Sud à 13 reprises au péril de sa vie via l''Underground Railroad' (réseau secret) pour libérer plus de 70 esclaves, dont ses vieux parents. Pendant la guerre de Sécession, elle sert l'armée du Nord comme infirmière, espionne et chef de raid armé.",
+        "fun": "Elle souffrait d'épilepsie et de violents épisodes de narcolepsie (elle s'endormait d'un coup) dus à un crâne fracturé par un contremaître dans son enfance. Elle interprétait ses absences soudaines comme des 'visions guidées par Dieu'.",
+        "quizzes": [
+            {
+                "question": "Comment s'appelait le réseau clandestin qu'elle utilisait pour faire fuir les esclaves ?",
+                "options": ["Le sentier de la nuit", "La marche vers l'Ouest", "L'Underground Railroad (chemin de fer souterrain)", "L'African Escape"],
+                "answer": 2
+            },
+            {
+                "question": "Quel exploit militaire militaire hors du commun a-t-elle accompli pendant la guerre civile ?",
+                "options": ["Elle a dirigé un raid armé d'assaut (première femme à le faire)", "Elle a assassiné le président sudiste", "Elle a piloté un sous-marin", "Elle est devenue Générale 5 étoiles"],
+                "answer": 0
+            }
+        ]
+    },
+    {
+        "front": "Qui était Thomas Edison ?",
+        "dates": "11 février 1847 (Milan, Ohio, États-Unis) - 18 octobre 1931 (West Orange, New Jersey, États-Unis) | 84 ans",
+        "faits": "Issu d'une famille modeste, il est renvoyé de l'école après 3 mois car le maître le juge 'hyperactif et stupide'. Éduqué par sa mère, il installe un laboratoire de chimie dans sa cave à 10 ans. Devenu un inventeur et redoutable homme d'affaires, il n'invente pas l'ampoule électrique à partir de zéro, mais crée le premier filament de bambou commercialement viable. Il invente le phonographe, participe au cinéma, et fonde General Electric, déposant un record de 1093 brevets.",
+        "fun": "Lors de la 'Guerre des Courants' contre Nikola Tesla, Edison (qui défendait le courant continu) a secrètement financé l'invention de la chaise électrique utilisant le courant alternatif de son rival, espérant prouver au public que l'invention de Tesla était meurtrière.",
+        "quizzes": [
+            {
+                "question": "Comment Thomas Edison a-t-il été principalement instruit dans sa jeunesse ?",
+                "options": ["Dans une université de la Ivy League", "À l'école militaire", "Il a été éduqué par sa mère après avoir été renvoyé de l'école", "Par des moines en Europe"],
+                "answer": 2
+            },
+            {
+                "question": "Quel célèbre appareil d'enregistrement du son a-t-il inventé ?",
+                "options": ["La radio", "Le phonographe", "Le microphone", "Le synthétiseur"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Qui était Karl Marx ?",
+        "dates": "5 mai 1818 (Trèves, Prusse) - 14 mars 1883 (Londres, Royaume-Uni) | 64 ans",
+        "faits": "Fils d'un brillant avocat issu d'une longue lignée de rabbins (le père s'est converti au protestantisme pour pouvoir exercer). Karl étudie la philosophie et le droit, et devient un journaliste très virulent. Traqué et exilé de plusieurs pays pour ses idées subversives, il s'installe à Londres où il vit souvent dans une pauvreté extrême. Il co-rédige le 'Manifeste du Parti communiste' (1848) avec Friedrich Engels et écrit 'Le Capital', théorisant la lutte des classes comme moteur de l'histoire humaine.",
+        "fun": "Le grand théoricien de l'économie capitaliste était absolument incapable de gérer ses propres finances. Il a parfois dû mettre son unique manteau et ses chaussures en gage au mont-de-piété pour pouvoir acheter du pain à ses enfants, l'empêchant de sortir de chez lui !",
+        "quizzes": [
+            {
+                "question": "Quel concept fondamental est au cœur de la pensée politique de Marx ?",
+                "options": ["Le droit divin des rois", "La lutte des classes", "La libre entreprise sans règles", "Le nationalisme militaire"],
+                "answer": 1
+            },
+            {
+                "question": "Avec quel grand ami intellectuel a-t-il coécrit le Manifeste communiste ?",
+                "options": ["Friedrich Engels", "Emmanuel Kant", "Lénine", "Victor Hugo"],
+                "answer": 0
+            }
+        ]
+    },
+    {
+        "front": "Qui était Ada Lovelace ?",
+        "dates": "10 décembre 1815 (Londres, Angleterre) - 27 novembre 1852 (Londres, Angleterre) | 36 ans",
+        "faits": "Fille légitime de l'extravagant poète Lord Byron. Sa mère, terrifiée à l'idée qu'Ada hérite de la 'folie poétique' de son père, l'oblige dès l'enfance à étudier les mathématiques et la logique de manière militaire. Jeune femme de la haute société, elle collabore avec Charles Babbage sur son projet de 'machine analytique' (un projet d'ordinateur mécanique à engrenages). En 1843, comprenant que cette machine pourrait traiter des symboles et non juste des nombres, elle rédige le tout premier algorithme de l'histoire.",
+        "fun": "Elle est aujourd'hui reconnue mondialement comme la toute première programmeuse informatique de l'histoire de l'humanité, ayant écrit du code un siècle entier avant que le premier ordinateur électrique ne soit inventé !",
+        "quizzes": [
+            {
+                "question": "De qui Ada Lovelace était-elle la fille ?",
+                "options": ["De Charles Darwin", "Du roi George III", "Du poète Lord Byron", "D'Isaac Newton"],
+                "answer": 2
+            },
+            {
+                "question": "Pour quel exploit majeur est-elle reconnue dans l'histoire des sciences ?",
+                "options": ["Elle a rédigé le tout premier algorithme informatique (programme)", "Elle a découvert la radioactivité", "Elle a inventé la machine à écrire", "Elle a calculé l'orbite de la Terre"],
+                "answer": 0
+            }
+        ]
+    },
+    {
+        "front": "Qui était Auguste (Octave) ?",
+        "dates": "23 septembre 63 av. J.-C. (Rome, Italie) - 19 août 14 apr. J.-C. (Nola, Italie) | 76 ans",
+        "faits": "Né Caius Octavius, fils d'un sénateur provincial, il devient à 18 ans le fils adoptif et héritier du testament de son grand-oncle Jules César (fraîchement assassiné). Chétif et considéré comme faible, ce jeune homme surprend tout le monde par son génie politique froid et implacable. Il lève une armée, venge César, vainc ses rivaux (dont Marc Antoine et Cléopâtre) et met fin à la République. Sans jamais se nommer roi, il concentre tous les pouvoirs et devient le tout premier Empereur romain.",
+        "fun": "L'empereur le plus puissant du monde était terrorisé par l'orage. Dès que le tonnerre grondait, Auguste courait se cacher au fond d'une cave souterraine obscure en s'enveloppant étroitement dans une peau de phoque, censée repousser la foudre !",
+        "quizzes": [
+            {
+                "question": "Quel lien familial direct unissait le jeune Octave à Jules César ?",
+                "options": ["Il était son neveu et fils adoptif", "Il était son père", "Il était son demi-frère", "Ils n'avaient aucun lien"],
+                "answer": 0
+            },
+            {
+                "question": "Quel titre inédit a-t-il obtenu, marquant la fin de la République ?",
+                "options": ["Sénateur suprême", "Pharaon de Rome", "Le tout premier Empereur romain", "Dictateur d'un an"],
+                "answer": 2
+            }
+        ]
+    },
+    {
+        "front": "Qui était Stephen Hawking ?",
+        "dates": "8 janvier 1942 (Oxford, Angleterre) - 14 mars 2018 (Cambridge, Angleterre) | 76 ans",
+        "faits": "Né dans une famille excentrique d'intellectuels (père chercheur, mère secrétaire). Étudiant brillant mais paresseux, il s'ennuie à l'université. À 21 ans, on lui diagnostique la maladie de Charcot (SLA) qui détruit ses neurones moteurs ; les médecins lui donnent 2 ans à vivre. Défiant tous les pronostics, il fonde une famille et devient l'un des plus grands physiciens théoriciens. Cloué dans un fauteuil et parlant via un synthétiseur vocal, il prouve mathématiquement que les trous noirs meurent en s'évaporant (le rayonnement de Hawking).",
+        "fun": "Fier de son espièglerie scientifique, il a organisé en 2009 un banquet luxueux avec champagne et décoration festive. Il s'y est rendu seul et a attendu. Il n'a envoyé les invitations qu'APRÈS la fin de la fête, pour voir si des voyageurs du futur viendraient !",
+        "quizzes": [
+            {
+                "question": "Quelle grave maladie dégénérative lui a-t-on diagnostiquée à l'âge de 21 ans ?",
+                "options": ["La sclérose en plaques", "La lèpre", "La maladie de Charcot (SLA)", "La maladie d'Alzheimer"],
+                "answer": 2
+            },
+            {
+                "question": "Quelle fut sa plus grande découverte en cosmologie théorique ?",
+                "options": ["La Terre est ronde", "Les trous noirs émettent des radiations et s'évaporent", "Il a cartographié la Voie Lactée", "La découverte d'une vie extraterrestre"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Qui était George Washington ?",
+        "dates": "22 février 1732 (Comté de Westmoreland, Virginie) - 14 décembre 1799 (Mount Vernon, Virginie, États-Unis) | 67 ans",
+        "faits": "Né dans la bourgeoisie terrienne des colonies britanniques, il hérite d'immenses plantations esclavagistes de tabac. D'abord géomètre puis officier militaire pour la Couronne anglaise, il se retourne contre l'Angleterre à cause des taxes abusives. Nommé commandant en chef de l'armée rebelle continentale, il gagne la guerre d'Indépendance. Il refuse la couronne de roi qu'on lui propose et est élu à l'unanimité comme le premier Président des États-Unis.",
+        "fun": "Contrairement à la légende populaire, ses fameux faux dentiers n'étaient absolument pas en bois ! Ses prothèses étaient fabriquées avec de l'ivoire d'hippopotame, des fixations en or, et même de véritables dents humaines achetées à des esclaves.",
+        "quizzes": [
+            {
+                "question": "Quelle classe sociale représentait la famille de George Washington ?",
+                "options": ["De pauvres paysans irlandais", "De riches planteurs esclavagistes de Virginie", "Des banquiers de New York", "Des ouvriers du textile"],
+                "answer": 1
+            },
+            {
+                "question": "Quel titre lui a-t-on proposé, qu'il a formellement refusé pour protéger la démocratie ?",
+                "options": ["Général 5 étoiles", "Gouverneur à vie", "Roi des États-Unis", "Pape de l'Église américaine"],
+                "answer": 2
+            }
+        ]
+    },
+    {
+        "front": "Qui était Marie-Antoinette ?",
+        "dates": "2 novembre 1755 (Vienne, Autriche) - 16 octobre 1793 (Paris, France) | 37 ans",
+        "faits": "Née archiduchesse d'Autriche, onzième fille de la redoutable impératrice Marie-Thérèse. À 14 ans, elle est envoyée à Versailles et mariée au futur Louis XVI pour sceller la paix entre les deux pays. Reine fêtarde, dépensière et mal conseillée, elle s'enferme dans son luxueux domaine du Petit Trianon, s'attirant la haine du peuple affamé qui la surnomme 'l'Autrichienne'. Lors de la Révolution française, elle fait preuve de dignité lors de son procès hâtif avant d'être guillotinée en place publique.",
+        "fun": "Elle n'a jamais prononcé la tristement célèbre phrase face au peuple affamé : 'S'ils n'ont pas de pain, qu'ils mangent de la brioche !'. Cette phrase figurait en réalité dans un vieux livre du philosophe Jean-Jacques Rousseau, publié quand la reine n'était qu'une petite fille en Autriche.",
+        "quizzes": [
+            {
+                "question": "De quelle nationalité d'origine était la reine Marie-Antoinette ?",
+                "options": ["Anglaise", "Russe", "Autrichienne", "Prussienne"],
+                "answer": 2
+            },
+            {
+                "question": "Pourquoi a-t-elle été mariée au jeune dauphin de France à 14 ans ?",
+                "options": ["Pour sceller une grande alliance politique et la paix", "À la suite d'un tirage au sort", "Par un amour d'enfance clandestin", "Pour espionner le roi de France"],
+                "answer": 0
+            }
+        ]
+    },
+    {
+        "front": "Qui était Attila le Hun ?",
+        "dates": "Vers 395 (Plaines de Pannonie) - Mars 453 (Pannonie, actuelle Hongrie) | env. 58 ans",
+        "faits": "Fils de roi, il grandit en tant que prince nomade des steppes, apprenant à monter à cheval et à tirer à l'arc dès son plus jeune âge. Il unifie toutes les tribus huns et crée un empire s'étendant de l'Oural au Rhin. Avec sa redoutable cavalerie rapide, il met à genoux les Empires romains (d'Orient et d'Occident) en pillant l'Europe. Surnommé le 'Fléau de Dieu', son but n'était pas de conquérir politiquement les terres, mais d'extorquer de gigantesques tributs en or à Rome sous la menace.",
+        "fun": "La mort du plus grand guerrier d'Europe fut étonnamment pitoyable. Le soir de ses propres noces (avec une princesse germanique), complètement ivre, il fit un saignement de nez dans son sommeil et s'étouffa à mort dans son propre sang, provoquant l'effondrement immédiat de son empire.",
+        "quizzes": [
+            {
+                "question": "Quel surnom apocalyptique les Romains ont-ils donné à Attila ?",
+                "options": ["L'Ours Noir", "L'Empereur de Sang", "Le Démon d'Orient", "Le Fléau de Dieu"],
+                "answer": 3
+            },
+            {
+                "question": "Quel était le véritable but de ses invasions meurtrières sur l'Empire romain ?",
+                "options": ["Convertir les Romains à sa religion", "Voler les terres agricoles", "Extorquer des milliers de kilos d'or en tribut", "Détruire le Colisée"],
+                "answer": 2
+            }
+        ]
+    },
+    {
+        "front": "Qui était Malcolm X ?",
+        "dates": "19 mai 1925 (Omaha, Nebraska, États-Unis) - 21 février 1965 (New York, États-Unis) | 39 ans",
+        "faits": "Né Malcolm Little. Fils d'un prêcheur battu à mort par des suprémacistes blancs (Ku Klux Klan). Placé en orphelinat, il tombe dans la délinquance, le vol et la drogue. C'est en prison qu'il lit des dizaines de livres et se convertit à la 'Nation of Islam'. Devenu un orateur magnétique et radical, il milite pour la séparation des races et l'autodéfense armée des Noirs américains, s'opposant violemment au pacifisme de Martin Luther King. Après avoir adouci ses positions, il est assassiné de 21 balles par son ancienne secte.",
+        "fun": "Pourquoi s'appeler 'X' ? Il a effacé son nom de famille officiel (Little) car il estimait qu'il s'agissait du nom du maître esclavagiste blanc imposé à ses ancêtres. Le X, symbole mathématique de l'inconnu, représentait son véritable nom africain perdu à jamais.",
+        "quizzes": [
+            {
+                "question": "Où le jeune Malcolm a-t-il véritablement commencé son éducation politique et spirituelle ?",
+                "options": ["À l'université d'Harvard", "Pendant un séjour en prison de 7 ans", "Dans l'armée américaine", "En France"],
+                "answer": 1
+            },
+            {
+                "question": "Que représentait la lettre 'X' qu'il a choisie pour nom de famille ?",
+                "options": ["Son grade militaire secret", "L'inconnu de son véritable nom de famille africain volé par l'esclavage", "La croix religieuse", "Le nom d'un quartier de New York"],
+                "answer": 1
+            }
+        ]
     }
 ]
