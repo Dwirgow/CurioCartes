@@ -1,4 +1,4 @@
-const CACHE_NAME = 'CurioCartes_v9.4';
+const CACHE_NAME = 'CurioCartes_v9.5';
 
 // Les fichiers locaux indispensables pour que l'app fonctionne hors-ligne
 const ASSETS_TO_CACHE = [
