@@ -195,7 +195,7 @@
         }
         button:active { transform: scale(0.97); }
 
-        .quiz-btn { 
+       .quiz-btn { 
             background: #F8FAFC !important; 
             color: var(--text-main) !important; 
             text-align: left; 
@@ -204,6 +204,8 @@
             border: 2px solid transparent !important;
             box-shadow: none !important;
             margin-top: 10px !important;
+            /* Ajout des transitions pour rendre le changement de couleur et d'ombre très fluide */
+            transition: background 0.3s ease-out, border-color 0.3s ease-out, color 0.3s ease-out, box-shadow 0.3s ease-out, transform 0.1s ease-out !important;
         }
         .quiz-btn:hover { border-color: var(--primary) !important; background: #F1F5F9 !important; }
 
