@@ -718,5 +718,455 @@
                 "answer": 1
             }
         ]
+    },
+	{
+        "front": "Qui était Alan Turing ?",
+        "dates": "23 juin 1912 (Londres, Angleterre) - 7 juin 1954 (Wilmslow, Angleterre) | 41 ans",
+        "faits": "Issu de la haute bourgeoisie britannique, fils d'un administrateur colonial. Mathématicien et cryptologue de génie, il joue un rôle décisif pendant la Seconde Guerre mondiale en décryptant la machine Enigma utilisée par les sous-marins nazis, raccourcissant la guerre de plusieurs années. Pionnier absolu de l'informatique et de l'intelligence artificielle, il est pourtant condamné en 1952 pour son homosexualité (alors un crime au Royaume-Uni). Forcé de subir une castration chimique, il met fin à ses jours deux ans plus tard.",
+        "fun": "L'un des pères de l'informatique moderne était aussi un athlète d'exception ! Il courait le marathon à un niveau quasi olympique et utilisait souvent la course à pied sur de très longues distances pour résoudre des problèmes mathématiques complexes dans sa tête.",
+        "quizzes": [
+            {
+                "question": "Quelle célèbre machine de codage nazi Alan Turing a-t-il réussi à décrypter ?",
+                "options": ["La machine de Lorenz", "Le code Morse allemand", "Enigma", "Le système V2"],
+                "answer": 2
+            },
+            {
+                "question": "Quel concept célèbre porte aujourd'hui son nom dans le domaine de l'intelligence artificielle ?",
+                "options": ["Le paradoxe de Turing", "Le test de Turing", "L'équation de Turing", "Le processeur Turing"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Qui était Élisabeth Ire d'Angleterre ?",
+        "dates": "7 septembre 1533 (Greenwich, Angleterre) - 24 mars 1603 (Richmond, Angleterre) | 69 ans",
+        "faits": "Fille du roi Henri VIII et d'Anne Boleyn (décapitée quand Élisabeth avait 2 ans). Déclarée illégitime et emprisonnée à la Tour de Londres pendant sa jeunesse par sa demi-sœur Marie Tudor, elle survit aux complots et devient reine à 25 ans. Son long règne de 44 ans (l'ère élisabéthaine) marque un âge d'or culturel avec l'émergence de Shakespeare, et l'affirmation de la puissance navale anglaise après l'écrasement de l'Invincible Armada espagnole.",
+        "fun": "Surnommée la 'Reine Vierge', elle a refusé de se marier toute sa vie pour ne jamais avoir à partager son pouvoir avec un roi étranger ou un noble anglais ambitieux, transformant son célibat en une redoutable arme diplomatique.",
+        "quizzes": [
+            {
+                "question": "Qui était le père d'Élisabeth Ire, célèbre pour avoir eu six épouses ?",
+                "options": ["Richard Cœur de Lion", "Édouard VI", "Jacques Ier", "Henri VIII"],
+                "answer": 3
+            },
+            {
+                "question": "Quelle immense flotte ennemie a été vaincue sous son règne en 1588 ?",
+                "options": ["L'Invincible Armada espagnole", "La flotte viking", "La marine de Napoléon", "Les navires marchands hollandais"],
+                "answer": 0
+            }
+        ]
+    },
+    {
+        "front": "Qui était Simón Bolívar ?",
+        "dates": "24 juillet 1783 (Caracas, Venezuela) - 17 décembre 1830 (Santa Marta, Colombie) | 47 ans",
+        "faits": "Issu de la plus riche aristocratie créole du Venezuela. Orphelin très jeune, il part étudier en Europe où il se passionne pour les idées des Lumières et la Révolution française. Devenu général, il jure de libérer l'Amérique du Sud. Surnommé 'El Libertador', il mène des décennies de guerres féroces et parvient à arracher l'indépendance de six pays actuels : le Venezuela, la Colombie, l'Équateur, le Pérou, le Panama et la Bolivie. Il meurt de la tuberculose, déçu de voir son grand empire sud-américain se fracturer.",
+        "fun": "C'est l'un des rares personnages historiques à avoir donné son nom exact à un pays tout entier : la Bolivie (créée en 1825 en son honneur, avec Bolívar lui-même comme premier président).",
+        "quizzes": [
+            {
+                "question": "Contre quel grand empire Simón Bolívar s'est-il battu pour libérer l'Amérique du Sud ?",
+                "options": ["L'Empire aztèque", "L'Empire britannique", "L'Empire espagnol", "L'Empire portugais"],
+                "answer": 2
+            },
+            {
+                "question": "Quel était son surnom emblématique dans toute l'Amérique latine ?",
+                "options": ["Le Conquistador", "El Libertador", "L'Empereur du Sud", "Le Général d'Or"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Qui était Florence Nightingale ?",
+        "dates": "12 mai 1820 (Florence, Italie) - 13 août 1910 (Londres, Angleterre) | 90 ans",
+        "faits": "Née dans une famille britannique richissime, elle choque ses parents en refusant un mariage mondain pour se consacrer aux soins des malades, un métier alors jugé dégradant. Pionnière des soins infirmiers modernes, elle part sur le front de la guerre de Crimée. Face aux conditions effroyables, elle impose des règles d'hygiène militaire strictes (lavage des mains, aération, stérilisation) qui font chuter drastiquement le taux de mortalité. Elle fonde ensuite la première véritable école d'infirmières au monde.",
+        "fun": "En plus de la médecine, c'était une brillante mathématicienne ! Pour convaincre les généraux et les politiciens têtus de financer l'hygiène, elle a inventé et popularisé le diagramme circulaire (le fameux graphique en 'camembert').",
+        "quizzes": [
+            {
+                "question": "De quelle profession moderne Florence Nightingale est-elle considérée comme la fondatrice ?",
+                "options": ["Infirmière", "Chirurgienne militaire", "Pharmacienne", "Psychiatre"],
+                "answer": 0
+            },
+            {
+                "question": "Quel outil mathématique a-t-elle utilisé pour prouver visuellement que l'hygiène sauvait des vies ?",
+                "options": ["La calculatrice mécanique", "Le diagramme circulaire (camembert)", "L'arbre généalogique", "La courbe de Fibonacci"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Qui était Socrate ?",
+        "dates": "Vers 470 av. J.-C. (Athènes, Grèce) - 399 av. J.-C. (Athènes, Grèce) | 71 ans",
+        "faits": "Fils d'un modeste tailleur de pierre et d'une sage-femme, il est le père fondateur de la philosophie occidentale. Il n'a jamais écrit la moindre ligne de sa vie : sa pensée nous a été transmise par son jeune élève, Platon. Socrate passait son temps dans les rues d'Athènes à interroger les citoyens influents pour leur démontrer qu'ils ne savaient en réalité rien (la maïeutique). Jalousé et accusé de corrompre la jeunesse et de ne pas croire aux dieux, il est jugé et condamné à mort par la cité.",
+        "fun": "Lors de son procès, la loi exigeait qu'il propose lui-même une punition alternative à la mort. Extrêmement ironique, Socrate a proposé d'être nourri et logé gratuitement à vie par la ville pour la remercier de l'avoir éveillée !",
+        "quizzes": [
+            {
+                "question": "Quel philosophe célèbre a été l'élève de Socrate et a écrit ses dialogues ?",
+                "options": ["Aristote", "Pythagore", "Épicure", "Platon"],
+                "answer": 3
+            },
+            {
+                "question": "Comment Socrate a-t-il été exécuté après sa condamnation à mort ?",
+                "options": ["En buvant un poison (la ciguë)", "Par pendaison sur l'Acropole", "Il a été jeté aux lions", "Il a été exilé dans le désert"],
+                "answer": 0
+            }
+        ]
+    },
+    {
+        "front": "Qui était Marco Polo ?",
+        "dates": "15 septembre 1254 (Venise, Italie) - 8 janvier 1324 (Venise, Italie) | 69 ans",
+        "faits": "Issu d'une riche famille de marchands vénitiens. À l'âge de 17 ans, il part avec son père et son oncle pour un voyage monumental à travers l'Asie via la route de la soie. Il gagne la confiance du puissant empereur mongol Kubilaï Khan (petit-fils de Gengis Khan) et devient son émissaire officiel pendant 16 ans. De retour à Venise après un quart de siècle d'absence, il dicte ses mémoires depuis une prison génoise. Son ouvrage, le 'Livre des Merveilles', révèle l'Extrême-Orient à une Europe fascinée.",
+        "fun": "Ses contemporains italiens refusaient de croire à ses récits sur la monnaie en papier, les pierres qui brûlent (le charbon) ou l'immensité des cités chinoises. Sur son lit de mort, pressé d'avouer ses mensonges, il déclara : 'Je n'ai pas raconté la moitié de ce que j'ai vu'.",
+        "quizzes": [
+            {
+                "question": "À quel puissant empereur asiatique Marco Polo a-t-il servi d'émissaire ?",
+                "options": ["L'Empereur du Japon", "Kubilaï Khan", "L'Empereur Ming", "Le Shah de Perse"],
+                "answer": 1
+            },
+            {
+                "question": "Quelle célèbre route commerciale a-t-il empruntée pour rejoindre l'Asie ?",
+                "options": ["La route du Rhum", "La route des Épices", "La route de la Soie", "Le passage du Nord-Ouest"],
+                "answer": 2
+            }
+        ]
+    },
+    {
+        "front": "Qui était Confucius ?",
+        "dates": "28 septembre 551 av. J.-C. (Qufu, État de Lu, Chine) - 11 avril 479 av. J.-C. (Qufu, Chine) | 71 ans",
+        "faits": "Issu d'une famille noble mais ruinée, orphelin de père à 3 ans, il grandit dans une pauvreté stricte. Autodidacte, il devient fonctionnaire puis enseignant itinérant à une époque de chaos et de guerres féodales. Il élabore une philosophie morale basée sur l'harmonie sociale, l'éducation universelle, la piété filiale (respect des parents) et la bienveillance (le Ren). S'il a peiné à trouver un souverain pour l'écouter de son vivant, le confucianisme est devenu le socle de la culture chinoise pendant plus de 2000 ans.",
+        "fun": "Bien qu'il soit aujourd'hui le penseur le plus vénéré de toute l'Asie, Confucius considérait à la fin de sa vie que son existence politique était un échec absolu, aucun roi n'ayant voulu appliquer sa doctrine de la paix.",
+        "quizzes": [
+            {
+                "question": "Quel est le principe central de la philosophie de Confucius ?",
+                "options": ["La conquête militaire du monde", "La recherche de la richesse matérielle", "L'harmonie sociale et le respect des aînés", "La vie en ermite dans les montagnes"],
+                "answer": 2
+            },
+            {
+                "question": "Dans quel milieu social Confucius a-t-il grandi après la mort de son père ?",
+                "options": ["Dans la pauvreté", "Au cœur du palais impérial d'or", "Élevé par de riches marchands", "Adopté par des moines tibétains"],
+                "answer": 0
+            }
+        ]
+    },
+    {
+        "front": "Qui était Saladin ?",
+        "dates": "Vers 1138 (Tikrit, Mésopotamie) - 4 mars 1193 (Damas, Syrie) | 55 ans",
+        "faits": "Né dans une influente famille militaire kurde, il gravit les échelons pour s'emparer du pouvoir en Égypte et en Syrie, fondant la dynastie des Ayyoubides. Figure majeure de l'histoire islamique, il parvient à unifier les forces musulmanes morcelées du Moyen-Orient. En 1187, il remporte une victoire décisive et reprend Jérusalem aux croisés chrétiens après un siècle de domination franque, déclenchant la Troisième Croisade européenne.",
+        "fun": "Saladin était intensément respecté par ses ennemis pour son code de chevalerie. Lors d'une bataille, voyant le roi anglais Richard Cœur de Lion perdre sa monture, Saladin a exigé qu'on envoie immédiatement deux magnifiques chevaux arabes à son rival pour qu'ils puissent se battre d'égal à égal.",
+        "quizzes": [
+            {
+                "question": "Quelle grande ville sainte Saladin a-t-il reprise aux Occidentaux en 1187 ?",
+                "options": ["La Mecque", "Constantinople", "Jérusalem", "Alexandrie"],
+                "answer": 2
+            },
+            {
+                "question": "Quel roi européen célèbre fut le principal adversaire de Saladin ?",
+                "options": ["Richard Cœur de Lion", "Charlemagne", "Philippe Auguste", "Henri VIII"],
+                "answer": 0
+            }
+        ]
+    },
+    {
+        "front": "Qui était Toussaint Louverture ?",
+        "dates": "Vers 1743 (Cap-Français, Saint-Domingue) - 7 avril 1803 (Fort de Joux, France) | env. 60 ans",
+        "faits": "Né esclave sur une plantation de la colonie française de Saint-Domingue, il est affranchi vers l'âge de 33 ans. Fin lettré, il devient le cerveau militaire et politique de l'immense soulèvement des esclaves de 1791. Général redoutable, il force la France révolutionnaire à abolir l'esclavage, repousse les invasions britanniques et espagnoles, et prend le contrôle total de l'île. Napoléon, refusant son autonomie, enverra une flotte pour le capturer ; il mourra incarcéré dans le froid du Jura.",
+        "fun": "Avant de prendre la tête de l'armée des anciens esclaves, Toussaint avait accumulé suffisamment de richesses après son affranchissement pour louer une plantation de café... et posséder lui-même quelques esclaves pendant une courte période.",
+        "quizzes": [
+            {
+                "question": "De quel futur pays Toussaint Louverture a-t-il mené la révolution fondatrice ?",
+                "options": ["La Jamaïque", "Cuba", "Haïti (Saint-Domingue)", "La Guadeloupe"],
+                "answer": 2
+            },
+            {
+                "question": "Quel dirigeant français a fini par ordonner son arrestation secrète ?",
+                "options": ["Louis XVI", "Napoléon Bonaparte", "Robespierre", "Le roi Soleil"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Qui était Amelia Earhart ?",
+        "dates": "24 juillet 1897 (Atchison, Kansas, États-Unis) - Disparue le 2 juillet 1937 (Océan Pacifique) | 39 ans",
+        "faits": "Fille d'un avocat souffrant d'alcoolisme, elle enchaîne les métiers (infirmière de guerre, photographe) pour se payer des cours de pilotage dans un milieu exclusivement masculin. Pionnière mondiale de l'aviation et féministe militante, elle devient la toute première femme à traverser l'océan Atlantique en solo en 1932. En 1937, alors qu'elle tente de réaliser le premier tour du monde en avion en suivant la ligne de l'équateur, son Lockheed Electra disparaît sans laisser de traces.",
+        "fun": "L'aviation coûtait une fortune à l'époque. Pour financer ses avions, Amelia a créé sa propre marque de vêtements de sport féminins 'pratiques et modernes', qu'elle cousait parfois elle-même le soir dans sa chambre d'hôtel avec une petite machine portative.",
+        "quizzes": [
+            {
+                "question": "Quel exploit historique Amelia Earhart a-t-elle accompli seule en 1932 ?",
+                "options": ["Atteindre la stratosphère", "Survoler le pôle Sud", "La traversée de l'océan Atlantique", "Franchir le mur du son"],
+                "answer": 2
+            },
+            {
+                "question": "Comment s'est terminée sa carrière fulgurante à l'âge de 39 ans ?",
+                "options": ["Elle a pris sa retraite", "Son avion a mystérieusement disparu au-dessus du Pacifique", "Elle est devenue astronaute pour la NASA", "Elle a été abattue en temps de guerre"],
+                "answer": 1
+            }
+        ]
+    },
+	{
+        "front": "Qui était Charlemagne ?",
+        "dates": "2 avril 742 (Empire franc) - 28 janvier 814 (Aix-la-Chapelle, Empire carolingien) | 71 ans",
+        "faits": "Fils du roi Pépin le Bref, il hérite du royaume franc et passe sa vie à faire la guerre pour étendre ses frontières. Il unifie une grande partie de l'Europe occidentale (France, Allemagne, Italie actuelles) et se fait couronner Empereur d'Occident par le pape en l'an 800. Il met en place une administration solide et favorise la 'renaissance carolingienne', une période de renouveau culturel et éducatif.",
+        "fun": "Bien qu'il soit célèbre pour avoir 'inventé l'école' (ou plutôt l'avoir réformée), Charlemagne lui-même n'a jamais réussi à apprendre à écrire correctement ! Il gardait toujours des tablettes sous son oreiller pour s'entraîner la nuit, sans grand succès.",
+        "quizzes": [
+            {
+                "question": "En quelle année symbolique Charlemagne a-t-il été couronné Empereur par le pape ?",
+                "options": ["En l'an 500", "En l'an 800", "En l'an 1000", "En l'an 1200"],
+                "answer": 1
+            },
+            {
+                "question": "Quel domaine Charlemagne a-t-il particulièrement cherché à réformer dans son empire ?",
+                "options": ["L'éducation et les écoles monastiques", "La navigation maritime", "La production de soie", "La démocratie directe"],
+                "answer": 0
+            }
+        ]
+    },
+    {
+        "front": "Qui était Johannes Gutenberg ?",
+        "dates": "Vers 1400 (Mayence, Saint-Empire) - 3 février 1468 (Mayence, Saint-Empire) | env. 68 ans",
+        "faits": "Issu d'une famille de patriciens (bourgeoisie aisée), il devient orfèvre et taille les métaux. Vers 1450, il révolutionne la diffusion du savoir en Europe en inventant la typographie à caractères métalliques mobiles et la presse à imprimer. Son œuvre maîtresse est la 'Bible à quarante-deux lignes'. Cependant, il perd un procès contre son banquier, se fait confisquer son imprimerie et finit sa vie dans une relative pauvreté.",
+        "fun": "Avant d'inventer l'imprimerie, Gutenberg fabriquait et vendait des 'miroirs magiques' aux pèlerins, censés capturer la lumière sainte des reliques religieuses !",
+        "quizzes": [
+            {
+                "question": "Quel a été le premier grand livre imprimé par Gutenberg ?",
+                "options": ["L'Iliade d'Homère", "Le Coran", "La Bible", "Les poèmes de Virgile"],
+                "answer": 2
+            },
+            {
+                "question": "Quelle innovation majeure caractérise l'invention de Gutenberg ?",
+                "options": ["L'utilisation du papier de riz", "Les caractères métalliques mobiles", "L'encre invisible", "L'impression en 3D"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Qui était Che Guevara ?",
+        "dates": "14 juin 1928 (Rosario, Argentine) - 9 octobre 1967 (La Higuera, Bolivie) | 39 ans",
+        "faits": "Issu de la bourgeoisie argentine, Ernesto Guevara étudie la médecine. Lors de voyages à travers l'Amérique latine, il est révolté par la misère extrême des paysans et l'impérialisme américain. Devenu marxiste, il rejoint Fidel Castro pour mener la révolution cubaine et renverser le dictateur Batista. Après avoir été ministre à Cuba, il repart exporter la guérilla en Afrique puis en Bolivie, où il est capturé et exécuté par l'armée bolivienne (aidée par la CIA).",
+        "fun": "Le mot 'Che' n'était pas son prénom, mais un tic de langage argentin (équivalent de 'mec' ou 'hé') qu'il utilisait tellement souvent que ses camarades cubains ont fini par le surnommer ainsi.",
+        "quizzes": [
+            {
+                "question": "Dans quel pays le Che a-t-il aidé Fidel Castro à mener une révolution victorieuse ?",
+                "options": ["En Argentine", "Au Mexique", "À Cuba", "Au Venezuela"],
+                "answer": 2
+            },
+            {
+                "question": "Quelle était la profession initiale d'Ernesto Guevara avant de devenir guérillero ?",
+                "options": ["Médecin", "Avocat", "Ingénieur", "Paysan"],
+                "answer": 0
+            }
+        ]
+    },
+    {
+        "front": "Qui était Ramsès II ?",
+        "dates": "Vers 1303 av. J.-C. (Égypte antique) - 1213 av. J.-C. (Pi-Ramsès, Égypte) | env. 90 ans",
+        "faits": "Troisième pharaon de la XIXe dynastie, il connaît l'un des règnes les plus longs de l'Antiquité (66 ans). Grand bâtisseur, il fait ériger des monuments colossaux à sa propre gloire (Abou Simbel, Karnak). Chef militaire redoutable, il affronte les Hittites lors de la célèbre bataille de Qadesh et signe ensuite le premier traité de paix connu de l'histoire. Il a eu plus d'une centaine d'enfants avec ses nombreuses épouses (dont la célèbre Néfertari).",
+        "fun": "En 1974, la momie de Ramsès II devait voyager en France pour être traitée contre un champignon. Le gouvernement égyptien lui a donc fait établir un véritable passeport moderne avec la mention : 'Profession : Roi (décédé)' !",
+        "quizzes": [
+            {
+                "question": "Pour quel type d'accomplissement Ramsès II est-il le plus célèbre en Égypte ?",
+                "options": ["La construction de monuments colossaux (Abou Simbel)", "L'invention de l'écriture hiéroglyphique", "L'introduction de la monnaie", "La découverte du fer"],
+                "answer": 0
+            },
+            {
+                "question": "Quelle grande bataille militaire de son règne a abouti au premier traité de paix de l'histoire ?",
+                "options": ["La bataille d'Actium", "La bataille de Marathon", "La bataille de Qadesh", "La guerre de Troie"],
+                "answer": 2
+            }
+        ]
+    },
+    {
+        "front": "Qui était Aliénor d'Aquitaine ?",
+        "dates": "1122 (Bordeaux ou Poitiers, France) - 31 mars 1204 (Poitiers, France) | 82 ans",
+        "faits": "Duchesse d'Aquitaine, elle est l'une des femmes les plus puissantes et riches du Moyen Âge. Elle devient reine de France par son mariage avec Louis VII, qu'elle accompagne (fait rare) lors de la deuxième croisade. Après l'annulation de ce mariage terne, elle épouse le fougueux futur roi d'Angleterre, Henri II Plantagenêt. Elle jouera un rôle politique central, gouvernant souvent au nom de ses maris ou de ses célèbres fils (comme Richard Cœur de Lion), et sera même emprisonnée 15 ans par son propre mari.",
+        "fun": "Elle a transformé la culture de la noblesse en finançant les troubadours et en instaurant l''amour courtois' à sa cour, dictant aux chevaliers brutaux comment se comporter de manière galante avec les dames.",
+        "quizzes": [
+            {
+                "question": "Quel statut unique Aliénor d'Aquitaine a-t-il cumulé au cours de sa vie ?",
+                "options": ["Elle fut impératrice d'Orient et d'Occident", "Elle fut reine de France, puis reine d'Angleterre", "Elle devint la première femme papesse", "Elle dirigea l'Empire byzantin"],
+                "answer": 1
+            },
+            {
+                "question": "Quel célèbre roi d'Angleterre était l'un de ses fils préférés ?",
+                "options": ["Richard Cœur de Lion", "Henri VIII", "Guillaume le Conquérant", "Arthur Pendragon"],
+                "answer": 0
+            }
+        ]
+    },
+    {
+        "front": "Qui était Geronimo ?",
+        "dates": "16 juin 1829 (Nouveau-Mexique) - 17 février 1909 (Fort Sill, Oklahoma, États-Unis) | 79 ans",
+        "faits": "Chamane et chef de guerre de la tribu des Apaches Chiricahuas. Après le massacre de sa femme, de ses trois enfants et de sa mère par l'armée mexicaine, il voue une haine implacable à ceux qui envahissent ses terres. Fin stratège et maître de la guérilla, il résiste farouchement pendant plus de 30 ans aux armées mexicaine et américaine avec seulement quelques dizaines de guerriers. Finalement contraint de se rendre en 1886, il finit sa vie comme prisonnier de guerre, paradé dans des foires américaines.",
+        "fun": "Lorsqu'il est devenu une 'attraction' à la fin de sa vie, il vendait des arcs, des flèches et des photographies dédicacées de lui-même aux touristes pour gagner de l'argent !",
+        "quizzes": [
+            {
+                "question": "De quelle tribu amérindienne Geronimo était-il le chef militaire ?",
+                "options": ["Les Navajos", "Les Apaches", "Les Sioux", "Les Cherokees"],
+                "answer": 1
+            },
+            {
+                "question": "Quel événement tragique a déclenché sa lutte armée acharnée ?",
+                "options": ["Le massacre de sa famille par les Mexicains", "Le vol de ses chevaux", "La destruction de son village par une tornade", "Un conflit avec les colons français"],
+                "answer": 0
+            }
+        ]
+    },
+    {
+        "front": "Qui était Franklin D. Roosevelt (FDR) ?",
+        "dates": "30 janvier 1882 (Hyde Park, New York, États-Unis) - 12 avril 1945 (Warm Springs, Géorgie, États-Unis) | 63 ans",
+        "faits": "Issu d'une riche famille patricienne américaine. Atteint de la polio à 39 ans, il perd définitivement l'usage de ses jambes mais cache son fauteuil roulant au public. Seul président américain élu à quatre reprises, il sauve les États-Unis de la Grande Dépression (crise de 1929) avec son programme de relance économique, le 'New Deal'. Il dirige ensuite le pays avec fermeté et diplomatie pendant presque toute la Seconde Guerre mondiale, avant de mourir d'une hémorragie cérébrale juste avant la victoire.",
+        "fun": "Pour redonner espoir aux Américains ruinés par la crise économique, il a inventé les 'Causeries au coin du feu', s'adressant directement aux citoyens à la radio avec un ton chaleureux et rassurant, une révolution de communication politique.",
+        "quizzes": [
+            {
+                "question": "Quel programme économique Roosevelt a-t-il lancé pour contrer la Grande Dépression ?",
+                "options": ["Le plan Marshall", "Le New Deal", "La Grande Société", "L'Obamacare"],
+                "answer": 1
+            },
+            {
+                "question": "Quel handicap physique Roosevelt prenait-il grand soin de cacher au public ?",
+                "options": ["Il était devenu aveugle", "Il était sourd", "Il était paralysé des jambes à cause de la polio", "Il avait perdu un bras"],
+                "answer": 2
+            }
+        ]
+    },
+    {
+        "front": "Qui était Mata Hari ?",
+        "dates": "7 août 1876 (Leeuwarden, Pays-Bas) - 15 octobre 1917 (Vincennes, France) | 41 ans",
+        "faits": "Née Margaretha Zelle, fille d'un riche chapelier ruiné. Après un mariage désastreux aux Indes néerlandaises (Indonésie), elle arrive à Paris et s'invente un personnage de princesse javanaise. Elle devient une danseuse exotique célèbre, effeuilleuse mondaine et courtisane pour la haute société politique et militaire de toute l'Europe. Pendant la Première Guerre mondiale, son style de vie international la rend suspecte. Elle est arrêtée, accusée (probablement à tort ou de manière très exagérée) d'être une espionne double travaillant pour l'Allemagne, et fusillée par la France.",
+        "fun": "Face à son peloton d'exécution militaire, elle a refusé qu'on lui bande les yeux et a, selon la légende, envoyé un dernier baiser volant aux soldats français chargés de la fusiller.",
+        "quizzes": [
+            {
+                "question": "Quelle était la profession officielle de Mata Hari qui lui permettait de fréquenter les puissants ?",
+                "options": ["Journaliste", "Danseuse exotique et courtisane", "Chanteuse d'opéra", "Ambassadrice des Pays-Bas"],
+                "answer": 1
+            },
+            {
+                "question": "Pour quel motif a-t-elle été exécutée par la France en 1917 ?",
+                "options": ["Pour espionnage (accusée d'être un agent double)", "Pour vol de bijoux de la Couronne", "Pour meurtre d'un général", "Pour désertion"],
+                "answer": 0
+            }
+        ]
+    },
+    {
+        "front": "Qui était Boudicca (Boadicée) ?",
+        "dates": "Vers 30 (Bretagne, actuelle Angleterre) - 61 (Bretagne) | env. 31 ans",
+        "faits": "Reine du peuple celte des Iceni. À la mort de son mari (qui était allié à Rome), les Romains ignorent son testament, annexent ses terres, la font fouetter publiquement et violent ses filles. En représailles, Boudicca lève une armée gigantesque unissant plusieurs tribus celtes et mène une rébellion sanglante contre l'occupation romaine en 60 apr. J.-C. Elle détruit trois villes majeures (dont l'ancêtre de Londres) avant d'être finalement vaincue par le gouverneur Suetonius Paulinus. Elle s'empoisonne pour échapper à la capture.",
+        "fun": "Les historiens romains la décrivaient avec terreur : très grande, terrifiante, avec une voix rocailleuse et une épaisse crinière de cheveux roux ou fauves qui lui tombait jusqu'aux hanches, portant toujours un épais collier d'or (un torque).",
+        "quizzes": [
+            {
+                "question": "Contre quel empire la reine Boudicca s'est-elle rebellée ?",
+                "options": ["L'Empire perse", "L'Empire romain", "L'Empire mongol", "L'Empire byzantin"],
+                "answer": 1
+            },
+            {
+                "question": "Quel événement a déclenché sa révolte meurtrière ?",
+                "options": ["L'augmentation des impôts", "L'humiliation, l'annexion de ses terres et l'agression de sa famille", "L'interdiction de parler sa langue", "Le vol d'une relique sacrée"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Qui était Jeanne Baret ?",
+        "dates": "27 juillet 1740 (La Comelle, France) - 5 août 1807 (Saint-Aulaye, France) | 67 ans",
+        "faits": "Issue d'une famille de paysans très pauvres, elle devient une botaniste autodidacte passionnée. En 1766, la marine royale interdisant l'embarquement des femmes, elle se bande la poitrine, s'habille en homme et prend le nom de 'Jean Baret' pour participer à l'expédition autour du monde de Bougainville, en tant que valet du botaniste Philibert Commerson (son compagnon). Démasquée en plein océan Pacifique, elle poursuit son travail et devient la toute première femme à faire le tour du monde.",
+        "fun": "C'est elle, habillée en homme et portant les lourdes caisses de son compagnon malade, qui a en réalité découvert la célèbre plante tropicale rose à laquelle on a donné le nom du capitaine de l'expédition : le Bougainvillier !",
+        "quizzes": [
+            {
+                "question": "Quel exploit historique féminin Jeanne Baret a-t-elle accompli ?",
+                "options": ["Elle a été la première femme élue à l'Académie des Sciences", "Elle a inventé le vaccin contre la variole", "Elle est la première femme à avoir fait le tour du monde", "Elle a piloté le premier ballon à air chaud"],
+                "answer": 2
+            },
+            {
+                "question": "Quelle ruse a-t-elle utilisée pour pouvoir embarquer sur le navire du roi ?",
+                "options": ["Elle a soudoyé le capitaine", "Elle s'est déguisée en homme", "Elle s'est cachée dans un tonneau", "Elle a prétendu être la fille du roi"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Qui était Martin Luther ?",
+        "dates": "10 novembre 1483 (Eisleben, Saint-Empire) - 18 février 1546 (Eisleben, Saint-Empire) | 62 ans",
+        "faits": "Fils d'un propriétaire de mines de cuivre, il abandonne des études de droit pour devenir moine augustin après avoir survécu à un violent orage. Indigné par la corruption de l'Église catholique (notamment la vente des 'indulgences' pour effacer les péchés), il publie ses '95 thèses' en 1517. Excommunié par le pape et mis au ban par l'empereur Charles Quint, il traduit la Bible en allemand pour que le peuple puisse la lire seul. Son action déclenche la Réforme protestante et bouleverse l'Europe entière.",
+        "fun": "Alors qu'il était caché dans le château de la Wartbourg, Luther affirmait être harcelé par le Diable en personne. Pour le faire fuir, il lui aurait carrément lancé son encrier de plomb à la figure !",
+        "quizzes": [
+            {
+                "question": "Quel grand mouvement religieux Martin Luther a-t-il initié ?",
+                "options": ["Le catholicisme orthodoxe", "Le mouvement jésuite", "La Réforme protestante", "L'Inquisition"],
+                "answer": 2
+            },
+            {
+                "question": "Quelle pratique financière de l'Église a profondément indigné Luther ?",
+                "options": ["La vente des 'indulgences' (le pardon des péchés contre de l'argent)", "Le salaire des moines", "Les taxes agricoles", "Les dons aux croisades"],
+                "answer": 0
+            }
+        ]
+    },
+    {
+        "front": "Qui était Katsushika Hokusai ?",
+        "dates": "31 octobre 1760 (Edo, Japon) - 10 mai 1849 (Edo, Japon) | 88 ans",
+        "faits": "Fils d'un artisan miroitier, il devient le plus célèbre peintre et graveur japonais (art de l'ukiyo-e). Travailleur acharné et perfectionniste, il change de pseudonyme plus de 120 fois au cours de sa vie et déménage 93 fois, détestant faire le ménage. Son œuvre majeure, les 'Trente-six vues du mont Fuji' (comprenant la célèbre 'Grande Vague de Kanagawa'), a profondément influencé l'art occidental (notamment Van Gogh, Monet et le japonisme) lors de l'ouverture du Japon au XIXe siècle.",
+        "fun": "À 75 ans, il a écrit qu'il commençait tout juste à comprendre la nature et que son but ultime était de vivre jusqu'à 110 ans pour que 'chaque ligne, chaque point' de ses dessins prenne véritablement vie.",
+        "quizzes": [
+            {
+                "question": "Quelle est l'œuvre la plus mondialement connue de Hokusai ?",
+                "options": ["Les tournesols", "La Grande Vague de Kanagawa", "La création d'Adam", "Le jardin zen de Kyoto"],
+                "answer": 1
+            },
+            {
+                "question": "Combien de fois Hokusai a-t-il environ changé de nom d'artiste au cours de sa vie ?",
+                "options": ["Aucune, il a toujours signé Hokusai", "3 fois", "Plus de 120 fois", "Exactement 10 fois"],
+                "answer": 2
+            }
+        ]
+    },
+    {
+        "front": "Qui était Sappho ?",
+        "dates": "Vers 630 av. J.-C. (Île de Lesbos, Grèce antique) - Vers 570 av. J.-C. (Île de Lesbos) | env. 60 ans",
+        "faits": "Issue d'une riche famille aristocratique de la cité de Mytilène. Surnommée la 'Dixième Muse' par Platon lui-même, elle est l'une des très rares femmes poétesses de l'Antiquité grecque dont le nom a survécu. Elle dirigeait une académie pour jeunes filles et écrivait des poèmes lyriques (chantés avec une lyre) d'une grande beauté et d'une intense émotion, célébrant l'amour, souvent dirigé vers d'autres femmes. Son œuvre n'a survécu que sous forme de fragments sauvés sur des papyrus déchirés.",
+        "fun": "C'est son île natale, Lesbos (et son nom même), qui a donné naissance des siècles plus tard aux mots 'lesbienne' et 'saphique', en référence aux amours entre femmes célébrées dans ses poèmes.",
+        "quizzes": [
+            {
+                "question": "Comment Platon, grand admirateur de son génie poétique, surnommait-il Sappho ?",
+                "options": ["La prêtresse d'Apollon", "La dixième Muse", "L'Athéna des mots", "La reine des poètes"],
+                "answer": 1
+            },
+            {
+                "question": "Sur quelle île grecque Sappho est-elle née et a-t-elle vécu ?",
+                "options": ["L'île de Crète", "L'île d'Ithaque", "L'île de Rhodes", "L'île de Lesbos"],
+                "answer": 3
+            }
+        ]
+    },
+    {
+        "front": "Qui était Horatio Nelson ?",
+        "dates": "29 septembre 1758 (Burnham Thorpe, Angleterre) - 21 octobre 1805 (Cap Trafalgar, Espagne) | 47 ans",
+        "faits": "Fils d'un pasteur modeste, il entre dans la marine royale (Royal Navy) à 12 ans. Officier naval britannique de génie, il est le principal cauchemar maritime de Napoléon Bonaparte. Au cours de ses nombreux combats intenses, il perd son bras droit et l'usage de son œil droit. En 1805, lors de la bataille de Trafalgar, il écrase définitivement les flottes française et espagnole grâce à une tactique d'attaque perpendiculaire risquée, mais meurt foudroyé par la balle d'un tireur d'élite français.",
+        "fun": "Pour ramener son corps en Angleterre sans qu'il ne pourrisse pendant le long trajet en bateau après Trafalgar, ses marins ont plongé son cadavre dans un grand tonneau rempli de cognac français !",
+        "quizzes": [
+            {
+                "question": "Quel membre du corps l'Amiral Nelson a-t-il perdu au combat avant la fin de sa vie ?",
+                "options": ["Sa jambe gauche", "Son bras droit (et l'usage d'un œil)", "Ses deux mains", "Une oreille"],
+                "answer": 1
+            },
+            {
+                "question": "Lors de quelle célèbre bataille maritime a-t-il vaincu Napoléon tout en perdant la vie ?",
+                "options": ["La bataille d'Aboukir", "La bataille d'Austerlitz", "La bataille de Trafalgar", "La bataille de Waterloo"],
+                "answer": 2
+            }
+        ]
+    },
+    {
+        "front": "Qui était Roald Amundsen ?",
+        "dates": "16 juillet 1872 (Borge, Norvège) - Disparu vers le 18 juin 1928 (Océan Arctique) | 55 ans",
+        "faits": "Fils d'une famille d'armateurs de navires. L'un des plus grands explorateurs polaires de l'histoire de l'humanité. Il est le premier à franchir le mythique passage du Nord-Ouest (entre l'Atlantique et le Pacifique via le Canada arctique). En 1911, après une course épique et acharnée contre l'expédition britannique de Robert Scott, il est le tout premier homme à atteindre le pôle Sud géographique, grâce à son utilisation ingénieuse des chiens de traîneau et de vêtements inuits. Il disparaît tragiquement dans l'Arctique lors d'une mission de sauvetage en hydravion.",
+        "fun": "Sa mère voulait absolument qu'il devienne médecin. Amundsen a sagement fait semblant d'étudier la médecine pendant des années, pour ne quitter l'université et prendre la mer que le lendemain de la mort de sa mère !",
+        "quizzes": [
+            {
+                "question": "Quel exploit géographique majeur Roald Amundsen a-t-il été le premier à réaliser ?",
+                "options": ["Il a atteint le pôle Sud", "Il a atteint le sommet de l'Everest", "Il a marché sur la Lune", "Il a traversé l'Antarctique à pied"],
+                "answer": 0
+            },
+            {
+                "question": "Avec quel animal a-t-il choisi de voyager pour réussir son expédition au pôle Sud ?",
+                "options": ["Des rennes", "Des chevaux nains", "Des chiens de traîneau", "Des bœufs musqués"],
+                "answer": 2
+            }
+        ]
     }
 ]
