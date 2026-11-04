@@ -1168,5 +1168,545 @@
                 "answer": 2
             }
         ]
+    },
+	{
+        "front": "Qui était Marie Stuart (Marie Ier d'Écosse) ?",
+        "dates": "8 décembre 1542 (Linlithgow, Écosse) - 8 février 1587 (Fotheringhay, Angleterre) | 44 ans",
+        "faits": "Fille du roi Jacques V, elle devient reine d'Écosse à seulement 6 jours. Élevée à la cour de France, elle épouse le futur roi François II mais devient veuve très jeune. De retour en Écosse, pays déchiré par les guerres de religion, elle fait face à des rébellions et des scandales matrimoniaux sanglants. Forcée d'abdiquer, elle fuit en Angleterre pour demander l'asile à sa cousine Élisabeth Ire. Considérée comme une menace pour le trône anglais, elle est emprisonnée pendant 18 ans puis décapitée pour complot.",
+        "fun": "Lors de son exécution, le bourreau a dû s'y reprendre à trois fois avec sa hache. Lorsqu'il a enfin soulevé la tête par les cheveux pour la montrer au public, il s'est retrouvé avec une perruque rousse dans les mains, la tête chauve de la reine roulant sur le sol !",
+        "quizzes": [
+            {
+                "question": "À quel âge Marie Stuart est-elle officiellement devenue reine d'Écosse ?",
+                "options": ["À 6 jours", "À 18 ans", "À 30 ans", "À sa naissance, avant de mourir"],
+                "answer": 0
+            },
+            {
+                "question": "Quelle célèbre reine d'Angleterre l'a fait emprisonner puis exécuter ?",
+                "options": ["Victoria", "Marie Tudor (Bloody Mary)", "Élisabeth Ire", "Anne Boleyn"],
+                "answer": 2
+            }
+        ]
+    },
+    {
+        "front": "Qui était Sun Tzu ?",
+        "dates": "Vers 544 av. J.-C. (État de Qi ou Wu, Chine) - Vers 496 av. J.-C. (État de Wu, Chine) | env. 48 ans",
+        "faits": "Général chinois, stratège militaire et philosophe de la période des Printemps et Automnes. Issu de la noblesse militaire, il offre ses services au roi de Wu et remporte de nombreuses victoires contre des armées bien supérieures en nombre. Il est mondialement célèbre pour avoir rédigé 'L'Art de la guerre', un traité de stratégie révolutionnaire affirmant que l'art suprême de la guerre consiste à soumettre l'ennemi sans même avoir à combattre, par la ruse, l'espionnage et l'adaptation.",
+        "fun": "Pour tester ses compétences, le roi lui demanda un jour d'entraîner son harem de 180 concubines à la discipline militaire. Face à leurs rires, Sun Tzu fit impitoyablement décapiter les deux favorites du roi, instaurant immédiatement un silence et une obéissance absolus !",
+        "quizzes": [
+            {
+                "question": "Quel est le titre de son très célèbre traité de stratégie ?",
+                "options": ["Le Livre des Cinq Anneaux", "Le Prince", "L'Art de la guerre", "Le Tao Te King"],
+                "answer": 2
+            },
+            {
+                "question": "Selon sa philosophie, quel est le but ultime d'un grand général ?",
+                "options": ["Exterminer la population ennemie", "Vaincre l'ennemi par la ruse sans avoir à combattre", "Gagner avec le plus de sang versé possible", "Mourir au combat avec honneur"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Qui était Nicolas II ?",
+        "dates": "18 mai 1868 (Tsarskoïe Selo, Russie) - 17 juillet 1918 (Iekaterinbourg, Russie) | 50 ans",
+        "faits": "Fils du tsar Alexandre III, il grandit dans l'opulence de la dynastie des Romanov mais se montre politiquement faible et indécis. Dernier empereur de Russie, il réprime violemment les manifestations pacifiques (le Dimanche rouge) et engage son pays dans la désastreuse Première Guerre mondiale. L'effondrement de l'économie et la famine déclenchent la Révolution russe de 1917. Forcé d'abdiquer, il est assassiné secrètement avec sa femme, son fils et ses quatre filles par les bolcheviks.",
+        "fun": "Il était passionné de photographie, une technologie balbutiante à l'époque. Il possédait plusieurs appareils et a rempli des dizaines d'albums de photos intimes de sa famille, allant jusqu'à se prendre en 'selfie' dans les miroirs du palais !",
+        "quizzes": [
+            {
+                "question": "De quelle célèbre dynastie Nicolas II était-il le dernier représentant ?",
+                "options": ["Les Tudor", "Les Habsbourg", "Les Romanov", "Les Bourbons"],
+                "answer": 2
+            },
+            {
+                "question": "Quel événement majeur l'a forcé à abdiquer de son trône en 1917 ?",
+                "options": ["La Révolution française", "La Révolution russe (bolchevik)", "L'invasion de Napoléon", "Une élection démocratique perdue"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Qui était Sigmund Freud ?",
+        "dates": "6 mai 1856 (Freiberg, Empire d'Autriche) - 23 septembre 1939 (Londres, Royaume-Uni) | 83 ans",
+        "faits": "Issu d'une famille juive modeste de marchands de laine, il devient médecin neurologue à Vienne. Il révolutionne la compréhension de l'esprit humain en inventant la psychanalyse. Il théorise l'existence de l'inconscient, le refoulement, le complexe d'Œdipe et l'interprétation des rêves, affirmant que nos névroses proviennent de désirs enfouis et de traumatismes infantiles. Fuyant l'Autriche nazie à la fin de sa vie, il s'exile à Londres où il meurt d'un cancer de la mâchoire.",
+        "fun": "Il était totalement accro aux cigares (il en fumait jusqu'à 20 par jour !). Un jour, agacé par des disciples qui cherchaient un sens complexe et sexuel à son habitude de fumer, il aurait répondu : 'Parfois, un cigare n'est rien d'autre qu'un cigare.'",
+        "quizzes": [
+            {
+                "question": "Quelle discipline liée à la psychologie a-t-il inventée ?",
+                "options": ["La psychiatrie", "Le comportementalisme (béhaviorisme)", "La psychanalyse", "L'hypnose médicale"],
+                "answer": 2
+            },
+            {
+                "question": "Quel concept freudien désigne les pensées et désirs inaccessibles à notre conscience ?",
+                "options": ["Le subconscient", "L'inconscient", "Le surmoi", "L'intuition"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Qui était Hatchepsout ?",
+        "dates": "Vers 1507 av. J.-C. (Thèbes, Égypte) - Vers 1458 av. J.-C. (Thèbes, Égypte) | env. 49 ans",
+        "faits": "Fille aînée du pharaon Thoutmôsis Ier. À la mort de son époux et demi-frère Thoutmôsis II, elle assure la régence pour son jeune beau-fils. Ambitieuse et habile, elle s'empare de tous les pouvoirs et se fait couronner 'Pharaon' à part entière, l'une des très rares femmes à obtenir ce titre suprême. Son règne d'une vingtaine d'années est marqué par une immense prospérité économique, des expéditions commerciales pacifiques (vers le mythique pays de Pount) et la construction du sublime temple de Deir el-Bahari.",
+        "fun": "Pour légitimer son pouvoir absolu dans une société très patriarcale, elle a ordonné qu'on la représente sur les statues officielles non pas comme une femme, mais avec un torse plat, un pagne court et la fameuse fausse barbe tressée des rois masculins !",
+        "quizzes": [
+            {
+                "question": "Quel titre suprême et exceptionnel pour une femme Hatchepsout a-t-elle obtenu ?",
+                "options": ["Pharaon d'Égypte", "Impératrice d'Orient", "Grande Prêtresse d'Amon", "Générale en chef"],
+                "answer": 0
+            },
+            {
+                "question": "Comment s'assurait-elle d'être respectée sur la plupart de ses statues officielles ?",
+                "options": ["Elle tenait la tête de ses ennemis", "Elle portait un masque de lion", "Elle se faisait sculpter avec une fausse barbe de pharaon mâle", "Elle se faisait sculpter en géante"],
+                "answer": 2
+            }
+        ]
+    },
+    {
+        "front": "Qui était René Descartes ?",
+        "dates": "31 mars 1596 (La Haye-en-Touraine, France) - 11 février 1650 (Stockholm, Suède) | 53 ans",
+        "faits": "Issu de la petite noblesse de robe, cet enfant de santé fragile est élevé chez les jésuites. Mathématicien, physicien et philosophe, il bouleverse la pensée scientifique européenne du XVIIe siècle en publiant le 'Discours de la méthode'. Il rejette la scolastique médiévale et fonde le rationalisme moderne, affirmant qu'il faut douter de tout (le doute hyperbolique) sauf de sa propre conscience ('Je pense, donc je suis'). Il a également inventé la géométrie analytique (les repères avec les axes X et Y).",
+        "fun": "Il adorait faire la grasse matinée ! Habitué depuis l'enfance à réfléchir au chaud dans son lit jusqu'à midi, il est mort d'une pneumonie après que la reine de Suède l'a forcé à lui donner des cours de philosophie tous les matins à 5 heures dans son château glacial.",
+        "quizzes": [
+            {
+                "question": "Quelle célèbre phrase résume la philosophie de la conscience de Descartes ?",
+                "options": ["L'État, c'est moi", "L'homme est un loup pour l'homme", "Je pense, donc je suis", "Dieu est mort"],
+                "answer": 2
+            },
+            {
+                "question": "Dans quel domaine des mathématiques lui doit-on une invention très célèbre que l'on utilise au collège ?",
+                "options": ["Les probabilités", "Les repères et coordonnées graphiques (abscisse et ordonnée)", "Les nombres premiers", "Le calcul des pourcentages"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Qui était Sitting Bull (Taureau Assis) ?",
+        "dates": "Vers 1831 (Grand River, Dakota du Sud) - 15 décembre 1890 (Réserve de Standing Rock, États-Unis) | env. 59 ans",
+        "faits": "Chef de la tribu des Lakotas (Sioux). Considéré comme un grand chef spirituel et homme-médecine par son peuple. Refusant l'enfermement dans les réserves et la spoliation des Terres sacrées des Black Hills par les chercheurs d'or, il unit plusieurs tribus amérindiennes. En 1876, galvanisés par ses visions prémonitoires, les guerriers sioux et cheyennes anéantissent le 7e régiment de cavalerie du célèbre général Custer lors de l'emblématique bataille de Little Bighorn.",
+        "fun": "Après sa reddition, il est devenu une célébrité en rejoignant le spectacle de cirque de Buffalo Bill (le 'Wild West Show'). Il gagnait très bien sa vie en vendant des autographes, et donnait tout son argent aux jeunes mendiants blancs des grandes villes américaines.",
+        "quizzes": [
+            {
+                "question": "De quelle grande nation amérindienne Sitting Bull était-il le chef spirituel ?",
+                "options": ["Les Navajos", "Les Iroquois", "Les Cherokees", "Les Sioux (Lakotas)"],
+                "answer": 3
+            },
+            {
+                "question": "Quelle grande bataille militaire les Indiens ont-ils remportée sous sa direction ?",
+                "options": ["La bataille d'Alamo", "La bataille de Little Bighorn (contre le général Custer)", "La bataille de Wounded Knee", "La bataille d'Appomattox"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Qui était Olympe de Gouges ?",
+        "dates": "7 mai 1748 (Montauban, France) - 3 novembre 1793 (Paris, France) | 45 ans",
+        "faits": "Née Marie Gouze, fille d'un boucher (mais possiblement fille illégitime d'un marquis). Veuve très jeune, elle refuse de se remarier pour conserver sa liberté et s'installe à Paris. Humaniste engagée, elle milite pour l'abolition de l'esclavage, le droit au divorce, et rédige en 1791 la 'Déclaration des droits de la femme et de la citoyenne', exigeant l'égalité politique totale entre les sexes. S'opposant à la violence de la Terreur et à Robespierre, elle est arrêtée et guillotinée.",
+        "fun": "Dans son célèbre texte militant pour les droits des femmes, elle a écrit une phrase devenue prophétique et glaçante pour elle-même : 'La femme a le droit de monter sur l'échafaud ; elle doit avoir également celui de monter à la Tribune'.",
+        "quizzes": [
+            {
+                "question": "Quel célèbre texte fondateur Olympe de Gouges a-t-elle rédigé pendant la Révolution ?",
+                "options": ["La Marseillaise", "La Déclaration des droits de la femme et de la citoyenne", "Le Code civil féminin", "Le Manifeste des égales"],
+                "answer": 1
+            },
+            {
+                "question": "Pour quelle autre grande cause humaniste militait-elle activement à travers ses pièces de théâtre ?",
+                "options": ["L'abolition de l'esclavage", "La conquête de l'Europe", "La colonisation", "L'interdiction de la viande"],
+                "answer": 0
+            }
+        ]
+    },
+    {
+        "front": "Qui était Akhenaton (Aménophis IV) ?",
+        "dates": "Vers 1371 av. J.-C. (Thèbes, Égypte) - Vers 1334 av. J.-C. (Akhetaton, Égypte) | env. 37 ans",
+        "faits": "Pharaon de la XVIIIe dynastie, fils d'Amenhotep III et époux de la mythique reine Néfertiti. Il provoque un séisme religieux sans précédent dans l'Égypte antique : il interdit le culte des multiples dieux traditionnels pour imposer l'adoration d'un dieu unique, Aton (le disque solaire). Il fait construire une nouvelle capitale en plein désert (Amarna). À sa mort, son nom est martelé et effacé des monuments par ses successeurs pour punir cette 'hérésie'.",
+        "fun": "L'art sous son règne est devenu étrangement réaliste, presque difforme. Contrairement aux autres pharaons représentés comme de beaux athlètes, Akhenaton se faisait sculpter avec un ventre bedonnant, des hanches larges, un crâne très allongé et des lèvres épaisses !",
+        "quizzes": [
+            {
+                "question": "Quelle révolution radicale ce pharaon a-t-il tentée d'imposer à l'Égypte ?",
+                "options": ["L'abandon total des pyramides", "L'égalité homme-femme", "Il a remplacé le polythéisme par le culte d'un dieu unique", "Il a aboli l'esclavage"],
+                "answer": 2
+            },
+            {
+                "question": "Qui était sa très célèbre épouse, dont le buste est mondialement connu aujourd'hui ?",
+                "options": ["Cléopâtre", "Néfertiti", "Hatchepsout", "Nefertari"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Qui était Pablo Picasso ?",
+        "dates": "25 octobre 1881 (Málaga, Espagne) - 8 avril 1973 (Mougins, France) | 91 ans",
+        "faits": "Enfant prodige, fils d'un professeur de dessin qui, bluffé par le talent de son fils de 13 ans, lui donne ses propres pinceaux et arrête de peindre. Picasso s'installe à Paris et devient le géant de l'art du XXe siècle. Il bouleverse les codes visuels en co-inventant le Cubisme, déconstruisant la réalité en formes géométriques. Son tableau magistral 'Guernica' (1937) dénonce l'horreur des bombardements pendant la guerre d'Espagne et devient un symbole universel de paix.",
+        "fun": "Travailleur compulsif, il était convaincu que créer de l'art le maintenait en vie. Il a produit un volume d'œuvres record dans l'histoire de l'humanité : on estime son travail à environ 50 000 créations (peintures, céramiques, dessins, sculptures) !",
+        "quizzes": [
+            {
+                "question": "Quel grand mouvement artistique révolutionnaire Picasso a-t-il co-inventé avec Georges Braque ?",
+                "options": ["Le Cubisme", "Le Surréalisme", "L'Impressionnisme", "Le Pop-Art"],
+                "answer": 0
+            },
+            {
+                "question": "Quel célèbre tableau géant a-t-il peint pour dénoncer la guerre d'Espagne ?",
+                "options": ["La Joconde", "Guernica", "Le Cri", "Les Demoiselles d'Avignon"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Qui était William Shakespeare ?",
+        "dates": "26 avril 1564 (Stratford-upon-Avon, Angleterre) - 23 avril 1616 (Stratford-upon-Avon, Angleterre) | 52 ans",
+        "faits": "Fils d'un gantier et maire de sa ville, il quitte sa famille pour s'installer à Londres où il devient acteur puis dramaturge. Sous le règne d'Élisabeth Ire puis de Jacques Ier, il écrit près de 40 pièces (Hamlet, Roméo et Juliette, Macbeth) explorant toutes les nuances sombres, drôles et tragiques de l'âme humaine. Co-propriétaire du célèbre théâtre 'Le Globe', il est considéré comme le plus grand poète et écrivain de l'histoire de la langue anglaise.",
+        "fun": "Son vocabulaire était si riche qu'il a inventé ou popularisé plus de 1 700 mots de la langue anglaise actuelle ! Des termes quotidiens comme 'lonely' (solitaire), 'gossip' (commérage) ou 'assassination' (assassinat) viennent directement de ses pièces.",
+        "quizzes": [
+            {
+                "question": "Quel célèbre théâtre en plein air de Londres était dirigé par Shakespeare et sa troupe ?",
+                "options": ["L'Opéra Royal", "Le Globe", "Le Colisée anglais", "Le théâtre de la Reine"],
+                "answer": 1
+            },
+            {
+                "question": "Laquelle de ces célèbres pièces classiques N'A PAS été écrite par Shakespeare ?",
+                "options": ["Roméo et Juliette", "Macbeth", "Hamlet", "Le Malade imaginaire"],
+                "answer": 3
+            }
+        ]
+    },
+    {
+        "front": "Qui était Spartacus ?",
+        "dates": "Vers 109 av. J.-C. (Thrace, actuelle Bulgarie) - 71 av. J.-C. (Lucanie, Italie) | env. 38 ans",
+        "faits": "D'origine thrace (peut-être ancien soldat), il est capturé, réduit en esclavage et envoyé dans une école de gladiateurs impitoyable à Capoue. En 73 av. J.-C., il s'évade avec 70 autres gladiateurs armés d'ustensiles de cuisine. Il rassemble rapidement une armée gigantesque de plus de 70 000 esclaves fugitifs et bergers pauvres. Véritable génie tactique, il humilie les légions romaines pendant plus de deux ans avant d'être finalement encerclé et tué par le riche général Crassus.",
+        "fun": "Son corps n'a jamais été retrouvé sur le champ de bataille après sa défaite finale. En représailles et pour terroriser le peuple, les Romains ont crucifié 6 000 de ses partisans tout le long de la route (via Appia), sur plus de 200 kilomètres jusqu'à Rome.",
+        "quizzes": [
+            {
+                "question": "Quel était le statut et le métier de Spartacus avant qu'il ne mène sa rébellion ?",
+                "options": ["Sénateur romain", "Esclave gladiateur", "Boulanger", "Pirate grec"],
+                "answer": 1
+            },
+            {
+                "question": "Contre quelle grande puissance militaire s'est-il soulevé avec son armée d'esclaves ?",
+                "options": ["L'Empire égyptien", "La République romaine", "L'Empire d'Alexandre le Grand", "L'armée perse"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Qui était Ibn Battûta ?",
+        "dates": "24 février 1304 (Tanger, Maroc) - Vers 1368 (Marrakech, Empire mérinide) | env. 64 ans",
+        "faits": "Issu d'une famille de juges (cadis) de culture berbère, il quitte le Maroc à 21 ans pour faire le pèlerinage de la Mecque. Passionné par la découverte, il ne rentrera chez lui que 29 ans plus tard ! Il est le plus grand voyageur du Moyen Âge : il a parcouru environ 120 000 kilomètres, explorant l'Afrique de l'Ouest, l'Inde, la Chine, la Russie et l'Empire byzantin. À son retour, il dicte l'incroyable récit de ses aventures dans son grand livre, la 'Rihla'.",
+        "fun": "Son voyage était loin d'être paisible ! Il a survécu à des attaques de pirates, à un naufrage dévastateur, à la peste noire, et a même failli être décapité par un tyran en Inde dont il était devenu l'un des juges à la cour.",
+        "quizzes": [
+            {
+                "question": "Quel exploit historique impressionnant Ibn Battûta a-t-il réalisé au 14e siècle ?",
+                "options": ["Il a gagné toutes ses guerres", "Il a voyagé sur plus de 120 000 km à travers trois continents", "Il a traversé l'Atlantique en bateau", "Il a inventé la boussole"],
+                "answer": 1
+            },
+            {
+                "question": "Quelle était la profession d'Ibn Battûta, qu'il a parfois exercée pour des rois étrangers ?",
+                "options": ["Forgeron", "Médecin des armées", "Juge islamique (cadi)", "Marchand d'épices"],
+                "answer": 2
+            }
+        ]
+    },
+    {
+        "front": "Qui était Raspoutine ?",
+        "dates": "21 janvier 1869 (Pokrovskoïe, Sibérie) - 30 décembre 1916 (Saint-Pétersbourg, Russie) | 47 ans",
+        "faits": "Fils de paysans sibériens illettrés. Mystique itinérant et guérisseur charismatique, il s'introduit à la cour du dernier tsar de Russie, Nicolas II. Il devient rapidement indispensable à la tsarine Alexandra car il semble être le seul homme au monde capable d'apaiser par hypnose les crises mortelles d'hémophilie du jeune prince héritier. Son immense influence politique, sa débauche notoire et son arrogance scandalisent la noblesse, qui finit par organiser son assassinat brutal.",
+        "fun": "Son meurtre est digne d'un mythe : des nobles l'ont d'abord nourri de gâteaux remplis de cyanure (qui n'ont eu aucun effet !), lui ont ensuite tiré dessus, l'ont roué de coups, et ont fini par le jeter vivant et ligoté dans un fleuve glacé pour s'assurer de sa mort.",
+        "quizzes": [
+            {
+                "question": "De quel dangereux trouble du sang souffrait le fils du tsar, que Raspoutine apaisait ?",
+                "options": ["La leucémie", "La malaria", "L'hémophilie (le sang ne coagule pas)", "La peste"],
+                "answer": 2
+            },
+            {
+                "question": "Comment la haute noblesse russe a-t-elle réagi à l'influence grandissante de Raspoutine ?",
+                "options": ["Ils l'ont nommé Tsar", "Ils l'ont envoyé à l'université", "Ils l'ont forcé à devenir soldat", "Ils l'ont détesté et ont organisé son assassinat secret"],
+                "answer": 3
+            }
+        ]
+    },
+    {
+        "front": "Qui était Eleanor Roosevelt ?",
+        "dates": "11 octobre 1884 (New York, États-Unis) - 7 novembre 1962 (New York, États-Unis) | 78 ans",
+        "faits": "Issue d'une riche famille de l'élite américaine. Épouse du président Franklin D. Roosevelt, elle transforme radicalement le rôle de Première Dame. Face à la paralysie de son mari, elle devient ses 'yeux et ses oreilles', voyageant inlassablement partout dans le pays pour enquêter sur la misère du New Deal. Ardente défenseuse des droits des Noirs, des femmes et des travailleurs, elle est nommée déléguée à l'ONU après la mort de son mari et supervise la rédaction de la Déclaration universelle des droits de l'homme de 1948.",
+        "fun": "Elle refusait obstinément la protection des services secrets ! Pour pouvoir se déplacer librement et conduire sa propre voiture de nuit à travers le pays, elle avait obtenu un permis de port d'arme et gardait toujours un pistolet chargé dans sa boîte à gants.",
+        "quizzes": [
+            {
+                "question": "Quel changement politique majeur a-t-elle apporté aux États-Unis ?",
+                "options": ["Elle a supprimé le Sénat", "Elle a transformé le rôle de Première Dame en un poste de réel activisme", "Elle s'est fait élire Présidente à la place de son mari", "Elle a inventé le Parti Républicain"],
+                "answer": 1
+            },
+            {
+                "question": "Quel grand texte international fondamental Eleanor Roosevelt a-t-elle supervisé à l'ONU en 1948 ?",
+                "options": ["Le traité de Versailles", "La constitution américaine", "La Déclaration universelle des droits de l'homme", "Le traité de libre-échange"],
+                "answer": 2
+            }
+        ]
+    },
+	{
+        "front": "Qui était la reine Victoria ?",
+        "dates": "24 mai 1819 (Londres, Angleterre) - 22 janvier 1901 (Île de Wight, Angleterre) | 81 ans",
+        "faits": "Élevée sous les règles étouffantes du 'système de Kensington' par sa mère surprotectrice. Elle devient reine à 18 ans et s'émancipe immédiatement. Son règne immense de 63 ans (l'ère victorienne) marque l'apogée de l'Empire britannique et de la révolution industrielle. Elle épouse son cousin le prince Albert, le grand amour de sa vie, et portera le deuil (en noir) pendant 40 ans après sa mort. Elle est surnommée la 'grand-mère de l'Europe' car ses 9 enfants ont été mariés dans toutes les cours royales du continent.",
+        "fun": "Elle a été la première souveraine à habiter le palais de Buckingham, mais aussi la première personnalité au monde à accepter d'utiliser du chloroforme pour accoucher (de son 8e enfant), brisant les tabous religieux et popularisant ainsi l'anesthésie !",
+        "quizzes": [
+            {
+                "question": "Quel surnom affectueux lui a-t-on donné à la fin de sa vie ?",
+                "options": ["La grand-mère de l'Europe", "La reine de fer", "La veuve joyeuse", "L'impératrice du monde"],
+                "answer": 0
+            },
+            {
+                "question": "Quelle couleur de vêtements a-t-elle portée pendant 40 ans après la mort de son mari ?",
+                "options": ["Le blanc", "Le rouge", "Le noir", "Le violet"],
+                "answer": 2
+            }
+        ]
+    },
+    {
+        "front": "Qui était Mansa Musa ?",
+        "dates": "Vers 1280 (Empire du Mali) - Vers 1337 (Mali) | env. 57 ans",
+        "faits": "Empereur (Mansa) de l'immense Empire du Mali au XIVe siècle. Son royaume contrôlait les lucratives routes commerciales transsahariennes et possédait d'immenses réserves d'or et de sel. Les historiens le considèrent aujourd'hui comme l'être humain le plus riche de toute l'histoire de l'humanité. Souverain pieux et bâtisseur, il transforme sa capitale Tombouctou en un prestigieux centre intellectuel, architectural et islamique attirant des savants de tout le Moyen-Orient.",
+        "fun": "Lors de son pèlerinage vers la Mecque en 1324, il a voyagé avec des milliers d'esclaves et de chameaux chargés d'or. Il a distribué tellement d'or en cours de route (notamment en Égypte) qu'il a provoqué une crise économique et une inflation massive qui a ruiné la région pendant 10 ans !",
+        "quizzes": [
+            {
+                "question": "De quel immense empire africain Mansa Musa était-il le souverain ?",
+                "options": ["L'Empire zoulou", "L'Empire d'Éthiopie", "L'Empire du Mali", "L'Empire songhaï"],
+                "answer": 2
+            },
+            {
+                "question": "Quelle conséquence inattendue a eue sa générosité démesurée lors de son voyage en Égypte ?",
+                "options": ["Une épidémie de peste", "L'effondrement de la valeur de l'or à cause de l'inflation", "Une guerre civile de succession", "Une pénurie d'eau potable"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Qui était Mary Anning ?",
+        "dates": "21 mai 1799 (Lyme Regis, Angleterre) - 9 mars 1847 (Lyme Regis, Angleterre) | 47 ans",
+        "faits": "Issue d'une famille dissidente anglaise très pauvre. Son père ébéniste lui apprend à creuser les falaises pour trouver des fossiles et les vendre aux touristes afin de survivre. Sans aucune éducation formelle et en tant que femme de classe ouvrière, elle devient pourtant l'une des plus grandes paléontologues de l'histoire. Elle découvre le premier squelette complet d'ichtyosaure à l'âge de 12 ans, puis des plésiosaures, prouvant de fait l'extinction des espèces (avant même Darwin). La communauté scientifique masculine s'est longtemps approprié ses découvertes.",
+        "fun": "Bébé, elle a survécu à un événement extraordinaire : la femme qui la tenait dans ses bras lors d'un festival a été foudroyée par un orage et tuée sur le coup (avec deux autres personnes), mais le bébé Mary en est sorti totalement indemne et soudainement 'très éveillé'.",
+        "quizzes": [
+            {
+                "question": "Quelle était sa profession scientifique, à l'époque totalement fermée aux femmes non éduquées ?",
+                "options": ["Chirurgienne militaire", "Paléontologue spécialiste des fossiles", "Astronome", "Alchimiste"],
+                "answer": 1
+            },
+            {
+                "question": "Que faisait Mary Anning de ses fossiles remarquables durant sa jeunesse ?",
+                "options": ["Elle les vendait aux touristes sur la plage pour nourrir sa famille", "Elle les broyait pour en faire des médicaments", "Elle les exposait gratuitement dans son salon", "Elle s'en faisait des colliers"],
+                "answer": 0
+            }
+        ]
+    },
+    {
+        "front": "Qui était Shaka Zulu ?",
+        "dates": "Vers 1787 (Melmoth, actuelle Afrique du Sud) - 22 septembre 1828 (KwaDukuza, Royaume zoulou) | env. 41 ans",
+        "faits": "Enfant illégitime d'un chef de clan, il est rejeté, raillé et exilé avec sa mère, grandissant dans la honte. Devenu un guerrier d'une force physique hors du commun, il prend le pouvoir et transforme la petite tribu zouloue en un immense empire militariste. Génie tactique impitoyable, il révolutionne la guerre en Afrique australe en inventant une courte lance d'estoc pour le corps à corps (l'iklwa) et la redoutable formation d'attaque en 'cornes de buffle'. Sombrant dans une folie meurtrière à la mort de sa mère bien-aimée, il est assassiné par ses demi-frères.",
+        "fun": "Pour endurcir ses soldats et les rendre plus rapides, il leur a strictement interdit de porter des sandales. Il les faisait courir pieds nus sur des tapis d'épines pendant des semaines jusqu'à ce que la plante de leurs pieds devienne dure comme du roc !",
+        "quizzes": [
+            {
+                "question": "Quelle arme redoutable Shaka Zulu a-t-il imposée pour remplacer les longues lances de jet inefficaces ?",
+                "options": ["L'arc à poulies", "Le fusil à poudre noire", "L'iklwa (courte lance de corps-à-corps)", "L'épée en fer forgé"],
+                "answer": 2
+            },
+            {
+                "question": "Comment a-t-il été traité pendant son enfance au sein de la tribu ?",
+                "options": ["Comme un dieu vivant protégé par des prêtres", "Rejeté, harcelé et exilé en tant qu'enfant illégitime", "Élevé par des colons européens", "Il était un prince gâté et choyé"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Qui était Nicolas Copernic ?",
+        "dates": "19 février 1473 (Toruń, Pologne) - 24 mai 1543 (Frombork, Pologne) | 70 ans",
+        "faits": "Issu d'une riche famille de marchands de cuivre, il perd son père à 10 ans et est élevé par son puissant oncle évêque. Chanoine de l'Église, diplomate et médecin, il bouleverse secrètement l'histoire des sciences en développant la théorie de l'héliocentrisme (la Terre et les planètes tournent autour du Soleil). Cette théorie s'oppose frontalement au géocentrisme soutenu par l'Église depuis l'Antiquité. Craignant les foudres religieuses et les moqueries, il retarde la publication de son œuvre majeure 'De revolutionibus' jusqu'à son lit de mort.",
+        "fun": "Selon la légende, il était plongé dans un profond coma depuis plusieurs jours et s'est réveillé juste assez longtemps pour tenir dans ses mains le tout premier exemplaire imprimé de son livre achevé, avant de refermer les yeux et de mourir paisiblement le jour même.",
+        "quizzes": [
+            {
+                "question": "Quelle théorie révolutionnaire a été formulée mathématiquement par Nicolas Copernic ?",
+                "options": ["La théorie des trous noirs", "La Terre est plate", "L'héliocentrisme (la Terre tourne autour du Soleil)", "L'évolution des espèces par sélection naturelle"],
+                "answer": 2
+            },
+            {
+                "question": "Quand Copernic a-t-il enfin osé faire publier son livre controversé ?",
+                "options": ["À l'âge de 20 ans", "L'année même de sa mort, par prudence", "Il ne l'a jamais publié, Galilée l'a volé", "Sous le règne de Napoléon"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Qui était Hedy Lamarr ?",
+        "dates": "9 novembre 1914 (Vienne, Autriche-Hongrie) - 19 janvier 2000 (Casselberry, Floride, États-Unis) | 85 ans",
+        "faits": "Née Hedwig Kiesler dans une grande famille juive autrichienne. Fuyant un mari marchand d'armes tyrannique proche des fascistes, elle émigre aux États-Unis. Considérée comme 'la plus belle femme du monde', elle devient une immense star de cinéma d'Hollywood dans les années 40. Mais son esprit était scientifique : pour aider les Alliés à vaincre les sous-marins nazis, elle invente et brevète (avec son ami compositeur) un système secret de 'saut de fréquence' rendant les torpilles américaines indétectables et impossibles à brouiller.",
+        "fun": "La marine américaine a refusé d'utiliser son invention pendant la guerre car elle venait 'd'une actrice', lui conseillant plutôt de vendre des baisers pour lever des fonds. Son invention est pourtant devenue la technologie fondatrice du Wi-Fi, du Bluetooth et du GPS que nous utilisons tous aujourd'hui !",
+        "quizzes": [
+            {
+                "question": "Quelle technologie indispensable de notre quotidien a été rendue possible grâce à son invention secrète ?",
+                "options": ["L'écran tactile", "Le Wi-Fi et le Bluetooth", "Le four à micro-ondes", "Le moteur à réaction des avions"],
+                "answer": 1
+            },
+            {
+                "question": "Quelle était la profession publique d'Hedy Lamarr dans les années 1940 ?",
+                "options": ["Chirurgienne militaire", "Professeure de mathématiques", "Star de cinéma à Hollywood", "Agente secrète du KGB"],
+                "answer": 2
+            }
+        ]
+    },
+    {
+        "front": "Qui était Marc Aurèle ?",
+        "dates": "26 avril 121 (Rome, Italie) - 17 mars 180 (Sirmium ou Vindobona, Empire romain) | 58 ans",
+        "faits": "Issu de la haute aristocratie sénatoriale romaine, remarqué pour son sérieux dès l'enfance, il est adopté sur ordre impérial pour devenir le futur souverain. Dernier des 'Cinq bons empereurs' de l'apogée de Rome, il règne à une époque terrifiante marquée par des invasions germaniques incessantes et la 'peste antonine' qui décime l'empire. Surnommé l'Empereur-Philosophe, grand représentant du stoïcisme, il rédigeait le soir sous sa tente militaire ses 'Pensées pour moi-même', un journal intime de méditation sur le devoir, la mort et l'humilité.",
+        "fun": "Contrairement à l'image des empereurs sanguinaires, il détestait les cruels combats de gladiateurs. Obligé d'y assister par devoir politique, il s'asseyait dans la tribune impériale et lisait des livres ou signait des papiers administratifs pour ignorer les massacres de l'arène.",
+        "quizzes": [
+            {
+                "question": "À quel grand courant de la philosophie antique Marc Aurèle appartenait-il ?",
+                "options": ["L'Épicurisme", "Le Cynisme", "Le Stoïcisme", "L'Existentialisme"],
+                "answer": 2
+            },
+            {
+                "question": "Quel célèbre recueil de méditations a-t-il rédigé seul sous sa tente pendant la guerre ?",
+                "options": ["Le Prince", "Pensées pour moi-même", "Le Capital", "L'Iliade"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Qui était Marie Tussaud ?",
+        "dates": "1er décembre 1761 (Strasbourg, France) - 16 avril 1850 (Londres, Angleterre) | 88 ans",
+        "faits": "Fille posthume d'un soldat mort au combat, elle est élevée par un médecin suisse qui lui apprend l'art de modeler la cire anatomique. Remarquée, elle devient tutrice d'art à la cour du roi Louis XVI à Versailles. Pendant la Révolution française, jetée en prison, elle doit prouver sa loyauté à la République pour éviter la guillotine : elle est forcée de mouler les masques mortuaires en cire des nobles fraîchement décapités, dont ceux de ses anciens amis (Louis XVI, Marie-Antoinette). Elle fuit ensuite à Londres pour fonder son légendaire musée de cire.",
+        "fun": "Son travail sous la Terreur était d'une horreur absolue : elle devait parfois chercher les têtes coupées elle-même dans les charniers, et travaillait sa cire chaude assise sur les marches mêmes de l'échafaud de la guillotine, entourée de la foule en colère !",
+        "quizzes": [
+            {
+                "question": "Quelle compétence macabre l'a sauvée de la guillotine sous la Révolution ?",
+                "options": ["Elle cuisinait pour Robespierre", "Elle modelait en cire les visages des victimes décapitées", "Elle recousait les soldats blessés", "Elle lisait dans les astres"],
+                "answer": 1
+            },
+            {
+                "question": "Quelle célèbre institution de loisir a-t-elle fondée plus tard en Angleterre ?",
+                "options": ["Le British Museum", "La grande roue de Londres", "Le musée Madame Tussauds", "Le théâtre de Big Ben"],
+                "answer": 2
+            }
+        ]
+    },
+    {
+        "front": "Qui était Zheng He ?",
+        "dates": "1371 (Jinning, Yunnan, Chine) - 1433 (En mer ou à Nankin, Chine) | 62 ans",
+        "faits": "Né 'Ma He' dans une famille musulmane chinoise rurale. Capturé enfant lors d'une guerre impériale, il est castré (devenant eunuque) et placé comme serviteur du futur empereur Yongle. Devenu un brillant tacticien de confiance, l'Empereur le nomme amiral d'une gigantesque flotte d'exploration comptant des centaines de navires et 30 000 hommes. Un siècle entier avant les explorateurs européens, Zheng He mène sept grandes expéditions maritimes jusqu'en Inde, au Moyen-Orient et sur les côtes de l'Afrique de l'Est pour imposer la diplomatie de la dynastie Ming.",
+        "fun": "Ses navires principaux, appelés les 'Bateaux-trésors', étaient de véritables monstres marins en bois mesurant plus de 130 mètres de long. À titre de comparaison, le célèbre navire de Christophe Colomb (la Santa Maria) ne mesurait que 19 petits mètres !",
+        "quizzes": [
+            {
+                "question": "Quel événement dramatique a marqué son enfance avant qu'il ne devienne amiral ?",
+                "options": ["Il a été élevé par des loups", "Il a été capturé par l'armée, castré et réduit en servitude", "Il a été vendu à des pirates européens", "Il a remporté la loterie impériale"],
+                "answer": 1
+            },
+            {
+                "question": "Jusqu'à quel continent éloigné sa flotte impériale chinoise est-elle allée naviguer ?",
+                "options": ["L'Australie", "L'Amérique du Sud", "L'Afrique de l'Est", "L'Europe du Nord"],
+                "answer": 2
+            }
+        ]
+    },
+    {
+        "front": "Qui était Wu Zetian ?",
+        "dates": "17 février 624 (Lizhou, Chine) - 16 décembre 705 (Luoyang, Empire Zhou) | 81 ans",
+        "faits": "Issue d'une riche famille alliée à la dynastie Tang, elle entre au palais impérial à 14 ans comme simple concubine de bas rang. D'une grande intelligence politique, elle séduit le fils du vieil empereur. Lorsqu'il monte sur le trône, elle manipule la cour, exile ou fait assassiner ses rivaux (y compris peut-être certains de ses propres enfants) et se fait couronner. Elle est l'unique femme de toute l'histoire millénaire de la Chine à avoir officiellement porté le titre d'Impératrice régnante. Son règne, bien que cruel, fut d'une immense prospérité culturelle.",
+        "fun": "Pour démontrer que son pouvoir était d'origine cosmique et intouchable, elle a carrément inventé une vingtaine de nouveaux caractères d'écriture (les caractères de Zetian) et a forcé tout l'empire chinois à les utiliser à la place des anciens mots !",
+        "quizzes": [
+            {
+                "question": "Quel exploit politique totalement unique dans l'histoire de la Chine Wu Zetian a-t-elle accompli ?",
+                "options": ["Elle a été la seule femme officiellement Impératrice régnante de plein droit", "Elle a repoussé Gengis Khan seule", "Elle a rendu le pouvoir au peuple (démocratie)", "Elle a aboli l'armée chinoise"],
+                "answer": 0
+            },
+            {
+                "question": "Comment a-t-elle commencé sa longue carrière à l'intérieur du palais impérial ?",
+                "options": ["Comme générale en chef des cavaliers", "Comme simple concubine de bas rang", "Comme princesse légitime héritière", "Comme cuisinière royale"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Qui était Léonidas Ier ?",
+        "dates": "Vers 540 av. J.-C. (Sparte, Grèce antique) - 480 av. J.-C. (Les Thermopyles, Grèce) | env. 60 ans",
+        "faits": "Prince issu de la lignée royale des Agiades, il n'était initialement pas destiné au trône. Il a donc dû subir dans sa jeunesse l''agôgé', le dressage militaire effroyablement brutal, rude et sanglant réservé aux citoyens spartiates. Devenu roi à la mort de ses frères aînés, il mène la coalition grecque contre l'immense invasion perse du roi Xerxès Ier. Il entre dans la légende éternelle lors de la bataille des Thermopyles, choisissant de se sacrifier avec sa garde de 300 Spartiates dans un défilé rocheux pour ralentir l'ennemi.",
+        "fun": "Avant la bataille, le redoutable roi perse a envoyé un messager exigeant que les Grecs rendent leurs armes pour avoir la vie sauve. La réponse mythique de Léonidas, d'un sarcasme absolu, fut 'Molôn labé', ce qui signifie littéralement : 'Viens les prendre !'",
+        "quizzes": [
+            {
+                "question": "Quel dressage militaire cauchemardesque a-t-il dû endurer dans sa jeunesse à Sparte ?",
+                "options": ["L'agôgé (l'éducation spartiate)", "La torture d'initiation perse", "L'école de gladiateurs de Rome", "L'Inquisition"],
+                "answer": 0
+            },
+            {
+                "question": "Quelle phrase légendaire a-t-il répondue à l'armée ennemie qui lui demandait de rendre les armes ?",
+                "options": ["Je capitule", "Viens les prendre (Molôn labé)", "Que la paix soit sur vous", "Sauve qui peut"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Qui était T.E. Lawrence (Lawrence d'Arabie) ?",
+        "dates": "16 août 1888 (Tremadog, Pays de Galles) - 19 mai 1935 (Bovington, Angleterre) | 46 ans",
+        "faits": "Enfant illégitime d'un aristocrate, jeune homme intellectuel et frêle, il étudie l'archéologie à Oxford et part fouiller au Moyen-Orient, apprenant l'arabe. Pendant la Première Guerre mondiale, l'armée britannique l'envoie dans le désert comme officier du renseignement. Adoptant les coutumes locales, il parvient à unifier les tribus bédouines nomades et mène la 'Grande révolte arabe' contre l'Empire ottoman. Redoutable stratège de guérilla, il sabote les chemins de fer turcs et prend la ville d'Aqaba. Écœuré par les trahisons coloniales des Occidentaux, il meurt dans un simple accident de moto.",
+        "fun": "Malgré son image d'immense guerrier du désert chevauchant des chameaux au grand galop, Lawrence mesurait seulement 1m65, détestait profondément la chaleur écrasante du sable, et préférait de loin lire de la poésie antique !",
+        "quizzes": [
+            {
+                "question": "Quelle était la formation académique de T.E. Lawrence avant la Première Guerre mondiale ?",
+                "options": ["Architecte naval", "Médecin chirurgien", "Archéologue passionné par l'Orient", "Avocat pénaliste"],
+                "answer": 2
+            },
+            {
+                "question": "Contre quel grand empire a-t-il aidé les tribus arabes à mener leur révolte ?",
+                "options": ["L'Empire ottoman (turc)", "L'Empire russe", "L'Empire britannique", "L'Empire byzantin"],
+                "answer": 0
+            }
+        ]
+    },
+    {
+        "front": "Qui était Grace O'Malley (Gráinne Ní Mháille) ?",
+        "dates": "Vers 1530 (Comté de Mayo, Irlande) - Vers 1603 (Château de Rockfleet, Irlande) | env. 73 ans",
+        "faits": "Fille de la petite noblesse, son père est un puissant chef de clan irlandais contrôlant les mers. On lui refuse d'embarquer sur les navires car 'les cheveux longs portent malheur et se prennent dans les cordages'. Pour prouver sa détermination, elle se rase la tête. Devenue la reine de son clan, elle est une redoutable cheffe pirate, taxant les navires marchands et construisant des châteaux-forts sur les côtes. Elle s'opposera toute sa vie à l'annexion de l'Irlande par les Anglais, allant jusqu'à négocier face-à-face, en latin, avec la reine Élisabeth Ire.",
+        "fun": "Selon la légende, le lendemain même de son accouchement à bord de son navire, son équipage a été abordé par des pirates turcs. Elle s'est levée de son lit, a saisi deux pistolets, et est montée sur le pont en chemise de nuit pour diriger victorieusement la contre-attaque !",
+        "quizzes": [
+            {
+                "question": "Quel titre officieux et craint a été donné à Grace O'Malley ?",
+                "options": ["La Reine des Neiges", "La Reine Pirate d'Irlande", "L'Impératrice des Celtes", "La Sorcière des mers"],
+                "answer": 1
+            },
+            {
+                "question": "Pourquoi s'est-elle intégralement rasé la tête lorsqu'elle était jeune fille ?",
+                "options": ["Pour échapper à une terrible maladie", "Pour se déguiser en moine anglais", "Parce qu'on lui refusait d'embarquer à cause de ses cheveux longs", "En signe de deuil"],
+                "answer": 2
+            }
+        ]
+    },
+    {
+        "front": "Qui était le Bouddha (Siddhartha Gautama) ?",
+        "dates": "Vers 563 av. J.-C. (Lumbini, actuel Népal) - Vers 483 av. J.-C. (Kushinagar, Inde) | env. 80 ans",
+        "faits": "Né prince héritier d'un puissant clan. Une prophétie annonçant qu'il deviendrait soit un grand roi soit un saint ermite, son père l'enferme dans un fastueux palais de plaisirs pour l'attacher au monde matériel. À 29 ans, il sort en secret et découvre avec un immense choc la vieillesse, la maladie et la mort. Il abandonne son trône, sa femme et son fils pour mener une vie d'ascète. Après des années de privations, il s'assoit sous l'arbre de la Bodhi, médite et atteint 'l'Éveil' (le Nirvana). Il enseigne ensuite la 'Voie du milieu', libérée des désirs, fondant le bouddhisme.",
+        "fun": "Les fameuses statues que l'on trouve souvent dans les restaurants montrant un 'Bouddha très gros et chauve qui rit' (Budai) ne représentent absolument pas le vrai Bouddha historique (qui était très mince), mais un moine chinois folklorique ayant vécu 1500 ans plus tard !",
+        "quizzes": [
+            {
+                "question": "Quel était le statut social de Siddhartha Gautama avant son éveil spirituel ?",
+                "options": ["Il était un esclave indien", "Il était un prince royal destiné à régner", "Il était un paysan très pauvre", "Il était un général de l'armée"],
+                "answer": 1
+            },
+            {
+                "question": "Quel choc psychologique a provoqué sa décision de tout abandonner à 29 ans ?",
+                "options": ["Son palais d'or a brûlé", "Il a découvert la vieillesse, la maladie et la mort lors d'une sortie secrète", "Sa femme a tenté de l'empoisonner", "Il a perdu la guerre"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Qui était Platon ?",
+        "dates": "428 ou 427 av. J.-C. (Athènes, Grèce antique) - 348 ou 347 av. J.-C. (Athènes) | env. 80 ans",
+        "faits": "Issu de la plus haute aristocratie athénienne, ce jeune homme brillant était destiné à diriger la cité. Révolté par l'exécution de son cher maître Socrate (condamné à boire de la ciguë), il se détourne de la politique pour la philosophie. Il fonde 'l'Académie' (considérée comme la première université du monde occidental) où il enseignera à Aristote. Sa pensée repose sur la 'Théorie des Idées' : le monde matériel dans lequel nous vivons n'est qu'une illusion imparfaite, une pâle copie du monde éternel de la Vérité (illustré par son célébrissime 'Mythe de la caverne').",
+        "fun": "'Platon' n'était probablement pas son vrai prénom, mais un surnom d'étudiant affectueux (qui signifie 'large' en grec). Il aurait gagné ce surnom dans sa jeunesse parce qu'il pratiquait la lutte sportive à très haut niveau et avait des épaules extraordinairement larges !",
+        "quizzes": [
+            {
+                "question": "Quel célèbre mythe a-t-il inventé pour expliquer que les humains vivent dans l'illusion et l'ignorance ?",
+                "options": ["Le mythe d'Icare", "Le mythe de la caverne", "Le mythe d'Œdipe", "Le mythe de la boîte de Pandore"],
+                "answer": 1
+            },
+            {
+                "question": "Quelle grande institution éducative antique Platon a-t-il fondée à Athènes ?",
+                "options": ["Les Jeux Olympiques", "La toute première banque", "L'Académie (la première école philosophique structurée)", "Le Sénat de Rome"],
+                "answer": 2
+            }
+        ]
     }
 ]
