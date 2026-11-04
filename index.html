@@ -88,7 +88,31 @@
             20%, 60% { transform: translateX(-6px); }
             40%, 80% { transform: translateX(6px); }
         }
-
+		.tags-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+        .tag-pill {
+            background: #E0E7FF;
+            color: var(--primary);
+            font-size: 0.7rem;
+            font-weight: 800;
+            padding: 4px 10px;
+            border-radius: 12px;
+            text-transform: uppercase;
+        }
+        .quiz-person-name {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            font-weight: 700;
+            margin-bottom: 15px;
+            text-decoration: underline;
+            text-decoration-color: #E0E7FF;
+            text-decoration-thickness: 3px;
+        }
         .flip-card {
             background-color: transparent;
             width: 100%;
@@ -334,10 +358,12 @@
             <div class="flip-card-inner" id="card-inner">
                 <div class="flip-card-front" id="card-front"></div>
                 <div class="flip-card-back">
-                    <div class="back-section">
-                        <div class="back-title">Dates ⏳</div>
-                        <div id="card-dates"></div>
-                    </div>
+                    <!-- TITRE AU DOS -->
+                    <h3 id="card-back-title" style="color: var(--primary); text-align: center; margin-top: -15px; margin-bottom: 10px; padding-bottom: 5px; border-bottom: 2px solid #F1F5F9; font-size: 1.1rem;"></h3>
+                    
+                    <!-- CONTENEUR POUR LES TAGS -->
+                    <div class="tags-container" id="card-tags"></div>
+                    
                     <div class="back-section">
                         <div class="back-title">Faits Marquants 📖</div>
                         <div id="card-faits"></div>
@@ -355,6 +381,7 @@
 
         <div class="quiz-container" id="quiz-view">
             <div class="quiz-header">🧠 Mode Révision</div>
+			<div class="quiz-person-name" id="quiz-person-name"></div>
             <p id="quiz-question" style="font-weight: 800; margin-bottom: 20px; font-size: 1.2rem; color: var(--primary);"></p>
             <div id="quiz-options"></div>
         </div>
@@ -557,6 +584,18 @@
             hideAllViews();
             cardView.style.display = 'block';
             instruction.style.display = 'block';
+			
+			// Affichage des tags
+            const tagsContainer = document.getElementById('card-tags');
+            tagsContainer.innerHTML = '';
+            if (card.tags) {
+                card.tags.forEach(tag => {
+                    const span = document.createElement('span');
+                    span.className = 'tag-pill';
+                    span.innerText = tag;
+                    tagsContainer.appendChild(span);
+                });
+            }
         }
 
         function flipCard() {
@@ -580,7 +619,8 @@
         function showQuiz() {
             const quiz = currentQuizzes[currentSubQuizIndex];
             const headerText = document.querySelector('.quiz-header');
-            
+            // Affiche le nom de la personne
+            document.getElementById('quiz-person-name').innerText = deck[currentCardIndex].front.replace('Qui était ', '').replace(' ?', '');
             if (currentQuizzes.length > 1) {
                 headerText.innerText = `🧠 Mode Révision (${currentSubQuizIndex + 1}/${currentQuizzes.length})`;
             } else {
@@ -802,8 +842,22 @@
             const listDiv = document.getElementById('library-list');
             listDiv.innerHTML = '';
             
-            const seenIndices = Object.keys(memoryData).map(Number);
+            let seenIndices = Object.keys(memoryData).map(Number);
             
+            // --- NOUVEAU : TRI CHRONOLOGIQUE INTELLIGENT ---
+            seenIndices.sort((a, b) => {
+                const getYear = (index) => {
+                    const datePart = deck[index].dates.split('(')[0]; // Isole la naissance
+                    const numbers = datePart.match(/\d+/g); // Cherche les nombres
+                    if (!numbers) return 0;
+                    let year = parseInt(numbers[numbers.length - 1]); // Prend l'année
+                    if (datePart.includes('av. J.-C.')) year = -year; // Gère l'Antiquité
+                    return year;
+                };
+                return getYear(a) - getYear(b);
+            });
+            // -----------------------------------------------
+
             if (seenIndices.length === 0) {
                 listDiv.innerHTML = '<p style="color: var(--text-muted); font-size: 0.9rem;">Tu n\'as encore découvert aucune carte.</p>';
             } else {
@@ -811,7 +865,7 @@
                     const btn = document.createElement('button');
                     btn.className = 'quiz-btn'; 
                     
-                    let title = deck[index].front;
+                    let title = deck[index].front.replace('Qui était ', '').replace(' ?', '');
                     if(title.length > 35) title = title.substring(0, 35) + '...';
                     
                     btn.innerText = title;
@@ -840,6 +894,18 @@
             hideAllViews();
             cardView.style.display = 'block';
             instruction.style.display = 'block';
+			
+			// Affichage des tags
+            const tagsContainer = document.getElementById('card-tags');
+            tagsContainer.innerHTML = '';
+            if (card.tags) {
+                card.tags.forEach(tag => {
+                    const span = document.createElement('span');
+                    span.className = 'tag-pill';
+                    span.innerText = tag;
+                    tagsContainer.appendChild(span);
+                });
+            }
         }
 
         function hideAllViews() {
