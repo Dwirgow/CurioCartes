@@ -1708,5 +1708,276 @@
                 "answer": 2
             }
         ]
+    },
+	{
+        "front": "Qui était Catherine de Médicis ?",
+        "dates": "13 avril 1519 (Florence, Italie) - 5 janvier 1589 (Blois, France) | 69 ans",
+        "tags": ["Renaissance", "Reine de France", "Politique"],
+        "faits": "Héritière de la richissime famille banquière des Médicis, elle est orpheline à un mois. Mariée au futur roi de France Henri II, elle est d'abord écartée du pouvoir par la maîtresse de son mari, Diane de Poitiers. À la mort du roi, elle devient l'une des figures politiques les plus puissantes d'Europe, assurant la régence pour ses fils de santé fragile. Face aux sanglantes guerres de religion entre catholiques et protestants, elle tente de maintenir la paix par la tolérance, mais son nom reste tragiquement lié au massacre de la Saint-Barthélemy en 1572.",
+        "fun": "Elle a profondément influencé la culture de la cour de France en y introduisant de nombreuses coutumes italiennes, comme l'usage régulier de la fourchette, les parfums, le corset, et même les macarons !",
+        "quizzes": [
+            {
+                "question": "De quelle célèbre ville italienne la riche famille de Catherine était-elle originaire ?",
+                "options": ["Venise", "Rome", "Florence", "Naples"],
+                "answer": 2
+            },
+            {
+                "question": "Quel événement sanglant des guerres de religion a entaché son héritage politique ?",
+                "options": ["Le massacre de la Saint-Barthélemy", "La prise de la Bastille", "La bataille de Marignan", "La guerre de Cent Ans"],
+                "answer": 0
+            }
+        ]
+    },
+    {
+        "front": "Qui était Hannibal Barca ?",
+        "dates": "247 av. J.-C. (Carthage, actuelle Tunisie) - Vers 183 av. J.-C. (Bithynie, actuelle Turquie) | env. 64 ans",
+        "faits": "Fils du grand général carthaginois Hamilcar Barca, il jure dès son enfance une haine éternelle à Rome. Devenu commandant en chef, il déclenche la deuxième guerre punique. Considéré comme l'un des plus grands tacticiens militaires de l'Antiquité, il réalise l'exploit inouï de traverser les Alpes en plein hiver avec son armée et ses éléphants de guerre pour attaquer l'Italie par le nord. Il inflige aux Romains des défaites écrasantes (notamment à Cannes en 216 av. J.-C.) avant d'être finalement vaincu à Zama par Scipion l'Africain. Il s'empoisonne pour échapper à la capture.",
+        "fun": "Lors d'une bataille navale à la fin de sa vie, il a inventé une arme biologique terrifiante : il a fait catapulter des dizaines de jarres en argile remplies de serpents venimeux très agressifs directement sur les ponts des navires ennemis !",
+        "quizzes": [
+            {
+                "question": "Quelle chaîne de montagnes réputée infranchissable Hannibal a-t-il traversée avec son armée ?",
+                "options": ["Les Pyrénées", "L'Himalaya", "Les Alpes", "Le Caucase"],
+                "answer": 2
+            },
+            {
+                "question": "Quel animal exotique terrifiant accompagnait son armée lors de sa longue marche ?",
+                "options": ["Des tigres", "Des éléphants de guerre", "Des rhinocéros", "Des ours bruns"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Qui était Pierre le Grand (Pierre Ier) ?",
+        "dates": "9 juin 1672 (Moscou, Russie) - 8 février 1725 (Saint-Pétersbourg, Russie) | 52 ans",
+        "faits": "Proclamé tsar à 10 ans, il grandit loin de la cour, se passionnant pour l'armée et la construction navale. Géant énergique de plus de 2 mètres, il voyage incognito en Europe occidentale pour y apprendre les métiers d'ouvrier et d'ingénieur. De retour en Russie, il force son pays, encore très médiéval, à se moderniser brutalement et à s'occidentaliser. Il crée la marine russe, vainc l'Empire suédois pour obtenir un accès à la mer Baltique, et fonde une nouvelle capitale fastueuse sur des marécages : Saint-Pétersbourg.",
+        "fun": "Pour forcer les nobles russes (les boyards) à adopter la mode européenne moderne, il a créé un très lourd 'impôt sur la barbe' ! Ceux qui voulaient garder leurs longues barbes traditionnelles devaient payer une taxe et porter un jeton en cuivre autour du cou pour le prouver.",
+        "quizzes": [
+            {
+                "question": "Quelle célèbre ville a-t-il fondée de toutes pièces pour en faire sa capitale ?",
+                "options": ["Moscou", "Kiev", "Saint-Pétersbourg", "Vladivostok"],
+                "answer": 2
+            },
+            {
+                "question": "Comment a-t-il voyagé en Europe occidentale dans sa jeunesse pour espionner et apprendre ?",
+                "options": ["En conquérant militaire", "Incognito sous un faux nom de charpentier", "En tant que moine", "Dans une cage dorée"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Qui était Avicenne (Ibn Sina) ?",
+        "dates": "980 (Afshana, actuel Ouzbékistan) - Juin 1037 (Hamadan, actuel Iran) | 57 ans",
+        "faits": "Génie précoce de l'Âge d'or islamique, il connaît le Coran par cœur à 10 ans et maîtrise la médecine à 16 ans. Érudit, philosophe, astronome et médecin, il a écrit plus de 250 ouvrages. Son chef-d'œuvre, le 'Canon de la médecine', est une immense encyclopédie médicale qui synthétise les savoirs grecs, romains et orientaux. Ce livre a été traduit en latin et utilisé comme manuel de référence dans toutes les grandes universités d'Europe pendant plus de 500 ans.",
+        "fun": "Avicenne avait un style de vie très intense : il travaillait comme vizir et soignait des patients toute la journée, dictait ses livres de médecine et de philosophie tard dans la nuit, puis organisait de grandes fêtes avec ses étudiants jusqu'à l'aube.",
+        "quizzes": [
+            {
+                "question": "Quel est le titre de son encyclopédie majeure, étudiée en Europe pendant des siècles ?",
+                "options": ["Le Canon de la médecine", "Le Livre des Morts", "L'Anatomie du corps", "L'Art de guérir"],
+                "answer": 0
+            },
+            {
+                "question": "Dans quel contexte historique et culturel majeur Avicenne a-t-il brillé ?",
+                "options": ["La Renaissance italienne", "L'Empire byzantin", "L'Âge d'or islamique", "La Révolution industrielle"],
+                "answer": 2
+            }
+        ]
+    },
+    {
+        "front": "Qui était Frederick Douglass ?",
+        "dates": "Vers février 1818 (Comté de Talbot, Maryland) - 20 février 1895 (Washington D.C., États-Unis) | env. 77 ans",
+        "faits": "Né esclave dans une plantation du Sud, il est séparé de sa mère bébé. À l'âge de 12 ans, la femme de son maître lui apprend secrètement l'alphabet (ce qui était illégal). Il s'échappe vers le Nord à l'âge de 20 ans déguisé en marin. Grâce à son éloquence exceptionnelle et son intelligence, il devient le plus grand leader du mouvement abolitionniste américain. Écrivain, éditeur de journaux et conseiller du président Abraham Lincoln pendant la guerre de Sécession, il milita aussi ardemment pour le droit de vote des femmes.",
+        "fun": "Lorsqu'il a publié son autobiographie à succès en 1845, son récit était si brillant que beaucoup de Blancs refusaient de croire qu'il avait pu être écrit par un ancien esclave. Il a dû fuir en Europe pendant deux ans car le livre révélait son ancienne identité, risquant de le faire capturer par son ancien maître.",
+        "quizzes": [
+            {
+                "question": "Quelle compétence, interdite aux esclaves, lui a ouvert la voie vers la liberté ?",
+                "options": ["L'utilisation des armes à feu", "L'apprentissage de la lecture et de l'écriture", "La navigation en mer", "La médecine par les plantes"],
+                "answer": 1
+            },
+            {
+                "question": "Pour quel grand mouvement de justice Frederick Douglass est-il le plus connu ?",
+                "options": ["Le mouvement écologiste", "Le mouvement communiste", "Le mouvement abolitionniste (contre l'esclavage)", "Le droit de vote des 18 ans"],
+                "answer": 2
+            }
+        ]
+    },
+    {
+        "front": "Qui était Vercingétorix ?",
+        "dates": "Vers 82 av. J.-C. (Gaule, actuelle Auvergne) - 46 av. J.-C. (Rome, Italie) | env. 36 ans",
+        "faits": "Fils d'un chef de la tribu des Arvernes (qui fut assassiné pour avoir voulu devenir roi), il reçoit une éducation aristocratique et militaire. Face à l'invasion de la Gaule par Jules César, il parvient à unifier les différentes tribus gauloises, d'ordinaire très divisées. Adepte de la tactique de la 'terre brûlée', il inflige une lourde défaite aux Romains à Gergovie. Il est finalement encerclé lors du siège d'Alésia en 52 av. J.-C., dépose ses armes aux pieds de César pour épargner ses hommes, et est étranglé à Rome après six ans de captivité.",
+        "fun": "Son nom, Vercingétorix, n'est pas vraiment un prénom comme on l'entend aujourd'hui, mais plutôt un titre honorifique celte signifiant 'Le grand roi des guerriers' !",
+        "quizzes": [
+            {
+                "question": "Quel célèbre général romain a envahi la Gaule et affronté Vercingétorix ?",
+                "options": ["Marc Antoine", "Auguste", "Jules César", "Pompée"],
+                "answer": 2
+            },
+            {
+                "question": "Lors de quel siège décisif Vercingétorix a-t-il été contraint de se rendre ?",
+                "options": ["Le siège d'Alésia", "La bataille de Gergovie", "Le siège de Lutèce", "Le siège de Massilia"],
+                "answer": 0
+            }
+        ]
+    },
+    {
+        "front": "Qui était John F. Kennedy (JFK) ?",
+        "dates": "29 mai 1917 (Brookline, Massachusetts) - 22 novembre 1963 (Dallas, Texas, États-Unis) | 46 ans",
+        "faits": "Issu de l'une des familles politiques catholiques les plus riches d'Amérique. Jeune héros de la Seconde Guerre mondiale (dans la marine), il devient le 35e et le plus jeune président élu des États-Unis en 1960. Symbole de la modernité et du renouveau, son mandat est marqué par des tensions extrêmes de la Guerre froide (la crise des missiles de Cuba, le Mur de Berlin) et par le lancement du programme spatial Apollo pour atteindre la Lune. Il est assassiné par balle lors d'un défilé en voiture décapotable à Dallas.",
+        "fun": "Il souffrait de douleurs de dos chroniques si atroces qu'il portait secrètement un corset médical rigide en permanence. C'est paradoxalement ce corset qui l'a empêché de s'effondrer après la première balle de l'assassin, le maintenant droit pour le coup fatal.",
+        "quizzes": [
+            {
+                "question": "Quel événement géopolitique majeur a failli déclencher une guerre nucléaire sous son mandat ?",
+                "options": ["La guerre du Viêt Nam", "La crise des missiles de Cuba", "L'invasion de l'Afghanistan", "La guerre de Corée"],
+                "answer": 1
+            },
+            {
+                "question": "Quel grand programme scientifique et d'exploration a-t-il officiellement lancé ?",
+                "options": ["Le programme spatial Apollo (vers la Lune)", "L'invention d'Internet", "Le clonage humain", "Le forage marin profond"],
+                "answer": 0
+            }
+        ]
+    },
+    {
+        "front": "Qui était Toutânkhamon ?",
+        "dates": "Vers 1341 av. J.-C. (Akhetaton, Égypte) - Vers 1323 av. J.-C. (Thèbes, Égypte) | env. 18 ans",
+        "faits": "Fils du pharaon 'hérétique' Akhenaton, il monte sur le trône vers l'âge de 9 ans. Manipulé par ses conseillers (dont le vizir Aÿ), son règne marque le retour à la religion traditionnelle égyptienne (le polythéisme et le dieu Amon) après les réformes radicales de son père. De santé très fragile à cause de la consanguinité de ses parents, il meurt jeune, probablement d'une infection liée à une fracture de la jambe aggravée par le paludisme. Son nom est vite effacé par ses successeurs.",
+        "fun": "Il fut un pharaon politiquement très mineur, mais il est paradoxalement le plus célèbre aujourd'hui ! La raison ? Son tombeau, découvert en 1922 par l'archéologue Howard Carter, est le seul de toute l'histoire de l'Égypte à avoir été retrouvé avec son trésor royal quasi intact.",
+        "quizzes": [
+            {
+                "question": "Pourquoi Toutânkhamon est-il le pharaon le plus célèbre aujourd'hui ?",
+                "options": ["C'est lui qui a bâti la plus grande pyramide", "Son tombeau a été découvert intact avec tout son trésor", "Il a conquis toute l'Afrique", "Il a régné pendant 100 ans"],
+                "answer": 1
+            },
+            {
+                "question": "Quel grand changement religieux a eu lieu pendant son court règne ?",
+                "options": ["L'interdiction de momifier", "L'invention du christianisme", "L'adoption du dieu du Soleil uniquement", "Le retour aux anciens dieux (le polythéisme)"],
+                "answer": 3
+            }
+        ]
+    },
+    {
+        "front": "Qui était Mary Shelley ?",
+        "dates": "30 août 1797 (Londres, Angleterre) - 1er février 1851 (Londres, Angleterre) | 53 ans",
+        "faits": "Fille de la célèbre militante féministe Olympe de Gouges (erreur courante : sa mère était en fait Mary Wollstonecraft) et du philosophe William Godwin. À 16 ans, elle s'enfuit avec le poète rebelle Percy Shelley. En 1816, lors d'un été pluvieux passé en Suisse avec le poète Lord Byron, ce dernier propose un concours d'histoires de fantômes. À seulement 18 ans, Mary conçoit alors 'Frankenstein ou le Prométhée moderne', inventant presque à elle seule le genre de la science-fiction moderne. Sa vie sera ensuite marquée par le deuil tragique de plusieurs de ses enfants et de son mari.",
+        "fun": "Une grande partie du public pense aujourd'hui que 'Frankenstein' est le nom du monstre couturé, alors qu'il s'agit en fait du nom du scientifique (Victor Frankenstein) qui a créé la créature anonyme !",
+        "quizzes": [
+            {
+                "question": "Quel célèbre roman a-t-elle écrit, fondant la science-fiction moderne ?",
+                "options": ["Dracula", "L'Étrange Cas du docteur Jekyll", "Frankenstein", "La Machine à explorer le temps"],
+                "answer": 2
+            },
+            {
+                "question": "Dans quelles circonstances a-t-elle eu l'idée de ce roman à l'âge de 18 ans ?",
+                "options": ["Lors d'un concours d'histoires de fantômes entre amis un été pluvieux", "Après avoir visité un asile", "En étudiant la médecine", "Après avoir fait un cauchemar en prison"],
+                "answer": 0
+            }
+        ]
+    },
+    {
+        "front": "Qui était Mustafa Kemal Atatürk ?",
+        "dates": "1881 (Thessalonique, Empire ottoman) - 10 novembre 1938 (Istanbul, Turquie) | 57 ans",
+        "faits": "Issu de la classe moyenne, il devient un brillant officier de l'armée ottomane. Héros militaire lors de la Première Guerre mondiale (notamment à la bataille de Gallipoli). Refusant le démembrement de son pays par les Alliés en 1918, il mène une guerre d'indépendance. Fondateur et premier président de la République de Turquie, il lance des réformes radicales en quelques années : laïcité stricte de l'État, adoption de l'alphabet latin, interdiction du fez traditionnel, et droit de vote pour les femmes dès 1934.",
+        "fun": "Son nom de famille, 'Atatürk', n'est pas son nom de naissance, mais un titre honorifique unique voté par le parlement turc en 1934, signifiant littéralement 'Le Père des Turcs'. Il est strictement interdit à toute autre personne de porter ce nom.",
+        "quizzes": [
+            {
+                "question": "De quel État moderne Mustafa Kemal est-il le fondateur ?",
+                "options": ["La Grèce", "La Turquie", "L'Arabie Saoudite", "L'Égypte"],
+                "answer": 1
+            },
+            {
+                "question": "Quelle réforme radicale a-t-il imposée pour moderniser et occidentaliser son pays ?",
+                "options": ["Il a banni l'armée", "La laïcité de l'État et l'alphabet latin", "L'interdiction des écoles", "Le retour à l'empire"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Qui était Otto von Bismarck ?",
+        "dates": "1er avril 1815 (Schönhausen, Prusse) - 30 juillet 1898 (Friedrichsruh, Empire allemand) | 83 ans",
+        "faits": "Issu de l'aristocratie terrienne conservatrice (les Junkers) de Prusse. Homme politique d'une redoutable intelligence, surnommé le 'Chancelier de fer'. Son objectif ultime était d'unifier la mosaïque d'États allemands en un seul puissant empire sous la domination de la Prusse. Pour y parvenir, il a orchestré avec un machiavélisme brillant trois guerres très ciblées (contre le Danemark, l'Autriche, puis la France en 1870). Il fut également le premier leader européen à créer un système d'assurances sociales (retraite, maladie) pour contrer la montée du socialisme.",
+        "fun": "Il avait un appétit légendaire et gargantuesque. Il mangeait souvent une douzaine d'œufs au petit-déjeuner et consommait énormément de caviar, d'huîtres, de saucisses et de vin, au point que son médecin a dû le mettre au régime strict à la fin de sa vie.",
+        "quizzes": [
+            {
+                "question": "Quel était son surnom politique, symbole de sa fermeté implacable ?",
+                "options": ["L'Aigle de Prusse", "Le Chancelier de fer", "Le Roi Soleil", "Le Dictateur d'or"],
+                "answer": 1
+            },
+            {
+                "question": "Quelle grande réalisation politique a-t-il accomplie par la guerre et la diplomatie ?",
+                "options": ["L'unification de l'Allemagne en un seul Empire", "La destruction de la Russie", "L'indépendance de l'Autriche", "La conquête de l'Afrique"],
+                "answer": 0
+            }
+        ]
+    },
+    {
+        "front": "Qui était Jean Jaurès ?",
+        "dates": "3 septembre 1859 (Castres, France) - 31 juillet 1914 (Paris, France) | 54 ans",
+        "faits": "Issu de la bourgeoisie provinciale, élève très brillant (reçu premier à Normale Sup). Devenu professeur de philosophie puis député, il est bouleversé par la grande grève des mineurs de Carmaux et devient la voix majeure du socialisme français. Fondateur du journal 'L'Humanité', il défend ardemment le capitaine Dreyfus, soutient la séparation des Églises et de l'État, et lutte pour les droits des ouvriers. Profondément pacifiste, il tente désespérément d'empêcher l'éclatement de la Première Guerre mondiale, mais il est assassiné au café du Croissant par un nationaliste.",
+        "fun": "Jaurès avait une voix de tonnerre et une éloquence si puissante qu'il n'avait jamais besoin de porte-voix pour s'adresser aux foules de milliers d'ouvriers en plein air, ce qui lui permettait de les hypnotiser par ses discours humanistes.",
+        "quizzes": [
+            {
+                "question": "Quel célèbre journal national a été fondé par Jean Jaurès ?",
+                "options": ["Le Figaro", "L'Humanité", "Le Monde", "Libération"],
+                "answer": 1
+            },
+            {
+                "question": "Pourquoi Jean Jaurès a-t-il été assassiné en juillet 1914 ?",
+                "options": ["Pour avoir volé des documents", "Par un rival politique amoureux", "Parce qu'il tentait par tous les moyens d'empêcher la guerre mondiale", "Parce qu'il voulait rétablir la monarchie"],
+                "answer": 2
+            }
+        ]
+    },
+    {
+        "front": "Qui était Margaret Thatcher ?",
+        "dates": "13 octobre 1925 (Grantham, Angleterre) - 8 avril 2013 (Londres, Royaume-Uni) | 87 ans",
+        "faits": "Fille d'un modeste épicier méthodiste. Chimiste puis avocate de formation, elle gravit les échelons du Parti conservateur grâce à son obstination féroce. En 1979, elle devient la première femme Première ministre du Royaume-Uni. Surnommée la 'Dame de fer' (un surnom inventé par la presse soviétique), elle impose des politiques ultra-libérales implacables, privatisant l'industrie, brisant les puissants syndicats de mineurs, et menant une guerre victorieuse contre l'Argentine pour les îles Malouines. Elle divise encore profondément la société britannique aujourd'hui.",
+        "fun": "Avant de faire de la politique, dans le cadre de son travail de jeune chimiste pour l'industrie alimentaire, elle a participé aux recherches scientifiques permettant d'inventer la glace italienne (la crème glacée molle pompée avec de l'air) !",
+        "quizzes": [
+            {
+                "question": "Quel surnom célèbre la presse soviétique lui a-t-elle donné ?",
+                "options": ["La Dame de fer", "La Reine des glaces", "La Valkyrie", "La Mère de la Nation"],
+                "answer": 0
+            },
+            {
+                "question": "Quel secteur économique britannique a été durement brisé par ses réformes politiques ?",
+                "options": ["L'industrie de la mode", "Les puissants syndicats de mineurs", "Les banquiers de la City", "Les compagnies aériennes"],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "front": "Qui était George Orwell ?",
+        "dates": "25 juin 1903 (Motihari, Indes britanniques) - 21 janvier 1950 (Londres, Royaume-Uni) | 46 ans",
+        "faits": "Né Eric Arthur Blair dans une famille de fonctionnaires coloniaux. Après avoir servi dans la police impériale en Birmanie, écœuré par le colonialisme, il choisit de vivre dans la pauvreté volontaire à Paris et à Londres pour écrire. Socialiste convaincu, il part combattre en Espagne contre le fascisme et reçoit une balle dans la gorge. Il devient le critique le plus lucide des totalitarismes (nazisme et stalinisme) en écrivant deux chefs-d'œuvre de la littérature : 'La Ferme des animaux' et le terrifiant roman dystopique '1984'. Il meurt de la tuberculose.",
+        "fun": "Le concept mythique et angoissant de 'Big Brother' (l'œil du dictateur qui surveille chaque citoyen à travers un écran) a été inventé par Orwell dans son roman 1984... bien avant l'invention des caméras de vidéosurveillance modernes !",
+        "quizzes": [
+            {
+                "question": "Quel célèbre roman dystopique sur la surveillance de masse a-t-il écrit ?",
+                "options": ["Le Meilleur des mondes", "1984", "Fahrenheit 451", "Dune"],
+                "answer": 1
+            },
+            {
+                "question": "Quelle cause l'a poussé à prendre les armes en 1936 en Espagne ?",
+                "options": ["Il s'est battu contre les fascistes pendant la guerre civile espagnole", "Il a voulu reconquérir l'Espagne pour le Royaume-Uni", "Il a rejoint des pirates en mer", "Il a défendu le roi d'Espagne"],
+                "answer": 0
+            }
+        ]
+    },
+    {
+        "front": "Qui était Thomas Jefferson ?",
+        "dates": "13 avril 1743 (Shadwell, Virginie) - 4 juillet 1826 (Charlottesville, Virginie, États-Unis) | 83 ans",
+        "faits": "Né dans une riche famille de propriétaires terriens, il est un homme des Lumières aux talents multiples : avocat, architecte, philosophe et inventeur. À seulement 33 ans, il est le principal rédacteur de la Déclaration d'indépendance des États-Unis (1776). Il devient le 3e président américain, doublant la taille du pays en rachetant la Louisiane à la France de Napoléon. Son héritage est aujourd'hui fortement débattu à cause de ses contradictions : il écrivait que 'tous les hommes sont créés égaux', mais possédait plus de 600 esclaves.",
+        "fun": "Par un incroyable hasard de l'histoire, Thomas Jefferson est mort de vieillesse le 4 juillet 1826, très exactement le jour du 50e anniversaire de la signature de la Déclaration d'indépendance qu'il avait lui-même rédigée !",
+        "quizzes": [
+            {
+                "question": "Quel document fondateur de l'histoire américaine a-t-il principalement rédigé ?",
+                "options": ["La Constitution", "Le treizième amendement", "La Déclaration d'indépendance", "La Charte des droits de l'homme"],
+                "answer": 2
+            },
+            {
+                "question": "Quelle immense acquisition territoriale a-t-il réalisée en tant que président ?",
+                "options": ["Le rachat de l'Alaska", "L'annexion de l'Ouest américain", "L'achat du Mexique", "Le rachat du territoire de la Louisiane à la France"],
+                "answer": 3
+            }
+        ]
     }
 ]
