@@ -333,8 +333,17 @@
             animation: pulseGlow 2s infinite;
         }
         .discovery-box.actionable .discovery-timer { color: var(--primary); }
-
-        .instruction {
+		
+		.card-links { display: flex; flex-direction: column; gap: 8px; margin-top: 5px; }
+        
+		.card-link {
+            background: #F1F5F9; color: var(--primary); text-decoration: none;
+            padding: 8px 12px; border-radius: 8px; font-size: 0.85rem;
+            font-weight: 600; text-align: center; border: 1px solid #E2E8F0;
+        }
+        .card-link:active { background: #E2E8F0; }
+        
+		.instruction {
             margin-top: 15px;
             margin-bottom: 10px;
             color: var(--text-muted);
@@ -371,6 +380,10 @@
                     <div class="back-section">
                         <div class="back-title">Le Fun Fact 🍿</div>
                         <div id="card-fun"></div>
+						<div class="back-section" id="section-links" style="display: none; margin-top: 15px;">
+                        <div class="back-title">Pour aller plus loin 🔗</div>
+                        <div class="card-links" id="card-links"></div>
+                    </div>
                     </div>
                     <button id="btn-finish-discovery" onclick="finishDiscovery(event)" style="margin-top: auto;">J'ai compris !</button>
                     <button id="btn-close-library" onclick="showLibrary(event)" style="margin-top: auto; display: none; background: var(--text-muted);">Retour à la liste</button>
@@ -570,7 +583,25 @@
         }
 
         function showDiscovery() {
-            const card = deck[currentCardIndex];
+            const linksSection = document.getElementById('section-links');
+            const linksContainer = document.getElementById('card-links');
+            linksContainer.innerHTML = '';
+            
+            if (card.links && card.links.length > 0) {
+                linksSection.style.display = 'block';
+                card.links.forEach(link => {
+                    const a = document.createElement('a');
+                    a.className = 'card-link';
+                    a.href = link.url;
+                    a.target = '_blank'; // Ouvre dans un nouvel onglet
+                    a.innerText = link.label;
+                    a.onclick = (e) => e.stopPropagation(); // Empêche la carte de se retourner quand on clique sur le lien
+                    linksContainer.appendChild(a);
+                });
+            } else {
+                linksSection.style.display = 'none';
+            }
+			const card = deck[currentCardIndex];
             document.getElementById('card-front').innerText = card.front;
             document.getElementById('card-dates').innerText = card.dates;
             document.getElementById('card-faits').innerText = card.faits;
@@ -879,7 +910,25 @@
         function readLibraryCard(index) {
             currentMode = 'LIBRARY_READ';
             currentCardIndex = index;
-            const card = deck[index];
+            const linksSection = document.getElementById('section-links');
+            const linksContainer = document.getElementById('card-links');
+            linksContainer.innerHTML = '';
+            
+            if (card.links && card.links.length > 0) {
+                linksSection.style.display = 'block';
+                card.links.forEach(link => {
+                    const a = document.createElement('a');
+                    a.className = 'card-link';
+                    a.href = link.url;
+                    a.target = '_blank'; // Ouvre dans un nouvel onglet
+                    a.innerText = link.label;
+                    a.onclick = (e) => e.stopPropagation(); // Empêche la carte de se retourner quand on clique sur le lien
+                    linksContainer.appendChild(a);
+                });
+            } else {
+                linksSection.style.display = 'none';
+            }
+			const card = deck[index];
             
             document.getElementById('card-front').innerText = card.front;
             document.getElementById('card-dates').innerText = card.dates;
