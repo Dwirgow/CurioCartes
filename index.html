@@ -195,7 +195,7 @@
         }
         button:active { transform: scale(0.97); }
 
-       .quiz-btn { 
+        .quiz-btn { 
             background: #F8FAFC !important; 
             color: var(--text-main) !important; 
             text-align: left; 
@@ -204,8 +204,6 @@
             border: 2px solid transparent !important;
             box-shadow: none !important;
             margin-top: 10px !important;
-            /* Ajout des transitions pour rendre le changement de couleur et d'ombre très fluide */
-            transition: background 0.3s ease-out, border-color 0.3s ease-out, color 0.3s ease-out, box-shadow 0.3s ease-out, transform 0.1s ease-out !important;
         }
         .quiz-btn:hover { border-color: var(--primary) !important; background: #F1F5F9 !important; }
 
@@ -336,7 +334,6 @@
             <div class="flip-card-inner" id="card-inner">
                 <div class="flip-card-front" id="card-front"></div>
                 <div class="flip-card-back">
-					<h3 id="card-back-title" style="color: var(--primary); text-align: center; margin-top: -15; margin-bottom: 15px; padding-bottom: 10px; border-bottom: 2px solid #F1F5F9; font-size: 1.2rem;"></h3>
                     <div class="back-section">
                         <div class="back-title">Dates ⏳</div>
                         <div id="card-dates"></div>
@@ -548,7 +545,6 @@
         function showDiscovery() {
             const card = deck[currentCardIndex];
             document.getElementById('card-front').innerText = card.front;
-			document.getElementById('card-back-title').innerText = card.front.replace('Qui était ', '').replace(' ?', '');
             document.getElementById('card-dates').innerText = card.dates;
             document.getElementById('card-faits').innerText = card.faits;
             document.getElementById('card-fun').innerText = card.fun;
@@ -595,24 +591,17 @@
             const optionsDiv = document.getElementById('quiz-options');
             optionsDiv.innerHTML = '';
             
-            // 1. Créer un tableau d'objets pour garder la trace de la bonne réponse
             let shuffledOptions = quiz.options.map((opt, index) => {
-                return { 
-                    text: opt, 
-                    isCorrect: (index === quiz.answer) 
-                };
+                return { text: opt, isCorrect: (index === quiz.answer) };
             });
 
-            // 2. Mélanger ce tableau au hasard (Algorithme de Fisher-Yates)
             for (let i = shuffledOptions.length - 1; i > 0; i--) {
                 const j = Math.floor(Math.random() * (i + 1));
                 [shuffledOptions[i], shuffledOptions[j]] = [shuffledOptions[j], shuffledOptions[i]];
             }
 
-            // 3. Trouver la nouvelle position de la bonne réponse après le mélange
             const newCorrectIndex = shuffledOptions.findIndex(o => o.isCorrect);
             
-            // 4. Créer les boutons dans le nouvel ordre aléatoire
             shuffledOptions.forEach((optObj, currentIndex) => {
                 const btn = document.createElement('button');
                 btn.className = 'quiz-btn';
@@ -643,7 +632,7 @@
                         currentLevel++;
                         if(currentLevel >= INTERVALS.length) currentLevel = INTERVALS.length - 1;
                         saveToMemory(currentCardIndex, currentLevel);
-						currentBatchCount++;
+                        currentBatchCount++;
                         analyzeMemory();
                     }
                 }, 800);
@@ -653,10 +642,14 @@
                 allBtns[correctIndex].classList.add('correct');
                 
                 setTimeout(() => {
-                    alert("Faux ! La bonne réponse était : " + currentQuizzes[currentSubQuizIndex].options[correctIndex]);
+                    // C'est ici que le bug est corrigé : on interroge la liste originale
+                    const originalQuiz = currentQuizzes[currentSubQuizIndex];
+                    const correctAnswerText = originalQuiz.options[originalQuiz.answer];
+                    
+                    alert("Faux ! La bonne réponse était : " + correctAnswerText);
                     currentLevel = 0;
                     saveToMemory(currentCardIndex, currentLevel);
-					currentBatchCount++;
+                    currentBatchCount++;
                     analyzeMemory();
                 }, 10);
             }
@@ -835,7 +828,6 @@
             const card = deck[index];
             
             document.getElementById('card-front').innerText = card.front;
-			document.getElementById('card-back-title').innerText = card.front.replace('Qui était ', '').replace(' ?', '');
             document.getElementById('card-dates').innerText = card.dates;
             document.getElementById('card-faits').innerText = card.faits;
             document.getElementById('card-fun').innerText = card.fun;
