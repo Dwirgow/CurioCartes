@@ -219,6 +219,13 @@
         }
         button:active { transform: scale(0.97); }
 
+        /* Nouvelle animation de rebond pour la bonne réponse */
+        @keyframes popIn {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.04); }
+            100% { transform: scale(1); }
+        }
+
         .quiz-btn { 
             background: #F8FAFC !important; 
             color: var(--text-main) !important; 
@@ -228,15 +235,24 @@
             border: 2px solid transparent !important;
             box-shadow: none !important;
             margin-top: 10px !important;
+            /* La fameuse ligne de transition pour rendre le fondu de couleur fluide */
+            transition: background 0.3s ease-out, border-color 0.3s ease-out, color 0.3s ease-out, box-shadow 0.3s ease-out !important;
         }
-        .quiz-btn:hover { border-color: var(--primary) !important; background: #F1F5F9 !important; }
+
+        .quiz-btn:hover { 
+            border-color: var(--primary) !important; 
+            background: #F1F5F9 !important; 
+        }
 
         .quiz-btn.correct {
             background: var(--secondary) !important;
             color: white !important;
             border-color: var(--secondary) !important;
             box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4) !important;
+            /* On applique l'animation de rebond fluide */
+            animation: popIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
+		
         .quiz-btn.wrong {
             background: #EF4444 !important;
             color: white !important;
@@ -583,6 +599,10 @@
         }
 
         function showDiscovery() {
+            // 1. ON DÉFINIT LA CARTE EN PREMIER
+            const card = deck[currentCardIndex]; 
+            
+            // 2. ENSUITE ON GÈRE LES LIENS
             const linksSection = document.getElementById('section-links');
             const linksContainer = document.getElementById('card-links');
             linksContainer.innerHTML = '';
@@ -593,15 +613,16 @@
                     const a = document.createElement('a');
                     a.className = 'card-link';
                     a.href = link.url;
-                    a.target = '_blank'; // Ouvre dans un nouvel onglet
+                    a.target = '_blank';
                     a.innerText = link.label;
-                    a.onclick = (e) => e.stopPropagation(); // Empêche la carte de se retourner quand on clique sur le lien
+                    a.onclick = (e) => e.stopPropagation(); 
                     linksContainer.appendChild(a);
                 });
             } else {
                 linksSection.style.display = 'none';
             }
-			const card = deck[currentCardIndex];
+            
+            // 3. ON AFFICHE LE RESTE DU TEXTE
             document.getElementById('card-front').innerText = card.front;
             document.getElementById('card-dates').innerText = card.dates;
             document.getElementById('card-faits').innerText = card.faits;
@@ -615,8 +636,8 @@
             hideAllViews();
             cardView.style.display = 'block';
             instruction.style.display = 'block';
-			
-			// Affichage des tags
+            
+            // 4. ON AFFICHE LES TAGS
             const tagsContainer = document.getElementById('card-tags');
             tagsContainer.innerHTML = '';
             if (card.tags) {
@@ -910,6 +931,11 @@
         function readLibraryCard(index) {
             currentMode = 'LIBRARY_READ';
             currentCardIndex = index;
+            
+            // 1. ON DÉFINIT LA CARTE EN PREMIER
+            const card = deck[index]; 
+            
+            // 2. ENSUITE ON GÈRE LES LIENS
             const linksSection = document.getElementById('section-links');
             const linksContainer = document.getElementById('card-links');
             linksContainer.innerHTML = '';
@@ -920,16 +946,16 @@
                     const a = document.createElement('a');
                     a.className = 'card-link';
                     a.href = link.url;
-                    a.target = '_blank'; // Ouvre dans un nouvel onglet
+                    a.target = '_blank'; 
                     a.innerText = link.label;
-                    a.onclick = (e) => e.stopPropagation(); // Empêche la carte de se retourner quand on clique sur le lien
+                    a.onclick = (e) => e.stopPropagation(); 
                     linksContainer.appendChild(a);
                 });
             } else {
                 linksSection.style.display = 'none';
             }
-			const card = deck[index];
             
+            // 3. ON AFFICHE LE RESTE DU TEXTE
             document.getElementById('card-front').innerText = card.front;
             document.getElementById('card-dates').innerText = card.dates;
             document.getElementById('card-faits').innerText = card.faits;
@@ -943,8 +969,8 @@
             hideAllViews();
             cardView.style.display = 'block';
             instruction.style.display = 'block';
-			
-			// Affichage des tags
+            
+            // 4. ON AFFICHE LES TAGS
             const tagsContainer = document.getElementById('card-tags');
             tagsContainer.innerHTML = '';
             if (card.tags) {
