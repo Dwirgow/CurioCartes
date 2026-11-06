@@ -620,7 +620,8 @@
             } else {
                 linksSection.style.display = 'none';
             }
-            
+            let personName = card.front.replace('Qui était ', '').replace(' ?', '');
+            document.getElementById('card-back-title').innerText = personName;
             document.getElementById('card-front').innerText = card.front;
             document.getElementById('card-dates').innerText = card.dates;
             document.getElementById('card-faits').innerText = card.faits;
@@ -992,7 +993,8 @@
             } else {
                 linksSection.style.display = 'none';
             }
-            
+            let personName = card.front.replace('Qui était ', '').replace(' ?', '');
+            document.getElementById('card-back-title').innerText = personName;
             document.getElementById('card-front').innerText = card.front;
             document.getElementById('card-dates').innerText = card.dates;
             document.getElementById('card-faits').innerText = card.faits;
