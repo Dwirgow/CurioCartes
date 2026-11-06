@@ -1,7 +1,7 @@
 [
     {
         "front": "Qui était Marie Curie ?",
-        "dates": "1867 - 1934",
+        "dates": "1867 (Varsovie, Pologne) - 1934 (Passy, France) | 66 ans",
         "faits": "Physicienne et chimiste polonaise naturalisée française, première femme à recevoir un prix Nobel, et la seule à en recevoir dans deux domaines scientifiques différents (Physique et Chimie). Découverte du radium et du polonium.",
         "fun": "Ses cahiers de laboratoire sont encore tellement radioactifs aujourd'hui qu'ils sont conservés dans des boîtes en plomb et nécessitent un équipement de protection pour être consultés !",
         "quizzes": [
@@ -19,7 +19,7 @@
     },
     {
         "front": "Qui était Léonard de Vinci ?",
-        "dates": "1452 - 1519",
+        "dates": "1452 (Vinci, Italie) - 1519 (Ambroise, France) | 67 ans",
         "faits": "Génie universel de la Renaissance italienne. Artiste, scientifique, ingénieur et anatomiste. Auteur de La Joconde et de La Cène. Il a imaginé des machines volantes, des chars d'assaut et des sous-marins des siècles avant leur invention.",
         "fun": "Il était ambidextre et écrivait souvent ses notes personnelles à l'envers (en miroir) de droite à gauche, pour éviter que l'on vole ses idées et ne pas faire de taches d'encre !",
         "quizzes": [
@@ -37,7 +37,7 @@
     },
     {
         "front": "Qui était Nelson Mandela ?",
-        "dates": "1918 - 2013",
+        "dates": "1918 (Mvezo, USA) - 2013 (Johannesburg, Afrique du Sud) | 95 ans",
         "faits": "Leader politique de la lutte contre l'apartheid en Afrique du Sud. Emprisonné pendant 27 ans pour ses convictions. Libéré en 1990, il devient le premier président noir du pays en 1994, prônant la réconciliation nationale et le pardon.",
         "fun": "Pendant ses années de clandestinité pour échapper à la police avant son arrestation, il se déguisait souvent en chauffeur de maître ou en chef cuisinier pour passer inaperçu dans la ville !",
         "quizzes": [
@@ -55,7 +55,7 @@
     },
     {
         "front": "Qui était Cléopâtre VII ?",
-        "dates": "69 av. J.-C. - 30 av. J.-C.",
+        "dates": "69 av. J.-C. (Alexandrie, Egypte) - 30 av. J.-C. (Alexandrie, Egypte) | 39 ans",
         "faits": "Dernière reine d'Égypte antique de la dynastie des Ptolémées. Célèbre pour son intelligence diplomatique, ses alliances avec les généraux romains Jules César puis Marc Antoine, et sa fin tragique marquant l'annexion de l'Égypte par l'Empire romain.",
         "fun": "Bien qu'étant reine d'Égypte, elle était d'origine grecque (macédonienne). Elle fut d'ailleurs la toute première dirigeante de sa dynastie à apprendre réellement à parler la langue égyptienne locale !",
         "quizzes": [
@@ -73,7 +73,7 @@
     },
     {
         "front": "Qui était Albert Einstein ?",
-        "dates": "1879 - 1955",
+        "dates": "1879 (Ulm, Allemagne) - 1955 (New Jersey, Etats Unis) | 76 ans",
         "faits": "Physicien théoricien d'origine allemande. Il a bouleversé notre compréhension de l'univers physique avec sa théorie de la relativité restreinte (E=mc²) et sa théorie de la relativité générale. Il reçut le Prix Nobel de physique en 1921.",
         "fun": "Après la mort du premier président d'Israël en 1952, le gouvernement a officiellement proposé à Einstein de devenir le nouveau président du pays. Il a poliment refusé, affirmant n'avoir aucune aptitude pour gérer les hommes !",
         "quizzes": [
@@ -91,7 +91,7 @@
     },
 	{
         "front": "Qui était Napoléon Bonaparte ?",
-        "dates": "1769 - 1821 (Né à Ajaccio, Corse | Mort à Longwood, Île Sainte-Hélène, à 51 ans)",
+        "dates": "1769 (Ajaccio, Corse) - 1821 (Île Sainte-Hélène, Afrique) | 51 ans",
         "faits": "Général militaire brillant pendant la Révolution française, il devient Empereur des Français en 1804. Il a conquis une grande partie de l'Europe grâce à ses stratégies novatrices avant de subir de lourdes défaites (campagne de Russie, Waterloo). Il a profondément modernisé la France en créant le Code civil, les lycées et la Banque de France.",
         "fun": "Contrairement à la légende populaire propagée par les caricatures anglaises, il n'était pas petit ! Il mesurait environ 1,69 m, ce qui était une taille tout à fait moyenne, voire légèrement supérieure, pour un homme de son époque.",
         "quizzes": [
@@ -109,7 +109,7 @@
     },
     {
         "front": "Qui était Jeanne d'Arc ?",
-        "dates": "1412 - 1431 (Née à Domrémy, France | Morte à Rouen, France, à 19 ans)",
+        "dates": "1412 (Domrémy, France) - 1431 (Rouen, France) | 19 ans",
         "faits": "Héroïne de l'histoire de France et chef de guerre pendant la guerre de Cent Ans. Paysanne très pieuse, elle affirme entendre des voix divines lui ordonnant de chasser les Anglais. Elle parvient à rencontrer le roi Charles VII, mène les troupes françaises à la victoire à Orléans, mais finit capturée par les Bourguignons, vendue aux Anglais et brûlée vive pour hérésie.",
         "fun": "Lors de son procès, pour éviter qu'on l'accuse d'être une sorcière maléfique, elle a refusé de jurer sur la Bible de dire toute la vérité concernant ses visions, rendant fous de rage ses juges anglais.",
         "quizzes": [
@@ -127,7 +127,7 @@
     },
     {
         "front": "Qui était Louis XIV ?",
-        "dates": "1638 - 1715 (Né à Saint-Germain-en-Laye, France | Mort à Versailles, France, à 77 ans)",
+        "dates": "1638 (Saint-Germain-en-Laye, France) - 1715 (Versailles, France) | 77 ans",
         "faits": "Surnommé le 'Roi-Soleil', il incarne l'apogée de la monarchie absolue de droit divin en France. Son règne de 72 ans est le plus long de l'histoire de France. Il a centralisé le pouvoir, maté la noblesse en l'attirant à la cour, et fait rayonner la culture française dans toute l'Europe en faisant construire le somptueux château de Versailles.",
         "fun": "Il adorait la danse et le ballet ! Dans sa jeunesse, il s'est produit sur scène devant sa cour dans plus de 20 ballets différents, souvent déguisé en dieu gréco-romain.",
         "quizzes": [
@@ -145,7 +145,7 @@
     },
     {
         "front": "Qui était Rosa Parks ?",
-        "dates": "1913 - 2005 (Née à Tuskegee, Alabama | Morte à Détroit, Michigan, à 92 ans)",
+        "dates": "1913 (Tuskegee, Alabama) - 2005 (Détroit, Michigan) | 92 ans",
         "faits": "Figure emblématique du mouvement des droits civiques aux États-Unis. En 1955, à Montgomery, elle refuse de céder sa place à un passager blanc dans un bus soumis à la ségrégation. Son arrestation déclenche un boycott des bus mené par le jeune pasteur Martin Luther King, menant finalement à l'abolition des lois ségrégationnistes dans les transports.",
         "fun": "Contrairement à l'image de la petite couturière fatiguée, son acte n'était pas spontané ! Elle était déjà une militante très active et formée au sein de la NAACP (association pour les droits des gens de couleur).",
         "quizzes": [
@@ -163,7 +163,7 @@
     },
     {
         "front": "Qui était Mahatma Gandhi ?",
-        "dates": "1869 - 1948 (Né à Porbandar, Inde | Mort à New Delhi, Inde, à 78 ans)",
+        "dates": "1869 (Porbandar, Inde) - 1948 (New Delhi, Inde) | 78 ans",
         "faits": "Pionnier de la résistance pacifique et de la désobéissance civile. Il a mené l'Inde à l'indépendance face à l'Empire britannique en utilisant des méthodes non violentes (boycotts, grèves de la faim, marches symboliques). Son influence a inspiré de nombreux mouvements pour les droits civiques à travers le monde.",
         "fun": "Gandhi parlait l'anglais avec un accent parfait et était avocat de formation. Il a même exercé le droit en Afrique du Sud pendant plus de 20 ans avant de retourner en Inde pour lutter.",
         "quizzes": [
@@ -181,7 +181,7 @@
     },
     {
         "front": "Qui était Winston Churchill ?",
-        "dates": "1874 - 1965 (Né à Woodstock, Angleterre | Mort à Londres, Angleterre, à 90 ans)",
+        "dates": "1874 (Woodstock, Angleterre) - 1965 (Londres, Angleterre) | 90 ans",
         "faits": "Premier ministre du Royaume-Uni pendant la Seconde Guerre mondiale. Célèbre pour sa résilience, ses discours galvanisants ('Du sang, du labeur, des larmes et de la sueur') et son refus catégorique de négocier avec l'Allemagne nazie. Il est considéré comme l'un des plus grands dirigeants du XXe siècle.",
         "fun": "En plus d'être un redoutable politicien, il était un écrivain prolifique et a même remporté le prix Nobel de littérature en 1953 pour ses mémoires historiques !",
         "quizzes": [
@@ -199,7 +199,7 @@
     },
     {
         "front": "Qui était Wolfgang Amadeus Mozart ?",
-        "dates": "1756 - 1791 (Né à Salzbourg, Autriche | Mort à Vienne, Autriche, à 35 ans)",
+        "dates": "1756 (Salzbourg, Autriche) - 1791 (Vienne, Autriche) | 35 ans",
         "faits": "Génie précoce de la musique classique européenne. Il a composé plus de 600 œuvres (symphonies, opéras, concertos) touchant à tous les genres de son époque. Son talent inné pour la mélodie et l'harmonie a fait de lui l'un des compositeurs les plus influents de l'histoire, malgré sa mort tragique et prématurée.",
         "fun": "Il avait une mémoire auditive surnaturelle. À 14 ans, après avoir entendu une seule fois un chant secret du Vatican (le Miserere d'Allegri) de 15 minutes, il est rentré chez lui et a réécrit la partition entière de tête, sans aucune erreur !",
         "quizzes": [
@@ -217,7 +217,7 @@
     },
     {
         "front": "Qui était Isaac Newton ?",
-        "dates": "1643 - 1727 (Né à Woolsthorpe, Angleterre | Mort à Londres, Angleterre, à 84 ans)",
+        "dates": "1643 (Woolsthorpe, Angleterre) - 1727 (Londres, Angleterre) | 84 ans",
         "faits": "Physicien, mathématicien et astronome britannique. Il a fondé la mécanique classique avec ses trois lois du mouvement et a formulé la loi de la gravitation universelle (expliquant que la force qui fait tomber une pomme est la même qui maintient la Lune en orbite). Il a également co-inventé le calcul infinitésimal.",
         "fun": "Newton était obsédé par l'alchimie (essayer de transformer le plomb en or) et l'occultisme. Il a écrit secrètement beaucoup plus de livres sur la théologie et l'alchimie que sur les mathématiques !",
         "quizzes": [
@@ -235,7 +235,7 @@
     },
     {
         "front": "Qui était Charles Darwin ?",
-        "dates": "1809 - 1882 (Né à Shrewsbury, Angleterre | Mort à Downe, Angleterre, à 73 ans)",
+        "dates": "1809 (Shrewsbury, Angleterre) - 1882 (Downe, Angleterre) | 73 ans",
         "faits": "Naturaliste et biologiste britannique. Après un voyage de 5 ans autour du monde sur le navire Beagle, il a publié 'De l'origine des espèces' en 1859. Il y explique que tous les êtres vivants ont évolué avec le temps à partir d'ancêtres communs grâce au processus de la sélection naturelle.",
         "fun": "Pour étudier si les animaux ressentaient des émotions, Darwin passait un temps fou à observer les singes au zoo de Londres et essayait même de jouer de la flûte aux vers de terre de son jardin pour voir s'ils réagissaient à la musique !",
         "quizzes": [
@@ -253,7 +253,7 @@
     },
     {
         "front": "Qui était Galilée (Galileo Galilei) ?",
-        "dates": "1564 - 1642 (Né à Pise, Italie | Mort à Arcetri, Italie, à 77 ans)",
+        "dates": "1564 (Pise, Italie) - 1642 (Arcetri, Italie) | 77 ans",
         "faits": "Père de la science moderne. En braquant une lunette astronomique vers le ciel, il prouve que la Terre tourne autour du Soleil (l'héliocentrisme de Copernic) et non l'inverse. Ses découvertes ont déclenché la fureur de l'Église catholique, qui l'a condamné pour hérésie et forcé à abjurer ses théories.",
         "fun": "La légende raconte qu'en se relevant après avoir été forcé d'avouer que la Terre ne bougeait pas, il aurait murmuré : 'Et pourtant, elle tourne' (E pur si muove). L'Église catholique ne l'a officiellement réhabilité qu'en... 1992 !",
         "quizzes": [
@@ -271,7 +271,7 @@
     },
     {
         "front": "Qui était Abraham Lincoln ?",
-        "dates": "1809 - 1865 (Né à Hodgenville, Kentucky | Mort à Washington D.C., à 56 ans)",
+        "dates": "1809 (Hodgenville, Kentucky) - 1865 (Washington D.C.) | 56 ans",
         "faits": "16e président des États-Unis, il a dirigé le pays pendant sa période la plus tragique : la guerre de Sécession. Il a réussi à préserver l'Union du pays et a publié la Proclamation d'émancipation, un acte politique majeur qui a conduit à l'abolition de l'esclavage. Il a été assassiné au théâtre peu après la victoire.",
         "fun": "Avant d'être président, Lincoln était un redoutable lutteur de foire ! Grand (1,93m) et musclé, il n'aurait perdu qu'un seul combat sur environ 300 et figure même au Hall of Fame de la lutte américaine.",
         "quizzes": [
@@ -289,7 +289,7 @@
     },
     {
         "front": "Qui était Jules César ?",
-        "dates": "100 av. J.-C. - 44 av. J.-C. (Né à Rome, Italie | Mort à Rome, Italie, à 55 ans)",
+        "dates": "100 av. J.-C. (Rome, Italie) - 44 av. J.-C. (Rome, Italie) | 55 ans",
         "faits": "Général et homme politique romain. Ses victoires lors de la guerre des Gaules ont étendu le territoire de Rome de manière spectaculaire. Il s'est ensuite retourné contre le Sénat, a provoqué une guerre civile et s'est fait nommer dictateur à vie, marquant la fin de la République romaine. Il a été assassiné de 23 coups de couteau par un complot de sénateurs.",
         "fun": "Il n'a jamais été 'Empereur' ! Jules César a préparé le terrain en détruisant la République, mais le tout premier empereur officiel de Rome fut son fils adoptif, Auguste.",
         "quizzes": [
@@ -307,7 +307,7 @@
     },
     {
         "front": "Qui était Alexandre le Grand ?",
-        "dates": "356 av. J.-C. - 323 av. J.-C. (Né à Pella, Macédoine | Mort à Babylone, Mésopotamie, à 32 ans)",
+        "dates": "356 av. J.-C. (Pella, Macédoine) - 323 av. J.-C. (Babylone, Mésopotamie) | 32 ans",
         "faits": "Roi de Macédoine et l'un des plus grands conquérants de l'histoire. En seulement 13 ans de règne, il a vaincu l'immense Empire perse et étendu son royaume de la Grèce jusqu'à l'Inde. Il n'a jamais perdu une seule bataille de toute sa vie, fondant la civilisation hellénistique (mélange de cultures grecque et orientale).",
         "fun": "Il avait pour précepteur le célèbre philosophe grec Aristote ! Pendant ses conquêtes, Alexandre envoyait régulièrement des échantillons de plantes et d'animaux exotiques à son ancien professeur pour ses études.",
         "quizzes": [
@@ -325,7 +325,7 @@
     },
     {
         "front": "Qui était Molière (Jean-Baptiste Poquelin) ?",
-        "dates": "1622 - 1673 (Né à Paris, France | Mort à Paris, France, à 51 ans)",
+        "dates": "1622 (Paris, France) - 1673 (Paris, France) | 51 ans",
         "faits": "Dramaturge et comédien français, maître absolu de la comédie. Protégé de Louis XIV, il a écrit des chefs-d'œuvre (Le Tartuffe, L'Avare, Le Bourgeois gentilhomme) qui dénonçaient les travers, l'hypocrisie et les ridicules de la société de son époque à travers le rire.",
         "fun": "Contrairement à la légende, il n'est pas mort sur scène ! Il a été pris de violentes convulsions lors d'une représentation du 'Malade imaginaire', mais il a réussi à terminer la pièce avant de mourir chez lui quelques heures plus tard.",
         "quizzes": [
@@ -343,7 +343,7 @@
     },
     {
         "front": "Qui était Frida Kahlo ?",
-        "dates": "1907 - 1954 (Née à Coyoacán, Mexique | Morte à Coyoacán, Mexique, à 47 ans)",
+        "dates": "1907 (Coyoacán, Mexique) - 1954 (Coyoacán, Mexique) | 47 ans",
         "faits": "Artiste peintre mexicaine célèbre pour ses autoportraits intenses et colorés, teintés de surréalisme et de réalisme magique. Souffrant de douleurs chroniques après un grave accident de bus dans sa jeunesse, elle a peint sa souffrance physique et morale, tout en devenant une icône de l'émancipation féminine et de la culture mexicaine.",
         "fun": "Elle adorait les animaux exotiques. Dans sa fameuse 'Maison Bleue', elle vivait avec des singes-araignées, des chiens nus du Mexique, un faon, et un perroquet qui jurait en espagnol !",
         "quizzes": [
@@ -361,7 +361,7 @@
     },
     {
         "front": "Qui était Mère Teresa ?",
-        "dates": "1910 - 1997 (Née à Skopje, Empire ottoman | Morte à Calcutta, Inde, à 87 ans)",
+        "dates": "1910 (Skopje, Empire Ottoman) - 1997 (Calcutta, Inde) | 87 ans",
         "faits": "Religieuse catholique d'origine albanaise, naturalisée indienne. Elle a fondé la congrégation des Missionnaires de la Charité pour consacrer sa vie aux 'plus pauvres d'entre les pauvres' dans les bidonvilles de Calcutta, soignant les mourants et les lépreux. Elle a reçu le prix Nobel de la paix en 1979.",
         "fun": "Quand elle a reçu son Prix Nobel, elle a refusé le luxueux banquet de gala traditionnel et a demandé que les 192 000 dollars de frais du dîner soient directement reversés aux pauvres de l'Inde.",
         "quizzes": [
@@ -379,7 +379,7 @@
     },
     {
         "front": "Qui était Gengis Khan ?",
-        "dates": "Vers 1162 - 1227 (Né dans les monts Khentii, Mongolie | Mort à Yinchuan, Chine, à environ 65 ans)",
+        "dates": "1162 (Monts Khentii, Mongolie) - 1227 (Yinchuan, Chine) | 65 ans",
         "faits": "Guerrier et rassembleur des tribus nomades mongoles, il a fondé le plus vaste empire continu de toute l'histoire de l'humanité (s'étendant de l'Europe de l'Est à la mer du Japon). Cavalier et stratège hors pair, il était impitoyable envers ses ennemis mais instaurait la tolérance religieuse et la méritocratie dans ses propres rangs.",
         "fun": "Personne ne sait où il est enterré. Selon la légende, son escorte funéraire a tué tous ceux qui croisaient leur route, puis des chevaux ont piétiné le sol de sa tombe pour en effacer toute trace.",
         "quizzes": [
@@ -397,7 +397,7 @@
     },
     {
         "front": "Qui était Neil Armstrong ?",
-        "dates": "1930 - 2012 (Né à Wapakoneta, Ohio | Mort à Cincinnati, Ohio, à 82 ans)",
+        "dates": "1930 (Wapakoneta, Ohio) - 2012 (Cincinnati, Ohio) | 82 ans",
         "faits": "Pilote d'essai, ingénieur et astronaute américain. En tant que commandant de la mission Apollo 11, il est entré dans l'histoire le 21 juillet 1969 en devenant le tout premier être humain à poser le pied sur la Lune, prononçant une phrase devenue légendaire.",
         "fun": "Lors du retour sur Terre, Armstrong, Buzz Aldrin et Michael Collins ont dû remplir un vrai formulaire de déclaration de douane américaine à l'aéroport d'Hawaï, déclarant qu'ils ramenaient des 'roches et poussières de la Lune' !",
         "quizzes": [
@@ -415,7 +415,7 @@
     },
     {
         "front": "Qui était Victor Hugo ?",
-        "dates": "1802 - 1885 (Né à Besançon, France | Mort à Paris, France, à 83 ans)",
+        "dates": "1802 (Besançon, France) - 1885 (Paris, France) | 83 ans",
         "faits": "Monument de la littérature française (poète, romancier, dramaturge) et homme politique engagé. Auteur des 'Misérables' et de 'Notre-Dame de Paris', il a lutté toute sa vie contre la misère, l'injustice sociale et la peine de mort. Fervent défenseur de la République, il s'est exilé pendant 19 ans pour s'opposer à Napoléon III.",
         "fun": "À sa mort, plus de 2 millions de personnes ont suivi son cortège funéraire dans les rues de Paris, soit une foule plus importante que la population totale de la capitale à l'époque !",
         "quizzes": [
@@ -433,7 +433,7 @@
     },
     {
         "front": "Qui était Martin Luther King Jr. ?",
-        "dates": "1929 - 1968 (Né à Atlanta, Géorgie | Mort à Memphis, Tennessee, à 39 ans)",
+        "dates": "1929 (Atlanta, Géorgie) - 1968 (Memphis, Tennessee) | 39 ans",
         "faits": "Pasteur afro-américain et militant non violent pour le mouvement des droits civiques aux États-Unis. Il a mené la lutte contre la ségrégation raciale et a prononcé son célèbre discours 'I Have a Dream' devant le Lincoln Memorial en 1963. Il a reçu le prix Nobel de la paix avant d'être tragiquement assassiné à l'âge de 39 ans.",
         "fun": "Son vrai prénom de naissance était 'Michael' ! Son père a décidé de changer leurs deux prénoms en 'Martin Luther' après un voyage inspirant en Allemagne sur les traces du grand réformateur protestant.",
         "quizzes": [
@@ -451,7 +451,7 @@
     },
 	{
         "front": "Qui était Nikola Tesla ?",
-        "dates": "10 juillet 1856 (Smiljan, Empire d'Autriche) - 7 janvier 1943 (New York, États-Unis) | 86 ans",
+        "dates": "1856 (Smiljan, Empire d'Autriche) - 1943 (New York, États-Unis) | 86 ans",
         "faits": "Issu d'une famille serbe (père prêtre orthodoxe, mère inventrice d'outils agricoles). Ingénieur surdoué à la mémoire photographique, il émigre aux États-Unis presque sans un sou pour travailler avec Thomas Edison, avant de devenir son grand rival lors de la fameuse 'guerre des courants'. Tesla invente le courant alternatif (celui qui alimente nos maisons aujourd'hui), le moteur asynchrone, la transmission sans fil, et dépose plus de 300 brevets. Mauvais homme d'affaires, il finit sa vie ruiné, nourrissant les pigeons dans un hôtel.",
         "fun": "Il souffrait de puissants TOC (Troubles Obsessionnels Compulsifs) : il était obsédé par le chiffre 3, calculait le volume exact de son assiette avant d'avaler une bouchée, et refusait catégoriquement de toucher des cheveux humains ou des bijoux ronds comme des perles.",
         "quizzes": [
@@ -469,7 +469,7 @@
     },
     {
         "front": "Qui était Ludwig van Beethoven ?",
-        "dates": "16 décembre 1770 (Bonn, Saint-Empire) - 26 mars 1827 (Vienne, Empire d'Autriche) | 56 ans",
+        "dates": "1770 (Bonn, Saint-Empire) - 1827 (Vienne, Empire d'Autriche) | 56 ans",
         "faits": "Issu d'une famille de musiciens modestes d'origine flamande. Son père, musicien de cour alcoolique et violent, l'oblige à travailler le piano jour et nuit à coups de bâton pour en faire 'le nouveau Mozart'. Devenu un compositeur de génie à Vienne, il fait la transition majeure entre le classicisme rigoureux et le romantisme émotionnel. Dès l'âge de 27 ans, il commence à perdre l'ouïe. Il composera ses plus grands chefs-d'œuvre (comme sa bouleversante 9e Symphonie) en étant devenu totalement sourd.",
         "fun": "Pour se 'stimuler le cerveau' lorsqu'il composait, Beethoven avait l'habitude de se verser d'énormes seaux d'eau glacée sur la tête, ce qui inondait régulièrement le plafond de ses pauvres voisins du dessous !",
         "quizzes": [
@@ -487,7 +487,7 @@
     },
     {
         "front": "Qui était Catherine II (Catherine la Grande) ?",
-        "dates": "2 mai 1729 (Stettin, Prusse) - 17 novembre 1796 (Saint-Pétersbourg, Russie) | 67 ans",
+        "dates": "1729 (Stettin, Prusse) - 1796 (Saint-Pétersbourg, Russie) | 67 ans",
         "faits": "Née princesse allemande (Sophie d'Anhalt-Zerbst) dans une famille désargentée. Mariée à 16 ans à l'héritier du trône de Russie (le futur Pierre III), elle s'isole dans la lecture pour apprendre le russe, la politique et la philosophie. Après un coup d'État où son mari est destitué puis assassiné (avec sa complicité tacite), elle devient Impératrice. Despote éclairée, elle modernise l'empire, étend considérablement le territoire (annexion de la Crimée, de la Pologne) et correspond avec Voltaire et Diderot.",
         "fun": "Immense collectionneuse d'art, elle a fondé le célèbre musée de l'Ermitage. Pour protéger ses milliers de toiles inestimables contre les rats, elle a officiellement embauché des centaines de chats comme 'gardiens de galerie', une tradition impériale qui perdure encore aujourd'hui !",
         "quizzes": [
@@ -505,7 +505,7 @@
     },
     {
         "front": "Qui était Charles de Gaulle ?",
-        "dates": "22 novembre 1890 (Lille, France) - 9 novembre 1970 (Colombey-les-Deux-Églises, France) | 79 ans",
+        "dates": "1890 (Lille, France) - 1970 (Colombey-les-Deux-Églises, France) | 79 ans",
         "faits": "Issu d'une famille bourgeoise catholique, très patriote et passionnée d'histoire (son père était professeur). Militaire de carrière, il est grièvement blessé et fait prisonnier pendant la Première Guerre mondiale. En 1940, refusant l'armistice face à l'Allemagne nazie, il s'exile à Londres, lance le célèbre Appel du 18 Juin et organise la Résistance. En 1958, rappelé au pouvoir en pleine crise algérienne, il fonde la Ve République et dote la France de la bombe nucléaire pour garantir son indépendance.",
         "fun": "Sa très grande taille (1,96 m) posait un cauchemar logistique militaire pendant les guerres. Les lits de camp, les uniformes, et même les voitures blindées devaient souvent être rallongés sur mesure pour qu'il puisse s'y tenir !",
         "quizzes": [
@@ -523,7 +523,7 @@
     },
     {
         "front": "Qui était Vincent van Gogh ?",
-        "dates": "30 mars 1853 (Groot Zundert, Pays-Bas) - 29 juillet 1890 (Auvers-sur-Oise, France) | 37 ans",
+        "dates": "1853 (Groot Zundert, Pays-Bas) - 1890 (Auvers-sur-Oise, France) | 37 ans",
         "faits": "Fils d'un pasteur protestant strict. Sa jeunesse est une succession d'échecs : il tente d'être marchand d'art, puis instituteur, puis prédicateur miséreux chez les mineurs de charbon. Il ne commence à peindre sérieusement qu'à 27 ans. Soutenu financièrement par son frère Théo, il peint frénétiquement plus de 800 toiles en 10 ans, révolutionnant l'utilisation de la couleur. Souffrant de graves crises de démence, il se coupe l'oreille après une dispute avec Gauguin et meurt par suicide, se croyant raté.",
         "fun": "De son vivant, sur ses centaines de chefs-d'œuvre, Van Gogh n'a réussi à vendre officiellement qu'un seul et unique tableau ('La Vigne rouge' pour 400 francs). Aujourd'hui, ses toiles s'arrachent pour des dizaines de millions d'euros.",
         "quizzes": [
@@ -541,7 +541,7 @@
     },
     {
         "front": "Qui était Harriet Tubman ?",
-        "dates": "Vers 1822 (Comté de Dorchester, Maryland, États-Unis) - 10 mars 1913 (Auburn, New York, États-Unis) | environ 91 ans",
+        "dates": "1822 (Maryland, États-Unis) - 1913 (New York, États-Unis) | 91 ans",
         "faits": "Née esclave noire sous le nom d'Araminta Ross. Battue et maltraitée durant toute sa jeunesse, elle s'échappe seule vers le Nord libre en 1849. Surnommée la 'Moïse noire', elle fait l'incroyable choix de retourner clandestinement dans le Sud à 13 reprises au péril de sa vie via l''Underground Railroad' (réseau secret) pour libérer plus de 70 esclaves, dont ses vieux parents. Pendant la guerre de Sécession, elle sert l'armée du Nord comme infirmière, espionne et chef de raid armé.",
         "fun": "Elle souffrait d'épilepsie et de violents épisodes de narcolepsie (elle s'endormait d'un coup) dus à un crâne fracturé par un contremaître dans son enfance. Elle interprétait ses absences soudaines comme des 'visions guidées par Dieu'.",
         "quizzes": [
@@ -559,7 +559,7 @@
     },
     {
         "front": "Qui était Thomas Edison ?",
-        "dates": "11 février 1847 (Milan, Ohio, États-Unis) - 18 octobre 1931 (West Orange, New Jersey, États-Unis) | 84 ans",
+        "dates": "1847 (Ohio, États-Unis) - 1931 (New Jersey, États-Unis) | 84 ans",
         "faits": "Issu d'une famille modeste, il est renvoyé de l'école après 3 mois car le maître le juge 'hyperactif et stupide'. Éduqué par sa mère, il installe un laboratoire de chimie dans sa cave à 10 ans. Devenu un inventeur et redoutable homme d'affaires, il n'invente pas l'ampoule électrique à partir de zéro, mais crée le premier filament de bambou commercialement viable. Il invente le phonographe, participe au cinéma, et fonde General Electric, déposant un record de 1093 brevets.",
         "fun": "Lors de la 'Guerre des Courants' contre Nikola Tesla, Edison (qui défendait le courant continu) a secrètement financé l'invention de la chaise électrique utilisant le courant alternatif de son rival, espérant prouver au public que l'invention de Tesla était meurtrière.",
         "quizzes": [
@@ -577,7 +577,7 @@
     },
     {
         "front": "Qui était Karl Marx ?",
-        "dates": "5 mai 1818 (Trèves, Prusse) - 14 mars 1883 (Londres, Royaume-Uni) | 64 ans",
+        "dates": "1818 (Trèves, Prusse) - 1883 (Londres, Royaume-Uni) | 64 ans",
         "faits": "Fils d'un brillant avocat issu d'une longue lignée de rabbins (le père s'est converti au protestantisme pour pouvoir exercer). Karl étudie la philosophie et le droit, et devient un journaliste très virulent. Traqué et exilé de plusieurs pays pour ses idées subversives, il s'installe à Londres où il vit souvent dans une pauvreté extrême. Il co-rédige le 'Manifeste du Parti communiste' (1848) avec Friedrich Engels et écrit 'Le Capital', théorisant la lutte des classes comme moteur de l'histoire humaine.",
         "fun": "Le grand théoricien de l'économie capitaliste était absolument incapable de gérer ses propres finances. Il a parfois dû mettre son unique manteau et ses chaussures en gage au mont-de-piété pour pouvoir acheter du pain à ses enfants, l'empêchant de sortir de chez lui !",
         "quizzes": [
@@ -595,7 +595,7 @@
     },
     {
         "front": "Qui était Ada Lovelace ?",
-        "dates": "10 décembre 1815 (Londres, Angleterre) - 27 novembre 1852 (Londres, Angleterre) | 36 ans",
+        "dates": "1815 (Londres, Angleterre) - 1852 (Londres, Angleterre) | 36 ans",
         "faits": "Fille légitime de l'extravagant poète Lord Byron. Sa mère, terrifiée à l'idée qu'Ada hérite de la 'folie poétique' de son père, l'oblige dès l'enfance à étudier les mathématiques et la logique de manière militaire. Jeune femme de la haute société, elle collabore avec Charles Babbage sur son projet de 'machine analytique' (un projet d'ordinateur mécanique à engrenages). En 1843, comprenant que cette machine pourrait traiter des symboles et non juste des nombres, elle rédige le tout premier algorithme de l'histoire.",
         "fun": "Elle est aujourd'hui reconnue mondialement comme la toute première programmeuse informatique de l'histoire de l'humanité, ayant écrit du code un siècle entier avant que le premier ordinateur électrique ne soit inventé !",
         "quizzes": [
@@ -613,7 +613,7 @@
     },
     {
         "front": "Qui était Auguste (Octave) ?",
-        "dates": "23 septembre 63 av. J.-C. (Rome, Italie) - 19 août 14 apr. J.-C. (Nola, Italie) | 76 ans",
+        "dates": "63 av. J.-C. (Rome, Italie) - 14 apr. J.-C. (Nola, Italie) | 76 ans",
         "faits": "Né Caius Octavius, fils d'un sénateur provincial, il devient à 18 ans le fils adoptif et héritier du testament de son grand-oncle Jules César (fraîchement assassiné). Chétif et considéré comme faible, ce jeune homme surprend tout le monde par son génie politique froid et implacable. Il lève une armée, venge César, vainc ses rivaux (dont Marc Antoine et Cléopâtre) et met fin à la République. Sans jamais se nommer roi, il concentre tous les pouvoirs et devient le tout premier Empereur romain.",
         "fun": "L'empereur le plus puissant du monde était terrorisé par l'orage. Dès que le tonnerre grondait, Auguste courait se cacher au fond d'une cave souterraine obscure en s'enveloppant étroitement dans une peau de phoque, censée repousser la foudre !",
         "quizzes": [
@@ -631,7 +631,7 @@
     },
     {
         "front": "Qui était Stephen Hawking ?",
-        "dates": "8 janvier 1942 (Oxford, Angleterre) - 14 mars 2018 (Cambridge, Angleterre) | 76 ans",
+        "dates": "1942 (Oxford, Angleterre) - 2018 (Cambridge, Angleterre) | 76 ans",
         "faits": "Né dans une famille excentrique d'intellectuels (père chercheur, mère secrétaire). Étudiant brillant mais paresseux, il s'ennuie à l'université. À 21 ans, on lui diagnostique la maladie de Charcot (SLA) qui détruit ses neurones moteurs ; les médecins lui donnent 2 ans à vivre. Défiant tous les pronostics, il fonde une famille et devient l'un des plus grands physiciens théoriciens. Cloué dans un fauteuil et parlant via un synthétiseur vocal, il prouve mathématiquement que les trous noirs meurent en s'évaporant (le rayonnement de Hawking).",
         "fun": "Fier de son espièglerie scientifique, il a organisé en 2009 un banquet luxueux avec champagne et décoration festive. Il s'y est rendu seul et a attendu. Il n'a envoyé les invitations qu'APRÈS la fin de la fête, pour voir si des voyageurs du futur viendraient !",
         "quizzes": [
@@ -649,7 +649,7 @@
     },
     {
         "front": "Qui était George Washington ?",
-        "dates": "22 février 1732 (Comté de Westmoreland, Virginie) - 14 décembre 1799 (Mount Vernon, Virginie, États-Unis) | 67 ans",
+        "dates": "1732 (Comté de Westmoreland, Virginie) - 1799 (Virginie, États-Unis) | 67 ans",
         "faits": "Né dans la bourgeoisie terrienne des colonies britanniques, il hérite d'immenses plantations esclavagistes de tabac. D'abord géomètre puis officier militaire pour la Couronne anglaise, il se retourne contre l'Angleterre à cause des taxes abusives. Nommé commandant en chef de l'armée rebelle continentale, il gagne la guerre d'Indépendance. Il refuse la couronne de roi qu'on lui propose et est élu à l'unanimité comme le premier Président des États-Unis.",
         "fun": "Contrairement à la légende populaire, ses fameux faux dentiers n'étaient absolument pas en bois ! Ses prothèses étaient fabriquées avec de l'ivoire d'hippopotame, des fixations en or, et même de véritables dents humaines achetées à des esclaves.",
         "quizzes": [
@@ -667,7 +667,7 @@
     },
     {
         "front": "Qui était Marie-Antoinette ?",
-        "dates": "2 novembre 1755 (Vienne, Autriche) - 16 octobre 1793 (Paris, France) | 37 ans",
+        "dates": "1755 (Vienne, Autriche) - 1793 (Paris, France) | 37 ans",
         "faits": "Née archiduchesse d'Autriche, onzième fille de la redoutable impératrice Marie-Thérèse. À 14 ans, elle est envoyée à Versailles et mariée au futur Louis XVI pour sceller la paix entre les deux pays. Reine fêtarde, dépensière et mal conseillée, elle s'enferme dans son luxueux domaine du Petit Trianon, s'attirant la haine du peuple affamé qui la surnomme 'l'Autrichienne'. Lors de la Révolution française, elle fait preuve de dignité lors de son procès hâtif avant d'être guillotinée en place publique.",
         "fun": "Elle n'a jamais prononcé la tristement célèbre phrase face au peuple affamé : 'S'ils n'ont pas de pain, qu'ils mangent de la brioche !'. Cette phrase figurait en réalité dans un vieux livre du philosophe Jean-Jacques Rousseau, publié quand la reine n'était qu'une petite fille en Autriche.",
         "quizzes": [
@@ -685,7 +685,7 @@
     },
     {
         "front": "Qui était Attila le Hun ?",
-        "dates": "Vers 395 (Plaines de Pannonie) - Mars 453 (Pannonie, actuelle Hongrie) | env. 58 ans",
+        "dates": "395 (Plaines de Pannonie) - 453 (Pannonie, actuelle Hongrie) | 58 ans",
         "faits": "Fils de roi, il grandit en tant que prince nomade des steppes, apprenant à monter à cheval et à tirer à l'arc dès son plus jeune âge. Il unifie toutes les tribus huns et crée un empire s'étendant de l'Oural au Rhin. Avec sa redoutable cavalerie rapide, il met à genoux les Empires romains (d'Orient et d'Occident) en pillant l'Europe. Surnommé le 'Fléau de Dieu', son but n'était pas de conquérir politiquement les terres, mais d'extorquer de gigantesques tributs en or à Rome sous la menace.",
         "fun": "La mort du plus grand guerrier d'Europe fut étonnamment pitoyable. Le soir de ses propres noces (avec une princesse germanique), complètement ivre, il fit un saignement de nez dans son sommeil et s'étouffa à mort dans son propre sang, provoquant l'effondrement immédiat de son empire.",
         "quizzes": [
@@ -703,7 +703,7 @@
     },
     {
         "front": "Qui était Malcolm X ?",
-        "dates": "19 mai 1925 (Omaha, Nebraska, États-Unis) - 21 février 1965 (New York, États-Unis) | 39 ans",
+        "dates": "1925 (Nebraska, États-Unis) - 1965 (New York, États-Unis) | 39 ans",
         "faits": "Né Malcolm Little. Fils d'un prêcheur battu à mort par des suprémacistes blancs (Ku Klux Klan). Placé en orphelinat, il tombe dans la délinquance, le vol et la drogue. C'est en prison qu'il lit des dizaines de livres et se convertit à la 'Nation of Islam'. Devenu un orateur magnétique et radical, il milite pour la séparation des races et l'autodéfense armée des Noirs américains, s'opposant violemment au pacifisme de Martin Luther King. Après avoir adouci ses positions, il est assassiné de 21 balles par son ancienne secte.",
         "fun": "Pourquoi s'appeler 'X' ? Il a effacé son nom de famille officiel (Little) car il estimait qu'il s'agissait du nom du maître esclavagiste blanc imposé à ses ancêtres. Le X, symbole mathématique de l'inconnu, représentait son véritable nom africain perdu à jamais.",
         "quizzes": [
@@ -721,7 +721,7 @@
     },
 	{
         "front": "Qui était Alan Turing ?",
-        "dates": "23 juin 1912 (Londres, Angleterre) - 7 juin 1954 (Wilmslow, Angleterre) | 41 ans",
+        "dates": "1912 (Londres, Angleterre) - 1954 (Wilmslow, Angleterre) | 41 ans",
         "faits": "Issu de la haute bourgeoisie britannique, fils d'un administrateur colonial. Mathématicien et cryptologue de génie, il joue un rôle décisif pendant la Seconde Guerre mondiale en décryptant la machine Enigma utilisée par les sous-marins nazis, raccourcissant la guerre de plusieurs années. Pionnier absolu de l'informatique et de l'intelligence artificielle, il est pourtant condamné en 1952 pour son homosexualité (alors un crime au Royaume-Uni). Forcé de subir une castration chimique, il met fin à ses jours deux ans plus tard.",
         "fun": "L'un des pères de l'informatique moderne était aussi un athlète d'exception ! Il courait le marathon à un niveau quasi olympique et utilisait souvent la course à pied sur de très longues distances pour résoudre des problèmes mathématiques complexes dans sa tête.",
         "quizzes": [
@@ -739,7 +739,7 @@
     },
     {
         "front": "Qui était Élisabeth Ire d'Angleterre ?",
-        "dates": "7 septembre 1533 (Greenwich, Angleterre) - 24 mars 1603 (Richmond, Angleterre) | 69 ans",
+        "dates": "1533 (Greenwich, Angleterre) - 1603 (Richmond, Angleterre) | 69 ans",
         "faits": "Fille du roi Henri VIII et d'Anne Boleyn (décapitée quand Élisabeth avait 2 ans). Déclarée illégitime et emprisonnée à la Tour de Londres pendant sa jeunesse par sa demi-sœur Marie Tudor, elle survit aux complots et devient reine à 25 ans. Son long règne de 44 ans (l'ère élisabéthaine) marque un âge d'or culturel avec l'émergence de Shakespeare, et l'affirmation de la puissance navale anglaise après l'écrasement de l'Invincible Armada espagnole.",
         "fun": "Surnommée la 'Reine Vierge', elle a refusé de se marier toute sa vie pour ne jamais avoir à partager son pouvoir avec un roi étranger ou un noble anglais ambitieux, transformant son célibat en une redoutable arme diplomatique.",
         "quizzes": [
@@ -757,7 +757,7 @@
     },
     {
         "front": "Qui était Simón Bolívar ?",
-        "dates": "24 juillet 1783 (Caracas, Venezuela) - 17 décembre 1830 (Santa Marta, Colombie) | 47 ans",
+        "dates": "1783 (Caracas, Venezuela) - 1830 (Santa Marta, Colombie) | 47 ans",
         "faits": "Issu de la plus riche aristocratie créole du Venezuela. Orphelin très jeune, il part étudier en Europe où il se passionne pour les idées des Lumières et la Révolution française. Devenu général, il jure de libérer l'Amérique du Sud. Surnommé 'El Libertador', il mène des décennies de guerres féroces et parvient à arracher l'indépendance de six pays actuels : le Venezuela, la Colombie, l'Équateur, le Pérou, le Panama et la Bolivie. Il meurt de la tuberculose, déçu de voir son grand empire sud-américain se fracturer.",
         "fun": "C'est l'un des rares personnages historiques à avoir donné son nom exact à un pays tout entier : la Bolivie (créée en 1825 en son honneur, avec Bolívar lui-même comme premier président).",
         "quizzes": [
@@ -775,7 +775,7 @@
     },
     {
         "front": "Qui était Florence Nightingale ?",
-        "dates": "12 mai 1820 (Florence, Italie) - 13 août 1910 (Londres, Angleterre) | 90 ans",
+        "dates": "1820 (Florence, Italie) - 1910 (Londres, Angleterre) | 90 ans",
         "faits": "Née dans une famille britannique richissime, elle choque ses parents en refusant un mariage mondain pour se consacrer aux soins des malades, un métier alors jugé dégradant. Pionnière des soins infirmiers modernes, elle part sur le front de la guerre de Crimée. Face aux conditions effroyables, elle impose des règles d'hygiène militaire strictes (lavage des mains, aération, stérilisation) qui font chuter drastiquement le taux de mortalité. Elle fonde ensuite la première véritable école d'infirmières au monde.",
         "fun": "En plus de la médecine, c'était une brillante mathématicienne ! Pour convaincre les généraux et les politiciens têtus de financer l'hygiène, elle a inventé et popularisé le diagramme circulaire (le fameux graphique en 'camembert').",
         "quizzes": [
@@ -793,7 +793,7 @@
     },
     {
         "front": "Qui était Socrate ?",
-        "dates": "Vers 470 av. J.-C. (Athènes, Grèce) - 399 av. J.-C. (Athènes, Grèce) | 71 ans",
+        "dates": "470 av. J.-C. (Athènes, Grèce) - 399 av. J.-C. (Athènes, Grèce) | 71 ans",
         "faits": "Fils d'un modeste tailleur de pierre et d'une sage-femme, il est le père fondateur de la philosophie occidentale. Il n'a jamais écrit la moindre ligne de sa vie : sa pensée nous a été transmise par son jeune élève, Platon. Socrate passait son temps dans les rues d'Athènes à interroger les citoyens influents pour leur démontrer qu'ils ne savaient en réalité rien (la maïeutique). Jalousé et accusé de corrompre la jeunesse et de ne pas croire aux dieux, il est jugé et condamné à mort par la cité.",
         "fun": "Lors de son procès, la loi exigeait qu'il propose lui-même une punition alternative à la mort. Extrêmement ironique, Socrate a proposé d'être nourri et logé gratuitement à vie par la ville pour la remercier de l'avoir éveillée !",
         "quizzes": [
@@ -811,7 +811,7 @@
     },
     {
         "front": "Qui était Marco Polo ?",
-        "dates": "15 septembre 1254 (Venise, Italie) - 8 janvier 1324 (Venise, Italie) | 69 ans",
+        "dates": "1254 (Venise, Italie) - 1324 (Venise, Italie) | 69 ans",
         "faits": "Issu d'une riche famille de marchands vénitiens. À l'âge de 17 ans, il part avec son père et son oncle pour un voyage monumental à travers l'Asie via la route de la soie. Il gagne la confiance du puissant empereur mongol Kubilaï Khan (petit-fils de Gengis Khan) et devient son émissaire officiel pendant 16 ans. De retour à Venise après un quart de siècle d'absence, il dicte ses mémoires depuis une prison génoise. Son ouvrage, le 'Livre des Merveilles', révèle l'Extrême-Orient à une Europe fascinée.",
         "fun": "Ses contemporains italiens refusaient de croire à ses récits sur la monnaie en papier, les pierres qui brûlent (le charbon) ou l'immensité des cités chinoises. Sur son lit de mort, pressé d'avouer ses mensonges, il déclara : 'Je n'ai pas raconté la moitié de ce que j'ai vu'.",
         "quizzes": [
@@ -829,7 +829,7 @@
     },
     {
         "front": "Qui était Confucius ?",
-        "dates": "28 septembre 551 av. J.-C. (Qufu, État de Lu, Chine) - 11 avril 479 av. J.-C. (Qufu, Chine) | 71 ans",
+        "dates": "551 av. J.-C. (Qufu, Chine) - 479 av. J.-C. (Qufu, Chine) | 71 ans",
         "faits": "Issu d'une famille noble mais ruinée, orphelin de père à 3 ans, il grandit dans une pauvreté stricte. Autodidacte, il devient fonctionnaire puis enseignant itinérant à une époque de chaos et de guerres féodales. Il élabore une philosophie morale basée sur l'harmonie sociale, l'éducation universelle, la piété filiale (respect des parents) et la bienveillance (le Ren). S'il a peiné à trouver un souverain pour l'écouter de son vivant, le confucianisme est devenu le socle de la culture chinoise pendant plus de 2000 ans.",
         "fun": "Bien qu'il soit aujourd'hui le penseur le plus vénéré de toute l'Asie, Confucius considérait à la fin de sa vie que son existence politique était un échec absolu, aucun roi n'ayant voulu appliquer sa doctrine de la paix.",
         "quizzes": [
@@ -847,7 +847,7 @@
     },
     {
         "front": "Qui était Saladin ?",
-        "dates": "Vers 1138 (Tikrit, Mésopotamie) - 4 mars 1193 (Damas, Syrie) | 55 ans",
+        "dates": "1138 (Tikrit, Mésopotamie) - 1193 (Damas, Syrie) | 55 ans",
         "faits": "Né dans une influente famille militaire kurde, il gravit les échelons pour s'emparer du pouvoir en Égypte et en Syrie, fondant la dynastie des Ayyoubides. Figure majeure de l'histoire islamique, il parvient à unifier les forces musulmanes morcelées du Moyen-Orient. En 1187, il remporte une victoire décisive et reprend Jérusalem aux croisés chrétiens après un siècle de domination franque, déclenchant la Troisième Croisade européenne.",
         "fun": "Saladin était intensément respecté par ses ennemis pour son code de chevalerie. Lors d'une bataille, voyant le roi anglais Richard Cœur de Lion perdre sa monture, Saladin a exigé qu'on envoie immédiatement deux magnifiques chevaux arabes à son rival pour qu'ils puissent se battre d'égal à égal.",
         "quizzes": [
@@ -865,7 +865,7 @@
     },
     {
         "front": "Qui était Toussaint Louverture ?",
-        "dates": "Vers 1743 (Cap-Français, Saint-Domingue) - 7 avril 1803 (Fort de Joux, France) | env. 60 ans",
+        "dates": "1743 (Cap-Français, Saint-Domingue) - 1803 (Fort de Joux, France) | 60 ans",
         "faits": "Né esclave sur une plantation de la colonie française de Saint-Domingue, il est affranchi vers l'âge de 33 ans. Fin lettré, il devient le cerveau militaire et politique de l'immense soulèvement des esclaves de 1791. Général redoutable, il force la France révolutionnaire à abolir l'esclavage, repousse les invasions britanniques et espagnoles, et prend le contrôle total de l'île. Napoléon, refusant son autonomie, enverra une flotte pour le capturer ; il mourra incarcéré dans le froid du Jura.",
         "fun": "Avant de prendre la tête de l'armée des anciens esclaves, Toussaint avait accumulé suffisamment de richesses après son affranchissement pour louer une plantation de café... et posséder lui-même quelques esclaves pendant une courte période.",
         "quizzes": [
@@ -883,7 +883,7 @@
     },
     {
         "front": "Qui était Amelia Earhart ?",
-        "dates": "24 juillet 1897 (Atchison, Kansas, États-Unis) - Disparue le 2 juillet 1937 (Océan Pacifique) | 39 ans",
+        "dates": "1897 (Atchison, Kansas, États-Unis) - Disparue le 2 juillet 1937 (Océan Pacifique) | 39 ans",
         "faits": "Fille d'un avocat souffrant d'alcoolisme, elle enchaîne les métiers (infirmière de guerre, photographe) pour se payer des cours de pilotage dans un milieu exclusivement masculin. Pionnière mondiale de l'aviation et féministe militante, elle devient la toute première femme à traverser l'océan Atlantique en solo en 1932. En 1937, alors qu'elle tente de réaliser le premier tour du monde en avion en suivant la ligne de l'équateur, son Lockheed Electra disparaît sans laisser de traces.",
         "fun": "L'aviation coûtait une fortune à l'époque. Pour financer ses avions, Amelia a créé sa propre marque de vêtements de sport féminins 'pratiques et modernes', qu'elle cousait parfois elle-même le soir dans sa chambre d'hôtel avec une petite machine portative.",
         "quizzes": [
@@ -901,7 +901,7 @@
     },
 	{
         "front": "Qui était Charlemagne ?",
-        "dates": "2 avril 742 (Empire franc) - 28 janvier 814 (Aix-la-Chapelle, Empire carolingien) | 71 ans",
+        "dates": "742 (Empire franc) - 814 (Aix-la-Chapelle, Empire carolingien) | 71 ans",
         "faits": "Fils du roi Pépin le Bref, il hérite du royaume franc et passe sa vie à faire la guerre pour étendre ses frontières. Il unifie une grande partie de l'Europe occidentale (France, Allemagne, Italie actuelles) et se fait couronner Empereur d'Occident par le pape en l'an 800. Il met en place une administration solide et favorise la 'renaissance carolingienne', une période de renouveau culturel et éducatif.",
         "fun": "Bien qu'il soit célèbre pour avoir 'inventé l'école' (ou plutôt l'avoir réformée), Charlemagne lui-même n'a jamais réussi à apprendre à écrire correctement ! Il gardait toujours des tablettes sous son oreiller pour s'entraîner la nuit, sans grand succès.",
         "quizzes": [
@@ -919,7 +919,7 @@
     },
     {
         "front": "Qui était Johannes Gutenberg ?",
-        "dates": "Vers 1400 (Mayence, Saint-Empire) - 3 février 1468 (Mayence, Saint-Empire) | env. 68 ans",
+        "dates": "1400 (Mayence, Saint-Empire) - 1468 (Mayence, Saint-Empire) | 68 ans",
         "faits": "Issu d'une famille de patriciens (bourgeoisie aisée), il devient orfèvre et taille les métaux. Vers 1450, il révolutionne la diffusion du savoir en Europe en inventant la typographie à caractères métalliques mobiles et la presse à imprimer. Son œuvre maîtresse est la 'Bible à quarante-deux lignes'. Cependant, il perd un procès contre son banquier, se fait confisquer son imprimerie et finit sa vie dans une relative pauvreté.",
         "fun": "Avant d'inventer l'imprimerie, Gutenberg fabriquait et vendait des 'miroirs magiques' aux pèlerins, censés capturer la lumière sainte des reliques religieuses !",
         "quizzes": [
@@ -937,7 +937,7 @@
     },
     {
         "front": "Qui était Che Guevara ?",
-        "dates": "14 juin 1928 (Rosario, Argentine) - 9 octobre 1967 (La Higuera, Bolivie) | 39 ans",
+        "dates": "1928 (Rosario, Argentine) - 1967 (La Higuera, Bolivie) | 39 ans",
         "faits": "Issu de la bourgeoisie argentine, Ernesto Guevara étudie la médecine. Lors de voyages à travers l'Amérique latine, il est révolté par la misère extrême des paysans et l'impérialisme américain. Devenu marxiste, il rejoint Fidel Castro pour mener la révolution cubaine et renverser le dictateur Batista. Après avoir été ministre à Cuba, il repart exporter la guérilla en Afrique puis en Bolivie, où il est capturé et exécuté par l'armée bolivienne (aidée par la CIA).",
         "fun": "Le mot 'Che' n'était pas son prénom, mais un tic de langage argentin (équivalent de 'mec' ou 'hé') qu'il utilisait tellement souvent que ses camarades cubains ont fini par le surnommer ainsi.",
         "quizzes": [
@@ -955,7 +955,7 @@
     },
     {
         "front": "Qui était Ramsès II ?",
-        "dates": "Vers 1303 av. J.-C. (Égypte antique) - 1213 av. J.-C. (Pi-Ramsès, Égypte) | env. 90 ans",
+        "dates": "1303 av. J.-C. (Égypte antique) - 1213 av. J.-C. (Pi-Ramsès, Égypte) | 90 ans",
         "faits": "Troisième pharaon de la XIXe dynastie, il connaît l'un des règnes les plus longs de l'Antiquité (66 ans). Grand bâtisseur, il fait ériger des monuments colossaux à sa propre gloire (Abou Simbel, Karnak). Chef militaire redoutable, il affronte les Hittites lors de la célèbre bataille de Qadesh et signe ensuite le premier traité de paix connu de l'histoire. Il a eu plus d'une centaine d'enfants avec ses nombreuses épouses (dont la célèbre Néfertari).",
         "fun": "En 1974, la momie de Ramsès II devait voyager en France pour être traitée contre un champignon. Le gouvernement égyptien lui a donc fait établir un véritable passeport moderne avec la mention : 'Profession : Roi (décédé)' !",
         "quizzes": [
@@ -973,7 +973,7 @@
     },
     {
         "front": "Qui était Aliénor d'Aquitaine ?",
-        "dates": "1122 (Bordeaux ou Poitiers, France) - 31 mars 1204 (Poitiers, France) | 82 ans",
+        "dates": "1122 (Bordeaux ou Poitiers, France) - 1204 (Poitiers, France) | 82 ans",
         "faits": "Duchesse d'Aquitaine, elle est l'une des femmes les plus puissantes et riches du Moyen Âge. Elle devient reine de France par son mariage avec Louis VII, qu'elle accompagne (fait rare) lors de la deuxième croisade. Après l'annulation de ce mariage terne, elle épouse le fougueux futur roi d'Angleterre, Henri II Plantagenêt. Elle jouera un rôle politique central, gouvernant souvent au nom de ses maris ou de ses célèbres fils (comme Richard Cœur de Lion), et sera même emprisonnée 15 ans par son propre mari.",
         "fun": "Elle a transformé la culture de la noblesse en finançant les troubadours et en instaurant l''amour courtois' à sa cour, dictant aux chevaliers brutaux comment se comporter de manière galante avec les dames.",
         "quizzes": [
@@ -991,7 +991,7 @@
     },
     {
         "front": "Qui était Geronimo ?",
-        "dates": "16 juin 1829 (Nouveau-Mexique) - 17 février 1909 (Fort Sill, Oklahoma, États-Unis) | 79 ans",
+        "dates": "1829 (Nouveau-Mexique) - 1909 (Fort Sill, Oklahoma, États-Unis) | 79 ans",
         "faits": "Chamane et chef de guerre de la tribu des Apaches Chiricahuas. Après le massacre de sa femme, de ses trois enfants et de sa mère par l'armée mexicaine, il voue une haine implacable à ceux qui envahissent ses terres. Fin stratège et maître de la guérilla, il résiste farouchement pendant plus de 30 ans aux armées mexicaine et américaine avec seulement quelques dizaines de guerriers. Finalement contraint de se rendre en 1886, il finit sa vie comme prisonnier de guerre, paradé dans des foires américaines.",
         "fun": "Lorsqu'il est devenu une 'attraction' à la fin de sa vie, il vendait des arcs, des flèches et des photographies dédicacées de lui-même aux touristes pour gagner de l'argent !",
         "quizzes": [
@@ -1009,7 +1009,7 @@
     },
     {
         "front": "Qui était Franklin D. Roosevelt (FDR) ?",
-        "dates": "30 janvier 1882 (Hyde Park, New York, États-Unis) - 12 avril 1945 (Warm Springs, Géorgie, États-Unis) | 63 ans",
+        "dates": "1882 (Hyde Park, New York, États-Unis) - 1945 (Warm Springs, Géorgie, États-Unis) | 63 ans",
         "faits": "Issu d'une riche famille patricienne américaine. Atteint de la polio à 39 ans, il perd définitivement l'usage de ses jambes mais cache son fauteuil roulant au public. Seul président américain élu à quatre reprises, il sauve les États-Unis de la Grande Dépression (crise de 1929) avec son programme de relance économique, le 'New Deal'. Il dirige ensuite le pays avec fermeté et diplomatie pendant presque toute la Seconde Guerre mondiale, avant de mourir d'une hémorragie cérébrale juste avant la victoire.",
         "fun": "Pour redonner espoir aux Américains ruinés par la crise économique, il a inventé les 'Causeries au coin du feu', s'adressant directement aux citoyens à la radio avec un ton chaleureux et rassurant, une révolution de communication politique.",
         "quizzes": [
@@ -1027,7 +1027,7 @@
     },
     {
         "front": "Qui était Mata Hari ?",
-        "dates": "7 août 1876 (Leeuwarden, Pays-Bas) - 15 octobre 1917 (Vincennes, France) | 41 ans",
+        "dates": "1876 (Leeuwarden, Pays-Bas) - 1917 (Vincennes, France) | 41 ans",
         "faits": "Née Margaretha Zelle, fille d'un riche chapelier ruiné. Après un mariage désastreux aux Indes néerlandaises (Indonésie), elle arrive à Paris et s'invente un personnage de princesse javanaise. Elle devient une danseuse exotique célèbre, effeuilleuse mondaine et courtisane pour la haute société politique et militaire de toute l'Europe. Pendant la Première Guerre mondiale, son style de vie international la rend suspecte. Elle est arrêtée, accusée (probablement à tort ou de manière très exagérée) d'être une espionne double travaillant pour l'Allemagne, et fusillée par la France.",
         "fun": "Face à son peloton d'exécution militaire, elle a refusé qu'on lui bande les yeux et a, selon la légende, envoyé un dernier baiser volant aux soldats français chargés de la fusiller.",
         "quizzes": [
@@ -1045,7 +1045,7 @@
     },
     {
         "front": "Qui était Boudicca (Boadicée) ?",
-        "dates": "Vers 30 (Bretagne, actuelle Angleterre) - 61 (Bretagne) | env. 31 ans",
+        "dates": "30 (Bretagne, actuelle Angleterre) - 61 (Bretagne) | 31 ans",
         "faits": "Reine du peuple celte des Iceni. À la mort de son mari (qui était allié à Rome), les Romains ignorent son testament, annexent ses terres, la font fouetter publiquement et violent ses filles. En représailles, Boudicca lève une armée gigantesque unissant plusieurs tribus celtes et mène une rébellion sanglante contre l'occupation romaine en 60 apr. J.-C. Elle détruit trois villes majeures (dont l'ancêtre de Londres) avant d'être finalement vaincue par le gouverneur Suetonius Paulinus. Elle s'empoisonne pour échapper à la capture.",
         "fun": "Les historiens romains la décrivaient avec terreur : très grande, terrifiante, avec une voix rocailleuse et une épaisse crinière de cheveux roux ou fauves qui lui tombait jusqu'aux hanches, portant toujours un épais collier d'or (un torque).",
         "quizzes": [
@@ -1063,7 +1063,7 @@
     },
     {
         "front": "Qui était Jeanne Baret ?",
-        "dates": "27 juillet 1740 (La Comelle, France) - 5 août 1807 (Saint-Aulaye, France) | 67 ans",
+        "dates": "1740 (La Comelle, France) - 1807 (Saint-Aulaye, France) | 67 ans",
         "faits": "Issue d'une famille de paysans très pauvres, elle devient une botaniste autodidacte passionnée. En 1766, la marine royale interdisant l'embarquement des femmes, elle se bande la poitrine, s'habille en homme et prend le nom de 'Jean Baret' pour participer à l'expédition autour du monde de Bougainville, en tant que valet du botaniste Philibert Commerson (son compagnon). Démasquée en plein océan Pacifique, elle poursuit son travail et devient la toute première femme à faire le tour du monde.",
         "fun": "C'est elle, habillée en homme et portant les lourdes caisses de son compagnon malade, qui a en réalité découvert la célèbre plante tropicale rose à laquelle on a donné le nom du capitaine de l'expédition : le Bougainvillier !",
         "quizzes": [
@@ -1081,7 +1081,7 @@
     },
     {
         "front": "Qui était Martin Luther ?",
-        "dates": "10 novembre 1483 (Eisleben, Saint-Empire) - 18 février 1546 (Eisleben, Saint-Empire) | 62 ans",
+        "dates": "1483 (Eisleben, Saint-Empire) - 1546 (Eisleben, Saint-Empire) | 62 ans",
         "faits": "Fils d'un propriétaire de mines de cuivre, il abandonne des études de droit pour devenir moine augustin après avoir survécu à un violent orage. Indigné par la corruption de l'Église catholique (notamment la vente des 'indulgences' pour effacer les péchés), il publie ses '95 thèses' en 1517. Excommunié par le pape et mis au ban par l'empereur Charles Quint, il traduit la Bible en allemand pour que le peuple puisse la lire seul. Son action déclenche la Réforme protestante et bouleverse l'Europe entière.",
         "fun": "Alors qu'il était caché dans le château de la Wartbourg, Luther affirmait être harcelé par le Diable en personne. Pour le faire fuir, il lui aurait carrément lancé son encrier de plomb à la figure !",
         "quizzes": [
@@ -1099,7 +1099,7 @@
     },
     {
         "front": "Qui était Katsushika Hokusai ?",
-        "dates": "31 octobre 1760 (Edo, Japon) - 10 mai 1849 (Edo, Japon) | 88 ans",
+        "dates": "1760 (Edo, Japon) - 1849 (Edo, Japon) | 88 ans",
         "faits": "Fils d'un artisan miroitier, il devient le plus célèbre peintre et graveur japonais (art de l'ukiyo-e). Travailleur acharné et perfectionniste, il change de pseudonyme plus de 120 fois au cours de sa vie et déménage 93 fois, détestant faire le ménage. Son œuvre majeure, les 'Trente-six vues du mont Fuji' (comprenant la célèbre 'Grande Vague de Kanagawa'), a profondément influencé l'art occidental (notamment Van Gogh, Monet et le japonisme) lors de l'ouverture du Japon au XIXe siècle.",
         "fun": "À 75 ans, il a écrit qu'il commençait tout juste à comprendre la nature et que son but ultime était de vivre jusqu'à 110 ans pour que 'chaque ligne, chaque point' de ses dessins prenne véritablement vie.",
         "quizzes": [
@@ -1117,7 +1117,7 @@
     },
     {
         "front": "Qui était Sappho ?",
-        "dates": "Vers 630 av. J.-C. (Île de Lesbos, Grèce antique) - Vers 570 av. J.-C. (Île de Lesbos) | env. 60 ans",
+        "dates": "630 av. J.-C. (Grèce antique) - 570 av. J.-C. (Grèce antique) | 60 ans",
         "faits": "Issue d'une riche famille aristocratique de la cité de Mytilène. Surnommée la 'Dixième Muse' par Platon lui-même, elle est l'une des très rares femmes poétesses de l'Antiquité grecque dont le nom a survécu. Elle dirigeait une académie pour jeunes filles et écrivait des poèmes lyriques (chantés avec une lyre) d'une grande beauté et d'une intense émotion, célébrant l'amour, souvent dirigé vers d'autres femmes. Son œuvre n'a survécu que sous forme de fragments sauvés sur des papyrus déchirés.",
         "fun": "C'est son île natale, Lesbos (et son nom même), qui a donné naissance des siècles plus tard aux mots 'lesbienne' et 'saphique', en référence aux amours entre femmes célébrées dans ses poèmes.",
         "quizzes": [
@@ -1135,7 +1135,7 @@
     },
     {
         "front": "Qui était Horatio Nelson ?",
-        "dates": "29 septembre 1758 (Burnham Thorpe, Angleterre) - 21 octobre 1805 (Cap Trafalgar, Espagne) | 47 ans",
+        "dates": "1758 (Burnham Thorpe, Angleterre) - 1805 (Cap Trafalgar, Espagne) | 47 ans",
         "faits": "Fils d'un pasteur modeste, il entre dans la marine royale (Royal Navy) à 12 ans. Officier naval britannique de génie, il est le principal cauchemar maritime de Napoléon Bonaparte. Au cours de ses nombreux combats intenses, il perd son bras droit et l'usage de son œil droit. En 1805, lors de la bataille de Trafalgar, il écrase définitivement les flottes française et espagnole grâce à une tactique d'attaque perpendiculaire risquée, mais meurt foudroyé par la balle d'un tireur d'élite français.",
         "fun": "Pour ramener son corps en Angleterre sans qu'il ne pourrisse pendant le long trajet en bateau après Trafalgar, ses marins ont plongé son cadavre dans un grand tonneau rempli de cognac français !",
         "quizzes": [
@@ -1153,7 +1153,7 @@
     },
     {
         "front": "Qui était Roald Amundsen ?",
-        "dates": "16 juillet 1872 (Borge, Norvège) - Disparu vers le 18 juin 1928 (Océan Arctique) | 55 ans",
+        "dates": "1872 (Borge, Norvège) - Disparu vers le 18 juin 1928 (Océan Arctique) | 55 ans",
         "faits": "Fils d'une famille d'armateurs de navires. L'un des plus grands explorateurs polaires de l'histoire de l'humanité. Il est le premier à franchir le mythique passage du Nord-Ouest (entre l'Atlantique et le Pacifique via le Canada arctique). En 1911, après une course épique et acharnée contre l'expédition britannique de Robert Scott, il est le tout premier homme à atteindre le pôle Sud géographique, grâce à son utilisation ingénieuse des chiens de traîneau et de vêtements inuits. Il disparaît tragiquement dans l'Arctique lors d'une mission de sauvetage en hydravion.",
         "fun": "Sa mère voulait absolument qu'il devienne médecin. Amundsen a sagement fait semblant d'étudier la médecine pendant des années, pour ne quitter l'université et prendre la mer que le lendemain de la mort de sa mère !",
         "quizzes": [
@@ -1171,7 +1171,7 @@
     },
 	{
         "front": "Qui était Marie Stuart (Marie Ier d'Écosse) ?",
-        "dates": "8 décembre 1542 (Linlithgow, Écosse) - 8 février 1587 (Fotheringhay, Angleterre) | 44 ans",
+        "dates": "1542 (Linlithgow, Écosse) - 1587 (Fotheringhay, Angleterre) | 44 ans",
         "faits": "Fille du roi Jacques V, elle devient reine d'Écosse à seulement 6 jours. Élevée à la cour de France, elle épouse le futur roi François II mais devient veuve très jeune. De retour en Écosse, pays déchiré par les guerres de religion, elle fait face à des rébellions et des scandales matrimoniaux sanglants. Forcée d'abdiquer, elle fuit en Angleterre pour demander l'asile à sa cousine Élisabeth Ire. Considérée comme une menace pour le trône anglais, elle est emprisonnée pendant 18 ans puis décapitée pour complot.",
         "fun": "Lors de son exécution, le bourreau a dû s'y reprendre à trois fois avec sa hache. Lorsqu'il a enfin soulevé la tête par les cheveux pour la montrer au public, il s'est retrouvé avec une perruque rousse dans les mains, la tête chauve de la reine roulant sur le sol !",
         "quizzes": [
@@ -1189,7 +1189,7 @@
     },
     {
         "front": "Qui était Sun Tzu ?",
-        "dates": "Vers 544 av. J.-C. (État de Qi ou Wu, Chine) - Vers 496 av. J.-C. (État de Wu, Chine) | env. 48 ans",
+        "dates": "544 av. J.-C. (État de Wu, Chine) - 496 av. J.-C. (État de Wu, Chine) | 48 ans",
         "faits": "Général chinois, stratège militaire et philosophe de la période des Printemps et Automnes. Issu de la noblesse militaire, il offre ses services au roi de Wu et remporte de nombreuses victoires contre des armées bien supérieures en nombre. Il est mondialement célèbre pour avoir rédigé 'L'Art de la guerre', un traité de stratégie révolutionnaire affirmant que l'art suprême de la guerre consiste à soumettre l'ennemi sans même avoir à combattre, par la ruse, l'espionnage et l'adaptation.",
         "fun": "Pour tester ses compétences, le roi lui demanda un jour d'entraîner son harem de 180 concubines à la discipline militaire. Face à leurs rires, Sun Tzu fit impitoyablement décapiter les deux favorites du roi, instaurant immédiatement un silence et une obéissance absolus !",
         "quizzes": [
@@ -1207,7 +1207,7 @@
     },
     {
         "front": "Qui était Nicolas II ?",
-        "dates": "18 mai 1868 (Tsarskoïe Selo, Russie) - 17 juillet 1918 (Iekaterinbourg, Russie) | 50 ans",
+        "dates": "1868 (Tsarskoïe Selo, Russie) - 1918 (Iekaterinbourg, Russie) | 50 ans",
         "faits": "Fils du tsar Alexandre III, il grandit dans l'opulence de la dynastie des Romanov mais se montre politiquement faible et indécis. Dernier empereur de Russie, il réprime violemment les manifestations pacifiques (le Dimanche rouge) et engage son pays dans la désastreuse Première Guerre mondiale. L'effondrement de l'économie et la famine déclenchent la Révolution russe de 1917. Forcé d'abdiquer, il est assassiné secrètement avec sa femme, son fils et ses quatre filles par les bolcheviks.",
         "fun": "Il était passionné de photographie, une technologie balbutiante à l'époque. Il possédait plusieurs appareils et a rempli des dizaines d'albums de photos intimes de sa famille, allant jusqu'à se prendre en 'selfie' dans les miroirs du palais !",
         "quizzes": [
@@ -1225,7 +1225,7 @@
     },
     {
         "front": "Qui était Sigmund Freud ?",
-        "dates": "6 mai 1856 (Freiberg, Empire d'Autriche) - 23 septembre 1939 (Londres, Royaume-Uni) | 83 ans",
+        "dates": "1856 (Freiberg, Empire d'Autriche) - 1939 (Londres, Royaume-Uni) | 83 ans",
         "faits": "Issu d'une famille juive modeste de marchands de laine, il devient médecin neurologue à Vienne. Il révolutionne la compréhension de l'esprit humain en inventant la psychanalyse. Il théorise l'existence de l'inconscient, le refoulement, le complexe d'Œdipe et l'interprétation des rêves, affirmant que nos névroses proviennent de désirs enfouis et de traumatismes infantiles. Fuyant l'Autriche nazie à la fin de sa vie, il s'exile à Londres où il meurt d'un cancer de la mâchoire.",
         "fun": "Il était totalement accro aux cigares (il en fumait jusqu'à 20 par jour !). Un jour, agacé par des disciples qui cherchaient un sens complexe et sexuel à son habitude de fumer, il aurait répondu : 'Parfois, un cigare n'est rien d'autre qu'un cigare.'",
         "quizzes": [
@@ -1243,7 +1243,7 @@
     },
     {
         "front": "Qui était Hatchepsout ?",
-        "dates": "Vers 1507 av. J.-C. (Thèbes, Égypte) - Vers 1458 av. J.-C. (Thèbes, Égypte) | env. 49 ans",
+        "dates": "1507 av. J.-C. (Thèbes, Égypte) - 1458 av. J.-C. (Thèbes, Égypte) | 49 ans",
         "faits": "Fille aînée du pharaon Thoutmôsis Ier. À la mort de son époux et demi-frère Thoutmôsis II, elle assure la régence pour son jeune beau-fils. Ambitieuse et habile, elle s'empare de tous les pouvoirs et se fait couronner 'Pharaon' à part entière, l'une des très rares femmes à obtenir ce titre suprême. Son règne d'une vingtaine d'années est marqué par une immense prospérité économique, des expéditions commerciales pacifiques (vers le mythique pays de Pount) et la construction du sublime temple de Deir el-Bahari.",
         "fun": "Pour légitimer son pouvoir absolu dans une société très patriarcale, elle a ordonné qu'on la représente sur les statues officielles non pas comme une femme, mais avec un torse plat, un pagne court et la fameuse fausse barbe tressée des rois masculins !",
         "quizzes": [
@@ -1261,7 +1261,7 @@
     },
     {
         "front": "Qui était René Descartes ?",
-        "dates": "31 mars 1596 (La Haye-en-Touraine, France) - 11 février 1650 (Stockholm, Suède) | 53 ans",
+        "dates": "1596 (La Haye-en-Touraine, France) - 1650 (Stockholm, Suède) | 53 ans",
         "faits": "Issu de la petite noblesse de robe, cet enfant de santé fragile est élevé chez les jésuites. Mathématicien, physicien et philosophe, il bouleverse la pensée scientifique européenne du XVIIe siècle en publiant le 'Discours de la méthode'. Il rejette la scolastique médiévale et fonde le rationalisme moderne, affirmant qu'il faut douter de tout (le doute hyperbolique) sauf de sa propre conscience ('Je pense, donc je suis'). Il a également inventé la géométrie analytique (les repères avec les axes X et Y).",
         "fun": "Il adorait faire la grasse matinée ! Habitué depuis l'enfance à réfléchir au chaud dans son lit jusqu'à midi, il est mort d'une pneumonie après que la reine de Suède l'a forcé à lui donner des cours de philosophie tous les matins à 5 heures dans son château glacial.",
         "quizzes": [
@@ -1279,7 +1279,7 @@
     },
     {
         "front": "Qui était Sitting Bull (Taureau Assis) ?",
-        "dates": "Vers 1831 (Grand River, Dakota du Sud) - 15 décembre 1890 (Réserve de Standing Rock, États-Unis) | env. 59 ans",
+        "dates": "1831 (Grand River, Dakota du Sud) - 1890 (Réserve de Standing Rock, États-Unis) | 59 ans",
         "faits": "Chef de la tribu des Lakotas (Sioux). Considéré comme un grand chef spirituel et homme-médecine par son peuple. Refusant l'enfermement dans les réserves et la spoliation des Terres sacrées des Black Hills par les chercheurs d'or, il unit plusieurs tribus amérindiennes. En 1876, galvanisés par ses visions prémonitoires, les guerriers sioux et cheyennes anéantissent le 7e régiment de cavalerie du célèbre général Custer lors de l'emblématique bataille de Little Bighorn.",
         "fun": "Après sa reddition, il est devenu une célébrité en rejoignant le spectacle de cirque de Buffalo Bill (le 'Wild West Show'). Il gagnait très bien sa vie en vendant des autographes, et donnait tout son argent aux jeunes mendiants blancs des grandes villes américaines.",
         "quizzes": [
@@ -1297,7 +1297,7 @@
     },
     {
         "front": "Qui était Olympe de Gouges ?",
-        "dates": "7 mai 1748 (Montauban, France) - 3 novembre 1793 (Paris, France) | 45 ans",
+        "dates": "1748 (Montauban, France) - 1793 (Paris, France) | 45 ans",
         "faits": "Née Marie Gouze, fille d'un boucher (mais possiblement fille illégitime d'un marquis). Veuve très jeune, elle refuse de se remarier pour conserver sa liberté et s'installe à Paris. Humaniste engagée, elle milite pour l'abolition de l'esclavage, le droit au divorce, et rédige en 1791 la 'Déclaration des droits de la femme et de la citoyenne', exigeant l'égalité politique totale entre les sexes. S'opposant à la violence de la Terreur et à Robespierre, elle est arrêtée et guillotinée.",
         "fun": "Dans son célèbre texte militant pour les droits des femmes, elle a écrit une phrase devenue prophétique et glaçante pour elle-même : 'La femme a le droit de monter sur l'échafaud ; elle doit avoir également celui de monter à la Tribune'.",
         "quizzes": [
@@ -1315,7 +1315,7 @@
     },
     {
         "front": "Qui était Akhenaton (Aménophis IV) ?",
-        "dates": "Vers 1371 av. J.-C. (Thèbes, Égypte) - Vers 1334 av. J.-C. (Akhetaton, Égypte) | env. 37 ans",
+        "dates": "1371 av. J.-C. (Thèbes, Égypte) - 1334 av. J.-C. (Akhetaton, Égypte) | 37 ans",
         "faits": "Pharaon de la XVIIIe dynastie, fils d'Amenhotep III et époux de la mythique reine Néfertiti. Il provoque un séisme religieux sans précédent dans l'Égypte antique : il interdit le culte des multiples dieux traditionnels pour imposer l'adoration d'un dieu unique, Aton (le disque solaire). Il fait construire une nouvelle capitale en plein désert (Amarna). À sa mort, son nom est martelé et effacé des monuments par ses successeurs pour punir cette 'hérésie'.",
         "fun": "L'art sous son règne est devenu étrangement réaliste, presque difforme. Contrairement aux autres pharaons représentés comme de beaux athlètes, Akhenaton se faisait sculpter avec un ventre bedonnant, des hanches larges, un crâne très allongé et des lèvres épaisses !",
         "quizzes": [
@@ -1333,7 +1333,7 @@
     },
     {
         "front": "Qui était Pablo Picasso ?",
-        "dates": "25 octobre 1881 (Málaga, Espagne) - 8 avril 1973 (Mougins, France) | 91 ans",
+        "dates": "1881 (Málaga, Espagne) - (Mougins, France) | 91 ans",
         "faits": "Enfant prodige, fils d'un professeur de dessin qui, bluffé par le talent de son fils de 13 ans, lui donne ses propres pinceaux et arrête de peindre. Picasso s'installe à Paris et devient le géant de l'art du XXe siècle. Il bouleverse les codes visuels en co-inventant le Cubisme, déconstruisant la réalité en formes géométriques. Son tableau magistral 'Guernica' (1937) dénonce l'horreur des bombardements pendant la guerre d'Espagne et devient un symbole universel de paix.",
         "fun": "Travailleur compulsif, il était convaincu que créer de l'art le maintenait en vie. Il a produit un volume d'œuvres record dans l'histoire de l'humanité : on estime son travail à environ 50 000 créations (peintures, céramiques, dessins, sculptures) !",
         "quizzes": [
@@ -1351,7 +1351,7 @@
     },
     {
         "front": "Qui était William Shakespeare ?",
-        "dates": "26 avril 1564 (Stratford-upon-Avon, Angleterre) - 23 avril 1616 (Stratford-upon-Avon, Angleterre) | 52 ans",
+        "dates": "1564 (Stratford, Angleterre) - 1616 (Stratford, Angleterre) | 52 ans",
         "faits": "Fils d'un gantier et maire de sa ville, il quitte sa famille pour s'installer à Londres où il devient acteur puis dramaturge. Sous le règne d'Élisabeth Ire puis de Jacques Ier, il écrit près de 40 pièces (Hamlet, Roméo et Juliette, Macbeth) explorant toutes les nuances sombres, drôles et tragiques de l'âme humaine. Co-propriétaire du célèbre théâtre 'Le Globe', il est considéré comme le plus grand poète et écrivain de l'histoire de la langue anglaise.",
         "fun": "Son vocabulaire était si riche qu'il a inventé ou popularisé plus de 1 700 mots de la langue anglaise actuelle ! Des termes quotidiens comme 'lonely' (solitaire), 'gossip' (commérage) ou 'assassination' (assassinat) viennent directement de ses pièces.",
         "quizzes": [
@@ -1369,7 +1369,7 @@
     },
     {
         "front": "Qui était Spartacus ?",
-        "dates": "Vers 109 av. J.-C. (Thrace, actuelle Bulgarie) - 71 av. J.-C. (Lucanie, Italie) | env. 38 ans",
+        "dates": "109 av. J.-C. (Thrace, actuelle Bulgarie) - 71 av. J.-C. (Lucanie, Italie) | 38 ans",
         "faits": "D'origine thrace (peut-être ancien soldat), il est capturé, réduit en esclavage et envoyé dans une école de gladiateurs impitoyable à Capoue. En 73 av. J.-C., il s'évade avec 70 autres gladiateurs armés d'ustensiles de cuisine. Il rassemble rapidement une armée gigantesque de plus de 70 000 esclaves fugitifs et bergers pauvres. Véritable génie tactique, il humilie les légions romaines pendant plus de deux ans avant d'être finalement encerclé et tué par le riche général Crassus.",
         "fun": "Son corps n'a jamais été retrouvé sur le champ de bataille après sa défaite finale. En représailles et pour terroriser le peuple, les Romains ont crucifié 6 000 de ses partisans tout le long de la route (via Appia), sur plus de 200 kilomètres jusqu'à Rome.",
         "quizzes": [
@@ -1387,7 +1387,7 @@
     },
     {
         "front": "Qui était Ibn Battûta ?",
-        "dates": "24 février 1304 (Tanger, Maroc) - Vers 1368 (Marrakech, Empire mérinide) | env. 64 ans",
+        "dates": "1304 (Tanger, Maroc) - 1368 (Marrakech, Empire mérinide) | 64 ans",
         "faits": "Issu d'une famille de juges (cadis) de culture berbère, il quitte le Maroc à 21 ans pour faire le pèlerinage de la Mecque. Passionné par la découverte, il ne rentrera chez lui que 29 ans plus tard ! Il est le plus grand voyageur du Moyen Âge : il a parcouru environ 120 000 kilomètres, explorant l'Afrique de l'Ouest, l'Inde, la Chine, la Russie et l'Empire byzantin. À son retour, il dicte l'incroyable récit de ses aventures dans son grand livre, la 'Rihla'.",
         "fun": "Son voyage était loin d'être paisible ! Il a survécu à des attaques de pirates, à un naufrage dévastateur, à la peste noire, et a même failli être décapité par un tyran en Inde dont il était devenu l'un des juges à la cour.",
         "quizzes": [
@@ -1405,7 +1405,7 @@
     },
     {
         "front": "Qui était Raspoutine ?",
-        "dates": "21 janvier 1869 (Pokrovskoïe, Sibérie) - 30 décembre 1916 (Saint-Pétersbourg, Russie) | 47 ans",
+        "dates": "1869 (Pokrovskoïe, Sibérie) - 1916 (Saint-Pétersbourg, Russie) | 47 ans",
         "faits": "Fils de paysans sibériens illettrés. Mystique itinérant et guérisseur charismatique, il s'introduit à la cour du dernier tsar de Russie, Nicolas II. Il devient rapidement indispensable à la tsarine Alexandra car il semble être le seul homme au monde capable d'apaiser par hypnose les crises mortelles d'hémophilie du jeune prince héritier. Son immense influence politique, sa débauche notoire et son arrogance scandalisent la noblesse, qui finit par organiser son assassinat brutal.",
         "fun": "Son meurtre est digne d'un mythe : des nobles l'ont d'abord nourri de gâteaux remplis de cyanure (qui n'ont eu aucun effet !), lui ont ensuite tiré dessus, l'ont roué de coups, et ont fini par le jeter vivant et ligoté dans un fleuve glacé pour s'assurer de sa mort.",
         "quizzes": [
@@ -1423,7 +1423,7 @@
     },
     {
         "front": "Qui était Eleanor Roosevelt ?",
-        "dates": "11 octobre 1884 (New York, États-Unis) - 7 novembre 1962 (New York, États-Unis) | 78 ans",
+        "dates": "1884 (New York, États-Unis) - 1962 (New York, États-Unis) | 78 ans",
         "faits": "Issue d'une riche famille de l'élite américaine. Épouse du président Franklin D. Roosevelt, elle transforme radicalement le rôle de Première Dame. Face à la paralysie de son mari, elle devient ses 'yeux et ses oreilles', voyageant inlassablement partout dans le pays pour enquêter sur la misère du New Deal. Ardente défenseuse des droits des Noirs, des femmes et des travailleurs, elle est nommée déléguée à l'ONU après la mort de son mari et supervise la rédaction de la Déclaration universelle des droits de l'homme de 1948.",
         "fun": "Elle refusait obstinément la protection des services secrets ! Pour pouvoir se déplacer librement et conduire sa propre voiture de nuit à travers le pays, elle avait obtenu un permis de port d'arme et gardait toujours un pistolet chargé dans sa boîte à gants.",
         "quizzes": [
@@ -1441,7 +1441,7 @@
     },
 	{
         "front": "Qui était la reine Victoria ?",
-        "dates": "24 mai 1819 (Londres, Angleterre) - 22 janvier 1901 (Île de Wight, Angleterre) | 81 ans",
+        "dates": "1819 (Londres, Angleterre) - 1901 (Île de Wight, Angleterre) | 81 ans",
         "faits": "Élevée sous les règles étouffantes du 'système de Kensington' par sa mère surprotectrice. Elle devient reine à 18 ans et s'émancipe immédiatement. Son règne immense de 63 ans (l'ère victorienne) marque l'apogée de l'Empire britannique et de la révolution industrielle. Elle épouse son cousin le prince Albert, le grand amour de sa vie, et portera le deuil (en noir) pendant 40 ans après sa mort. Elle est surnommée la 'grand-mère de l'Europe' car ses 9 enfants ont été mariés dans toutes les cours royales du continent.",
         "fun": "Elle a été la première souveraine à habiter le palais de Buckingham, mais aussi la première personnalité au monde à accepter d'utiliser du chloroforme pour accoucher (de son 8e enfant), brisant les tabous religieux et popularisant ainsi l'anesthésie !",
         "quizzes": [
@@ -1459,7 +1459,7 @@
     },
     {
         "front": "Qui était Mansa Musa ?",
-        "dates": "Vers 1280 (Empire du Mali) - Vers 1337 (Mali) | env. 57 ans",
+        "dates": "1280 (Empire du Mali) - 1337 (Mali) | 57 ans",
         "faits": "Empereur (Mansa) de l'immense Empire du Mali au XIVe siècle. Son royaume contrôlait les lucratives routes commerciales transsahariennes et possédait d'immenses réserves d'or et de sel. Les historiens le considèrent aujourd'hui comme l'être humain le plus riche de toute l'histoire de l'humanité. Souverain pieux et bâtisseur, il transforme sa capitale Tombouctou en un prestigieux centre intellectuel, architectural et islamique attirant des savants de tout le Moyen-Orient.",
         "fun": "Lors de son pèlerinage vers la Mecque en 1324, il a voyagé avec des milliers d'esclaves et de chameaux chargés d'or. Il a distribué tellement d'or en cours de route (notamment en Égypte) qu'il a provoqué une crise économique et une inflation massive qui a ruiné la région pendant 10 ans !",
         "quizzes": [
@@ -1477,7 +1477,7 @@
     },
     {
         "front": "Qui était Mary Anning ?",
-        "dates": "21 mai 1799 (Lyme Regis, Angleterre) - 9 mars 1847 (Lyme Regis, Angleterre) | 47 ans",
+        "dates": "1799 (Lyme Regis, Angleterre) - 1847 (Lyme Regis, Angleterre) | 47 ans",
         "faits": "Issue d'une famille dissidente anglaise très pauvre. Son père ébéniste lui apprend à creuser les falaises pour trouver des fossiles et les vendre aux touristes afin de survivre. Sans aucune éducation formelle et en tant que femme de classe ouvrière, elle devient pourtant l'une des plus grandes paléontologues de l'histoire. Elle découvre le premier squelette complet d'ichtyosaure à l'âge de 12 ans, puis des plésiosaures, prouvant de fait l'extinction des espèces (avant même Darwin). La communauté scientifique masculine s'est longtemps approprié ses découvertes.",
         "fun": "Bébé, elle a survécu à un événement extraordinaire : la femme qui la tenait dans ses bras lors d'un festival a été foudroyée par un orage et tuée sur le coup (avec deux autres personnes), mais le bébé Mary en est sorti totalement indemne et soudainement 'très éveillé'.",
         "quizzes": [
@@ -1495,7 +1495,7 @@
     },
     {
         "front": "Qui était Shaka Zulu ?",
-        "dates": "Vers 1787 (Melmoth, actuelle Afrique du Sud) - 22 septembre 1828 (KwaDukuza, Royaume zoulou) | env. 41 ans",
+        "dates": "1787 (Melmoth, actuelle Afrique du Sud) - 1828 (KwaDukuza, Royaume zoulou) | 41 ans",
         "faits": "Enfant illégitime d'un chef de clan, il est rejeté, raillé et exilé avec sa mère, grandissant dans la honte. Devenu un guerrier d'une force physique hors du commun, il prend le pouvoir et transforme la petite tribu zouloue en un immense empire militariste. Génie tactique impitoyable, il révolutionne la guerre en Afrique australe en inventant une courte lance d'estoc pour le corps à corps (l'iklwa) et la redoutable formation d'attaque en 'cornes de buffle'. Sombrant dans une folie meurtrière à la mort de sa mère bien-aimée, il est assassiné par ses demi-frères.",
         "fun": "Pour endurcir ses soldats et les rendre plus rapides, il leur a strictement interdit de porter des sandales. Il les faisait courir pieds nus sur des tapis d'épines pendant des semaines jusqu'à ce que la plante de leurs pieds devienne dure comme du roc !",
         "quizzes": [
@@ -1513,7 +1513,7 @@
     },
     {
         "front": "Qui était Nicolas Copernic ?",
-        "dates": "19 février 1473 (Toruń, Pologne) - 24 mai 1543 (Frombork, Pologne) | 70 ans",
+        "dates": "1473 (Toruń, Pologne) - 1543 (Frombork, Pologne) | 70 ans",
         "faits": "Issu d'une riche famille de marchands de cuivre, il perd son père à 10 ans et est élevé par son puissant oncle évêque. Chanoine de l'Église, diplomate et médecin, il bouleverse secrètement l'histoire des sciences en développant la théorie de l'héliocentrisme (la Terre et les planètes tournent autour du Soleil). Cette théorie s'oppose frontalement au géocentrisme soutenu par l'Église depuis l'Antiquité. Craignant les foudres religieuses et les moqueries, il retarde la publication de son œuvre majeure 'De revolutionibus' jusqu'à son lit de mort.",
         "fun": "Selon la légende, il était plongé dans un profond coma depuis plusieurs jours et s'est réveillé juste assez longtemps pour tenir dans ses mains le tout premier exemplaire imprimé de son livre achevé, avant de refermer les yeux et de mourir paisiblement le jour même.",
         "quizzes": [
@@ -1531,7 +1531,7 @@
     },
     {
         "front": "Qui était Hedy Lamarr ?",
-        "dates": "9 novembre 1914 (Vienne, Autriche-Hongrie) - 19 janvier 2000 (Casselberry, Floride, États-Unis) | 85 ans",
+        "dates": "1914 (Vienne, Autriche-Hongrie) - 2000 (Casselberry, Floride, États-Unis) | 85 ans",
         "faits": "Née Hedwig Kiesler dans une grande famille juive autrichienne. Fuyant un mari marchand d'armes tyrannique proche des fascistes, elle émigre aux États-Unis. Considérée comme 'la plus belle femme du monde', elle devient une immense star de cinéma d'Hollywood dans les années 40. Mais son esprit était scientifique : pour aider les Alliés à vaincre les sous-marins nazis, elle invente et brevète (avec son ami compositeur) un système secret de 'saut de fréquence' rendant les torpilles américaines indétectables et impossibles à brouiller.",
         "fun": "La marine américaine a refusé d'utiliser son invention pendant la guerre car elle venait 'd'une actrice', lui conseillant plutôt de vendre des baisers pour lever des fonds. Son invention est pourtant devenue la technologie fondatrice du Wi-Fi, du Bluetooth et du GPS que nous utilisons tous aujourd'hui !",
         "quizzes": [
@@ -1549,7 +1549,7 @@
     },
     {
         "front": "Qui était Marc Aurèle ?",
-        "dates": "26 avril 121 (Rome, Italie) - 17 mars 180 (Sirmium ou Vindobona, Empire romain) | 58 ans",
+        "dates": "121 (Rome, Italie) - 180 (Sirmium ou Vindobona, Empire romain) | 58 ans",
         "faits": "Issu de la haute aristocratie sénatoriale romaine, remarqué pour son sérieux dès l'enfance, il est adopté sur ordre impérial pour devenir le futur souverain. Dernier des 'Cinq bons empereurs' de l'apogée de Rome, il règne à une époque terrifiante marquée par des invasions germaniques incessantes et la 'peste antonine' qui décime l'empire. Surnommé l'Empereur-Philosophe, grand représentant du stoïcisme, il rédigeait le soir sous sa tente militaire ses 'Pensées pour moi-même', un journal intime de méditation sur le devoir, la mort et l'humilité.",
         "fun": "Contrairement à l'image des empereurs sanguinaires, il détestait les cruels combats de gladiateurs. Obligé d'y assister par devoir politique, il s'asseyait dans la tribune impériale et lisait des livres ou signait des papiers administratifs pour ignorer les massacres de l'arène.",
         "quizzes": [
@@ -1567,7 +1567,7 @@
     },
     {
         "front": "Qui était Marie Tussaud ?",
-        "dates": "1er décembre 1761 (Strasbourg, France) - 16 avril 1850 (Londres, Angleterre) | 88 ans",
+        "dates": "1761 (Strasbourg, France) - 1850 (Londres, Angleterre) | 88 ans",
         "faits": "Fille posthume d'un soldat mort au combat, elle est élevée par un médecin suisse qui lui apprend l'art de modeler la cire anatomique. Remarquée, elle devient tutrice d'art à la cour du roi Louis XVI à Versailles. Pendant la Révolution française, jetée en prison, elle doit prouver sa loyauté à la République pour éviter la guillotine : elle est forcée de mouler les masques mortuaires en cire des nobles fraîchement décapités, dont ceux de ses anciens amis (Louis XVI, Marie-Antoinette). Elle fuit ensuite à Londres pour fonder son légendaire musée de cire.",
         "fun": "Son travail sous la Terreur était d'une horreur absolue : elle devait parfois chercher les têtes coupées elle-même dans les charniers, et travaillait sa cire chaude assise sur les marches mêmes de l'échafaud de la guillotine, entourée de la foule en colère !",
         "quizzes": [
@@ -1603,7 +1603,7 @@
     },
     {
         "front": "Qui était Wu Zetian ?",
-        "dates": "17 février 624 (Lizhou, Chine) - 16 décembre 705 (Luoyang, Empire Zhou) | 81 ans",
+        "dates": "624 (Lizhou, Chine) - 705 (Luoyang, Empire Zhou) | 81 ans",
         "faits": "Issue d'une riche famille alliée à la dynastie Tang, elle entre au palais impérial à 14 ans comme simple concubine de bas rang. D'une grande intelligence politique, elle séduit le fils du vieil empereur. Lorsqu'il monte sur le trône, elle manipule la cour, exile ou fait assassiner ses rivaux (y compris peut-être certains de ses propres enfants) et se fait couronner. Elle est l'unique femme de toute l'histoire millénaire de la Chine à avoir officiellement porté le titre d'Impératrice régnante. Son règne, bien que cruel, fut d'une immense prospérité culturelle.",
         "fun": "Pour démontrer que son pouvoir était d'origine cosmique et intouchable, elle a carrément inventé une vingtaine de nouveaux caractères d'écriture (les caractères de Zetian) et a forcé tout l'empire chinois à les utiliser à la place des anciens mots !",
         "quizzes": [
@@ -1621,7 +1621,7 @@
     },
     {
         "front": "Qui était Léonidas Ier ?",
-        "dates": "Vers 540 av. J.-C. (Sparte, Grèce antique) - 480 av. J.-C. (Les Thermopyles, Grèce) | env. 60 ans",
+        "dates": "540 av. J.-C. (Sparte, Grèce antique) - 480 av. J.-C. (Les Thermopyles, Grèce) | 60 ans",
         "faits": "Prince issu de la lignée royale des Agiades, il n'était initialement pas destiné au trône. Il a donc dû subir dans sa jeunesse l''agôgé', le dressage militaire effroyablement brutal, rude et sanglant réservé aux citoyens spartiates. Devenu roi à la mort de ses frères aînés, il mène la coalition grecque contre l'immense invasion perse du roi Xerxès Ier. Il entre dans la légende éternelle lors de la bataille des Thermopyles, choisissant de se sacrifier avec sa garde de 300 Spartiates dans un défilé rocheux pour ralentir l'ennemi.",
         "fun": "Avant la bataille, le redoutable roi perse a envoyé un messager exigeant que les Grecs rendent leurs armes pour avoir la vie sauve. La réponse mythique de Léonidas, d'un sarcasme absolu, fut 'Molôn labé', ce qui signifie littéralement : 'Viens les prendre !'",
         "quizzes": [
@@ -1639,7 +1639,7 @@
     },
     {
         "front": "Qui était T.E. Lawrence (Lawrence d'Arabie) ?",
-        "dates": "16 août 1888 (Tremadog, Pays de Galles) - 19 mai 1935 (Bovington, Angleterre) | 46 ans",
+        "dates": "1888 (Tremadog, Pays de Galles) - 1935 (Bovington, Angleterre) | 46 ans",
         "faits": "Enfant illégitime d'un aristocrate, jeune homme intellectuel et frêle, il étudie l'archéologie à Oxford et part fouiller au Moyen-Orient, apprenant l'arabe. Pendant la Première Guerre mondiale, l'armée britannique l'envoie dans le désert comme officier du renseignement. Adoptant les coutumes locales, il parvient à unifier les tribus bédouines nomades et mène la 'Grande révolte arabe' contre l'Empire ottoman. Redoutable stratège de guérilla, il sabote les chemins de fer turcs et prend la ville d'Aqaba. Écœuré par les trahisons coloniales des Occidentaux, il meurt dans un simple accident de moto.",
         "fun": "Malgré son image d'immense guerrier du désert chevauchant des chameaux au grand galop, Lawrence mesurait seulement 1m65, détestait profondément la chaleur écrasante du sable, et préférait de loin lire de la poésie antique !",
         "quizzes": [
@@ -1657,7 +1657,7 @@
     },
     {
         "front": "Qui était Grace O'Malley (Gráinne Ní Mháille) ?",
-        "dates": "Vers 1530 (Comté de Mayo, Irlande) - Vers 1603 (Château de Rockfleet, Irlande) | env. 73 ans",
+        "dates": "1530 (Comté de Mayo, Irlande) - 1603 (Château de Rockfleet, Irlande) | 73 ans",
         "faits": "Fille de la petite noblesse, son père est un puissant chef de clan irlandais contrôlant les mers. On lui refuse d'embarquer sur les navires car 'les cheveux longs portent malheur et se prennent dans les cordages'. Pour prouver sa détermination, elle se rase la tête. Devenue la reine de son clan, elle est une redoutable cheffe pirate, taxant les navires marchands et construisant des châteaux-forts sur les côtes. Elle s'opposera toute sa vie à l'annexion de l'Irlande par les Anglais, allant jusqu'à négocier face-à-face, en latin, avec la reine Élisabeth Ire.",
         "fun": "Selon la légende, le lendemain même de son accouchement à bord de son navire, son équipage a été abordé par des pirates turcs. Elle s'est levée de son lit, a saisi deux pistolets, et est montée sur le pont en chemise de nuit pour diriger victorieusement la contre-attaque !",
         "quizzes": [
@@ -1675,7 +1675,7 @@
     },
     {
         "front": "Qui était le Bouddha (Siddhartha Gautama) ?",
-        "dates": "Vers 563 av. J.-C. (Lumbini, actuel Népal) - Vers 483 av. J.-C. (Kushinagar, Inde) | env. 80 ans",
+        "dates": "563 av. J.-C. (Lumbini, actuel Népal) - 483 av. J.-C. (Kushinagar, Inde) | 80 ans",
         "faits": "Né prince héritier d'un puissant clan. Une prophétie annonçant qu'il deviendrait soit un grand roi soit un saint ermite, son père l'enferme dans un fastueux palais de plaisirs pour l'attacher au monde matériel. À 29 ans, il sort en secret et découvre avec un immense choc la vieillesse, la maladie et la mort. Il abandonne son trône, sa femme et son fils pour mener une vie d'ascète. Après des années de privations, il s'assoit sous l'arbre de la Bodhi, médite et atteint 'l'Éveil' (le Nirvana). Il enseigne ensuite la 'Voie du milieu', libérée des désirs, fondant le bouddhisme.",
         "fun": "Les fameuses statues que l'on trouve souvent dans les restaurants montrant un 'Bouddha très gros et chauve qui rit' (Budai) ne représentent absolument pas le vrai Bouddha historique (qui était très mince), mais un moine chinois folklorique ayant vécu 1500 ans plus tard !",
         "quizzes": [
@@ -1693,7 +1693,7 @@
     },
     {
         "front": "Qui était Platon ?",
-        "dates": "428 ou 427 av. J.-C. (Athènes, Grèce antique) - 348 ou 347 av. J.-C. (Athènes) | env. 80 ans",
+        "dates": "427 av. J.-C. (Athènes, Grèce antique) - 347 av. J.-C. (Athènes) | 80 ans",
         "faits": "Issu de la plus haute aristocratie athénienne, ce jeune homme brillant était destiné à diriger la cité. Révolté par l'exécution de son cher maître Socrate (condamné à boire de la ciguë), il se détourne de la politique pour la philosophie. Il fonde 'l'Académie' (considérée comme la première université du monde occidental) où il enseignera à Aristote. Sa pensée repose sur la 'Théorie des Idées' : le monde matériel dans lequel nous vivons n'est qu'une illusion imparfaite, une pâle copie du monde éternel de la Vérité (illustré par son célébrissime 'Mythe de la caverne').",
         "fun": "'Platon' n'était probablement pas son vrai prénom, mais un surnom d'étudiant affectueux (qui signifie 'large' en grec). Il aurait gagné ce surnom dans sa jeunesse parce qu'il pratiquait la lutte sportive à très haut niveau et avait des épaules extraordinairement larges !",
         "quizzes": [
@@ -1711,7 +1711,7 @@
     },
 	{
         "front": "Qui était Catherine de Médicis ?",
-        "dates": "13 avril 1519 (Florence, Italie) - 5 janvier 1589 (Blois, France) | 69 ans",
+        "dates": "1519 (Florence, Italie) - 1589 (Blois, France) | 69 ans",
         "tags": ["Renaissance", "Reine de France", "Politique"],
         "faits": "Héritière de la richissime famille banquière des Médicis, elle est orpheline à un mois. Mariée au futur roi de France Henri II, elle est d'abord écartée du pouvoir par la maîtresse de son mari, Diane de Poitiers. À la mort du roi, elle devient l'une des figures politiques les plus puissantes d'Europe, assurant la régence pour ses fils de santé fragile. Face aux sanglantes guerres de religion entre catholiques et protestants, elle tente de maintenir la paix par la tolérance, mais son nom reste tragiquement lié au massacre de la Saint-Barthélemy en 1572.",
         "fun": "Elle a profondément influencé la culture de la cour de France en y introduisant de nombreuses coutumes italiennes, comme l'usage régulier de la fourchette, les parfums, le corset, et même les macarons !",
@@ -1730,7 +1730,7 @@
     },
     {
         "front": "Qui était Hannibal Barca ?",
-        "dates": "247 av. J.-C. (Carthage, actuelle Tunisie) - Vers 183 av. J.-C. (Bithynie, actuelle Turquie) | env. 64 ans",
+        "dates": "247 av. J.-C. (Carthage, actuelle Tunisie) - 183 av. J.-C. (Bithynie, actuelle Turquie) | 64 ans",
         "faits": "Fils du grand général carthaginois Hamilcar Barca, il jure dès son enfance une haine éternelle à Rome. Devenu commandant en chef, il déclenche la deuxième guerre punique. Considéré comme l'un des plus grands tacticiens militaires de l'Antiquité, il réalise l'exploit inouï de traverser les Alpes en plein hiver avec son armée et ses éléphants de guerre pour attaquer l'Italie par le nord. Il inflige aux Romains des défaites écrasantes (notamment à Cannes en 216 av. J.-C.) avant d'être finalement vaincu à Zama par Scipion l'Africain. Il s'empoisonne pour échapper à la capture.",
         "fun": "Lors d'une bataille navale à la fin de sa vie, il a inventé une arme biologique terrifiante : il a fait catapulter des dizaines de jarres en argile remplies de serpents venimeux très agressifs directement sur les ponts des navires ennemis !",
         "quizzes": [
@@ -1748,7 +1748,7 @@
     },
     {
         "front": "Qui était Pierre le Grand (Pierre Ier) ?",
-        "dates": "9 juin 1672 (Moscou, Russie) - 8 février 1725 (Saint-Pétersbourg, Russie) | 52 ans",
+        "dates": "1672 (Moscou, Russie) - 1725 (Saint-Pétersbourg, Russie) | 52 ans",
         "faits": "Proclamé tsar à 10 ans, il grandit loin de la cour, se passionnant pour l'armée et la construction navale. Géant énergique de plus de 2 mètres, il voyage incognito en Europe occidentale pour y apprendre les métiers d'ouvrier et d'ingénieur. De retour en Russie, il force son pays, encore très médiéval, à se moderniser brutalement et à s'occidentaliser. Il crée la marine russe, vainc l'Empire suédois pour obtenir un accès à la mer Baltique, et fonde une nouvelle capitale fastueuse sur des marécages : Saint-Pétersbourg.",
         "fun": "Pour forcer les nobles russes (les boyards) à adopter la mode européenne moderne, il a créé un très lourd 'impôt sur la barbe' ! Ceux qui voulaient garder leurs longues barbes traditionnelles devaient payer une taxe et porter un jeton en cuivre autour du cou pour le prouver.",
         "quizzes": [
@@ -1766,7 +1766,7 @@
     },
     {
         "front": "Qui était Avicenne (Ibn Sina) ?",
-        "dates": "980 (Afshana, actuel Ouzbékistan) - Juin 1037 (Hamadan, actuel Iran) | 57 ans",
+        "dates": "980 (Afshana, actuel Ouzbékistan) - 1037 (Hamadan, actuel Iran) | 57 ans",
         "faits": "Génie précoce de l'Âge d'or islamique, il connaît le Coran par cœur à 10 ans et maîtrise la médecine à 16 ans. Érudit, philosophe, astronome et médecin, il a écrit plus de 250 ouvrages. Son chef-d'œuvre, le 'Canon de la médecine', est une immense encyclopédie médicale qui synthétise les savoirs grecs, romains et orientaux. Ce livre a été traduit en latin et utilisé comme manuel de référence dans toutes les grandes universités d'Europe pendant plus de 500 ans.",
         "fun": "Avicenne avait un style de vie très intense : il travaillait comme vizir et soignait des patients toute la journée, dictait ses livres de médecine et de philosophie tard dans la nuit, puis organisait de grandes fêtes avec ses étudiants jusqu'à l'aube.",
         "quizzes": [
@@ -1784,7 +1784,7 @@
     },
     {
         "front": "Qui était Frederick Douglass ?",
-        "dates": "Vers février 1818 (Comté de Talbot, Maryland) - 20 février 1895 (Washington D.C., États-Unis) | env. 77 ans",
+        "dates": "1818 (Comté de Talbot, Maryland) - 1895 (Washington D.C., États-Unis) | 77 ans",
         "faits": "Né esclave dans une plantation du Sud, il est séparé de sa mère bébé. À l'âge de 12 ans, la femme de son maître lui apprend secrètement l'alphabet (ce qui était illégal). Il s'échappe vers le Nord à l'âge de 20 ans déguisé en marin. Grâce à son éloquence exceptionnelle et son intelligence, il devient le plus grand leader du mouvement abolitionniste américain. Écrivain, éditeur de journaux et conseiller du président Abraham Lincoln pendant la guerre de Sécession, il milita aussi ardemment pour le droit de vote des femmes.",
         "fun": "Lorsqu'il a publié son autobiographie à succès en 1845, son récit était si brillant que beaucoup de Blancs refusaient de croire qu'il avait pu être écrit par un ancien esclave. Il a dû fuir en Europe pendant deux ans car le livre révélait son ancienne identité, risquant de le faire capturer par son ancien maître.",
         "quizzes": [
@@ -1802,7 +1802,7 @@
     },
     {
         "front": "Qui était Vercingétorix ?",
-        "dates": "Vers 82 av. J.-C. (Gaule, actuelle Auvergne) - 46 av. J.-C. (Rome, Italie) | env. 36 ans",
+        "dates": "82 av. J.-C. (Gaule, actuelle Auvergne) - 46 av. J.-C. (Rome, Italie) | 36 ans",
         "faits": "Fils d'un chef de la tribu des Arvernes (qui fut assassiné pour avoir voulu devenir roi), il reçoit une éducation aristocratique et militaire. Face à l'invasion de la Gaule par Jules César, il parvient à unifier les différentes tribus gauloises, d'ordinaire très divisées. Adepte de la tactique de la 'terre brûlée', il inflige une lourde défaite aux Romains à Gergovie. Il est finalement encerclé lors du siège d'Alésia en 52 av. J.-C., dépose ses armes aux pieds de César pour épargner ses hommes, et est étranglé à Rome après six ans de captivité.",
         "fun": "Son nom, Vercingétorix, n'est pas vraiment un prénom comme on l'entend aujourd'hui, mais plutôt un titre honorifique celte signifiant 'Le grand roi des guerriers' !",
         "quizzes": [
@@ -1820,7 +1820,7 @@
     },
     {
         "front": "Qui était John F. Kennedy (JFK) ?",
-        "dates": "29 mai 1917 (Brookline, Massachusetts) - 22 novembre 1963 (Dallas, Texas, États-Unis) | 46 ans",
+        "dates": "1917 (Brookline, Massachusetts) - 1963 (Dallas, Texas, États-Unis) | 46 ans",
         "faits": "Issu de l'une des familles politiques catholiques les plus riches d'Amérique. Jeune héros de la Seconde Guerre mondiale (dans la marine), il devient le 35e et le plus jeune président élu des États-Unis en 1960. Symbole de la modernité et du renouveau, son mandat est marqué par des tensions extrêmes de la Guerre froide (la crise des missiles de Cuba, le Mur de Berlin) et par le lancement du programme spatial Apollo pour atteindre la Lune. Il est assassiné par balle lors d'un défilé en voiture décapotable à Dallas.",
         "fun": "Il souffrait de douleurs de dos chroniques si atroces qu'il portait secrètement un corset médical rigide en permanence. C'est paradoxalement ce corset qui l'a empêché de s'effondrer après la première balle de l'assassin, le maintenant droit pour le coup fatal.",
         "quizzes": [
@@ -1838,7 +1838,7 @@
     },
     {
         "front": "Qui était Toutânkhamon ?",
-        "dates": "Vers 1341 av. J.-C. (Akhetaton, Égypte) - Vers 1323 av. J.-C. (Thèbes, Égypte) | env. 18 ans",
+        "dates": "1341 av. J.-C. (Akhetaton, Égypte) - 1323 av. J.-C. (Thèbes, Égypte) | 18 ans",
         "faits": "Fils du pharaon 'hérétique' Akhenaton, il monte sur le trône vers l'âge de 9 ans. Manipulé par ses conseillers (dont le vizir Aÿ), son règne marque le retour à la religion traditionnelle égyptienne (le polythéisme et le dieu Amon) après les réformes radicales de son père. De santé très fragile à cause de la consanguinité de ses parents, il meurt jeune, probablement d'une infection liée à une fracture de la jambe aggravée par le paludisme. Son nom est vite effacé par ses successeurs.",
         "fun": "Il fut un pharaon politiquement très mineur, mais il est paradoxalement le plus célèbre aujourd'hui ! La raison ? Son tombeau, découvert en 1922 par l'archéologue Howard Carter, est le seul de toute l'histoire de l'Égypte à avoir été retrouvé avec son trésor royal quasi intact.",
         "quizzes": [
@@ -1856,7 +1856,7 @@
     },
     {
         "front": "Qui était Mary Shelley ?",
-        "dates": "30 août 1797 (Londres, Angleterre) - 1er février 1851 (Londres, Angleterre) | 53 ans",
+        "dates": "1797 (Londres, Angleterre) - 1851 (Londres, Angleterre) | 53 ans",
         "faits": "Fille de la célèbre militante féministe Olympe de Gouges (erreur courante : sa mère était en fait Mary Wollstonecraft) et du philosophe William Godwin. À 16 ans, elle s'enfuit avec le poète rebelle Percy Shelley. En 1816, lors d'un été pluvieux passé en Suisse avec le poète Lord Byron, ce dernier propose un concours d'histoires de fantômes. À seulement 18 ans, Mary conçoit alors 'Frankenstein ou le Prométhée moderne', inventant presque à elle seule le genre de la science-fiction moderne. Sa vie sera ensuite marquée par le deuil tragique de plusieurs de ses enfants et de son mari.",
         "fun": "Une grande partie du public pense aujourd'hui que 'Frankenstein' est le nom du monstre couturé, alors qu'il s'agit en fait du nom du scientifique (Victor Frankenstein) qui a créé la créature anonyme !",
         "quizzes": [
@@ -1874,7 +1874,7 @@
     },
     {
         "front": "Qui était Mustafa Kemal Atatürk ?",
-        "dates": "1881 (Thessalonique, Empire ottoman) - 10 novembre 1938 (Istanbul, Turquie) | 57 ans",
+        "dates": "1881 (Thessalonique, Empire ottoman) - 1938 (Istanbul, Turquie) | 57 ans",
         "faits": "Issu de la classe moyenne, il devient un brillant officier de l'armée ottomane. Héros militaire lors de la Première Guerre mondiale (notamment à la bataille de Gallipoli). Refusant le démembrement de son pays par les Alliés en 1918, il mène une guerre d'indépendance. Fondateur et premier président de la République de Turquie, il lance des réformes radicales en quelques années : laïcité stricte de l'État, adoption de l'alphabet latin, interdiction du fez traditionnel, et droit de vote pour les femmes dès 1934.",
         "fun": "Son nom de famille, 'Atatürk', n'est pas son nom de naissance, mais un titre honorifique unique voté par le parlement turc en 1934, signifiant littéralement 'Le Père des Turcs'. Il est strictement interdit à toute autre personne de porter ce nom.",
         "quizzes": [
@@ -1892,7 +1892,7 @@
     },
     {
         "front": "Qui était Otto von Bismarck ?",
-        "dates": "1er avril 1815 (Schönhausen, Prusse) - 30 juillet 1898 (Friedrichsruh, Empire allemand) | 83 ans",
+        "dates": "1815 (Schönhausen, Prusse) - 1898 (Friedrichsruh, Empire allemand) | 83 ans",
         "faits": "Issu de l'aristocratie terrienne conservatrice (les Junkers) de Prusse. Homme politique d'une redoutable intelligence, surnommé le 'Chancelier de fer'. Son objectif ultime était d'unifier la mosaïque d'États allemands en un seul puissant empire sous la domination de la Prusse. Pour y parvenir, il a orchestré avec un machiavélisme brillant trois guerres très ciblées (contre le Danemark, l'Autriche, puis la France en 1870). Il fut également le premier leader européen à créer un système d'assurances sociales (retraite, maladie) pour contrer la montée du socialisme.",
         "fun": "Il avait un appétit légendaire et gargantuesque. Il mangeait souvent une douzaine d'œufs au petit-déjeuner et consommait énormément de caviar, d'huîtres, de saucisses et de vin, au point que son médecin a dû le mettre au régime strict à la fin de sa vie.",
         "quizzes": [
@@ -1910,7 +1910,7 @@
     },
     {
         "front": "Qui était Jean Jaurès ?",
-        "dates": "3 septembre 1859 (Castres, France) - 31 juillet 1914 (Paris, France) | 54 ans",
+        "dates": "1859 (Castres, France) - 1914 (Paris, France) | 54 ans",
         "faits": "Issu de la bourgeoisie provinciale, élève très brillant (reçu premier à Normale Sup). Devenu professeur de philosophie puis député, il est bouleversé par la grande grève des mineurs de Carmaux et devient la voix majeure du socialisme français. Fondateur du journal 'L'Humanité', il défend ardemment le capitaine Dreyfus, soutient la séparation des Églises et de l'État, et lutte pour les droits des ouvriers. Profondément pacifiste, il tente désespérément d'empêcher l'éclatement de la Première Guerre mondiale, mais il est assassiné au café du Croissant par un nationaliste.",
         "fun": "Jaurès avait une voix de tonnerre et une éloquence si puissante qu'il n'avait jamais besoin de porte-voix pour s'adresser aux foules de milliers d'ouvriers en plein air, ce qui lui permettait de les hypnotiser par ses discours humanistes.",
         "quizzes": [
@@ -1928,7 +1928,7 @@
     },
     {
         "front": "Qui était Margaret Thatcher ?",
-        "dates": "13 octobre 1925 (Grantham, Angleterre) - 8 avril 2013 (Londres, Royaume-Uni) | 87 ans",
+        "dates": "1925 (Grantham, Angleterre) - 2013 (Londres, Royaume-Uni) | 87 ans",
         "faits": "Fille d'un modeste épicier méthodiste. Chimiste puis avocate de formation, elle gravit les échelons du Parti conservateur grâce à son obstination féroce. En 1979, elle devient la première femme Première ministre du Royaume-Uni. Surnommée la 'Dame de fer' (un surnom inventé par la presse soviétique), elle impose des politiques ultra-libérales implacables, privatisant l'industrie, brisant les puissants syndicats de mineurs, et menant une guerre victorieuse contre l'Argentine pour les îles Malouines. Elle divise encore profondément la société britannique aujourd'hui.",
         "fun": "Avant de faire de la politique, dans le cadre de son travail de jeune chimiste pour l'industrie alimentaire, elle a participé aux recherches scientifiques permettant d'inventer la glace italienne (la crème glacée molle pompée avec de l'air) !",
         "quizzes": [
@@ -1946,7 +1946,7 @@
     },
     {
         "front": "Qui était George Orwell ?",
-        "dates": "25 juin 1903 (Motihari, Indes britanniques) - 21 janvier 1950 (Londres, Royaume-Uni) | 46 ans",
+        "dates": "1903 (Motihari, Indes britanniques) - 1950 (Londres, Royaume-Uni) | 46 ans",
         "faits": "Né Eric Arthur Blair dans une famille de fonctionnaires coloniaux. Après avoir servi dans la police impériale en Birmanie, écœuré par le colonialisme, il choisit de vivre dans la pauvreté volontaire à Paris et à Londres pour écrire. Socialiste convaincu, il part combattre en Espagne contre le fascisme et reçoit une balle dans la gorge. Il devient le critique le plus lucide des totalitarismes (nazisme et stalinisme) en écrivant deux chefs-d'œuvre de la littérature : 'La Ferme des animaux' et le terrifiant roman dystopique '1984'. Il meurt de la tuberculose.",
         "fun": "Le concept mythique et angoissant de 'Big Brother' (l'œil du dictateur qui surveille chaque citoyen à travers un écran) a été inventé par Orwell dans son roman 1984... bien avant l'invention des caméras de vidéosurveillance modernes !",
         "quizzes": [
@@ -1964,7 +1964,7 @@
     },
     {
         "front": "Qui était Thomas Jefferson ?",
-        "dates": "13 avril 1743 (Shadwell, Virginie) - 4 juillet 1826 (Charlottesville, Virginie, États-Unis) | 83 ans",
+        "dates": "1743 (Shadwell, Virginie) - 1826 (Virginie, États-Unis) | 83 ans",
         "faits": "Né dans une riche famille de propriétaires terriens, il est un homme des Lumières aux talents multiples : avocat, architecte, philosophe et inventeur. À seulement 33 ans, il est le principal rédacteur de la Déclaration d'indépendance des États-Unis (1776). Il devient le 3e président américain, doublant la taille du pays en rachetant la Louisiane à la France de Napoléon. Son héritage est aujourd'hui fortement débattu à cause de ses contradictions : il écrivait que 'tous les hommes sont créés égaux', mais possédait plus de 600 esclaves.",
         "fun": "Par un incroyable hasard de l'histoire, Thomas Jefferson est mort de vieillesse le 4 juillet 1826, très exactement le jour du 50e anniversaire de la signature de la Déclaration d'indépendance qu'il avait lui-même rédigée !",
         "quizzes": [
