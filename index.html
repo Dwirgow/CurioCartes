@@ -896,15 +896,23 @@
             
             // --- NOUVEAU : TRI CHRONOLOGIQUE INTELLIGENT ---
             seenIndices.sort((a, b) => {
-                const getYear = (index) => {
-                    const datePart = deck[index].dates.split('(')[0]; // Isole la naissance
-                    const numbers = datePart.match(/\d+/g); // Cherche les nombres
+                const getBirthYear = (index) => {
+                    // 1. On supprime tout le texte entre parenthèses (les lieux)
+                    let cleanStr = deck[index].dates.replace(/\([^)]*\)/g, '');
+                    // 2. On coupe au niveau du tiret et on ne garde que la partie GAUCHE (la naissance)
+                    let birthStr = cleanStr.split('-')[0];
+                    // 3. On extrait tous les chiffres de cette partie naissance
+                    let numbers = birthStr.match(/\d+/g);
                     if (!numbers) return 0;
-                    let year = parseInt(numbers[numbers.length - 1]); // Prend l'année
-                    if (datePart.includes('av. J.-C.')) year = -year; // Gère l'Antiquité
+                    // 4. L'année est toujours le tout dernier nombre avant le tiret
+                    let year = parseInt(numbers[numbers.length - 1]);
+                    // 5. On passe en négatif si c'est avant J.-C.
+                    if (birthStr.toLowerCase().includes('av. j.-c.')) {
+                        year = -year;
+                    }
                     return year;
                 };
-                return getYear(a) - getYear(b);
+                return getBirthYear(a) - getBirthYear(b);
             });
             // -----------------------------------------------
 
