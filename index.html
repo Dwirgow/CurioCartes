@@ -605,7 +605,6 @@
             const linksContainer = document.getElementById('card-links');
             linksContainer.innerHTML = '';
             
-            // On vérifie d'abord si card.links existe avant de chercher sa longueur
             if (card.links && Array.isArray(card.links) && card.links.length > 0) {
                 linksSection.style.display = 'block';
                 card.links.forEach(link => {
@@ -620,10 +619,13 @@
             } else {
                 linksSection.style.display = 'none';
             }
-            let personName = card.front.replace('Qui était ', '').replace(' ?', '');
+            
+            // EXTRACTION DU NOM (PLUS ROBUSTE)
+            let personName = card.front.replace(/Qui [é|e]tait /gi, '').replace(/\s*\?/g, '');
             document.getElementById('card-back-title').innerText = personName;
+            
             document.getElementById('card-front').innerText = card.front;
-            document.getElementById('card-dates').innerText = card.dates;
+            // document.getElementById('card-dates').innerText = card.dates; // Supprimé ou commenté
             document.getElementById('card-faits').innerText = card.faits;
             document.getElementById('card-fun').innerText = card.fun;
             
@@ -638,7 +640,6 @@
             
             const tagsContainer = document.getElementById('card-tags');
             tagsContainer.innerHTML = '';
-            // On vérifie si card.tags existe et est bien un tableau
             if (card.tags && Array.isArray(card.tags)) {
                 card.tags.forEach(tag => {
                     const span = document.createElement('span');
@@ -670,8 +671,11 @@
         function showQuiz() {
             const quiz = currentQuizzes[currentSubQuizIndex];
             const headerText = document.querySelector('.quiz-header');
-            // Affiche le nom de la personne
-            document.getElementById('quiz-person-name').innerText = deck[currentCardIndex].front.replace('Qui était ', '').replace(' ?', '');
+            
+            // EXTRACTION DU NOM (PLUS ROBUSTE)
+            let personName = deck[currentCardIndex].front.replace(/Qui [é|e]tait /gi, '').replace(/\s*\?/g, '');
+            document.getElementById('quiz-person-name').innerText = personName;
+            
             if (currentQuizzes.length > 1) {
                 headerText.innerText = `🧠 Mode Révision (${currentSubQuizIndex + 1}/${currentQuizzes.length})`;
             } else {
@@ -704,7 +708,7 @@
             hideAllViews();
             quizView.style.display = 'flex';
         }
-
+		
         function checkAnswer(selectedIndex, correctIndex, clickedBtn) {
             const allBtns = document.querySelectorAll('.quiz-btn');
             allBtns.forEach(btn => btn.style.pointerEvents = 'none');
@@ -978,7 +982,6 @@
             const linksContainer = document.getElementById('card-links');
             linksContainer.innerHTML = '';
             
-            // Sécurité pour les liens
             if (card.links && Array.isArray(card.links) && card.links.length > 0) {
                 linksSection.style.display = 'block';
                 card.links.forEach(link => {
@@ -993,10 +996,13 @@
             } else {
                 linksSection.style.display = 'none';
             }
-            let personName = card.front.replace('Qui était ', '').replace(' ?', '');
+            
+            // EXTRACTION DU NOM (PLUS ROBUSTE)
+            let personName = card.front.replace(/Qui [é|e]tait /gi, '').replace(/\s*\?/g, '');
             document.getElementById('card-back-title').innerText = personName;
+            
             document.getElementById('card-front').innerText = card.front;
-            document.getElementById('card-dates').innerText = card.dates;
+            // document.getElementById('card-dates').innerText = card.dates; // Supprimé ou commenté
             document.getElementById('card-faits').innerText = card.faits;
             document.getElementById('card-fun').innerText = card.fun;
             
@@ -1011,7 +1017,6 @@
             
             const tagsContainer = document.getElementById('card-tags');
             tagsContainer.innerHTML = '';
-            // Sécurité pour les tags
             if (card.tags && Array.isArray(card.tags)) {
                 card.tags.forEach(tag => {
                     const span = document.createElement('span');
