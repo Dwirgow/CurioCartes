@@ -385,7 +385,7 @@
                 <div class="flip-card-back">
                     <!-- TITRE AU DOS -->
                     <h3 id="card-back-title" style="color: var(--primary); text-align: center; margin-top: -15px; margin-bottom: 10px; padding-bottom: 5px; border-bottom: 2px solid #F1F5F9; font-size: 1.1rem;"></h3>
-                    
+                    <div id="card-dates" style="text-align: center; color: var(--text-muted); font-size: 0.85rem; margin-bottom: 15px; font-weight: 600;"></div>
                     <!-- CONTENEUR POUR LES TAGS -->
                     <div class="tags-container" id="card-tags"></div>
                     
@@ -895,25 +895,42 @@
             let seenIndices = Object.keys(memoryData).map(Number);
             
             // --- NOUVEAU : TRI CHRONOLOGIQUE INTELLIGENT ---
+            // --- TRI CHRONOLOGIQUE STRICT SUR LA NAISSANCE ---
+            // --- TRI CHRONOLOGIQUE STRICT SUR LA NAISSANCE ---
             seenIndices.sort((a, b) => {
                 const getBirthYear = (index) => {
-                    // 1. On supprime tout le texte entre parenthèses (les lieux)
+                    // 1. On supprime le texte entre parenthèses (les lieux éventuels)
                     let cleanStr = deck[index].dates.replace(/\([^)]*\)/g, '');
-                    // 2. On coupe au niveau du tiret et on ne garde que la partie GAUCHE (la naissance)
-                    let birthStr = cleanStr.split('-')[0];
-                    // 3. On extrait tous les chiffres de cette partie naissance
-                    let numbers = birthStr.match(/\d+/g);
+                    
+                    // 2. On extrait TOUS les nombres de la chaîne de date
+                    let numbers = cleanStr.match(/\d+/g);
                     if (!numbers) return 0;
-                    // 4. L'année est toujours le tout dernier nombre avant le tiret
-                    let year = parseInt(numbers[numbers.length - 1]);
-                    // 5. On passe en négatif si c'est avant J.-C.
-                    if (birthStr.toLowerCase().includes('av. j.-c.')) {
+                    
+                    let year = 0;
+                    
+                    // 3. On cherche le TOUT PREMIER nombre qui fait 3 ou 4 chiffres.
+                    // Cela ignore automatiquement les jours et les mois (ex: "27-01-1756" -> 1756)
+                    let yearMatch = numbers.find(n => n.length >= 3);
+                    
+                    if (yearMatch) {
+                        year = parseInt(yearMatch);
+                    } else {
+                        // S'il n'y a que des petits nombres (ex: figures antiques "44 - 14 av. J.-C."),
+                        // l'année de naissance est forcément le tout premier nombre lu.
+                        year = parseInt(numbers[0]);
+                    }
+                    
+                    // 4. On passe en négatif si l'ère est "avant J.-C."
+                    if (cleanStr.toLowerCase().includes('av. j.-c.') || cleanStr.toLowerCase().includes('av. jc') || cleanStr.toLowerCase().includes('av jc')) {
                         year = -year;
                     }
+                    
                     return year;
                 };
+                
                 return getBirthYear(a) - getBirthYear(b);
             });
+            
             // -----------------------------------------------
 
             if (seenIndices.length === 0) {
